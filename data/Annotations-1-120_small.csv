@@ -1,0 +1,32 @@
+Report No.,Concept,Sentence,Negation
+1,shortness of breath,"S_O_H  Counters Report Type Record Type Subgroup Classifier  1,01TdvtyYejbW DS DS 1504  E_O_H  [Report de-identified (Safe-harbor compliant) by De-ID v.6.14.02]         **INSTITUTION   CARDIOLOGY   DISCHARGE SUMMARY  PATIENT NAME:  **NAME[AAA, BBB M]  ACCOUNT #:  **ID-NUM   **ROOM   ATTENDING PHYSICIAN:  **NAME[YYY M ZZZ]  ADMISSION DATE:  **DATE[Sep 27 2007]  DISCHARGE DATE: **DATE[Oct 07 2007]  The patient is a **AGE[in 60s]-year-old gentleman who presented to **INSTITUTION   with complaints of SHORTNESS OF BREATH and was found to have staph   bacteremia.",Affirmed
+1,staph   bacteremia,"S_O_H  Counters Report Type Record Type Subgroup Classifier  1,01TdvtyYejbW DS DS 1504  E_O_H  [Report de-identified (Safe-harbor compliant) by De-ID v.6.14.02]         **INSTITUTION   CARDIOLOGY   DISCHARGE SUMMARY  PATIENT NAME:  **NAME[AAA, BBB M]  ACCOUNT #:  **ID-NUM   **ROOM   ATTENDING PHYSICIAN:  **NAME[YYY M ZZZ]  ADMISSION DATE:  **DATE[Sep 27 2007]  DISCHARGE DATE: **DATE[Oct 07 2007]  The patient is a **AGE[in 60s]-year-old gentleman who presented to **INSTITUTION   with complaints of shortness of breath and was found to have STAPH   BACTEREMIA.",Affirmed
+1,infection,The patient was transferred to **INSTITUTION for   explantation of a pacemaker system that was felt to be involved by the   INFECTION.,Affirmed
+1,infection,The patient was sent back to **INSTITUTION the   following day for further evaluation and management of his INFECTION.,Affirmed
+1,infection,It was   planned to follow up in the **INSTITUTION for reimplantation of the   pacemaker once the INFECTION is completely resolved.,Affirmed
+2,Shortness Of Breath  ,8  cm (0.7-1.1 cm)      REFERRING DIAGNOSIS: SHORTNESS OF BREATH    TWO DIMENSIONAL ECHOCARDIOLOGY:   This was a technically difficult study.,Affirmed
+2,Shortness Of Breath,8  cm (0.7-1.1 cm)      REFERRING DIAGNOSIS: SHORTNESS OF BREATH    TWO DIMENSIONAL ECHOCARDIOLOGY:   This was a technically difficult study.,Affirmed
+2,Left ventricular size is normal,LEFT VENTRICULAR SIZE IS NORMAL.,Affirmed
+2,Left ventricular wall thickness is normal,LEFT VENTRICULAR WALL THICKNESS IS NORMAL.,Affirmed
+2,Segmental left ventricular   function is normal,SEGMENTAL LEFT VENTRICULAR   FUNCTION IS NORMAL.,Affirmed
+2,Overall left ventricular function is normal,"OVERALL LEFT VENTRICULAR FUNCTION IS NORMAL, with an   estimated ejection fraction of 55-60 %.",Affirmed
+2,Right ventricular size is normal,RIGHT VENTRICULAR SIZE IS NORMAL.,Affirmed
+2,Right ventricular wall thickness is normal,RIGHT VENTRICULAR WALL THICKNESS IS NORMAL.,Affirmed
+2,Right ventricular function is   normal,RIGHT VENTRICULAR FUNCTION IS   NORMAL.,Affirmed
+2,Left atrial size is normal,LEFT ATRIAL SIZE IS NORMAL.,Affirmed
+2,Right atrial size is normal,RIGHT ATRIAL SIZE IS NORMAL.,Affirmed
+2,pulmonary artery size is normal,The   PULMONARY ARTERY SIZE IS NORMAL.,Affirmed
+2,aortic root size is normal,The AORTIC ROOT SIZE IS NORMAL.,Affirmed
+2,aortic   valve is thickened,The AORTIC   VALVE IS THICKENED.,Affirmed
+2,mitral valve is normal,The MITRAL VALVE IS NORMAL.,Affirmed
+2,tricuspid valve is   normal,The TRICUSPID VALVE IS   NORMAL.,Affirmed
+2,pulmonic valve is normal,The PULMONIC VALVE IS NORMAL.,Affirmed
+2,pericardial effusion,No PERICARDIAL EFFUSION is seen.,Negated
+2,mitral regurgitation,SPECTRAL DOPPLER:   There is trace MITRAL REGURGITATION.,Affirmed
+2,tricuspid regurgitation,There is trace TRICUSPID REGURGITATION.,Affirmed
+2,pulmonic regurgitation,There is trace PULMONIC REGURGITATION.,Affirmed
+2,mitral regurgitation,COLOR FLOW DOPPLER:   There is trace MITRAL REGURGITATION.,Affirmed
+2,tricuspid regurgitation,There is trace TRICUSPID REGURGITATION.,Affirmed
+2,pulmonic regurgitation,There is trace PULMONIC REGURGITATION.,Affirmed
+2,Normal left ventricular size,02) NORMAL LEFT VENTRICULAR SIZE and function.,Affirmed
+2,Thickened aortic valve,03) THICKENED AORTIC VALVE.,Affirmed
