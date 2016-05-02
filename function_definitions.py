@@ -1,6 +1,7 @@
 from collections import OrderedDict
 import csv
 import nltk
+import re
 from nltk.tokenize import word_tokenize
 import itertools
 
@@ -20,6 +21,14 @@ def getCSVInDictionary(csvFileName):
         for column, value in row.iteritems():
             result.setdefault(column, []).append(value)
     return result
+
+def getTxtInDictionary(txtFileName):
+    reader= csv.DictReader(open(txtFileName), delimiter="	")
+    result= OrderedDict()
+    for row in reader:
+        for column, value in row.iteritems():
+            result.setdefault(column, []).append(value)
+    return result
     
 def getTokens(listSentences):
     '''
@@ -29,36 +38,62 @@ def getTokens(listSentences):
     '''
     tokenizedSentences = []
     for eachSentence in listSentences:
-        tokenizedSentences.append(word_tokenize(eachSentence.lower()))
+        tokenizedSentences.append(word_tokenize(re.sub("/", " ", eachSentence.lower())))
     return tokenizedSentences
+
+def sublistIndex(sublist, origlist):
+    origstr = ' '.join(map(str, origlist))
+    ind =  origstr.index(' '.join(map(str, sublist)))
+    return len(origstr[:ind].split(' ')) - 1
+
+
         
 def getTrainingDataForCRF(tokenizedSentences, tokenizedConcepts, bioTags):
-    # Get POS tags for each of the sentences
-    posTaggedTokens = []
-    for eachTokenizedSentence in tokenizedSentences:
-        posTaggedTokens.append(nltk.pos_tag(eachTokenizedSentence))
 
     indexConceptsInSentences= []
+    exceptions = []
     for i in range(len(tokenizedConcepts)):
         temp = []
-        temp.append(tokenizedSentences[i].index(tokenizedConcepts[i][0]))
-        temp.append(tokenizedSentences[i].index(tokenizedConcepts[i][-1]))
-        indexConceptsInSentences.append(temp)
-        
+        start = tokenizedConcepts[i][0]
+        end = tokenizedConcepts[i][-1]
+        if(start in tokenizedSentences[i]):
+            if(end in tokenizedSentences[i]):
+                # this will not work if there are multiple occurences of concept in a sentence!
+                ind = sublistIndex(tokenizedConcepts[i], tokenizedSentences[i])
+                temp.append(ind)
+                temp.append(ind + len(tokenizedConcepts[i]) - 1)
+                indexConceptsInSentences.append(temp)
+            else:
+                print("concept end '%s' is not in %i sentence; ignore this sentence" % (end, i))
+                exceptions.append(i)
+        else:
+            print("concept start '%s' is not in %i sentence; ignore this sentence" % (start, i))
+            exceptions.append(i)
+
+    for index in sorted(exceptions, reverse=True):
+        del tokenizedSentences[index]
+
+    # Get POS tags for each of the sentences
+    posTaggedTokens = []
+    for i in range(len(tokenizedSentences)):
+        posTaggedTokens.append(nltk.pos_tag(tokenizedSentences[i]))
+
     listBioTags= []
     for i in range(len(indexConceptsInSentences)):
         tempList = []
-        tempList.append(list(itertools.repeat(bioTags[0],indexConceptsInSentences[i][0])))
+        startIndex = indexConceptsInSentences[i][0]
+        endIndex = indexConceptsInSentences[i][1]
+        tempList.append(list(itertools.repeat(bioTags[0],startIndex)))
         tempList.append(list(itertools.repeat(bioTags[1],1)))
-        tempList.append(list(itertools.repeat(bioTags[2],indexConceptsInSentences[i][1]- indexConceptsInSentences[i][0])))
-        tempList.append(list(itertools.repeat(bioTags[0],len(tokenizedSentences[i])- indexConceptsInSentences[i][1]- 1)))
+        tempList.append(list(itertools.repeat(bioTags[2],endIndex- startIndex)))
+        tempList.append(list(itertools.repeat(bioTags[0],len(tokenizedSentences[i])- endIndex- 1)))
         tempList = [val for sublist in tempList for val in sublist]
         listBioTags.append(tempList)
-        
+
     # Write token, POS and BIO tag in CSV
     flatTokenizedSentences = []
-    for element in tokenizedSentences:
-        for eachElement in element:
+    for i in xrange(len(tokenizedSentences)):
+        for eachElement in tokenizedSentences[i]:
             flatTokenizedSentences.append(eachElement)
         flatTokenizedSentences.append('')
 
@@ -76,8 +111,12 @@ def getTrainingDataForCRF(tokenizedSentences, tokenizedConcepts, bioTags):
 
     trainDataCRF= zip(flatTokenizedSentences, flatListPosTags, flatListBioTags)
     with open('./output/trainCRF.csv', 'wb') as csvfile:
-        writer = csv.writer(csvfile)
+        writer = csv.writer(csvfile, delimiter=" ")
         for row in trainDataCRF:
+            if(row[0].strip()==row[1].strip()==row[2].strip() == ''):
+                print(row)
+                print(" ignored")
+                continue
             writer.writerow(row)
     
     return posTaggedTokens, indexConceptsInSentences, listBioTags
