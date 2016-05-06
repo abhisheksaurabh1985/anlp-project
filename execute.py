@@ -11,8 +11,7 @@ from nltk.tokenize import word_tokenize
 txtFileName= './data/Annotations-1-120.txt'
 dictAnnotatedData= getTxtInDictionary(txtFileName) # Read the annotated data in an Ordered Dictionary
 
-
-tokenizedSentences= getTokens(dictAnnotatedData['Sentence'][0:]) # Word2Vec expects single sentences, each one of them as a list of words. Generate tokens from sentences. 
+tokenizedSentences= getTokens(dictAnnotatedData['Sentence'][0:]) # Word2Vec expects single sentences, each one of them as a list of words. Generate tokens from sentences.
 print len(tokenizedSentences)
 
 tokenizedConcepts = getTokens(dictAnnotatedData['Concept'][0:]) # Tokenize 'concepts'
@@ -26,11 +25,3 @@ bioTags= ['O', 'B', 'I']
 [posTaggedTokens, indexConceptsInSentences, listBioTags] = getTrainingDataForCRF(tokenizedSentences,
                                                                                  tokenizedConcepts,
                                                                                  bioTags)
-
-
-        
-
-
-
-
-

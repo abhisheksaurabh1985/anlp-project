@@ -1,10 +1,8 @@
-
-
 /*
-	This program parses the bioscope data in an xml file, it removes all the tags and prints out the bare 		sentence into a text file. 
+	This program parses the bioscope data in an xml file, it removes all the tags and prints out the bare sentence into a text file. 
 	The program is run in the following way:
 		javac BioscopeParser.java
-		java Bioscope <name of the xml file> 
+		java Bioscope <name of the xml file>
 	It will parse the xml file for example 'file.xml' and print out the data in a text file
 	named 'file.txt'
 */
@@ -22,10 +20,10 @@ import java.io.*;
 
 
 public class BioscopeParser {
-   	 	
-	
+
+
    public static void main(String argv[]) throws IOException{
- 
+
       try {
 
 	 String fileName = argv[0];
@@ -34,7 +32,7 @@ public class BioscopeParser {
 	 String outputFile = fileName.substring(0,fileName.indexOf('.'));
 	 outputFile = outputFile+".txt";
 	 PrintWriter writer = new PrintWriter(outputFile, "UTF-8");
-	/*		 String savestr = "mysave.sav"; 
+	/*		 String savestr = "mysave.sav";
 		File f = new File(savestr);
 
 		PrintWriter out = null;
@@ -49,7 +47,7 @@ public class BioscopeParser {
 		    out.close();
 		}
 	 */
-         DocumentBuilderFactory dbFactory = 
+         DocumentBuilderFactory dbFactory =
             DocumentBuilderFactory.newInstance();
          DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
          Document doc = dBuilder.parse(inputFile);
@@ -58,7 +56,7 @@ public class BioscopeParser {
          System.out.println(doc.getDocumentElement().getNodeName());
 	 NodeList s = doc.getElementsByTagName("sentence");
 	 for(int i=0; i<s.getLength(); i++){
-		Node nNode = s.item(i);		
+		Node nNode = s.item(i);
 		if(nNode.getNodeType() == Node.ELEMENT_NODE){
 
 			Element e = (Element) nNode;
