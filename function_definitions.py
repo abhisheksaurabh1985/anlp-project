@@ -7,6 +7,7 @@ import csv
 import nltk
 import re
 import random
+import numpy as np
 
 def getCSVInDictionary(csvFileName):
     '''
@@ -46,9 +47,18 @@ def sublistIndex(sublist, origlist):
     ind =  origstr.index(' '.join(map(str, sublist)))
     return len(origstr[:ind].split(' ')) - 1
 
+def mergeListsOfBioTags(lists, priorities):
+    res = []
+    for i in xrange(len(lists[0])):
+        tag = lists[0][i]
+        for l in lists[1:]:
+            if(priorities[l[i]] > priorities[tag]):
+                tag = l[i]
+        res.append(tag)
+    return res
 
 
-def getTrainingDataForCRF(tokenizedSentences, tokenizedConcepts, bioTags):
+def getTrainingDataForCRF(tokenizedSentences, tokenizedConcepts, bioTags, priorities):
 
     indexConceptsInSentences= []
     exceptions = []
@@ -70,6 +80,7 @@ def getTrainingDataForCRF(tokenizedSentences, tokenizedConcepts, bioTags):
             print("concept start '%s' is not in %i sentence; ignore this sentence" % (start, i))
             exceptions.append(i)
 
+    # Get rid of the ignored sentences
     for index in sorted(exceptions, reverse=True):
         del tokenizedSentences[index]
 
@@ -90,23 +101,28 @@ def getTrainingDataForCRF(tokenizedSentences, tokenizedConcepts, bioTags):
         tempList = [val for sublist in tempList for val in sublist]
         listBioTags.append(tempList)
 
+    uniqueSentenses = list(np.unique(tokenizedSentences))
+
     # Write token, POS and BIO tag in CSV
     flatTokenizedSentences = []
-    for i in xrange(len(tokenizedSentences)):
-        for eachElement in tokenizedSentences[i]:
+    for i in xrange(len(uniqueSentenses)):
+        for eachElement in uniqueSentenses[i]:
             flatTokenizedSentences.append(eachElement)
         flatTokenizedSentences.append('')
 
     flatListPosTags= []
-    for eachPosTaggedSentence in posTaggedTokens:
-        for eachPosTaggedToken in eachPosTaggedSentence:
+    for i in xrange(len(uniqueSentenses)):
+        ind = tokenizedSentences.index(uniqueSentenses[i])
+        for eachPosTaggedToken in posTaggedTokens[ind]:
             flatListPosTags.append(eachPosTaggedToken[1])
         flatListPosTags.append('')
 
     flatListBioTags= []
-    for item in listBioTags:
-        for eachItem in item:
-            flatListBioTags.append(eachItem)
+    for i in xrange(len(uniqueSentenses)):
+        selectedBioTagsList = [listBioTags[k] for k, j in enumerate(tokenizedSentences) if j == uniqueSentenses[i]]
+        selectedBioTags = mergeListsOfBioTags(selectedBioTagsList, priorities)
+        for item in selectedBioTags:
+            flatListBioTags.append(item)
         flatListBioTags.append('')
 
     trainDataCRF= zip(flatTokenizedSentences, flatListPosTags, flatListBioTags)

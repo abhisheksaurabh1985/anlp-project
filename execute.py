@@ -16,11 +16,12 @@ print len(tokenizedConcepts)
 # Define B-I-O tags as per IOB2 convention. Three types of tags have been used viz. O (Others), B-X (Beginning of X)
 # and I-X (Inside X) where X is 'CONCEPT'.
 bioTags= ['O', 'B', 'I']
+priorities= {'O':0, 'B':2, 'I':1}
 
 # Training data for CRF
 [posTaggedTokens, indexConceptsInSentences, listBioTags] = getTrainingDataForCRF(tokenizedSentences,
                                                                                  tokenizedConcepts,
-                                                                                 bioTags)
+                                                                                 bioTags, priorities)
 ##print len(listBioTags), indexConceptsInSentences
 
 # Split data for training and testing
