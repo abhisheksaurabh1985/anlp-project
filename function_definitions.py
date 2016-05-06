@@ -110,15 +110,12 @@ def getTrainingDataForCRF(tokenizedSentences, tokenizedConcepts, bioTags):
         flatListBioTags.append('')    
 
     trainDataCRF= zip(flatTokenizedSentences, flatListPosTags, flatListBioTags)
-    with open('./output/trainCRF.csv', 'wb') as csvfile:
+    filename = './output/trainCRF.csv'
+    with open(filename, 'wb') as csvfile:
         writer = csv.writer(csvfile, delimiter=" ")
         for row in trainDataCRF:
-            if(row[0].strip()==row[1].strip()==row[2].strip() == ''):
-                print(row)
-                print(" ignored")
-                continue
             writer.writerow(row)
-    
+    print "%s created" % filename
     return posTaggedTokens, indexConceptsInSentences, listBioTags
 
 
