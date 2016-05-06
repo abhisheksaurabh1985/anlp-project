@@ -13,17 +13,10 @@ total =  len(res['real'])
 print "accuracy %f" % (correct/float(total))
 
 class_res= np.zeros((3,3))
-class_res[0,0] = sum(1 if (res['predicted'][i]=='O' and res['real'][i]=='O') else 0 for i in xrange(len(res['real'])))
-class_res[0,1] = sum(1 if (res['predicted'][i]=='B' and res['real'][i]=='O') else 0 for i in xrange(len(res['real'])))
-class_res[0,2] = sum(1 if (res['predicted'][i]=='I' and res['real'][i]=='O') else 0 for i in xrange(len(res['real'])))
-
-class_res[1,0] = sum(1 if (res['predicted'][i]=='O' and res['real'][i]=='B') else 0 for i in xrange(len(res['real'])))
-class_res[1,1] = sum(1 if (res['predicted'][i]=='B' and res['real'][i]=='B') else 0 for i in xrange(len(res['real'])))
-class_res[1,2] = sum(1 if (res['predicted'][i]=='I' and res['real'][i]=='B') else 0 for i in xrange(len(res['real'])))
-
-class_res[2,0] = sum(1 if (res['predicted'][i]=='O' and res['real'][i]=='I') else 0 for i in xrange(len(res['real'])))
-class_res[2,1] = sum(1 if (res['predicted'][i]=='B' and res['real'][i]=='I') else 0 for i in xrange(len(res['real'])))
-class_res[2,2] = sum(1 if (res['predicted'][i]=='I' and res['real'][i]=='I') else 0 for i in xrange(len(res['real'])))
+tags = ['O', 'B', 'I']
+for k in xrange(3):
+   for j in xrange(3):
+      class_res[k,j] = sum(1 if (res['predicted'][i]==tags[j] and res['real'][i]==tags[k]) else 0 for i in xrange(len(res['real'])))
 
 np.set_printoptions(precision=0, suppress=True)
 print class_res
