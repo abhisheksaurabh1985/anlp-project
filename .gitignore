@@ -1,0 +1,10 @@
+# Add git ignore files here
+
+# Python
+*.pyc
+
+# Java
+*.class
+
+# ignore all files in the output directory
+output/
