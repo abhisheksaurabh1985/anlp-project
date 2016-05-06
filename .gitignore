@@ -8,3 +8,9 @@
 
 # ignore all files in the output directory
 output/
+
+# temp files in crf-test
+crf-test/model
+crf-test/testDataCRF.txt
+crf-test/trainingDataCRF.txt
+crf-test/test_out.csv

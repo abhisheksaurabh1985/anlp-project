@@ -10,10 +10,10 @@ import random
 
 def getCSVInDictionary(csvFileName):
     '''
-    Description: Read a multi column CSV file with first row as header. File content is stored in a dictionary which the function returns. 
+    Description: Read a multi column CSV file with first row as header. File content is stored in a dictionary which the function returns.
     Input: File path along with the file name.
     Output: An ordered dictionary with file header as KEY. Dictionary values are a list which hold the column values corresponding to each header.
-    For e.g. {'header A': ['val_1_header_A', 'val_2_header_A'], 'header B': ['val_1_header_B', 'val_1_header_B']}   
+    For e.g. {'header A': ['val_1_header_A', 'val_2_header_A'], 'header B': ['val_1_header_B', 'val_1_header_B']}
     '''
     reader= csv.DictReader(open(csvFileName))
     result= OrderedDict()
@@ -29,7 +29,7 @@ def getTxtInDictionary(txtFileName):
         for column, value in row.iteritems():
             result.setdefault(column, []).append(value)
     return result
-    
+
 def getTokens(listSentences):
     '''
     Description: Function to get tokens from sentences. Word2Vec expects single sentences, each one of them as a list of words.
@@ -47,7 +47,7 @@ def sublistIndex(sublist, origlist):
     return len(origstr[:ind].split(' ')) - 1
 
 
-        
+
 def getTrainingDataForCRF(tokenizedSentences, tokenizedConcepts, bioTags):
 
     indexConceptsInSentences= []
@@ -107,7 +107,7 @@ def getTrainingDataForCRF(tokenizedSentences, tokenizedConcepts, bioTags):
     for item in listBioTags:
         for eachItem in item:
             flatListBioTags.append(eachItem)
-        flatListBioTags.append('')    
+        flatListBioTags.append('')
 
     trainDataCRF= zip(flatTokenizedSentences, flatListPosTags, flatListBioTags)
     filename = './output/trainCRF.csv'
@@ -124,14 +124,12 @@ def splitDataForValidation(fileNameCRFData, percentTest):
     blankLine = [' \n']
     with open(fileNameCRFData) as f:
         temp= []
-##        pdb.set_trace()
         for line in f:
-##            print line
             if line.strip():
-                temp.append(line)	
+                temp.append(line)
             else:
                 dataCRF.append(temp + blankLine)
-                temp= []                
+                temp= []
 
     print len(dataCRF)
     # Split into train and test
@@ -141,15 +139,6 @@ def splitDataForValidation(fileNameCRFData, percentTest):
     testDataCRF = [x for x in dataCRF if x not in trainingDataCRF]
     print len(trainingDataCRF)
     print len(testDataCRF)
-    # Write in text file
-##    try:
-##        with open('./output/trainingDataCRF.txt', 'w') as file:
-##            file.writelines(''.join(i) for i in trainingDataCRF)
-##
-##        with open('./output/testDataCRF.txt', 'w') as file:
-##            file.writelines(''.join(i) for i in testDataCRF)
-##    except Exception:
-##        pass
     with open('./crf-test/trainingDataCRF.txt', 'w') as file:
         for i in trainingDataCRF:
             if i is not None:
