@@ -112,24 +112,21 @@ def getTrainingDataForCRF(tokenizedSentences, tokenizedConcepts, bioTags):
     trainDataCRF= zip(flatTokenizedSentences, flatListPosTags, flatListBioTags)
     filename = './output/trainCRF.csv'
     with open(filename, 'wb') as csvfile:
-        writer = csv.writer(csvfile, delimiter=" ")
         for row in trainDataCRF:
-            writer.writerow(row)
+            csvfile.write(" ".join(row) + "\n")
     print "%s created" % filename
     return posTaggedTokens, indexConceptsInSentences, listBioTags
 
 
 def splitDataForValidation(fileNameCRFData, percentTest):
     dataCRF= []
-    blankLine = [' \n']
-    with open(fileNameCRFData) as f:
+    with open(fileNameCRFData, 'r') as f:
         temp= []
         for line in f:
-            if line.strip():
-                temp.append(line)
-            else:
-                dataCRF.append(temp + blankLine)
-                temp= []
+            temp.append(line)
+            if not line.strip():
+                dataCRF.append(temp)
+                temp= []                
 
     print len(dataCRF)
     # Split into train and test
