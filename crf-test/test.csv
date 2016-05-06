@@ -9,6 +9,7 @@ small JJ B
 external JJ I
 hemorrhoids NNS I
 . . O
+
 findings NNS O
 : : O
 scattered VBN O
@@ -20,6 +21,7 @@ the DT I
 sigmoid NN I
 colon NN I
 . . O
+
 complications NNS O
 : : O
 none NN O
@@ -64,6 +66,7 @@ with IN O
 hemoccult NN O
 cards NNS O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -111,6 +114,7 @@ congestive JJ B
 heart NN I
 failure NN I
 . . O
+
 findings NNS O
 : : O
 gross JJ B
@@ -130,6 +134,7 @@ effusions NNS O
 are VBP O
 present JJ O
 . . O
+
 findings NNS O
 : : O
 gross JJ O
@@ -149,6 +154,7 @@ effusions NNS O
 are VBP O
 present JJ O
 . . O
+
 findings NNS O
 : : O
 gross JJ O
@@ -168,6 +174,7 @@ effusions NNS O
 are VBP O
 present JJ O
 . . O
+
 findings NNS O
 : : O
 gross JJ O
@@ -187,6 +194,7 @@ effusions NNS I
 are VBP O
 present JJ O
 . . O
+
 there EX O
 is VBZ O
 no DT O
@@ -198,6 +206,7 @@ tubes NNS O
 in IN O
 place NN O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -229,6 +238,7 @@ history NN O
 bladder NN B
 cancer NN I
 . . O
+
 congenital JJ B
 heart NN I
 disease NN I
@@ -242,6 +252,7 @@ cardiomyopathy JJ O
 pulmonary JJ O
 hypertension NN O
 . . O
+
 congenital JJ O
 heart NN O
 disease NN O
@@ -255,6 +266,7 @@ cardiomyopathy JJ O
 pulmonary JJ O
 hypertension NN O
 . . O
+
 congenital JJ O
 heart NN O
 disease NN O
@@ -268,6 +280,7 @@ cardiomyopathy JJ I
 pulmonary JJ O
 hypertension NN O
 . . O
+
 congenital JJ O
 heart NN O
 disease NN O
@@ -281,6 +294,7 @@ cardiomyopathy JJ O
 pulmonary JJ B
 hypertension NN I
 . . O
+
 questionable JJ O
 history NN O
 of IN O
@@ -291,6 +305,7 @@ vena NN O
 cava NN O
 filter NN O
 . . O
+
 the DT O
 patient NN O
 had VBD O
@@ -316,6 +331,7 @@ dr. NN O
 zzz NNP O
 ] NNP O
 . . O
+
 the DT O
 patient JJ O
 underwent JJ O
@@ -352,6 +368,7 @@ and CC O
 shoulder NN O
 region NN O
 . . O
+
 the DT O
 patient JJ O
 underwent JJ O
@@ -388,6 +405,7 @@ and CC O
 shoulder NN O
 region NN O
 . . O
+
 the DT O
 patient JJ O
 underwent JJ O
@@ -424,10 +442,12 @@ and CC I
 shoulder NN I
 region NN I
 . . O
+
 congenital JJ B
 heart NN I
 disease NN I
 . . O
+
 the DT O
 patient NN O
 's POS O
@@ -448,6 +468,7 @@ no DT O
 organized VBN O
 hematoma NN O
 . . O
+
 the DT O
 patient NN O
 's POS O
@@ -468,6 +489,7 @@ no DT O
 organized VBN O
 hematoma NN O
 . . O
+
 the DT O
 patient NN O
 's POS O
@@ -488,12 +510,14 @@ no DT O
 organized VBN O
 hematoma NN B
 . . O
+
 questionable JJ O
 pe NN B
 with IN O
 ivc JJ O
 filter NN O
 . . O
+
 she PRP O
 will MD O
 call VB O
@@ -550,6 +574,7 @@ week NN O
 or CC O
 less JJR O
 . . O
+
 she PRP O
 will MD O
 call VB O
@@ -606,6 +631,7 @@ week NN O
 or CC O
 less JJR O
 . . O
+
 she PRP O
 will MD O
 call VB O
@@ -662,6 +688,7 @@ week NN O
 or CC O
 less JJR O
 . . O
+
 she PRP O
 will MD O
 call VB O
@@ -718,6 +745,7 @@ week NN O
 or CC O
 less JJR O
 . . O
+
 she PRP O
 will MD O
 call VB O
@@ -774,6 +802,7 @@ week NN O
 or CC O
 less JJR O
 . . O
+
 she PRP O
 will MD O
 call VB O
@@ -830,6 +859,7 @@ week NN O
 or CC O
 less JJR O
 . . O
+
 she PRP O
 will MD O
 call VB O
@@ -886,6 +916,7 @@ week NN O
 or CC O
 less JJR O
 . . O
+
 she PRP O
 will MD O
 call VB O
@@ -942,6 +973,7 @@ week NN I
 or CC I
 less JJR I
 . . O
+
 she PRP O
 will MD O
 alert VB O
@@ -982,6 +1014,7 @@ or CC O
 stomach NN O
 pain NN O
 . . O
+
 she PRP O
 will MD O
 alert VB O
@@ -1022,6 +1055,7 @@ or CC O
 stomach NN O
 pain NN O
 . . O
+
 she PRP O
 will MD O
 alert VB O
@@ -1062,6 +1096,7 @@ or CC O
 stomach NN O
 pain NN O
 . . O
+
 she PRP O
 will MD O
 alert VB O
@@ -1102,6 +1137,7 @@ or CC O
 stomach NN O
 pain NN O
 . . O
+
 she PRP O
 will MD O
 alert VB O
@@ -1142,6 +1178,7 @@ or CC O
 stomach NN O
 pain NN O
 . . O
+
 she PRP O
 will MD O
 alert VB O
@@ -1182,6 +1219,7 @@ or CC O
 stomach NN B
 pain NN I
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -1208,6 +1246,7 @@ size NN O
 is VBZ O
 normal JJ O
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -1234,6 +1273,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 ventricular JJ I
 wall NN I
@@ -1241,6 +1281,7 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 segmental JJ B
 left VBD I
 ventricular JJ I
@@ -1248,6 +1289,7 @@ function NN I
 is VBZ I
 abnormal JJ I
 . . O
+
 the DT O
 mid NN B
 anteroseptum NN I
@@ -1259,6 +1301,7 @@ are VBP I
 severely RB I
 hypokinetic JJ I
 . . O
+
 overall JJ B
 left VBD I
 ventricular JJ I
@@ -1276,12 +1319,14 @@ of IN O
 50-55 JJ O
 % NN O
 . . O
+
 right RB B
 ventricular JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular NN I
 wall NN I
@@ -1289,24 +1334,28 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular JJ I
 function NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 atrial JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 right JJ B
 atrial JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonary JJ B
 artery NN I
@@ -1314,6 +1363,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 root NN I
@@ -1321,6 +1371,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 valve NN I
@@ -1329,36 +1380,42 @@ thickened VBN I
 and CC I
 calcified VBN I
 . . O
+
 the DT O
 mitral JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 there EX O
 is VBZ O
 mitral JJ B
 annular JJ I
 calcification NN I
 . . O
+
 the DT O
 tricuspid JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 no DT O
 pericardial JJ B
 effusion NN I
 is VBZ O
 seen VBN O
 . . O
+
 normal JJ O
 saline NN O
 contrast NN O
@@ -1372,6 +1429,7 @@ left VB I
 intracardiac JJ I
 shunt NN I
 . . O
+
 spectral JJ O
 doppler NN O
 : : O
@@ -1381,24 +1439,28 @@ mild JJ B
 aortic JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace JJ B
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 mild JJ B
 aortic JJ I
 stenosis NN I
 . . O
+
 color NN O
 flow NN O
 doppler NN O
@@ -1409,18 +1471,21 @@ mild JJ B
 aortic JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace JJ B
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 final JJ O
 impressions NNS O
 : : O
@@ -1444,6 +1509,7 @@ normal JJ I
 systolic JJ I
 function NN I
 . . O
+
 02 CD O
 ) ) O
 thickened VBN B
@@ -1458,12 +1524,14 @@ and CC I
 mild JJ I
 regurgitation NN I
 . . O
+
 03 CD O
 ) ) O
 mitral JJ B
 annular JJ I
 calcification NN I
 . . O
+
 04 CD O
 ) ) O
 normal JJ O
@@ -1479,6 +1547,7 @@ left VB I
 intracardiac JJ I
 shunt NN I
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -1554,6 +1623,7 @@ rapid JJ B
 heart NN I
 rate NN I
 . . O
+
 a DT O
 **age NN O
 [ VBZ O
@@ -1582,6 +1652,7 @@ with IN I
 t-wave JJ I
 inversion NN I
 . . O
+
 she PRP O
 does VBZ O
 have VB O
@@ -1596,6 +1667,7 @@ on IN O
 lopressor NN O
 p.o NN O
 . . O
+
 she PRP O
 had VBD O
 a DT O
@@ -1617,6 +1689,7 @@ and CC O
 atrial JJ O
 fibrillation NN O
 . . O
+
 she PRP O
 had VBD O
 a DT O
@@ -1638,6 +1711,7 @@ and CC O
 atrial JJ B
 fibrillation NN I
 . . O
+
 at IN O
 that DT O
 time NN O
@@ -1659,6 +1733,7 @@ coronary JJ I
 artery NN I
 disease NN I
 . . O
+
 she PRP O
 also RB O
 had VBD O
@@ -1673,6 +1748,7 @@ well RB O
 as IN O
 hyponatremia NN O
 . . O
+
 she PRP O
 also RB O
 had VBD O
@@ -1687,6 +1763,7 @@ well RB O
 as IN O
 hyponatremia NN B
 . . O
+
 today NN O
 , , O
 she PRP O
@@ -1706,6 +1783,7 @@ as IN O
 gas NN O
 pains NNS O
 . . O
+
 today NN O
 , , O
 she PRP O
@@ -1725,6 +1803,7 @@ as IN O
 gas NN B
 pains NNS I
 . . O
+
 she PRP O
 denies VBZ O
 any DT O
@@ -1735,6 +1814,7 @@ denies VBZ O
 difficulty NN O
 breathing NN O
 . . O
+
 she PRP O
 denies VBZ O
 any DT O
@@ -1745,6 +1825,7 @@ denies VBZ O
 difficulty NN B
 breathing NN I
 . . O
+
 it PRP O
 did VBD O
 say VB O
@@ -1768,6 +1849,7 @@ that DT O
 any DT O
 more JJR O
 . . O
+
 she PRP O
 was VBD O
 not RB O
@@ -1775,6 +1857,7 @@ lightheaded VBN B
 at IN O
 all DT O
 . . O
+
 she PRP O
 admits VBZ O
 to TO O
@@ -1805,6 +1888,7 @@ or CC O
 cold NN O
 symptoms NNS O
 . . O
+
 she PRP O
 admits VBZ O
 to TO O
@@ -1835,6 +1919,7 @@ or CC O
 cold NN O
 symptoms NNS O
 . . O
+
 she PRP O
 admits VBZ O
 to TO O
@@ -1865,6 +1950,7 @@ or CC O
 cold NN O
 symptoms NNS O
 . . O
+
 she PRP O
 admits VBZ O
 to TO O
@@ -1895,6 +1981,7 @@ or CC O
 cold NN O
 symptoms NNS O
 . . O
+
 she PRP O
 admits VBZ O
 to TO O
@@ -1925,6 +2012,7 @@ or CC O
 cold NN B
 symptoms NNS I
 . . O
+
 she PRP O
 denies VBZ O
 change NN B
@@ -1934,6 +2022,7 @@ or CC I
 bladder NN I
 habits NNS I
 . . O
+
 medical JJ O
 history NN O
 : : O
@@ -1959,6 +2048,7 @@ the DT O
 left NN O
 eyelid NN O
 . . O
+
 medical JJ O
 history NN O
 : : O
@@ -1984,6 +2074,7 @@ the DT O
 left NN O
 eyelid NN O
 . . O
+
 medical JJ O
 history NN O
 : : O
@@ -2009,6 +2100,7 @@ the DT O
 left NN O
 eyelid NN O
 . . O
+
 medical JJ O
 history NN O
 : : O
@@ -2034,6 +2126,7 @@ the DT O
 left NN O
 eyelid NN O
 . . O
+
 medical JJ O
 history NN O
 : : O
@@ -2059,6 +2152,7 @@ the DT O
 left NN O
 eyelid NN O
 . . O
+
 medical JJ O
 history NN O
 : : O
@@ -2084,6 +2178,7 @@ the DT O
 left NN O
 eyelid NN O
 . . O
+
 medical JJ O
 history NN O
 : : O
@@ -2109,6 +2204,7 @@ the DT I
 left NN I
 eyelid NN I
 . . O
+
 social JJ O
 history NN O
 : : O
@@ -2119,6 +2215,7 @@ smoking NN O
 in IN O
 1958 CD O
 . . O
+
 denies NNS O
 alcohol VBP B
 or CC O
@@ -2126,6 +2223,7 @@ other JJ O
 drug NN O
 use NN O
 . . O
+
 denies NNS O
 alcohol VBP O
 or CC O
@@ -2133,6 +2231,7 @@ other JJ O
 drug NN B
 use NN I
 . . O
+
 general JJ O
 : : O
 she PRP O
@@ -2143,6 +2242,7 @@ any DT O
 acute JJ B
 distress NN I
 . . O
+
 she PRP O
 is VBZ O
 sitting VBG B
@@ -2151,10 +2251,12 @@ in IN O
 the DT O
 bed NN O
 . . O
+
 heent NN B
 : : I
 atraumatic JJ I
 . . O
+
 pupils NNS B
 equal JJ I
 round NN I
@@ -2163,29 +2265,35 @@ reactive JJ I
 to TO I
 light NN I
 . . O
+
 extraocular JJ B
 movements NNS I
 intact JJ I
 . . O
+
 sclerae NN B
 are VBP I
 anicteric JJ I
 . . O
+
 mucous JJ B
 membranes NNS I
 are VBP I
 moist JJ I
 . . O
+
 oropharynx NN B
 is VBZ I
 clear JJ I
 . . O
+
 neck NN O
 : : O
 neck NN B
 is VBZ I
 supple JJ I
 . . O
+
 heart NN O
 : : O
 heart NN B
@@ -2193,6 +2301,7 @@ is VBZ I
 irregularly JJ I
 irregular NN I
 . . O
+
 lungs NNS O
 : : O
 all DT O
@@ -2203,6 +2312,7 @@ to TO I
 auscultation VB I
 bilaterally RB I
 . . O
+
 no DT O
 wheezes NN B
 , , O
@@ -2211,6 +2321,7 @@ rales NNS O
 or CC O
 rhonchi NN O
 . . O
+
 no DT O
 wheezes NN O
 , , O
@@ -2219,6 +2330,7 @@ rales NNS B
 or CC O
 rhonchi NN O
 . . O
+
 no DT O
 wheezes NN O
 , , O
@@ -2227,6 +2339,7 @@ rales NNS O
 or CC O
 rhonchi NN B
 . . O
+
 abdomen NNS O
 : : O
 abdomen NNS B
@@ -2239,6 +2352,7 @@ and CC I
 mildly RB I
 distended VBD I
 . . O
+
 extremities NNS O
 : : O
 extremities NNS O
@@ -2249,6 +2363,7 @@ all DT I
 four CD I
 extremities NNS I
 . . O
+
 there EX O
 is VBZ O
 2+ CD B
@@ -2265,18 +2380,21 @@ the DT I
 lower JJR I
 extremities NNS I
 . . O
+
 neuro NN O
 : : O
 alert NN B
 and CC O
 oriented VBN O
 . . O
+
 neuro NN O
 : : O
 alert NN O
 and CC O
 oriented VBN B
 . . O
+
 cranial JJ B
 nerves NNS I
 ii VBP I
@@ -2284,6 +2402,7 @@ to TO I
 xii VB I
 intact JJ I
 . . O
+
 motor NN B
 and CC I
 sensation NN I
@@ -2294,6 +2413,7 @@ all DT I
 four CD I
 extremities NNS I
 . . O
+
 ed JJ O
 course NN O
 : : O
@@ -2329,6 +2449,7 @@ i NN O
 and CC O
 avl NN O
 . . O
+
 ed JJ O
 course NN O
 : : O
@@ -2364,6 +2485,7 @@ i NN O
 and CC O
 avl NN O
 . . O
+
 ed JJ O
 course NN O
 : : O
@@ -2399,6 +2521,7 @@ i NN I
 and CC I
 avl NN I
 . . O
+
 chest JJ B
 x-ray NN I
 : : I
@@ -2406,6 +2529,7 @@ no DT I
 acute JJ I
 disease NN I
 . . O
+
 cbc NN O
 : : O
 thrombocytopenia NN B
@@ -2417,6 +2541,7 @@ of IN O
 otherwise RB O
 unremarkable JJ O
 . . O
+
 a DT O
 **age NN O
 [ VBZ O
@@ -2433,6 +2558,7 @@ with IN O
 atrial JJ B
 flutter NN I
 . . O
+
 on IN O
 my PRP$ O
 exam NN O
@@ -2452,6 +2578,7 @@ sodium NN O
 of IN O
 134 CD O
 . . O
+
 she PRP O
 was VBD O
 admitted VBN O
@@ -2463,14 +2590,17 @@ a DT O
 monitored VBN O
 bed NN O
 . . O
+
 atrial JJ B
 fibrillation NN I
 atrial JJ I
 flutter NN I
 . . O
+
 mild JJ B
 thrombocytopenia NN I
 . . O
+
 the DT O
 indication NN O
 for IN O
@@ -2482,6 +2612,7 @@ in IN I
 bowel NN I
 habits NNS I
 . . O
+
 digital JJ O
 rectal NN B
 exam NN I
@@ -2492,6 +2623,7 @@ showed VBD I
 no DT I
 abnormalities NNS I
 . . O
+
 findings NNS O
 : : O
 diverticulosis NN B
@@ -2502,6 +2634,7 @@ the DT I
 sigmoid NN I
 colon NN I
 . . O
+
 there EX O
 was VBD O
 no DT O
@@ -2511,6 +2644,7 @@ polyps NNS B
 or CC O
 mass NN O
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -2562,6 +2696,7 @@ year NN O
 s NN O
 ) ) O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -2603,6 +2738,7 @@ history NN O
 right-sided JJ B
 weakness NN I
 . . O
+
 findings NNS O
 : : O
 no DT O
@@ -2612,6 +2748,7 @@ can MD O
 be VB O
 identified VBN O
 . . O
+
 brain NN B
 parenchyma NN I
 is VBZ I
@@ -2620,6 +2757,7 @@ normal JJ I
 in IN O
 appearance NN O
 . . O
+
 the DT O
 density NN B
 occupying VBG I
@@ -2636,6 +2774,7 @@ with IN O
 no DT O
 change NN O
 . . O
+
 paranasal NN B
 sinuses NNS I
 and CC I
@@ -2647,6 +2786,7 @@ normal JJ I
 in IN O
 appearance NN O
 . . O
+
 degenerative JJ B
 disc NN I
 disease NN I
@@ -2675,6 +2815,7 @@ evidence NN O
 of IN O
 erosions NNS O
 . . O
+
 degenerative JJ O
 disc NN O
 disease NN O
@@ -2703,6 +2844,7 @@ evidence NN O
 of IN O
 erosions NNS O
 . . O
+
 impression NN O
 : : O
 no DT O
@@ -2710,6 +2852,7 @@ intracranial JJ B
 pathology NN I
 identified VBN O
 . . O
+
 ct JJ O
 examination NN O
 of IN O
@@ -2745,6 +2888,7 @@ jul NN O
 2004 CD O
 ] NN O
 . . O
+
 while IN O
 these DT O
 appear VBP O
@@ -2769,6 +2913,7 @@ these DT O
 represent JJ O
 neoplasm NN O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -2814,6 +2959,7 @@ diagnosis NN O
 as IN O
 above IN O
 . . O
+
 post-op JJ O
 diagnosis NN O
 : : O
@@ -2822,6 +2968,7 @@ crohn NN B
 's POS I
 disease NN I
 . . O
+
 part NN O
 2 CD O
 : : O
@@ -2841,6 +2988,7 @@ evidence NN O
 of IN O
 dysplasia NN O
 . . O
+
 part NN O
 3 CD O
 : : O
@@ -2859,6 +3007,7 @@ and CC I
 architecture NN I
 changes NNS I
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -2946,6 +3095,7 @@ and CC O
 subarachnoid JJ O
 hemorrhage NN O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -3033,6 +3183,7 @@ and CC O
 subarachnoid JJ B
 hemorrhage NN I
 . . O
+
 transfer NN O
 diagnosis NN O
 ( ( O
@@ -3053,6 +3204,7 @@ and CC O
 subarachnoid JJ O
 hemorrhage NN O
 . . O
+
 transfer NN O
 diagnosis NN O
 ( ( O
@@ -3073,6 +3225,7 @@ and CC O
 subarachnoid JJ B
 hemorrhage NN I
 . . O
+
 hospital JJ O
 course NN O
 : : O
@@ -3110,6 +3263,7 @@ hemorrhage NN I
 and CC O
 ventriculomegaly NN O
 . . O
+
 hospital JJ O
 course NN O
 : : O
@@ -3147,6 +3301,7 @@ hemorrhage NN O
 and CC O
 ventriculomegaly NN B
 . . O
+
 she PRP O
 had VBD O
 rupture NN B
@@ -3176,6 +3331,7 @@ dr. JJ O
 zzz NNP O
 ] NNP O
 . . O
+
 she PRP O
 required VBD O
 an DT O
@@ -3211,6 +3367,7 @@ with IN O
 pipera-cillin JJ O
 tazobactam NN O
 . . O
+
 while IN O
 in IN O
 the DT O
@@ -3226,6 +3383,7 @@ but CC O
 no DT O
 leukocytosis NN O
 . . O
+
 once RB O
 transferred VBN O
 to TO O
@@ -3246,6 +3404,7 @@ culture NN O
 were VBD O
 sent VBN O
 . . O
+
 she PRP O
 complains VBZ O
 only RB O
@@ -3258,6 +3417,7 @@ left-sided JJ O
 facial JJ O
 pain NN O
 . . O
+
 she PRP O
 complains VBZ O
 only RB O
@@ -3270,6 +3430,7 @@ left-sided JJ B
 facial JJ I
 pain NN I
 . . O
+
 she PRP O
 has VBZ O
 no DT O
@@ -3277,6 +3438,7 @@ focal JJ B
 neurologic NN I
 deficits NNS I
 . . O
+
 she PRP O
 is VBZ O
 following VBG B
@@ -3296,6 +3458,7 @@ and CC O
 lower JJR O
 extremities NNS O
 . . O
+
 she PRP O
 is VBZ O
 following VBG O
@@ -3315,6 +3478,7 @@ and CC I
 lower JJR I
 extremities NNS I
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -3343,6 +3507,7 @@ size NN O
 is VBZ O
 normal JJ O
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -3371,6 +3536,7 @@ size NN O
 is VBZ O
 normal JJ O
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -3399,6 +3565,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 ventricular JJ I
 wall NN I
@@ -3412,6 +3579,7 @@ left JJ O
 ventricular JJ O
 hypertrophy NN O
 . . O
+
 left VBN O
 ventricular JJ O
 wall NN O
@@ -3425,6 +3593,7 @@ left JJ B
 ventricular JJ I
 hypertrophy NN I
 . . O
+
 segmental JJ B
 left VBD I
 ventricular JJ I
@@ -3432,6 +3601,7 @@ function NN I
 is VBZ I
 normal JJ I
 . . O
+
 overall JJ B
 left VBD I
 ventricular JJ I
@@ -3448,12 +3618,14 @@ of IN O
 60-65 JJ O
 % NN O
 . . O
+
 right RB B
 ventricular JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular NN I
 wall NN I
@@ -3461,24 +3633,28 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular JJ I
 function NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 atrial JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 right JJ B
 atrial JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT B
 pulmonary JJ I
 artery NN I
@@ -3486,6 +3662,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 root NN I
@@ -3494,6 +3671,7 @@ is VBZ I
 mildly RB I
 dilated VBN I
 . . O
+
 the DT O
 aortic JJ B
 valve NN I
@@ -3504,30 +3682,35 @@ thickened VBN I
 and CC I
 calcified VBN I
 . . O
+
 the DT O
 mitral JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 tricuspid JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 no DT O
 pericardial JJ B
 effusion NN I
 is VBZ O
 seen VBN O
 . . O
+
 spectral JJ O
 doppler NN O
 : : O
@@ -3537,30 +3720,35 @@ moderate JJ B
 aortic JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 mild JJ B
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace NN B
 pulmonic JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 severe JJ B
 aortic JJ I
 stenosis NN I
 . . O
+
 color NN O
 flow NN O
 doppler NN O
@@ -3571,24 +3759,28 @@ moderate JJ B
 aortic JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 mild JJ B
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace NN B
 pulmonic JJ I
 regurgitation NN I
 . . O
+
 final JJ O
 impressions NNS O
 : : O
@@ -3605,6 +3797,7 @@ preserved VBN I
 systolic JJ I
 function NN I
 . . O
+
 02 CD O
 ) ) O
 thickened VBD B
@@ -3621,18 +3814,21 @@ and CC I
 moderate JJ I
 regurgitation NN I
 . . O
+
 03 CD O
 ) ) O
 mild FW B
 mitral JJ I
 regurgitation NN I
 . . O
+
 04 CD O
 ) ) O
 borderline NN B
 pulmonary JJ I
 hypertension NN I
 . . O
+
 05 CD O
 ) ) O
 mild FW B
@@ -3640,6 +3836,7 @@ aortic JJ I
 root NN I
 dilation NN I
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -3673,6 +3870,7 @@ eight CD O
 days NNS O
 ago RB O
 . . O
+
 her PRP$ O
 wound NN B
 has VBZ I
@@ -3680,6 +3878,7 @@ been VBN I
 healing VBG I
 well RB I
 . . O
+
 physical JJ O
 exam NN O
 : : O
@@ -3690,6 +3889,7 @@ no DT O
 acute JJ B
 distress NN I
 . . O
+
 extremities NNS O
 : : O
 the DT O
@@ -3698,11 +3898,13 @@ is VBZ I
 healing VBG I
 well RB I
 . . O
+
 no DT O
 sign NN O
 of IN O
 infection NN B
 . . O
+
 the DT O
 patient NN O
 has VBZ O
@@ -3724,6 +3926,7 @@ signs NNS O
 of IN O
 infection NN O
 . . O
+
 the DT O
 patient NN O
 has VBZ O
@@ -3745,6 +3948,7 @@ signs NNS O
 of IN O
 infection NN B
 . . O
+
 digital JJ O
 rectal NN B
 exam NN I
@@ -3755,6 +3959,7 @@ showed VBD I
 no DT I
 abnormalities NNS I
 . . O
+
 findings NNS O
 : : O
 the DT O
@@ -3765,6 +3970,7 @@ normal JJ I
 in IN O
 appearance NN O
 . . O
+
 there EX O
 was VBD O
 no DT O
@@ -3784,6 +3990,7 @@ of IN O
 the DT O
 prep NN O
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -3812,6 +4019,7 @@ but CC O
 poor JJ O
 prep NN O
 . . O
+
 the DT O
 fusion NN O
 wheel NN O
@@ -3837,6 +4045,7 @@ changed VBN O
 in IN O
 size NN O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -3871,6 +4080,7 @@ to TO I
 small JJ I
 bowel NN I
 . . O
+
 kas NN O
 _______________________________________________________________ NNP O
 final JJ O
@@ -3886,31 +4096,38 @@ of IN O
 small JJ O
 intestine NN O
 . . O
+
 delirium NN B
 due JJ O
 to TO O
 medical JJ O
 decondition NN O
 . . O
+
 depression NN B
 and CC O
 anxiety NN O
 . . O
+
 depression NN O
 and CC O
 anxiety NN B
 . . O
+
 posttraumatic JJ B
 stress NN I
 disorder NN I
 . . O
+
 dissociative JJ B
 disorder NN I
 . . O
+
 borderline NN B
 personality NN I
 disorder NN I
 . . O
+
 chronic JJ B
 pain NN I
 with IN O
@@ -3932,6 +4149,7 @@ left JJ O
 upper JJ O
 extremity NN O
 . . O
+
 chronic JJ O
 pain NN O
 with IN O
@@ -3953,6 +4171,7 @@ left JJ O
 upper JJ O
 extremity NN O
 . . O
+
 chronic JJ O
 pain NN O
 with IN O
@@ -3974,6 +4193,7 @@ left JJ I
 upper JJ I
 extremity NN I
 . . O
+
 multiple JJ O
 history NN O
 of IN O
@@ -3987,6 +4207,7 @@ overdose NN O
 on IN O
 opioids NNS O
 . . O
+
 coronary JJ B
 artery NN I
 disease NN I
@@ -4018,6 +4239,7 @@ extremity NN O
 above IN O
 elbow NN O
 . . O
+
 coronary JJ O
 artery NN O
 disease NN O
@@ -4049,6 +4271,7 @@ extremity NN O
 above IN O
 elbow NN O
 . . O
+
 coronary JJ O
 artery NN O
 disease NN O
@@ -4080,58 +4303,72 @@ extremity NN I
 above IN I
 elbow NN I
 . . O
+
 type NN B
 2 CD I
 diabetes NNS I
 . . O
+
 hypertension NN B
 . . O
+
 peripheral JJ B
 vascular JJ I
 disease NN I
 . . O
+
 chronic JJ B
 obstructive JJ I
 pulmonary JJ I
 disease NN I
 . . O
+
 clostridium NN B
 difficile NN I
 colitis NN I
 . . O
+
 candida NN B
 urinary JJ I
 tract NN I
 infection NN I
 . . O
+
 history NN O
 of IN O
 rhabdomyolysis NN B
 . . O
+
 stage NN B
 i JJ I
 sacral JJ I
 decubitus NN I
 . . O
+
 dyslipidemia NN B
 . . O
+
 history NN O
 of IN O
 cerebrovascular JJ B
 accident NN I
 . . O
+
 history NN O
 of IN O
 seizure NN B
 disorder NN I
 . . O
+
 migraine NN B
 . . O
+
 history NN O
 of IN O
 medical JJ B
 noncompliance NN I
 . . O
+
 principal JJ O
 procedures NNS O
 and CC O
@@ -4146,6 +4383,7 @@ negative VBP O
 for IN O
 dvt NN B
 . . O
+
 brief JJ O
 history NN O
 of IN O
@@ -4198,6 +4436,7 @@ status NN I
 and CC O
 lethargy NN O
 . . O
+
 brief JJ O
 history NN O
 of IN O
@@ -4250,6 +4489,7 @@ status NN O
 and CC O
 lethargy NN B
 . . O
+
 altered VBN B
 mental JJ I
 status NN I
@@ -4268,6 +4508,7 @@ chronic JJ O
 pain NN O
 syndrome NN O
 . . O
+
 altered VBN O
 mental JJ O
 status NN O
@@ -4286,10 +4527,12 @@ chronic JJ B
 pain NN I
 syndrome NN I
 . . O
+
 agitation NN B
 was VBD O
 noted VBN O
 . . O
+
 the DT O
 patient NN O
 was VBD O
@@ -4299,6 +4542,7 @@ geodon NN O
 for IN O
 agitation NN B
 . . O
+
 the DT O
 patient NN O
 also RB O
@@ -4311,6 +4555,7 @@ started VBD O
 on IN O
 flagyl NN O
 . . O
+
 she PRP O
 was VBD O
 also RB O
@@ -4326,6 +4571,7 @@ started VBD O
 on IN O
 fluconazole NN O
 . . O
+
 psychiatric JJ O
 service NN O
 was VBD O
@@ -4350,6 +4596,7 @@ complications NNS O
 and CC O
 pain NN O
 . . O
+
 psychiatric JJ O
 service NN O
 was VBD O
@@ -4374,6 +4621,7 @@ complications NNS O
 and CC O
 pain NN B
 . . O
+
 the DT O
 patient JJ O
 denies NNS O
@@ -4381,6 +4629,7 @@ change VBP B
 in IN I
 sleep NN I
 . . O
+
 the DT O
 patient NN O
 continues VBZ O
@@ -4393,6 +4642,7 @@ urination NN I
 from IN O
 diuresis NN O
 . . O
+
 the DT O
 patient NN O
 has VBZ O
@@ -4409,6 +4659,7 @@ from IN O
 c. NN O
 diff NN O
 . . O
+
 the DT O
 patient NN O
 has VBZ O
@@ -4425,6 +4676,7 @@ from IN O
 c. NN O
 diff NN O
 . . O
+
 the DT O
 patient NN O
 has VBZ O
@@ -4441,6 +4693,7 @@ from IN O
 c. NN O
 diff NN O
 . . O
+
 the DT O
 patient NN O
 does VBZ O
@@ -4467,6 +4720,7 @@ conditions NNS O
 difficulty NN O
 concentrating NN O
 . . O
+
 the DT O
 patient NN O
 does VBZ O
@@ -4493,6 +4747,7 @@ conditions NNS O
 difficulty NN O
 concentrating NN O
 . . O
+
 the DT O
 patient NN O
 does VBZ O
@@ -4519,6 +4774,7 @@ conditions NNS O
 difficulty NN O
 concentrating NN O
 . . O
+
 the DT O
 patient NN O
 does VBZ O
@@ -4545,6 +4801,7 @@ conditions NNS O
 difficulty NN B
 concentrating NN I
 . . O
+
 the DT O
 patient NN O
 denies VBZ O
@@ -4554,6 +4811,7 @@ self-esteem NN O
 or CC O
 anhedonia NN O
 . . O
+
 the DT O
 patient NN O
 denies VBZ O
@@ -4563,6 +4821,7 @@ self-esteem NN O
 or CC O
 anhedonia NN B
 . . O
+
 the DT O
 patient NN O
 reports NNS O
@@ -4577,6 +4836,7 @@ flashbacks NNS O
 reliving VBG O
 events NNS O
 . . O
+
 on IN O
 admission NN O
 , , O
@@ -4585,6 +4845,7 @@ anxieties NNS B
 were VBD I
 mild JJ I
 . . O
+
 she PRP O
 also RB O
 has VBZ O
@@ -4595,6 +4856,7 @@ of IN O
 panic NN B
 attacks NNS I
 . . O
+
 she PRP O
 denies VBZ O
 any DT O
@@ -4606,6 +4868,7 @@ mania NN B
 , , O
 ocd NN O
 . . O
+
 she PRP O
 saw VBD O
 the DT O
@@ -4630,6 +4893,7 @@ a DT O
 child NN O
 state NN O
 . . O
+
 no DT O
 evidence NN O
 of IN O
@@ -4649,6 +4913,7 @@ her PRP$ O
 associated JJ O
 state NN O
 . . O
+
 no DT O
 evidence NN O
 of IN O
@@ -4668,6 +4933,7 @@ her PRP$ O
 associated JJ O
 state NN O
 . . O
+
 the DT O
 patient NN O
 was VBD O
@@ -4679,6 +4945,7 @@ during IN O
 the DT O
 hospitalization NN O
 . . O
+
 the DT O
 patient NN O
 was VBD O
@@ -4690,6 +4957,7 @@ during IN O
 the DT O
 hospitalization NN O
 . . O
+
 she PRP O
 was VBD O
 getting VBG O
@@ -4710,6 +4978,7 @@ by IN O
 her PRP$ O
 husband NN O
 . . O
+
 she PRP O
 was VBD O
 getting VBG O
@@ -4730,16 +4999,19 @@ by IN O
 her PRP$ O
 husband NN O
 . . O
+
 she PRP O
 became VBD O
 more RBR B
 pleasant JJ I
 . . O
+
 her PRP$ O
 thoughts NNS B
 were VBD I
 logical JJ I
 . . O
+
 no DT O
 delusions NNS B
 , , O
@@ -4748,6 +5020,7 @@ lethargy NN O
 or CC O
 hallucinations NNS O
 . . O
+
 no DT O
 delusions NNS O
 , , O
@@ -4756,6 +5029,7 @@ lethargy NN B
 or CC O
 hallucinations NNS O
 . . O
+
 no DT O
 delusions NNS O
 , , O
@@ -4764,6 +5038,7 @@ lethargy NN O
 or CC O
 hallucinations NNS B
 . . O
+
 she PRP O
 had VBD O
 a DT O
@@ -4772,6 +5047,7 @@ insight NN I
 and CC I
 judgment NN I
 . . O
+
 it PRP O
 was VBD O
 felt VBN O
@@ -4801,6 +5077,7 @@ depression NN O
 and CC O
 anxiety NN O
 . . O
+
 it PRP O
 was VBD O
 felt VBN O
@@ -4830,6 +5107,7 @@ depression NN O
 and CC O
 anxiety NN O
 . . O
+
 it PRP O
 was VBD O
 felt VBN O
@@ -4859,6 +5137,7 @@ depression NN O
 and CC O
 anxiety NN O
 . . O
+
 it PRP O
 was VBD O
 felt VBN O
@@ -4888,6 +5167,7 @@ depression NN O
 and CC O
 anxiety NN O
 . . O
+
 it PRP O
 was VBD O
 felt VBN O
@@ -4917,6 +5197,7 @@ depression NN B
 and CC O
 anxiety NN O
 . . O
+
 it PRP O
 was VBD O
 felt VBN O
@@ -4946,6 +5227,7 @@ depression NN O
 and CC O
 anxiety NN B
 . . O
+
 her PRP$ O
 pain NN B
 was VBD O
@@ -4962,6 +5244,7 @@ neurontin RB O
 mg NN O
 p.o NN O
 . . O
+
 it PRP O
 was VBD O
 recommended VBN O
@@ -4987,6 +5270,7 @@ diagnosis NN O
 of IN O
 decondition NN B
 . . O
+
 apparently RB O
 , , O
 she PRP O
@@ -5007,6 +5291,7 @@ was VBD O
 less JJR O
 lethargic JJ B
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -5124,6 +5409,7 @@ technically RB O
 difficult JJ O
 study NN O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -5241,12 +5527,14 @@ technically RB O
 difficult JJ O
 study NN O
 . . O
+
 left VBD B
 ventricular JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 ventricular JJ I
 wall NN I
@@ -5260,6 +5548,7 @@ left JJ O
 ventricular JJ O
 hypertrophy NN O
 . . O
+
 left VBN O
 ventricular JJ O
 wall NN O
@@ -5273,6 +5562,7 @@ left JJ B
 ventricular JJ I
 hypertrophy NN I
 . . O
+
 segmental JJ B
 left VBD I
 ventricular JJ I
@@ -5280,6 +5570,7 @@ function NN I
 is VBZ I
 normal JJ I
 . . O
+
 overall JJ B
 left VBD I
 ventricular JJ I
@@ -5296,12 +5587,14 @@ of IN O
 55-60 JJ O
 % NN O
 . . O
+
 right RB B
 ventricular JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular NN I
 wall NN I
@@ -5309,24 +5602,28 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular JJ I
 function NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 atrial JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 right JJ B
 atrial JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonary JJ B
 artery NN I
@@ -5334,6 +5631,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 root NN I
@@ -5341,12 +5639,14 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 a DT O
 bioprosthetic JJ B
 valve NN I
@@ -5356,6 +5656,7 @@ the DT I
 mitral JJ I
 position NN I
 . . O
+
 the DT O
 motion NN B
 of IN I
@@ -5366,24 +5667,28 @@ prosthesis NN I
 appears VBZ I
 normal JJ I
 . . O
+
 the DT O
 tricuspid JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 no DT O
 pericardial JJ B
 effusion NN I
 is VBZ O
 seen VBN O
 . . O
+
 normal JJ O
 saline NN O
 contrast NN O
@@ -5397,6 +5702,7 @@ left VB I
 intracardiac JJ I
 shunt NN I
 . . O
+
 02 CD O
 ) ) O
 nondilated VBN B
@@ -5408,6 +5714,7 @@ preserved VBN I
 systolic JJ I
 function NN I
 . . O
+
 03 CD O
 ) ) O
 bioprosthesis NN B
@@ -5421,6 +5728,7 @@ motion NN I
 and CC I
 function NN I
 . . O
+
 04 CD O
 ) ) O
 normal JJ O
@@ -5436,6 +5744,7 @@ left VB I
 intracardiac JJ I
 shunt NN I
 . . O
+
 chief JJ O
 complaint NN O
 : : O
@@ -5446,6 +5755,7 @@ to TO I
 his PRP$ I
 right-hand NN I
 . . O
+
 complains NNS O
 of IN O
 severe JJ B
@@ -5463,6 +5773,7 @@ worse JJR I
 with IN I
 movement NN I
 . . O
+
 no DT O
 numbness NN B
 or CC O
@@ -5471,6 +5782,7 @@ or CC O
 other JJ O
 injuries NNS O
 . . O
+
 no DT O
 numbness NN O
 or CC O
@@ -5479,6 +5791,7 @@ or CC O
 other JJ O
 injuries NNS O
 . . O
+
 no DT O
 pain NN B
 proximal NN I
@@ -5492,17 +5805,20 @@ no DT O
 other JJ O
 injuries NNS O
 . . O
+
 past JJ O
 medical JJ O
 history NN O
 : : O
 anxiety NN B
 . . O
+
 allergies NNS B
 : : I
 to TO I
 penicillin VB I
 . . O
+
 social JJ O
 history NN O
 : : O
@@ -5516,6 +5832,7 @@ illicit JJ O
 drug NN O
 use NN O
 . . O
+
 social JJ O
 history NN O
 : : O
@@ -5529,6 +5846,7 @@ illicit JJ O
 drug NN O
 use NN O
 . . O
+
 social JJ O
 history NN O
 : : O
@@ -5542,6 +5860,7 @@ illicit JJ B
 drug NN I
 use NN I
 . . O
+
 physical JJ O
 examination NN O
 : : O
@@ -5552,6 +5871,7 @@ no DT O
 acute JJ B
 distress NN I
 . . O
+
 heent NN O
 : : O
 head NN B
@@ -5559,28 +5879,33 @@ normocephalic JJ I
 and CC I
 atraumatic JJ I
 . . O
+
 eyes NNS O
 perrla NN B
 , , O
 eomi NN O
 . . O
+
 eyes NNS O
 perrla NN O
 , , O
 eomi NN B
 . . O
+
 moist NN O
 mucous JJ O
 membranes NNS O
 pharynx RB B
 good JJ I
 . . I
+
 no DT O
 lymphadenopathy JJ O
 neck NN B
 : : I
 supple NN I
 . . I
+
 no DT O
 lymphadenopathy NN O
 , , O
@@ -5588,6 +5913,7 @@ thyromegaly NN B
 or CC O
 jvd NN O
 . . O
+
 no DT O
 lymphadenopathy NN O
 , , O
@@ -5595,10 +5921,12 @@ thyromegaly NN O
 or CC O
 jvd NN B
 . . O
+
 lungs NNS B
 : : I
 ctp NN I
 . . O
+
 no DT O
 rales NNS B
 , , O
@@ -5606,6 +5934,7 @@ rhonchi NN O
 or CC O
 wheezes NNS O
 . . O
+
 no DT O
 rales NNS O
 , , O
@@ -5613,6 +5942,7 @@ rhonchi NN B
 or CC O
 wheezes NNS O
 . . O
+
 no DT O
 rales NNS O
 , , O
@@ -5620,6 +5950,7 @@ rhonchi NN O
 or CC O
 wheezes NNS B
 . . O
+
 heart NN O
 : : O
 regular JJ B
@@ -5627,6 +5958,7 @@ rate NN I
 and CC I
 rhythm NN I
 . . O
+
 no DT O
 murmurs NN B
 , , O
@@ -5634,6 +5966,7 @@ gallops NNS O
 , , O
 rubs NNS O
 . . O
+
 no DT O
 murmurs NN O
 , , O
@@ -5641,6 +5974,7 @@ gallops NNS B
 , , O
 rubs NNS O
 . . O
+
 no DT O
 murmurs NN O
 , , O
@@ -5648,6 +5982,7 @@ gallops NNS O
 , , O
 rubs NNS B
 . . O
+
 abdomen NNS B
 : : I
 soft JJ I
@@ -5656,20 +5991,24 @@ nontender NN I
 , , I
 nondistended VBN I
 . . O
+
 positive JJ B
 bowel NN I
 sounds NNS I
 . . O
+
 no DT O
 masses NNS B
 , , O
 splenomegaly NN O
 . . O
+
 no DT O
 masses NNS O
 , , O
 splenomegaly NN B
 . . O
+
 extremities NNS O
 : : O
 no DT O
@@ -5677,6 +6016,7 @@ clubbing NN B
 or CC O
 cyanosis NN O
 . . O
+
 extremities NNS O
 : : O
 no DT O
@@ -5684,6 +6024,7 @@ clubbing NN O
 or CC O
 cyanosis NN B
 . . O
+
 on IN B
 his PRP$ I
 right-hand NN I
@@ -5712,6 +6053,7 @@ his PRP$ I
 thenar NN I
 eminence NN I
 . . O
+
 he PRP O
 has VBZ O
 good JJ B
@@ -5724,6 +6066,7 @@ of IN I
 his PRP$ I
 digits NNS I
 . . O
+
 he PRP O
 has VBZ O
 got VBD O
@@ -5742,6 +6085,7 @@ all DT O
 his PRP$ O
 digits NNS O
 . . O
+
 he PRP O
 has VBZ O
 got VBD O
@@ -5760,12 +6104,14 @@ all DT I
 his PRP$ I
 digits NNS I
 . . O
+
 also RB O
 has VBZ O
 strong JJ B
 radial JJ I
 pulses NNS I
 . . O
+
 no DT O
 injury NN B
 proximal NN I
@@ -5773,6 +6119,7 @@ to TO I
 his PRP$ I
 wrist NN I
 . . O
+
 neurological JJ O
 : : O
 the DT O
@@ -5782,6 +6129,7 @@ awake JJ B
 , , O
 alert JJ O
 . . O
+
 neurological JJ O
 : : O
 the DT O
@@ -5791,6 +6139,7 @@ awake JJ O
 , , O
 alert JJ B
 . . O
+
 the DT O
 cranial JJ B
 nerves NNS I
@@ -5803,6 +6152,7 @@ his PRP$ O
 extremity NN O
 exam NN O
 . . O
+
 ed JJ O
 course NN O
 : : O
@@ -5828,6 +6178,7 @@ other JJ O
 obvious JJ O
 fractures NNS O
 . . O
+
 ed RB O
 discharge NN O
 diagnosis NN O
@@ -5855,6 +6206,7 @@ and CC I
 fourth JJ I
 digits NNS I
 . . O
+
 the DT O
 indication NN O
 for IN O
@@ -5865,6 +6217,7 @@ dyspepsia JJ B
 and CC O
 dysphagia NN O
 . . O
+
 the DT O
 indication NN O
 for IN O
@@ -5875,6 +6228,7 @@ dyspepsia JJ O
 and CC O
 dysphagia NN B
 . . O
+
 findings NNS O
 : : O
 hypopharynx NN B
@@ -5883,6 +6237,7 @@ larynx NN I
 were VBD I
 normal JJ I
 . . O
+
 the DT O
 esophagus NN B
 was VBD I
@@ -5897,6 +6252,7 @@ barrett NN O
 's POS O
 esophagus NN O
 . . O
+
 the DT O
 esophagus NN O
 was VBD O
@@ -5911,6 +6267,7 @@ barrett NN B
 's POS I
 esophagus NN I
 . . O
+
 the DT O
 gastric JJ B
 mucosa NN I
@@ -5924,11 +6281,13 @@ or CC O
 vascular JJ O
 abnormalities NNS O
 . . O
+
 the DT O
 duodenum NN B
 was VBD I
 normal JJ I
 . . O
+
 findings NNS O
 : : O
 there EX O
@@ -5948,6 +6307,7 @@ soft JJ I
 tissue NN I
 mass NN I
 . . O
+
 the DT O
 left JJ B
 hip NN I
@@ -5964,6 +6324,7 @@ other JJ I
 focal JJ I
 abnormalities NNS I
 . . O
+
 this DT O
 may MD O
 represent VB O
@@ -5972,6 +6333,7 @@ lesion NN I
 or CC O
 myeloma NN O
 . . O
+
 this DT O
 may MD O
 represent VB O
@@ -5980,6 +6342,7 @@ lesion NN O
 or CC O
 myeloma NN B
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -6024,15 +6387,18 @@ virus NN O
 is VBZ O
 negative JJ O
 . . O
+
 necrotizing VBG B
 pancreatitis NN I
 . . O
+
 diabetes NNS B
 secondary JJ O
 to TO O
 necrotizing VBG O
 pancreatitis NN O
 . . O
+
 laboratory NN O
 , , O
 radiographic JJ O
@@ -6083,6 +6449,7 @@ of IN O
 necrotizing VBG O
 pancreatitis NN O
 . . O
+
 laboratory NN O
 , , O
 radiographic JJ O
@@ -6133,6 +6500,7 @@ of IN O
 necrotizing VBG B
 pancreatitis NN I
 . . O
+
 on IN O
 **date NNP O
 [ NNP O
@@ -6160,6 +6528,7 @@ the DT O
 emergency NN O
 department NN O
 . . O
+
 on IN O
 **date NNP O
 [ NNP O
@@ -6187,6 +6556,7 @@ pancreatitis NN I
 with IN I
 calcifications NNS I
 . . O
+
 an DT O
 mri NN O
 done VBN O
@@ -6203,6 +6573,7 @@ positive JJ O
 for IN O
 cholecystolithiasis NN O
 . . O
+
 an DT O
 mri NN O
 done VBN O
@@ -6219,6 +6590,7 @@ positive JJ O
 for IN O
 cholecystolithiasis NN B
 . . O
+
 a DT O
 repeat NN O
 ct NN O
@@ -6242,6 +6614,7 @@ for IN O
 further JJ O
 management NN O
 . . O
+
 she PRP O
 states VBZ O
 that IN O
@@ -6255,6 +6628,7 @@ or CC O
 alcohol NN O
 use NN O
 . . O
+
 she PRP O
 states VBZ O
 that IN O
@@ -6268,6 +6642,7 @@ or CC O
 alcohol NN B
 use NN O
 . . O
+
 gi NN O
 : : O
 repeat NN O
@@ -6307,6 +6682,7 @@ tail NN O
 and CC O
 head NN O
 . . O
+
 there EX O
 was VBD O
 no DT O
@@ -6317,6 +6693,7 @@ no DT O
 discrete JJ O
 mass NN O
 . . O
+
 also RB O
 , , O
 on IN O
@@ -6344,6 +6721,7 @@ small JJ O
 bowel NN O
 obstruction NN O
 . . O
+
 also RB O
 , , O
 on IN O
@@ -6371,6 +6749,7 @@ small JJ B
 bowel NN I
 obstruction NN I
 . . O
+
 incidentally RB O
 , , O
 on IN O
@@ -6386,6 +6765,7 @@ diverticulosis NN I
 without IN I
 diverticulitis NN I
 . . O
+
 pancreaticobiliary NN O
 was VBD O
 consulted VBN O
@@ -6397,6 +6777,7 @@ her PRP$ O
 necrotizing JJ B
 pancreatitis NN I
 . . O
+
 she PRP O
 was VBD O
 kept VBN O
@@ -6420,6 +6801,7 @@ small JJ B
 bowel NN I
 obstruction NN I
 . . O
+
 incidentally RB O
 , , O
 on IN O
@@ -6436,6 +6818,7 @@ on IN I
 the DT I
 incisura NN I
 . . O
+
 she PRP O
 is VBZ O
 currently RB O
@@ -6457,6 +6840,7 @@ vomiting VBG O
 or CC O
 residuals NNS O
 . . O
+
 she PRP O
 is VBZ O
 currently RB O
@@ -6478,6 +6862,7 @@ vomiting VBG B
 or CC O
 residuals NNS O
 . . O
+
 we PRP O
 do VBP O
 not RB O
@@ -6501,6 +6886,7 @@ the DT O
 near JJ O
 future NN O
 . . O
+
 she PRP O
 had VBD O
 very RB O
@@ -6515,6 +6901,7 @@ nausea NN B
 or CC O
 vomiting NN O
 . . O
+
 she PRP O
 had VBD O
 very RB O
@@ -6529,6 +6916,7 @@ nausea NN O
 or CC O
 vomiting NN B
 . . O
+
 the DT O
 patient NN O
 was VBD O
@@ -6538,6 +6926,7 @@ her PRP$ O
 hospital NN O
 stay NN O
 . . O
+
 she PRP O
 did VBD O
 have VB O
@@ -6553,6 +6942,7 @@ toxin NN O
 was VBD O
 positive JJ O
 . . O
+
 she PRP O
 did VBD O
 have VB O
@@ -6578,6 +6968,7 @@ evaluate VB O
 for IN O
 dvt NN O
 . . O
+
 she PRP O
 did VBD O
 have VB O
@@ -6603,6 +6994,7 @@ evaluate VB O
 for IN O
 dvt NN B
 . . O
+
 this DT O
 was VBD O
 done VBN O
@@ -6632,6 +7024,7 @@ or CC I
 popliteal NN I
 veins NNS I
 . . O
+
 her PRP$ O
 blood NN O
 sugars NNS O
@@ -6643,6 +7036,7 @@ her PRP$ O
 necrotizing JJ B
 pancreatitis NN I
 . . O
+
 she PRP O
 does VBZ O
 have VB O
@@ -6658,6 +7052,7 @@ shots NNS O
 every DT O
 month NN O
 . . O
+
 disposition NN O
 : : O
 on IN O
@@ -6686,6 +7081,7 @@ transitional JJ O
 care NN O
 unit NN O
 . . O
+
 disposition NN O
 : : O
 on IN O
@@ -6714,6 +7110,7 @@ transitional JJ O
 care NN O
 unit NN O
 . . O
+
 she PRP O
 should MD O
 return VB O
@@ -6740,6 +7137,7 @@ or CC O
 chest JJS O
 pain NN O
 . . O
+
 she PRP O
 should MD O
 return VB O
@@ -6766,6 +7164,7 @@ or CC O
 chest JJS O
 pain NN O
 . . O
+
 she PRP O
 should MD O
 return VB O
@@ -6792,6 +7191,7 @@ or CC O
 chest JJS O
 pain NN O
 . . O
+
 she PRP O
 should MD O
 return VB O
@@ -6818,6 +7218,7 @@ or CC O
 chest JJS O
 pain NN O
 . . O
+
 she PRP O
 should MD O
 return VB O
@@ -6844,6 +7245,7 @@ or CC O
 chest JJS B
 pain NN I
 . . O
+
 left VBD B
 ventricular JJ I
 size NN I
@@ -6851,6 +7253,7 @@ is VBZ I
 moderately RB I
 dilated VBN I
 . . O
+
 left VBN B
 ventricular JJ I
 wall NN I
@@ -6865,6 +7268,7 @@ left VBD O
 ventricular JJ O
 hypertrophy NN O
 . . O
+
 left VBN O
 ventricular JJ O
 wall NN O
@@ -6879,6 +7283,7 @@ left VBD I
 ventricular JJ I
 hypertrophy NN I
 . . O
+
 segmental JJ B
 left VBD I
 ventricular JJ I
@@ -6886,6 +7291,7 @@ function NN I
 is VBZ I
 abnormal JJ I
 . . O
+
 the DT O
 inferior JJ B
 wall NN I
@@ -6899,12 +7305,14 @@ inferoseptum NN I
 are VBP I
 akinetic JJ I
 . . O
+
 the DT O
 lateral JJ B
 wall NN I
 is VBZ I
 hypokinetic JJ I
 . . O
+
 the DT O
 apical JJ B
 lateral JJ I
@@ -6916,6 +7324,7 @@ are VBP I
 severely RB I
 hypokinetic JJ I
 . . O
+
 overall JJ B
 left VBD I
 ventricular JJ I
@@ -6935,6 +7344,7 @@ of IN O
 25-30 JJ O
 % NN O
 . . O
+
 there EX O
 is VBZ O
 paradoxical JJ B
@@ -6946,12 +7356,14 @@ abnormal JJ O
 electrical JJ O
 activation NN O
 . . O
+
 right RB B
 ventricular JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular NN I
 wall NN I
@@ -6959,12 +7371,14 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular JJ I
 function NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 atrial JJ I
 size NN I
@@ -6972,12 +7386,14 @@ is VBZ I
 severely RB I
 enlarged VBN I
 . . O
+
 right JJ B
 atrial JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonary JJ B
 artery NN I
@@ -6985,6 +7401,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 root NN I
@@ -6993,42 +7410,49 @@ is VBZ I
 mildly RB I
 dilated VBN I
 . . O
+
 the DT O
 aortic JJ B
 valve NN I
 is VBZ I
 thickened VBN I
 . . O
+
 the DT O
 mitral JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 there EX O
 is VBZ O
 mitral JJ B
 annular JJ I
 calcification NN I
 . . O
+
 the DT O
 tricuspid JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 no DT O
 pericardial JJ B
 effusion NN I
 is VBZ O
 seen VBN O
 . . O
+
 spectral JJ O
 doppler NN O
 : : O
@@ -7040,12 +7464,14 @@ moderate VB I
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 mild JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 color NN O
 flow NN O
 doppler NN O
@@ -7058,12 +7484,14 @@ moderate VB I
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 mild JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 02 CD O
 ) ) O
 moderately RB B
@@ -7084,6 +7512,7 @@ decreased JJ I
 systolic JJ I
 function NN I
 . . O
+
 03 CD O
 ) ) O
 paradoxical JJ B
@@ -7095,12 +7524,14 @@ abnormal JJ O
 electrical JJ O
 activation NN O
 . . O
+
 04 CD O
 ) ) O
 thickened VBD B
 aortic JJ I
 valve NN I
 . . O
+
 05 CD O
 ) ) O
 mild NN B
@@ -7109,18 +7540,21 @@ moderate VB I
 mitral JJ I
 regurgitation NN I
 . . O
+
 06 CD O
 ) ) O
 mitral JJ B
 annular JJ I
 calcification NN I
 . . O
+
 07 CD O
 ) ) O
 mild NN B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 08 CD O
 ) ) O
 severe NN B
@@ -7128,6 +7562,7 @@ left VBD I
 atrial JJ I
 enlargement NN I
 . . O
+
 09 CD O
 ) ) O
 mild FW B
@@ -7135,6 +7570,7 @@ aortic JJ I
 root NN I
 dilation NN I
 . . O
+
 she PRP O
 has VBZ O
 had VBD O
@@ -7145,6 +7581,7 @@ since IN O
 that DT O
 time NN O
 . . O
+
 no DT O
 focal JJ B
 numbness NN I
@@ -7165,6 +7602,7 @@ and CC O
 middle JJ O
 fingers NNS O
 . . O
+
 no DT O
 focal JJ O
 numbness NN O
@@ -7185,6 +7623,7 @@ and CC O
 middle JJ O
 fingers NNS O
 . . O
+
 no DT O
 focal JJ O
 numbness NN O
@@ -7205,6 +7644,7 @@ and CC I
 middle JJ I
 fingers NNS I
 . . O
+
 she PRP O
 does VBZ O
 have VB O
@@ -7218,6 +7658,7 @@ on IN I
 the DT I
 outside NN I
 . . O
+
 she PRP O
 did VBD O
 scrape VB B
@@ -7232,6 +7673,7 @@ able JJ O
 to TO O
 ambulate VB O
 . . O
+
 she PRP O
 did VBD O
 scrape VB O
@@ -7246,20 +7688,24 @@ able JJ O
 to TO O
 ambulate VB B
 . . O
+
 no DT O
 current JJ O
 knee NN B
 pain NN I
 . . O
+
 no DT O
 neck NN B
 pain NN I
 . . O
+
 no DT O
 loss NN B
 of IN I
 consciousness NN I
 . . O
+
 blood NN B
 pressure NN I
 was VBD I
@@ -7271,6 +7717,7 @@ was VBD O
 98 CD O
 60 CD O
 . . O
+
 general JJ O
 : : O
 the DT O
@@ -7298,6 +7745,7 @@ oriented VBN O
 and CC O
 pleasant NN O
 . . O
+
 general JJ O
 : : O
 the DT O
@@ -7325,6 +7773,7 @@ oriented VBN O
 and CC O
 pleasant NN O
 . . O
+
 general JJ O
 : : O
 the DT O
@@ -7352,11 +7801,13 @@ oriented VBN B
 and CC O
 pleasant NN O
 . . O
+
 the DT O
 head NN B
 was VBD I
 atraumatic JJ I
 . . O
+
 neck NN O
 : : O
 neck NN B
@@ -7364,6 +7815,7 @@ was VBD I
 nontender JJ I
 __________ NN O
 . . O
+
 lungs NNS O
 : : O
 lungs NNS B
@@ -7372,6 +7824,7 @@ clear JJ I
 to TO I
 auscultation NN I
 . . O
+
 abdomen NNS O
 : : O
 abdomen NNS B
@@ -7379,6 +7832,7 @@ is VBZ I
 soft JJ I
 nontender NN I
 . . O
+
 extremities NNS O
 : : O
 the DT O
@@ -7399,6 +7853,7 @@ and CC I
 volar JJ I
 surface NN I
 . . O
+
 she PRP O
 has VBZ O
 tenderness NN B
@@ -7413,6 +7868,7 @@ and CC I
 middle JJ I
 finger NN I
 . . O
+
 she PRP O
 does VBZ O
 have VB O
@@ -7436,6 +7892,7 @@ is VBZ O
 some DT O
 pain NN O
 . . O
+
 she PRP O
 does VBZ O
 have VB O
@@ -7459,6 +7916,7 @@ is VBZ I
 some DT I
 pain NN I
 . . O
+
 she PRP O
 does VBZ O
 have VB O
@@ -7486,6 +7944,7 @@ the DT O
 interossei NN O
 muscles NNS O
 . . O
+
 the DT O
 forearm NN B
 compartments NNS I
@@ -7500,6 +7959,7 @@ good JJ O
 capillary NN O
 refill NN O
 . . O
+
 the DT O
 forearm NN O
 compartments NNS O
@@ -7514,6 +7974,7 @@ good JJ I
 capillary NN I
 refill NN I
 . . O
+
 other JJ O
 extremities NNS O
 : : O
@@ -7526,6 +7987,7 @@ her PRP$ I
 bilateral JJ I
 knees NNS I
 . . O
+
 skin NN O
 : : O
 skin NN O
@@ -7542,6 +8004,7 @@ abrasions NNS O
 as IN O
 above IN O
 . . O
+
 hand NN O
 x-rays NNS O
 showed VBD O
@@ -7559,6 +8022,7 @@ with IN I
 minimal JJ I
 displacement NN I
 . . O
+
 a DT O
 splint NN O
 was VBD O
@@ -7574,6 +8038,7 @@ this DT O
 was VBD O
 performed VBN O
 . . O
+
 there EX O
 is VBZ O
 no DT O
@@ -7587,6 +8052,7 @@ fracture NN I
 or CC I
 dislocation NN I
 . . O
+
 if IN O
 she PRP O
 has VBZ O
@@ -7629,6 +8095,7 @@ at IN O
 this DT O
 time NN O
 . . O
+
 if IN O
 she PRP O
 has VBZ O
@@ -7671,6 +8138,7 @@ at IN O
 this DT O
 time NN O
 . . O
+
 if IN O
 she PRP O
 has VBZ O
@@ -7713,6 +8181,7 @@ at IN O
 this DT O
 time NN O
 . . O
+
 if IN O
 she PRP O
 has VBZ O
@@ -7755,6 +8224,7 @@ at IN O
 this DT O
 time NN O
 . . O
+
 discharge NN O
 diagnosis NN O
 ( ( O
@@ -7772,6 +8242,7 @@ the DT O
 emergency NN O
 department NN O
 . . O
+
 the DT O
 indication NN O
 for IN O
@@ -7784,6 +8255,7 @@ and CC O
 chronic JJ O
 diarrhea NN O
 . . O
+
 the DT O
 indication NN O
 for IN O
@@ -7796,6 +8268,7 @@ and CC O
 chronic JJ O
 diarrhea NN B
 . . O
+
 findings NNS O
 : : O
 the DT O
@@ -7807,12 +8280,14 @@ normal JJ I
 in IN O
 appearance NN O
 . . O
+
 a DT O
 hiatal JJ B
 hernia NN I
 was VBD O
 found VBN O
 . . O
+
 multiple RB B
 small JJ I
 erosions NNS I
@@ -7822,6 +8297,7 @@ in IN I
 the DT I
 antrum NN I
 . . O
+
 two CD O
 biopsies NNS O
 were VBD O
@@ -7849,6 +8325,7 @@ the DT I
 postbulbar NN I
 duodenum NN I
 . . O
+
 four CD O
 biopsies NNS O
 were VBD O
@@ -7863,6 +8340,7 @@ o JJ O
 celiac NN B
 sprue NN I
 . . O
+
 there EX O
 was VBD O
 no DT O
@@ -7870,6 +8348,7 @@ evidence NN O
 of IN O
 ulcers NNS B
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -7936,6 +8415,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -8002,6 +8482,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -8068,6 +8549,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -8134,6 +8616,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -8183,6 +8666,7 @@ and CC I
 leg NN I
 pain NN I
 . . O
+
 findings NNS O
 : : O
 right JJ O
@@ -8198,6 +8682,7 @@ the DT I
 right JJ I
 hip NN I
 . . O
+
 there EX O
 is VBZ O
 moderate JJ B
@@ -8220,6 +8705,7 @@ the DT O
 greater JJR O
 trochanter NN O
 . . O
+
 there EX O
 is VBZ O
 moderate JJ O
@@ -8242,6 +8728,7 @@ the DT I
 greater JJR I
 trochanter NN I
 . . O
+
 there EX O
 are VBP O
 no DT O
@@ -8255,6 +8742,7 @@ of IN I
 the DT I
 pelvis NN I
 . . O
+
 right JJ O
 femur NN O
 : : O
@@ -8269,6 +8757,7 @@ the DT I
 right JJ I
 femur NN I
 . . O
+
 there EX O
 is VBZ O
 advanced JJ B
@@ -8295,6 +8784,7 @@ quadriceps NNS I
 tendon JJ I
 region NN I
 . . O
+
 impression NN O
 : : O
 no DT O
@@ -8309,6 +8799,7 @@ right JJ I
 hip NN I
 region NN I
 . . O
+
 prior JJ O
 orif NN O
 of IN O
@@ -8318,6 +8809,7 @@ femoral JJ I
 neck NN I
 fracture NN I
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -8362,6 +8854,7 @@ virus NN O
 is VBZ O
 negative JJ O
 . . O
+
 status NN O
 post NN O
 left VBD B
@@ -8381,15 +8874,19 @@ descending VBG O
 artery NN O
 stenting NN O
 . . O
+
 coronary JJ B
 artery NN I
 disease NN I
 . . O
+
 hypertension NN B
 . . O
+
 increased VBN B
 cholesterol NN I
 . . O
+
 reason NN O
 for IN O
 admission NN O
@@ -8431,6 +8928,7 @@ to TO O
 both DT O
 shoulders NNS O
 . . O
+
 reason NN O
 for IN O
 admission NN O
@@ -8472,6 +8970,7 @@ to TO I
 both DT I
 shoulders NNS I
 . . O
+
 in IN O
 the DT O
 er NN O
@@ -8485,6 +8984,7 @@ acute JJ B
 anterolateral JJ I
 mi NN I
 . . O
+
 a DT O
 ct NN B
 of IN I
@@ -8499,6 +8999,7 @@ no DT I
 acute JJ I
 lesion NN I
 . . O
+
 a DT O
 ct NN O
 angiogram NN O
@@ -8512,6 +9013,7 @@ high-grade JJ O
 carotid NN O
 stenosis NN O
 . . O
+
 a DT O
 ct NN O
 angiogram NN O
@@ -8525,6 +9027,7 @@ high-grade JJ I
 carotid NN I
 stenosis NN I
 . . O
+
 she PRP O
 was VBD O
 limited VBN O
@@ -8532,6 +9035,7 @@ by IN O
 significant JJ O
 claudication NN B
 . . O
+
 she PRP O
 was VBD O
 left VBN O
@@ -8540,6 +9044,7 @@ no DT O
 residual JJ O
 weakness NN B
 . . O
+
 the DT O
 patient NN O
 had VBD O
@@ -8551,6 +9056,7 @@ shortness NN O
 of IN O
 breath NN O
 . . O
+
 the DT O
 patient NN O
 had VBD O
@@ -8562,6 +9068,7 @@ shortness NN B
 of IN I
 breath NN I
 . . O
+
 no DT O
 palpitations NNS B
 while IN O
@@ -8569,6 +9076,7 @@ she PRP O
 was VBD O
 here RB O
 . . O
+
 towards IN O
 the DT O
 end NN O
@@ -8588,6 +9096,7 @@ in IN O
 pedal JJ B
 edema NN I
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -8613,6 +9122,7 @@ size NN O
 is VBZ O
 normal JJ O
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -8638,6 +9148,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 ventricular JJ I
 wall NN I
@@ -8651,6 +9162,7 @@ left JJ O
 ventricular JJ O
 hypertrophy NN O
 . . O
+
 left VBN O
 ventricular JJ O
 wall NN O
@@ -8664,6 +9176,7 @@ left JJ B
 ventricular JJ I
 hypertrophy NN I
 . . O
+
 segmental JJ B
 left VBD I
 ventricular JJ I
@@ -8671,6 +9184,7 @@ function NN I
 is VBZ I
 normal JJ I
 . . O
+
 overall JJ B
 left VBD I
 ventricular JJ I
@@ -8687,12 +9201,14 @@ of IN O
 55-60 JJ O
 % NN O
 . . O
+
 right RB B
 ventricular JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular NN I
 wall NN I
@@ -8700,12 +9216,14 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular JJ I
 function NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 atrial JJ I
 size NN I
@@ -8713,6 +9231,7 @@ is VBZ I
 mildly RB I
 enlarged VBN I
 . . O
+
 right JJ B
 atrial JJ I
 size NN I
@@ -8720,6 +9239,7 @@ is VBZ I
 mildly RB I
 enlarged VBN I
 . . O
+
 the DT O
 pulmonary JJ B
 artery NN I
@@ -8727,6 +9247,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 root NN I
@@ -8735,36 +9256,42 @@ is VBZ I
 borderline JJ I
 dilated VBN I
 . . O
+
 the DT O
 aortic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 mitral JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 tricuspid JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 no DT O
 pericardial JJ B
 effusion NN I
 is VBZ O
 seen VBN O
 . . O
+
 spectral JJ O
 doppler NN O
 : : O
@@ -8774,6 +9301,7 @@ mild JJ B
 aortic JJ I
 regurgitation NN I
 . . O
+
 color NN O
 flow NN O
 doppler NN O
@@ -8784,6 +9312,7 @@ mild JJ B
 aortic JJ I
 regurgitation NN I
 . . O
+
 final JJ O
 impressions NNS O
 : : O
@@ -8800,12 +9329,14 @@ preserved VBN I
 systolic JJ I
 function NN I
 . . O
+
 02 CD O
 ) ) O
 mild FW B
 aortic JJ I
 regurgitation NN I
 . . O
+
 03 CD O
 ) ) O
 mild NN B
@@ -8813,6 +9344,7 @@ left VBD I
 atrial JJ I
 enlargement NN I
 . . O
+
 04 CD O
 ) ) O
 mild NN B
@@ -8820,6 +9352,7 @@ right JJ I
 atrial JJ I
 enlargement NN I
 . . O
+
 05 CD O
 ) ) O
 borderline NN B
@@ -8827,6 +9360,7 @@ aortic JJ I
 root NN I
 dilation NN I
 . . O
+
 06 CD O
 ) ) O
 findings NNS O
@@ -8836,6 +9370,7 @@ orthotopic JJ B
 heart NN I
 transplantation NN I
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -8880,6 +9415,7 @@ of IN O
 having VBG O
 fallen VBN O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -8924,6 +9460,7 @@ of IN O
 having VBG O
 fallen VBN O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -8968,6 +9505,7 @@ of IN O
 having VBG O
 fallen VBN O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -9012,6 +9550,7 @@ of IN O
 having VBG O
 fallen VBN O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -9056,6 +9595,7 @@ of IN O
 having VBG O
 fallen VBN O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -9100,6 +9640,7 @@ of IN O
 having VBG O
 fallen VBN O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -9144,6 +9685,7 @@ of IN O
 having VBG O
 fallen VBN O
 . . O
+
 the DT O
 patient NN O
 sustained VBD O
@@ -9152,6 +9694,7 @@ left NN B
 acetabular JJ I
 fracture NN I
 . . O
+
 review NN O
 of IN O
 systems NNS O
@@ -9176,6 +9719,7 @@ to TO O
 his PRP$ O
 dementia NN B
 . . O
+
 physical JJ O
 exam NN O
 : : O
@@ -9209,12 +9753,14 @@ with IN O
 slight JJ B
 confusion NN I
 . . O
+
 head NN B
 and CC I
 face NN I
 are VBP I
 atraumatic JJ I
 . . O
+
 cervical JJ B
 spine NN I
 is VBZ I
@@ -9223,18 +9769,22 @@ but CC O
 remains VBZ O
 immobilized JJ O
 . . O
+
 chest JJS B
 wall NN I
 nontender NN I
 . . O
+
 lungs NNS B
 : : I
 clear JJ I
 . . O
+
 heart NN B
 tones NNS I
 regular JJ I
 . . O
+
 the DT O
 patient NN O
 's POS O
@@ -9245,6 +9795,7 @@ some DT I
 external JJ I
 rotation NN I
 . . O
+
 he PRP O
 has VBZ O
 point NN B
@@ -9263,6 +9814,7 @@ secondary JJ I
 to TO I
 pain VB I
 . . O
+
 ed JJ O
 course NN O
 : : O
@@ -9276,6 +9828,7 @@ left JJ B
 acetabular JJ I
 fracture NN I
 . . O
+
 admitting VBG O
 diagnosis NN O
 ( ( O
@@ -9289,6 +9842,7 @@ status NN I
 post NN I
 fall NN I
 . . O
+
 digital JJ O
 rectal NN O
 exam NN O
@@ -9300,6 +9854,7 @@ moderate JJ B
 external JJ I
 hemorrhoids NNS I
 . . O
+
 findings NNS O
 : : O
 a DT O
@@ -9318,6 +9873,7 @@ with IN O
 snare JJ O
 polypectomy NN O
 . . O
+
 a DT O
 5mm CD O
 sessile NN B
@@ -9334,6 +9890,7 @@ with IN O
 snare JJ O
 polypectomy NN O
 . . O
+
 a DT O
 6mm CD O
 sessile NN B
@@ -9349,6 +9906,7 @@ with IN O
 snare JJ O
 polypectomy NN O
 . . O
+
 retroflexion NN O
 of IN O
 the DT O
@@ -9358,6 +9916,7 @@ small JJ B
 internal JJ I
 hemorrhoids NNS I
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -9440,6 +9999,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -9522,6 +10082,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -9604,6 +10165,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -9686,6 +10248,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -9733,6 +10296,7 @@ rule NN O
 out IN O
 pneumonia NN B
 . . O
+
 findings NNS O
 : : O
 heart NN B
@@ -9740,17 +10304,20 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 mediastinal JJ B
 contours NNS I
 are VBP I
 normal JJ I
 . . O
+
 bilateral JJ B
 transplanted VBD I
 lungs NNS I
 appears VBZ I
 clear JJ I
 . . O
+
 there EX O
 is VBZ O
 no DT O
@@ -9759,6 +10326,7 @@ effusion NN I
 or CC O
 pneumothorax NN O
 . . O
+
 there EX O
 is VBZ O
 no DT O
@@ -9767,6 +10335,7 @@ effusion NN O
 or CC O
 pneumothorax NN B
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -9807,11 +10376,13 @@ jan NN O
 increased VBD B
 lipase NN I
 . . O
+
 pre-op JJ O
 diagnosis NN O
 : : O
 rejection NN B
 . . O
+
 _______________________________________________________________ JJ O
 final JJ O
 diagnosis NN O
@@ -9833,6 +10404,7 @@ grade JJ I
 iv-v NN I
 ) ) I
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -9914,6 +10486,7 @@ es JJ O
 : : O
 gastroenteritis NN B
 . . O
+
 reason NN O
 for IN O
 admission NN O
@@ -9941,6 +10514,7 @@ down NN B
 's POS I
 syndrome NN I
 . . O
+
 he PRP O
 was VBD O
 brought VBN O
@@ -9958,6 +10532,7 @@ vomiting VBG B
 and CC O
 diarrhea NN O
 . . O
+
 he PRP O
 was VBD O
 brought VBN O
@@ -9975,6 +10550,7 @@ vomiting VBG O
 and CC O
 diarrhea NN B
 . . O
+
 it PRP O
 was VBD O
 reported VBN O
@@ -9984,6 +10560,7 @@ a DT O
 syncopal JJ B
 event NN I
 . . O
+
 his PRP$ O
 coworkers NNS O
 saw VBD O
@@ -10001,6 +10578,7 @@ awake JJ B
 and CC O
 alert NN O
 . . O
+
 his PRP$ O
 coworkers NNS O
 saw VBD O
@@ -10018,6 +10596,7 @@ awake JJ O
 and CC O
 alert NN B
 . . O
+
 uuu JJ O
 ] NN O
 's POS O
@@ -10029,6 +10608,7 @@ vomiting NN B
 and CC O
 diarrhea NN O
 . . O
+
 uuu JJ O
 ] NN O
 's POS O
@@ -10040,6 +10620,7 @@ vomiting NN O
 and CC O
 diarrhea NN B
 . . O
+
 it PRP O
 is VBZ O
 reported VBN O
@@ -10059,11 +10640,13 @@ as IN O
 clear JJ O
 emesis NN B
 . . O
+
 he PRP O
 also RB O
 had VBD O
 diarrhea NNS B
 . . O
+
 the DT O
 patient NN O
 denied VBD O
@@ -10079,6 +10662,7 @@ numbness NN O
 or CC O
 paraesthesias NN O
 . . O
+
 the DT O
 patient NN O
 denied VBD O
@@ -10094,6 +10678,7 @@ numbness NN O
 or CC O
 paraesthesias NN O
 . . O
+
 the DT O
 patient NN O
 denied VBD O
@@ -10109,6 +10694,7 @@ numbness NN O
 or CC O
 paraesthesias NN O
 . . O
+
 the DT O
 patient NN O
 denied VBD O
@@ -10124,6 +10710,7 @@ numbness NN B
 or CC O
 paraesthesias NN O
 . . O
+
 the DT O
 patient NN O
 denied VBD O
@@ -10139,11 +10726,13 @@ numbness NN O
 or CC O
 paraesthesias NN B
 . . O
+
 he PRP O
 denied VBD O
 any DT O
 fever NN B
 . . O
+
 he PRP O
 does VBZ O
 complain VB O
@@ -10153,6 +10742,7 @@ mild JJ B
 periumbilical JJ I
 discomfort NN I
 . . O
+
 he PRP O
 was VBD O
 awake RB B
@@ -10162,6 +10752,7 @@ alert NN O
 and CC O
 oriented VBD O
 . . O
+
 he PRP O
 was VBD O
 awake RB O
@@ -10171,6 +10762,7 @@ alert NN B
 and CC O
 oriented VBD O
 . . O
+
 he PRP O
 was VBD O
 awake RB O
@@ -10180,6 +10772,7 @@ alert NN O
 and CC O
 oriented VBD B
 . . O
+
 examination NN O
 of IN O
 his PRP$ O
@@ -10196,6 +10789,7 @@ the DT O
 periumbilical JJ O
 area NN O
 . . O
+
 examination NN O
 of IN O
 his PRP$ O
@@ -10212,6 +10806,7 @@ the DT I
 periumbilical JJ I
 area NN I
 . . O
+
 he PRP O
 did VBD O
 have VB O
@@ -10219,6 +10814,7 @@ positive JJ B
 bowel NN I
 sounds NNS I
 . . O
+
 he PRP O
 received VBD O
 iv JJ O
@@ -10231,6 +10827,7 @@ for IN O
 his PRP$ O
 dehydration NN B
 . . O
+
 following VBG O
 his PRP$ O
 evaluation NN O
@@ -10247,9 +10844,11 @@ primarily RB O
 for IN O
 dehydration NN B
 . . O
+
 for IN O
 nausea NN B
 . . O
+
 we PRP O
 sent VBD O
 stool NN O
@@ -10259,18 +10858,21 @@ of IN O
 his PRP$ O
 diarrhea NN B
 . . O
+
 his PRP$ O
 nausea NN B
 and CC O
 vomiting NN O
 resolved VBN O
 . . O
+
 his PRP$ O
 nausea NN O
 and CC O
 vomiting NN B
 resolved VBN O
 . . O
+
 on IN O
 the DT O
 day NN O
@@ -10280,12 +10882,14 @@ he PRP O
 was VBD O
 afebrile RB B
 . . O
+
 his PRP$ O
 diarrhea NN B
 had VBD O
 been VBN O
 improving VBG O
 . . O
+
 he PRP O
 did VBD O
 not RB O
@@ -10294,6 +10898,7 @@ any DT O
 abdominal JJ B
 pain NN I
 . . O
+
 it PRP O
 was VBD O
 nontender RBR O
@@ -10302,12 +10907,14 @@ abdomen NNS B
 was VBD I
 soft JJ I
 . . I
+
 lungs NNS B
 were VBD I
 clear JJ I
 to TO I
 auscultation NN I
 . . O
+
 we PRP O
 felt VBD O
 that IN O
@@ -10318,6 +10925,7 @@ a DT O
 viral JJ B
 gastroenteritis NN I
 . . O
+
 return NN O
 to TO O
 the DT O
@@ -10336,6 +10944,7 @@ fevers NNS O
 or CC O
 chills NNS O
 . . O
+
 return NN O
 to TO O
 the DT O
@@ -10354,6 +10963,7 @@ fevers NNS O
 or CC O
 chills NNS O
 . . O
+
 return NN O
 to TO O
 the DT O
@@ -10372,6 +10982,7 @@ fevers NNS B
 or CC O
 chills NNS O
 . . O
+
 return NN O
 to TO O
 the DT O
@@ -10390,6 +11001,7 @@ fevers NNS O
 or CC O
 chills NNS B
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -10426,6 +11038,7 @@ size NN O
 is VBZ O
 normal JJ O
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -10462,6 +11075,7 @@ size NN O
 is VBZ O
 normal JJ O
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -10498,6 +11112,7 @@ size NN O
 is VBZ O
 normal JJ O
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -10534,6 +11149,7 @@ size NN O
 is VBZ O
 normal JJ O
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -10570,6 +11186,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 ventricular JJ I
 wall NN I
@@ -10583,6 +11200,7 @@ left JJ O
 ventricular JJ O
 hypertrophy NN O
 . . O
+
 left VBN O
 ventricular JJ O
 wall NN O
@@ -10596,6 +11214,7 @@ left JJ B
 ventricular JJ I
 hypertrophy NN I
 . . O
+
 segmental JJ B
 left VBD I
 ventricular JJ I
@@ -10603,6 +11222,7 @@ function NN I
 is VBZ I
 abnormal JJ I
 . . O
+
 the DT O
 anterior JJ B
 wall NN I
@@ -10616,6 +11236,7 @@ are VBP I
 mildly RB I
 hypokinetic JJ I
 . . O
+
 overall JJ B
 left VBD I
 ventricular JJ I
@@ -10632,12 +11253,14 @@ of IN O
 55-60 JJ O
 % NN O
 . . O
+
 right RB B
 ventricular JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular NN I
 wall NN I
@@ -10651,6 +11274,7 @@ right JJ O
 ventricular NN O
 hypertrophy NN O
 . . O
+
 right RB O
 ventricular NN O
 wall NN O
@@ -10664,6 +11288,7 @@ right JJ B
 ventricular NN I
 hypertrophy NN I
 . . O
+
 right RB B
 ventricular JJ I
 function NN I
@@ -10671,6 +11296,7 @@ is VBZ I
 grossly RB I
 normal JJ I
 . . O
+
 left VBN B
 atrial JJ I
 size NN I
@@ -10678,12 +11304,14 @@ is VBZ I
 mildly RB I
 enlarged VBN I
 . . O
+
 right JJ B
 atrial JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonary JJ B
 artery NN I
@@ -10691,6 +11319,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 root NN I
@@ -10698,30 +11327,35 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 mitral JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 there EX B
 is VBZ I
 mitral JJ I
 annular JJ I
 calcification NN I
 . . O
+
 the DT O
 tricuspid JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 no DT O
 pericardial JJ B
 effusion NN I
 is VBZ O
 seen VBN O
 . . O
+
 spectral JJ O
 doppler NN O
 : : O
@@ -10733,18 +11367,21 @@ moderate VB I
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 mild JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 mild JJ B
 pulmonic JJ I
 regurgitation NN I
 . . O
+
 color NN O
 flow NN O
 doppler NN O
@@ -10757,18 +11394,21 @@ moderate VB I
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 mild JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 mild JJ B
 pulmonic JJ I
 regurgitation NN I
 . . O
+
 final JJ O
 impressions NNS O
 : : O
@@ -10794,6 +11434,7 @@ preserved VBN I
 systolic JJ I
 function NN I
 . . O
+
 02 CD O
 ) ) O
 nondilated VBD B
@@ -10806,6 +11447,7 @@ grossly RB I
 normal JJ I
 function NN I
 . . O
+
 03 CD O
 ) ) O
 mild NN B
@@ -10814,24 +11456,28 @@ moderate VB I
 mitral JJ I
 regurgitation NN I
 . . O
+
 04 CD O
 ) ) O
 mitral JJ B
 annular JJ I
 calcification NN I
 . . O
+
 05 CD O
 ) ) O
 mild NN B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 06 CD O
 ) ) O
 mild NN B
 pulmonic JJ I
 regurgitation NN I
 . . O
+
 07 CD O
 ) ) O
 mild NN B
@@ -10839,12 +11485,14 @@ left VBD I
 atrial JJ I
 enlargement NN I
 . . O
+
 08 CD O
 ) ) O
 moderate VBP B
 pulmonary JJ I
 hypertension NN I
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -10911,6 +11559,7 @@ left JJ B
 leg NN I
 pain NN I
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -10946,6 +11595,7 @@ three CD O
 bulging VBG O
 disks NNS O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -10981,6 +11631,7 @@ three CD O
 bulging VBG B
 disks NNS I
 . . O
+
 she PRP O
 also RB O
 has VBZ O
@@ -11005,6 +11656,7 @@ her PRP$ O
 left JJ O
 leg NN O
 . . O
+
 she PRP O
 also RB O
 has VBZ O
@@ -11029,11 +11681,13 @@ her PRP$ I
 left JJ I
 leg NN I
 . . O
+
 she PRP O
 denies VBZ O
 any DT O
 incontinence NN B
 . . O
+
 social JJ O
 history NN O
 : : O
@@ -11043,11 +11697,13 @@ denies VBZ O
 alcohol NN B
 use NN I
 . . O
+
 the DT O
 patient NN O
 smokes VBZ B
 cigarettes NNS I
 . . O
+
 back RB B
 examination NN I
 : : I
@@ -11057,6 +11713,7 @@ stepoff NN I
 or CC I
 tenderness NN I
 . . O
+
 there EX O
 is VBZ O
 some DT O
@@ -11066,9 +11723,11 @@ to TO O
 ________ VB O
 tenderness NN O
 . . O
+
 no DT O
 weakness NN B
 . . O
+
 her PRP$ O
 gait NN B
 is VBZ I
@@ -11078,6 +11737,7 @@ otherwise RB O
 , , O
 normal JJ O
 . . O
+
 ed JJ O
 course NN O
 : : O
@@ -11089,6 +11749,7 @@ to TO O
 have VB O
 sciatica NN B
 . . O
+
 she PRP O
 had VBD O
 no DT O
@@ -11100,6 +11761,7 @@ herniation NN I
 or CC O
 weakness NN O
 . . O
+
 she PRP O
 had VBD O
 no DT O
@@ -11111,6 +11773,7 @@ herniation NN O
 or CC O
 weakness NN B
 . . O
+
 she PRP O
 felt VBD O
 her PRP O
@@ -11119,6 +11782,7 @@ was VBD O
 much RB O
 improved VBN O
 . . O
+
 acute JJ B
 exacerbation NN I
 of IN I
@@ -11126,8 +11790,10 @@ chronic JJ I
 low-back NN I
 pain NN I
 . . O
+
 sciatica NN B
 . . O
+
 the DT O
 indication NN O
 for IN O
@@ -11142,6 +11808,7 @@ polyps NNS I
 and CC O
 screening NN O
 . . O
+
 fh NN O
 is VBZ O
 +ve VBN O
@@ -11164,6 +11831,7 @@ under IN O
 colonoscopic NN O
 surveillance NN O
 . . O
+
 gi NN O
 ros NN O
 is VBZ O
@@ -11195,6 +11863,7 @@ symptom NN O
 or CC O
 sign NN O
 . . O
+
 gi NN O
 ros NN O
 is VBZ O
@@ -11226,6 +11895,7 @@ symptom NN O
 or CC O
 sign NN O
 . . O
+
 gi NN O
 ros NN O
 is VBZ O
@@ -11257,6 +11927,7 @@ symptom NN O
 or CC O
 sign NN O
 . . O
+
 gi NN O
 ros NN O
 is VBZ O
@@ -11288,6 +11959,7 @@ symptom NN O
 or CC O
 sign NN O
 . . O
+
 digital JJ O
 rectal NN O
 exam NN O
@@ -11299,11 +11971,13 @@ perianal JJ B
 skin NN I
 tags NNS I
 . . O
+
 small JJ B
 external JJ I
 hemorrhoidal NN I
 tags NNS I
 . . O
+
 findings NNS O
 : : O
 internal JJ B
@@ -11313,6 +11987,7 @@ hemorrhoids NNS I
 were VBD O
 found VBN O
 . . O
+
 the DT O
 ileal NN B
 mucosa NN I
@@ -11321,6 +11996,7 @@ normal JJ I
 in IN O
 appearance NN O
 . . O
+
 there EX O
 was VBD O
 no DT O
@@ -11332,6 +12008,7 @@ mass NN O
 or CC O
 diverticula NN O
 . . O
+
 there EX O
 was VBD O
 no DT O
@@ -11343,6 +12020,7 @@ mass NN O
 or CC O
 diverticula NN B
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -11408,6 +12086,7 @@ year NN O
 s NN O
 ) ) O
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -11473,6 +12152,7 @@ year NN O
 s NN O
 ) ) O
 . . O
+
 no DT O
 calcaneal JJ B
 fracture NN I
@@ -11480,6 +12160,7 @@ can MD O
 be VB O
 seen VBN O
 . . O
+
 no DT O
 residua NN O
 of IN O
@@ -11490,6 +12171,7 @@ be VB O
 seen VBN O
 otherwise RB O
 . . O
+
 impression NN O
 : : O
 healed VBN B
@@ -11502,6 +12184,7 @@ tib NN I
 fib NN I
 fractures NNS I
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -11612,6 +12295,7 @@ component NN O
 is VBZ O
 absent JJ O
 . . O
+
 interpretation NN O
 : : O
 negative JJ O
@@ -11621,6 +12305,7 @@ lesion NN I
 or CC I
 malignancy NN I
 . . O
+
 right JJ B
 hip NN I
 fracture NN I
@@ -11628,17 +12313,22 @@ status NN O
 post NN O
 hemiarthroplasty NN O
 . . O
+
 schizophrenia NN B
 . . O
+
 persistent JJ B
 thrombocytosis NN I
 . . O
+
 osteoporosis NN B
 . . O
+
 urinary JJ B
 tract NN I
 infection NN I
 . . O
+
 an DT O
 x-ray NN O
 of IN O
@@ -11651,6 +12341,7 @@ femoral JJ I
 neck NN I
 fracture NN I
 . . O
+
 her PRP$ O
 postoperative JJ O
 course NN O
@@ -11663,6 +12354,7 @@ temperature NN I
 and CC O
 leukocytosis NN O
 . . O
+
 her PRP$ O
 postoperative JJ O
 course NN O
@@ -11675,6 +12367,7 @@ temperature NN O
 and CC O
 leukocytosis NN B
 . . O
+
 at IN O
 the DT O
 time NN O
@@ -11698,6 +12391,7 @@ a DT O
 wheeled JJ O
 walker NN O
 . . O
+
 she PRP O
 was VBD O
 able JJ O
@@ -11724,6 +12418,7 @@ a DT I
 wheeled JJ I
 walker NN I
 . . O
+
 this DT O
 gradually RB O
 cleared VBN O
@@ -11739,6 +12434,7 @@ symptoms NNS O
 of IN O
 infection NN B
 . . O
+
 schizophrenia NN B
 : : O
 the DT O
@@ -11755,6 +12451,7 @@ on IN O
 multiple JJ O
 medications NNS O
 . . O
+
 uti NN B
 : : O
 the DT O
@@ -11772,6 +12469,7 @@ out RP O
 e. JJ O
 coli NNS O
 . . O
+
 thrombocytosis NN O
 : : O
 the DT O
@@ -11793,6 +12491,7 @@ fluctuating JJ O
 white JJ O
 count NN O
 . . O
+
 thrombocytosis NN O
 : : O
 the DT O
@@ -11814,16 +12513,19 @@ fluctuating JJ B
 white JJ I
 count NN I
 . . O
+
 she PRP O
 had VBD O
 no DT O
 fever NN B
 . . O
+
 she PRP O
 had VBD O
 no DT O
 chills NNS B
 . . O
+
 she PRP O
 had VBD O
 no DT O
@@ -11834,6 +12536,7 @@ symptoms NNS O
 of IN O
 infection NN B
 . . O
+
 she PRP O
 does VBZ O
 have VB O
@@ -11841,6 +12544,7 @@ the DT O
 mild JJ B
 uti NN I
 . . O
+
 osteoporosis NN O
 : : O
 the DT O
@@ -11862,6 +12566,7 @@ her PRP$ I
 psychiatric JJ I
 medications NNS I
 . . O
+
 she PRP O
 has VBZ O
 had VBD O
@@ -11878,6 +12583,7 @@ to TO O
 be VB O
 osteoporotic JJ B
 . . O
+
 allergies NNS O
 : : O
 no DT O
@@ -11885,6 +12591,7 @@ known JJ O
 drug NN B
 allergies NNS I
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -11917,6 +12624,7 @@ technically RB O
 difficult JJ O
 study NN O
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -11949,6 +12657,7 @@ technically RB O
 difficult JJ O
 study NN O
 . . O
+
 left VBD B
 ventricular JJ I
 size NN I
@@ -11959,6 +12668,7 @@ ventricle NN I
 is VBZ I
 small JJ I
 . . O
+
 left VBN B
 ventricular JJ I
 wall NN I
@@ -11966,6 +12676,7 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 segmental JJ B
 left VBD I
 ventricular JJ I
@@ -11973,6 +12684,7 @@ function NN I
 is VBZ I
 normal JJ I
 . . O
+
 overall JJ B
 left VBD I
 ventricular JJ I
@@ -11989,6 +12701,7 @@ of IN O
 55-60 JJ O
 % NN O
 . . O
+
 there EX O
 is VBZ O
 flattening VBG B
@@ -12006,6 +12719,7 @@ or CC O
 volume NN O
 overload NN O
 . . O
+
 there EX O
 is VBZ O
 flattening VBG O
@@ -12023,6 +12737,7 @@ or CC I
 volume NN I
 overload NN I
 . . O
+
 right RB B
 ( ( I
 systemic JJ I
@@ -12033,6 +12748,7 @@ is VBZ I
 severely RB I
 dilated VBN I
 . . O
+
 right RB B
 ventricular NN I
 wall NN I
@@ -12046,6 +12762,7 @@ right JJ O
 ventricular NN O
 hypertrophy NN O
 . . O
+
 right RB O
 ventricular NN O
 wall NN O
@@ -12059,6 +12776,7 @@ right JJ B
 ventricular NN I
 hypertrophy NN I
 . . O
+
 right RB B
 ventricular JJ I
 function NN I
@@ -12066,18 +12784,21 @@ is VBZ I
 severely RB I
 decreased VBN I
 . . O
+
 left VBN B
 atrial JJ I
 size NN I
 is VBZ I
 small JJ I
 . . O
+
 right JJ B
 atrial JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 there EX O
 is VBZ O
 an DT O
@@ -12096,6 +12817,7 @@ know VBP O
 interatrial JJ B
 baffle NN I
 . . O
+
 the DT O
 pulmonary JJ B
 artery NN I
@@ -12103,6 +12825,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 root NN I
@@ -12110,6 +12833,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 there EX O
 is VBZ O
 a DT O
@@ -12133,30 +12857,35 @@ the DT I
 great JJ I
 vessels NNS I
 . . O
+
 the DT O
 aortic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 mitral JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 tricuspid JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 no DT O
 pericardial JJ B
 effusion NN I
 is VBZ O
 seen VBN O
 . . O
+
 spectral JJ O
 doppler NN O
 : : O
@@ -12168,6 +12897,7 @@ moderate VB I
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 color NN O
 flow NN O
 doppler NN O
@@ -12180,6 +12910,7 @@ moderate VB I
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 02 CD O
 ) ) O
 there EX O
@@ -12205,6 +12936,7 @@ the DT I
 great JJ I
 vessels NNS I
 . . O
+
 03 CD O
 ) ) O
 small JJ B
@@ -12221,6 +12953,7 @@ preserved VBN I
 systolic JJ I
 function NN I
 . . O
+
 04 CD O
 ) ) O
 flattened VBD B
@@ -12236,6 +12969,7 @@ or CC O
 volume NN O
 overload NN O
 . . O
+
 04 CD O
 ) ) O
 flattened VBD O
@@ -12251,6 +12985,7 @@ or CC I
 volume NN I
 overload NN I
 . . O
+
 05 CD O
 ) ) O
 severely RB B
@@ -12267,6 +13002,7 @@ severely RB I
 decreased JJ I
 function NN I
 . . O
+
 06 CD O
 ) ) O
 mild NN B
@@ -12275,6 +13011,7 @@ moderate VB I
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 07 CD O
 ) ) O
 there EX O
@@ -12295,6 +13032,7 @@ know VBP O
 interatrial JJ B
 baffle NN I
 . . O
+
 chief JJ O
 complaint NN O
 is VBZ O
@@ -12305,6 +13043,7 @@ vomiting VBG O
 and CC O
 diarrhea NN O
 . . O
+
 chief JJ O
 complaint NN O
 is VBZ O
@@ -12315,6 +13054,7 @@ vomiting VBG B
 and CC O
 diarrhea NN O
 . . O
+
 chief JJ O
 complaint NN O
 is VBZ O
@@ -12325,6 +13065,7 @@ vomiting VBG O
 and CC O
 diarrhea NN B
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -12364,6 +13105,7 @@ vomiting NN O
 and CC O
 diarrhea NN O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -12403,6 +13145,7 @@ vomiting NN O
 and CC O
 diarrhea NN O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -12442,6 +13185,7 @@ vomiting NN O
 and CC O
 diarrhea NN O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -12481,6 +13225,7 @@ vomiting NN B
 and CC O
 diarrhea NN O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -12520,6 +13265,7 @@ vomiting NN O
 and CC O
 diarrhea NN B
 . . O
+
 she PRP O
 denies VBZ O
 any DT O
@@ -12554,6 +13300,7 @@ no DT O
 specific JJ O
 relief NN O
 . . O
+
 she PRP O
 denies VBZ O
 any DT O
@@ -12588,6 +13335,7 @@ no DT O
 specific JJ O
 relief NN O
 . . O
+
 she PRP O
 denies VBZ O
 any DT O
@@ -12622,6 +13370,7 @@ no DT O
 specific JJ O
 relief NN O
 . . O
+
 she PRP O
 denies VBZ O
 any DT O
@@ -12656,6 +13405,7 @@ no DT O
 specific JJ O
 relief NN O
 . . O
+
 physical JJ O
 examination NN O
 : : O
@@ -12666,24 +13416,28 @@ no DT O
 acute JJ B
 distress NN I
 . . O
+
 head NN O
 - : O
 normocephalic JJ B
 , , O
 atraumatic JJ O
 . . O
+
 eyes NNS O
 - : O
 perrla NN B
 , , O
 eomi NN O
 . . O
+
 eyes NNS O
 - : O
 perrla NN O
 , , O
 eomi NN B
 . . O
+
 pharynx SYM B
 - : I
 clear JJ I
@@ -12692,11 +13446,13 @@ moist JJ I
 mucous JJ I
 membranes NNS I
 . . O
+
 tms NNS B
 are VBP I
 clear JJ I
 bilaterally RB I
 . . O
+
 neck SYM B
 - : I
 supple NN I
@@ -12709,6 +13465,7 @@ thyromegaly NN O
 or CC O
 jvd NN O
 . . O
+
 neck SYM O
 - : O
 supple NN O
@@ -12721,6 +13478,7 @@ thyromegaly NN B
 or CC O
 jvd NN O
 . . O
+
 neck SYM O
 - : O
 supple NN O
@@ -12733,6 +13491,7 @@ thyromegaly NN O
 or CC O
 jvd NN B
 . . O
+
 lungs NNS B
 - : I
 ctp NN I
@@ -12745,6 +13504,7 @@ rhonchi NN O
 or CC O
 wheezes NNS O
 . . O
+
 lungs NNS O
 - : O
 ctp NN O
@@ -12757,6 +13517,7 @@ rhonchi NN O
 or CC O
 wheezes NNS O
 . . O
+
 lungs NNS O
 - : O
 ctp NN O
@@ -12769,6 +13530,7 @@ rhonchi NN B
 or CC O
 wheezes NNS O
 . . O
+
 lungs NNS O
 - : O
 ctp NN O
@@ -12781,6 +13543,7 @@ rhonchi NN O
 or CC O
 wheezes NNS B
 . . O
+
 heart NN O
 - : O
 regular JJ B
@@ -12796,6 +13559,7 @@ gallops NNS O
 or CC O
 rubs NNS O
 . . O
+
 heart NN O
 - : O
 regular JJ O
@@ -12811,6 +13575,7 @@ gallops NNS O
 or CC O
 rubs NNS O
 . . O
+
 heart NN O
 - : O
 regular JJ O
@@ -12826,6 +13591,7 @@ gallops NNS B
 or CC O
 rubs NNS O
 . . O
+
 heart NN O
 - : O
 regular JJ O
@@ -12841,6 +13607,7 @@ gallops NNS O
 or CC O
 rubs NNS B
 . . O
+
 abdomen NNS B
 - : I
 soft JJ I
@@ -12858,6 +13625,7 @@ mass NN O
 or CC O
 organomegaly NN O
 . . O
+
 abdomen NNS O
 - : O
 soft JJ O
@@ -12875,6 +13643,7 @@ mass NN O
 or CC O
 organomegaly NN O
 . . O
+
 abdomen NNS O
 - : O
 soft JJ O
@@ -12892,6 +13661,7 @@ mass NN O
 or CC O
 organomegaly NN B
 . . O
+
 extremities NNS O
 - : O
 no DT O
@@ -12902,6 +13672,7 @@ cyanosis NN O
 or CC O
 edema NN O
 . . O
+
 extremities NNS O
 - : O
 no DT O
@@ -12912,6 +13683,7 @@ cyanosis NN B
 or CC O
 edema NN O
 . . O
+
 extremities NNS O
 - : O
 no DT O
@@ -12922,6 +13694,7 @@ cyanosis NN O
 or CC O
 edema NN B
 . . O
+
 skin NN B
 is VBZ I
 warm JJ I
@@ -12930,6 +13703,7 @@ moist NN I
 without IN I
 lesion NN I
 . . O
+
 neurologic JJ O
 - : O
 alert NN B
@@ -12938,6 +13712,7 @@ oriented VBN O
 times NNS O
 three CD O
 . . O
+
 neurologic JJ O
 - : O
 alert NN O
@@ -12946,6 +13721,7 @@ oriented VBN B
 times NNS I
 three CD I
 . . O
+
 cranial JJ B
 nerves NNS I
 ii VBP I
@@ -12955,6 +13731,7 @@ xii NNP I
 grossly RB I
 intact JJ I
 . . O
+
 ed JJ O
 course NN O
 : : O
@@ -12966,6 +13743,7 @@ a DT O
 viral JJ B
 syndrome NN I
 . . O
+
 also RB O
 , , O
 the DT O
@@ -12991,6 +13769,7 @@ to TO O
 be VB O
 unremarkable JJ O
 . . O
+
 also RB O
 , , O
 the DT O
@@ -13016,6 +13795,7 @@ to TO O
 be VB O
 unremarkable JJ O
 . . O
+
 also RB O
 , , O
 the DT O
@@ -13041,6 +13821,7 @@ to TO I
 be VB I
 unremarkable JJ I
 . . O
+
 the DT O
 patient NN O
 had VBD O
@@ -13051,6 +13832,7 @@ a DT O
 focal JJ B
 infection NN I
 . . O
+
 she PRP O
 appeared VBD O
 well RB O
@@ -13072,6 +13854,7 @@ pharyngitis NN O
 or CC O
 pneumonia NN O
 . . O
+
 she PRP O
 appeared VBD O
 well RB O
@@ -13093,6 +13876,7 @@ pharyngitis NN O
 or CC O
 pneumonia NN O
 . . O
+
 she PRP O
 appeared VBD O
 well RB O
@@ -13114,6 +13898,7 @@ pharyngitis NN O
 or CC O
 pneumonia NN O
 . . O
+
 she PRP O
 appeared VBD O
 well RB O
@@ -13135,6 +13920,7 @@ pharyngitis NN B
 or CC O
 pneumonia NN O
 . . O
+
 she PRP O
 appeared VBD O
 well RB O
@@ -13156,24 +13942,30 @@ pharyngitis NN O
 or CC O
 pneumonia NN B
 . . O
+
 she PRP O
 appeared VBD O
 well RB B
 hydrated VBN I
 . . O
+
 nausea NN B
 and CC O
 vomiting NN O
 . . O
+
 nausea NN O
 and CC O
 vomiting NN B
 . . O
+
 diarrhea NN B
 . . O
+
 viral JJ B
 syndrome NN I
 . . O
+
 the DT O
 indication NN O
 for IN O
@@ -13185,6 +13977,7 @@ of IN O
 portal JJ B
 hypertension NN I
 . . O
+
 findings NNS O
 : : O
 the DT O
@@ -13196,6 +13989,7 @@ normal JJ I
 in IN O
 appearance NN O
 . . O
+
 the DT O
 stomach NN B
 wall NN I
@@ -13208,6 +14002,7 @@ pathology NN I
 was VBD I
 noted VBN I
 . . O
+
 duodenitis NN B
 was VBD I
 found VBN I
@@ -13218,6 +14013,7 @@ of IN I
 the DT I
 duodenum NN I
 . . O
+
 there EX O
 was VBD O
 no DT O
@@ -13229,6 +14025,7 @@ or CC O
 gastric JJ O
 varices NNS O
 . . O
+
 there EX O
 was VBD O
 no DT O
@@ -13240,6 +14037,7 @@ or CC O
 gastric JJ B
 varices NNS I
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -13298,6 +14096,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -13356,6 +14155,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -13414,6 +14214,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -13461,6 +14262,7 @@ right JJ B
 thyroid NN I
 nodule NN I
 . . O
+
 findings NNS O
 : : O
 the DT O
@@ -13472,6 +14274,7 @@ vascularity NN I
 are VBP I
 normal JJ I
 . . O
+
 the DT O
 1cm CD B
 nodular JJ I
@@ -13488,17 +14291,20 @@ to TO I
 nipple JJ I
 shadow NN I
 . . O
+
 the DT O
 lungs NNS B
 are VBP I
 otherwise RB I
 clear JJ I
 . . O
+
 right JJ B
 epicardial JJ I
 fat NN I
 pad NN I
 . . O
+
 impression NN O
 : : O
 probable JJ B
@@ -13511,6 +14317,7 @@ left JJ I
 lung NN I
 base NN I
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -13554,6 +14361,7 @@ right JJ O
 iliac NN O
 bolt NN O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -13597,6 +14405,7 @@ right JJ I
 iliac NN I
 bolt NN I
 . . O
+
 pre-op JJ O
 diagnosis NN O
 : : O
@@ -13606,6 +14415,7 @@ multiple NN B
 back RB I
 surgeries NNS I
 . . O
+
 procedure NN O
 : : O
 revision NN B
@@ -13614,6 +14424,7 @@ right JJ I
 iliac NN I
 bolt NN I
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -13690,14 +14501,18 @@ lumbar NN B
 disk NN I
 ruptures NNS I
 . . O
+
 hypertension NN B
 . . O
+
 depression NN B
 . . O
+
 gastroesophageal NN B
 reflux NN I
 disease NN I
 . . O
+
 status NN O
 post NN O
 left VBD B
@@ -13707,6 +14522,7 @@ repair NN O
 in IN O
 2006 CD O
 . . O
+
 status NN O
 post NN O
 total JJ O
@@ -13718,6 +14534,7 @@ salpingooophorectomy NN I
 in IN O
 1996 CD O
 . . O
+
 status NN O
 post NN O
 bladder NN B
@@ -13725,6 +14542,7 @@ lift NN I
 x VBD I
 2 CD I
 . . O
+
 reason NN O
 for IN O
 admission NN O
@@ -13772,6 +14590,7 @@ her PRP$ O
 left JJ O
 hip NN O
 . . O
+
 reason NN O
 for IN O
 admission NN O
@@ -13819,6 +14638,7 @@ her PRP$ I
 left JJ I
 hip NN I
 . . O
+
 she PRP O
 subsequently RB O
 underwent VBD O
@@ -13844,6 +14664,7 @@ left NN O
 lower JJR O
 extremity NN O
 . . O
+
 she PRP O
 subsequently RB O
 underwent VBD O
@@ -13869,6 +14690,7 @@ left NN I
 lower JJR I
 extremity NN I
 . . O
+
 neurodiagnostic JJ O
 imaging NN O
 was VBD O
@@ -13885,6 +14707,7 @@ and CC I
 l5-s1 JJ I
 levels NNS I
 . . O
+
 on IN O
 postoperative JJ O
 day NN O
@@ -13910,6 +14733,7 @@ vicodin NN O
 to TO O
 percocet VB O
 . . O
+
 she PRP O
 was VBD O
 afebrile JJ B
@@ -13928,6 +14752,7 @@ no DT O
 acute JJ O
 distress NN O
 . . O
+
 she PRP O
 was VBD O
 afebrile JJ O
@@ -13946,6 +14771,7 @@ no DT O
 acute JJ O
 distress NN O
 . . O
+
 she PRP O
 was VBD O
 afebrile JJ O
@@ -13964,6 +14790,7 @@ no DT O
 acute JJ O
 distress NN O
 . . O
+
 she PRP O
 was VBD O
 afebrile JJ O
@@ -13982,6 +14809,7 @@ no DT O
 acute JJ O
 distress NN O
 . . O
+
 she PRP O
 was VBD O
 afebrile JJ O
@@ -14000,6 +14828,7 @@ no DT O
 acute JJ B
 distress NN I
 . . O
+
 intake NN O
 and CC O
 voiding VBG B
@@ -14009,6 +14838,7 @@ and CC O
 ambulating VBG O
 independently RB O
 . . O
+
 intake NN O
 and CC O
 voiding VBG O
@@ -14018,6 +14848,7 @@ and CC O
 ambulating VBG B
 independently RB I
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -14044,12 +14875,14 @@ technically RB O
 difficult JJ O
 study NN O
 . . O
+
 left VBD B
 ventricular JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 ventricular JJ I
 wall NN I
@@ -14064,6 +14897,7 @@ left VBD O
 ventricular JJ O
 hypertrophy NN O
 . . O
+
 left VBN O
 ventricular JJ O
 wall NN O
@@ -14078,6 +14912,7 @@ left VBD I
 ventricular JJ I
 hypertrophy NN I
 . . O
+
 segmental JJ B
 left VBD I
 ventricular JJ I
@@ -14085,6 +14920,7 @@ function NN I
 is VBZ I
 normal JJ I
 . . O
+
 overall JJ B
 left VBD I
 ventricular JJ I
@@ -14101,12 +14937,14 @@ of IN O
 60-65 JJ O
 % NN O
 . . O
+
 right RB B
 ventricular JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular NN I
 wall NN I
@@ -14114,12 +14952,14 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular JJ I
 function NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 atrial JJ I
 size NN I
@@ -14127,12 +14967,14 @@ is VBZ I
 mildly RB I
 enlarged VBN I
 . . O
+
 right JJ B
 atrial JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonary JJ B
 artery NN I
@@ -14140,6 +14982,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 root NN I
@@ -14147,36 +14990,42 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 mitral JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 there EX O
 is VBZ O
 mitral JJ B
 annular JJ I
 calcification NN I
 . . O
+
 the DT O
 tricuspid JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 there EX O
 is VBZ O
 a DT O
@@ -14184,6 +15033,7 @@ small JJ B
 pericardial JJ I
 effusion NN I
 . . O
+
 no DT O
 echocardiographic JJ O
 signs NNS O
@@ -14192,6 +15042,7 @@ tamponade NN B
 are VBP O
 seen VBN O
 . . O
+
 spectral JJ O
 doppler NN O
 : : O
@@ -14201,18 +15052,21 @@ trace JJ B
 aortic JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 mild JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 mild JJ B
 mitral JJ I
 stenosis NN I
 . . O
+
 color NN O
 flow NN O
 doppler NN O
@@ -14223,12 +15077,14 @@ trace JJ B
 aortic JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 mild JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 02 CD O
 ) ) O
 nondilated VBN B
@@ -14243,24 +15099,28 @@ preserved VBN I
 systolic JJ I
 function NN I
 . . O
+
 03 CD O
 ) ) O
 none NN O
 mitral JJ B
 regurgitation NN I
 . . O
+
 04 CD O
 ) ) O
 mitral JJ B
 annular JJ I
 calcification NN I
 . . O
+
 05 CD O
 ) ) O
 mild NN B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 06 CD O
 ) ) O
 mild NN B
@@ -14268,12 +15128,14 @@ left VBD I
 atrial JJ I
 enlargement NN I
 . . O
+
 07 CD O
 ) ) O
 severe RB B
 pulmonary JJ I
 hypertension NN I
 . . O
+
 08 CD O
 ) ) O
 small JJ B
@@ -14281,6 +15143,7 @@ pericardial JJ I
 effusion NN I
 seen VBN O
 . . O
+
 09 CD O
 ) ) O
 no DT O
@@ -14291,6 +15154,7 @@ tamponade NN B
 are VBP O
 seen VBN O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -14362,6 +15226,7 @@ weakness NN B
 and CC O
 headache NN O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -14433,6 +15298,7 @@ weakness NN O
 and CC O
 headache NN B
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -14464,6 +15330,7 @@ as IN O
 leg NN O
 weakness NN O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -14495,6 +15362,7 @@ as IN O
 leg NN O
 weakness NN O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -14526,6 +15394,7 @@ as IN O
 leg NN O
 weakness NN O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -14557,6 +15426,7 @@ as IN O
 leg NN B
 weakness NN I
 . . O
+
 she PRP O
 also RB O
 complains VBZ O
@@ -14599,6 +15469,7 @@ no DT O
 symptomatic JJ O
 improvement NN O
 . . O
+
 she PRP O
 denies VBZ O
 any DT O
@@ -14606,6 +15477,7 @@ fevers NNS B
 or CC O
 chills NNS O
 . . O
+
 she PRP O
 denies VBZ O
 any DT O
@@ -14613,6 +15485,7 @@ fevers NNS O
 or CC O
 chills NNS B
 . . O
+
 she PRP O
 denies VBZ O
 any DT O
@@ -14621,6 +15494,7 @@ or CC O
 sputum NN O
 production NN O
 . . O
+
 she PRP O
 denies VBZ O
 any DT O
@@ -14629,11 +15503,13 @@ or CC O
 sputum NN B
 production NN I
 . . O
+
 she PRP O
 denies VBZ O
 any DT O
 dysuria NN B
 . . O
+
 she PRP O
 states VBZ O
 that IN O
@@ -14642,6 +15518,7 @@ is VBZ O
 somewhat RB B
 constipated JJ I
 . . O
+
 physical JJ O
 examination NN O
 : : O
@@ -14660,6 +15537,7 @@ no DT O
 acute JJ O
 distress NN O
 . . O
+
 physical JJ O
 examination NN O
 : : O
@@ -14678,6 +15556,7 @@ no DT O
 acute JJ B
 distress NN I
 . . O
+
 she PRP O
 was VBD O
 afebrile JJ B
@@ -14695,6 +15574,7 @@ the DT O
 nursing NN O
 report NN O
 . . O
+
 she PRP O
 was VBD O
 afebrile JJ O
@@ -14712,6 +15592,7 @@ the DT O
 nursing NN O
 report NN O
 . . O
+
 heent JJ O
 examination NN O
 reveals NNS O
@@ -14730,6 +15611,7 @@ intact JJ O
 extraocular JJ O
 movements NNS O
 . . O
+
 heent JJ O
 examination NN O
 reveals NNS O
@@ -14748,6 +15630,7 @@ intact JJ O
 extraocular JJ O
 movements NNS O
 . . O
+
 heent JJ O
 examination NN O
 reveals NNS O
@@ -14766,6 +15649,7 @@ intact JJ B
 extraocular JJ I
 movements NNS I
 . . O
+
 the DT O
 oral JJ B
 mucosa NN I
@@ -14777,6 +15661,7 @@ erythema NN I
 or CC I
 exudates NNS I
 . . O
+
 the DT O
 neck NN B
 is VBZ I
@@ -14784,6 +15669,7 @@ supple JJ I
 and CC I
 nontender NN I
 . . O
+
 lung NN B
 sounds NNS I
 are VBP I
@@ -14792,15 +15678,18 @@ and CC I
 equal JJ I
 bilaterally RB I
 . . O
+
 heart NN B
 sounds VBZ I
 regular JJ I
 . . O
+
 the DT O
 abdomen NNS B
 is VBZ I
 soft JJ I
 . . O
+
 there EX O
 is VBZ O
 mild JJ B
@@ -14821,6 +15710,7 @@ no DT I
 masses NNS I
 palpated VBD O
 . . O
+
 the DT O
 extremity NN B
 examination NN I
@@ -14832,6 +15722,7 @@ no DT O
 peripheral JJ O
 edema NN O
 . . O
+
 the DT O
 extremity NN O
 examination NN O
@@ -14843,6 +15734,7 @@ no DT O
 peripheral JJ B
 edema NN I
 . . O
+
 neurologically RB O
 , , O
 she PRP O
@@ -14853,6 +15745,7 @@ oriented VBD O
 times NNS O
 three CD O
 . . O
+
 neurologically RB O
 , , O
 she PRP O
@@ -14863,6 +15756,7 @@ oriented VBD B
 times NNS I
 three CD I
 . . O
+
 cranial JJ B
 nerves NNS I
 ii VBP I
@@ -14873,6 +15767,7 @@ within IN I
 normal JJ I
 limits NNS I
 . . O
+
 motor NN B
 is VBZ I
 5 CD I
@@ -14881,6 +15776,7 @@ in IN I
 all DT I
 extremities NNS I
 . . O
+
 she PRP O
 does VBZ O
 not RB O
@@ -14890,6 +15786,7 @@ focal JJ B
 neurologic NN I
 deficit NN I
 . . O
+
 ed JJ O
 course NN O
 : : O
@@ -14931,6 +15828,7 @@ air NN I
 or CC I
 obstruction NN I
 . . O
+
 however RB O
 because IN O
 of IN O
@@ -14970,6 +15868,7 @@ of IN O
 friday JJ O
 night NN O
 . . O
+
 however RB O
 because IN O
 of IN O
@@ -15009,6 +15908,7 @@ of IN O
 friday JJ O
 night NN O
 . . O
+
 we PRP O
 spoke VBD O
 with IN O
@@ -15072,6 +15972,7 @@ persistent JJ O
 abdominal JJ B
 pain NN I
 . . O
+
 admission NN O
 diagnosis NN O
 ( ( O
@@ -15085,6 +15986,7 @@ of IN O
 unclear JJ O
 etiology NN O
 . . O
+
 admission NN O
 diagnosis NN O
 ( ( O
@@ -15098,6 +16000,7 @@ of IN O
 unclear JJ O
 etiology NN O
 . . O
+
 the DT O
 indication NN O
 for IN O
@@ -15119,6 +16022,7 @@ nausea NN O
 and CC O
 vomiting NN O
 . . O
+
 the DT O
 indication NN O
 for IN O
@@ -15140,6 +16044,7 @@ nausea NN O
 and CC O
 vomiting NN O
 . . O
+
 the DT O
 indication NN O
 for IN O
@@ -15161,6 +16066,7 @@ nausea NN B
 and CC O
 vomiting NN O
 . . O
+
 the DT O
 indication NN O
 for IN O
@@ -15182,6 +16088,7 @@ nausea NN O
 and CC O
 vomiting NN B
 . . O
+
 findings NNS O
 : : O
 the DT O
@@ -15193,6 +16100,7 @@ normal JJ I
 in IN O
 appearance NN O
 . . O
+
 there EX O
 was VBD O
 a DT O
@@ -15207,11 +16115,13 @@ cm NN I
 was VBD I
 normal JJ I
 . . O
+
 the DT O
 gastrojejunostomy NN B
 was VBD I
 patent NN I
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -15292,6 +16202,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -15372,6 +16283,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -15422,6 +16334,7 @@ bilateral JJ B
 shoulder NN I
 pain NN I
 . . O
+
 findings NNS O
 : : O
 a DT O
@@ -15436,6 +16349,7 @@ without IN I
 periprosthetic JJ I
 lucency NN I
 . . O
+
 there EX O
 is VBZ O
 advanced JJ B
@@ -15443,6 +16357,7 @@ glenoid JJ I
 rim NN I
 osteoarthritis NN I
 . . O
+
 end NN B
 stage NN I
 glenohumeralosteoarthritis NN I
@@ -15453,12 +16368,14 @@ shoulder NN I
 is VBZ O
 unchanged JJ O
 . . O
+
 there EX O
 is VBZ O
 minimal JJ B
 subacromial JJ I
 narrowing NN I
 . . O
+
 right JJ B
 shoulder NN I
 hemiarthroplasty NN I
@@ -15466,6 +16383,7 @@ without IN I
 hardware NN I
 complication NN I
 . . O
+
 end NN B
 stage NN I
 glenohumeral JJ I
@@ -15475,6 +16393,7 @@ the DT I
 left JJ I
 shoulder NN I
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -15586,6 +16505,7 @@ small JJ O
 bowel NN O
 obstructions NNS O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -15697,6 +16617,7 @@ small JJ O
 bowel NN O
 obstructions NNS O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -15808,6 +16729,7 @@ small JJ O
 bowel NN O
 obstructions NNS O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -15919,6 +16841,7 @@ small JJ I
 bowel NN I
 obstructions NNS I
 . . O
+
 the DT O
 patient NN O
 was VBD O
@@ -15937,6 +16860,7 @@ nausea NN B
 and CC O
 vomiting NN O
 . . O
+
 the DT O
 patient NN O
 was VBD O
@@ -15955,6 +16879,7 @@ nausea NN O
 and CC O
 vomiting NN B
 . . O
+
 the DT O
 patient NN O
 had VBD O
@@ -15988,6 +16913,7 @@ feeding VBG O
 tube JJ O
 placement NN O
 . . O
+
 the DT O
 patient NN O
 had VBD O
@@ -16021,6 +16947,7 @@ feeding VBG O
 tube JJ O
 placement NN O
 . . O
+
 the DT O
 patient NN O
 was VBD O
@@ -16046,6 +16973,7 @@ jejunal JJ O
 tube NN O
 feeds NNS O
 . . O
+
 on IN O
 **date NNP O
 [ NNP O
@@ -16098,6 +17026,7 @@ to TO O
 go VB O
 home NN O
 . . O
+
 partial JJ B
 small JJ I
 bowel NN I
@@ -16105,11 +17034,14 @@ obstruction NN I
 , , O
 resolved VBN O
 . . O
+
 erosive JJ B
 gastritis NN I
 . . O
+
 duodenitis NN B
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -16133,6 +17065,7 @@ size NN O
 is VBZ O
 normal JJ O
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -16156,6 +17089,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 ventricular JJ I
 wall NN I
@@ -16169,6 +17103,7 @@ left JJ O
 ventricular JJ O
 hypertrophy NN O
 . . O
+
 left VBN O
 ventricular JJ O
 wall NN O
@@ -16182,6 +17117,7 @@ left JJ B
 ventricular JJ I
 hypertrophy NN I
 . . O
+
 segmental JJ B
 left VBD I
 ventricular JJ I
@@ -16189,6 +17125,7 @@ function NN I
 is VBZ I
 normal JJ I
 . . O
+
 overall JJ B
 left VBD I
 ventricular JJ I
@@ -16205,12 +17142,14 @@ of IN O
 60-65 JJ O
 % NN O
 . . O
+
 right RB B
 ventricular JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular NN I
 wall NN I
@@ -16218,12 +17157,14 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular JJ I
 function NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 atrial JJ I
 size NN I
@@ -16231,12 +17172,14 @@ is VBZ I
 mildly RB I
 enlarged VBN I
 . . O
+
 right JJ B
 atrial JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonary JJ B
 artery NN I
@@ -16244,6 +17187,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 root NN I
@@ -16251,36 +17195,42 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 mitral JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 tricuspid JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 no DT O
 pericardial JJ B
 effusion NN I
 is VBZ O
 seen VBN O
 . . O
+
 spectral JJ O
 doppler NN O
 : : O
@@ -16290,12 +17240,14 @@ trace JJ B
 aortic JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 color NN O
 flow NN O
 doppler NN O
@@ -16306,12 +17258,14 @@ trace JJ B
 aortic JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 final JJ O
 impressions NNS O
 : : O
@@ -16328,6 +17282,7 @@ preserved VBN I
 systolic JJ I
 function NN I
 . . O
+
 02 CD O
 ) ) O
 mild NN B
@@ -16335,12 +17290,14 @@ left VBD I
 atrial JJ I
 enlargement NN I
 . . O
+
 03 CD O
 ) ) O
 borderline NN B
 pulmonary JJ I
 hypertension NN I
 . . O
+
 04 CD O
 ) ) O
 no DT O
@@ -16350,6 +17307,7 @@ by IN O
 this DT O
 technique NN O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -16421,6 +17379,7 @@ of IN I
 the DT I
 toe NN I
 . . O
+
 he PRP O
 has VBZ O
 been VBN O
@@ -16430,10 +17389,12 @@ from IN O
 the DT O
 laceration NN B
 . . O
+
 he PRP O
 denies VBZ O
 paresthesias NN B
 . . O
+
 past JJ O
 medical JJ O
 history NN O
@@ -16457,6 +17418,7 @@ oxygen NN O
 at IN O
 night NN O
 . . O
+
 past JJ O
 medical JJ O
 history NN O
@@ -16480,6 +17442,7 @@ oxygen NN O
 at IN O
 night NN O
 . . O
+
 past JJ O
 medical JJ O
 history NN O
@@ -16503,15 +17466,18 @@ oxygen NN O
 at IN O
 night NN O
 . . O
+
 social JJ O
 history NN O
 : : O
 smoker NN B
 . . O
+
 he PRP O
 drinks VBZ B
 alcohol NN I
 . . O
+
 general JJ O
 : : O
 he PRP O
@@ -16525,6 +17491,7 @@ no DT O
 acute JJ O
 distress NN O
 . . O
+
 general JJ O
 : : O
 he PRP O
@@ -16538,6 +17505,7 @@ no DT O
 acute JJ O
 distress NN O
 . . O
+
 general JJ O
 : : O
 he PRP O
@@ -16551,10 +17519,12 @@ no DT O
 acute JJ B
 distress NN I
 . . O
+
 neck NN B
 : : I
 supple NN I
 . . O
+
 lungs NNS O
 : : O
 clear JJ B
@@ -16562,6 +17532,7 @@ to TO I
 auscultation VB I
 bilaterally RB I
 . . O
+
 has VBZ O
 a DT O
 regular JJ B
@@ -16571,6 +17542,7 @@ s-2 NN I
 without IN I
 murmurs NNS I
 . . O
+
 he PRP O
 has VBZ O
 strong JJ B
@@ -16586,6 +17558,7 @@ the DT I
 affected JJ I
 extremity NN I
 . . O
+
 abdomen NNS B
 : : I
 soft JJ I
@@ -16595,6 +17568,7 @@ nondistended JJ I
 and CC I
 nontender NN I
 . . O
+
 extremities NNS O
 : : O
 there EX O
@@ -16614,6 +17588,7 @@ left JJ I
 great JJ I
 toe NN I
 . . O
+
 there EX O
 is VBZ O
 not RB O
@@ -16633,6 +17608,7 @@ from IN I
 this DT I
 site NN I
 . . O
+
 the DT O
 patient NN O
 's POS O
@@ -16640,16 +17616,19 @@ sensation NN B
 is VBZ I
 intact JJ I
 . . O
+
 motor NN B
 is VBZ I
 intact JJ I
 . . O
+
 there EX O
 was VBD O
 no DT O
 foreign JJ B
 body NN I
 . . O
+
 the DT O
 wound NN B
 was VBD O
@@ -16679,6 +17658,7 @@ good JJ O
 wound NN O
 approximation NN O
 . . O
+
 the DT O
 wound NN B
 was VBD O
@@ -16708,6 +17688,7 @@ good JJ O
 wound NN O
 approximation NN O
 . . O
+
 the DT O
 wound NN B
 was VBD O
@@ -16718,6 +17699,7 @@ and CC O
 band NN O
 aid NN O
 . . O
+
 he PRP O
 will MD O
 follow VB O
@@ -16765,6 +17747,7 @@ from IN O
 the DT O
 site NN O
 . . O
+
 he PRP O
 will MD O
 follow VB O
@@ -16812,6 +17795,7 @@ from IN O
 the DT O
 site NN O
 . . O
+
 he PRP O
 will MD O
 follow VB O
@@ -16859,14 +17843,17 @@ from IN I
 the DT I
 site NN I
 . . O
+
 great JJ B
 toe JJ I
 laceration NN I
 . . O
+
 type NN B
 2 CD I
 diabetes NNS I
 . . O
+
 digital JJ B
 rectal NN I
 exam NN I
@@ -16877,6 +17864,7 @@ showed VBD I
 no DT I
 abnormalities NNS I
 . . O
+
 diverticulosis NN B
 was VBD I
 found VBN I
@@ -16885,6 +17873,7 @@ the DT I
 sigmoid NN I
 colon NN I
 . . O
+
 there EX O
 was VBD O
 no DT O
@@ -16892,6 +17881,7 @@ evidence NN O
 of IN O
 polyps NNS B
 . . O
+
 complications NNS O
 : : O
 none NN O
@@ -16936,6 +17926,7 @@ year NN O
 s NN O
 ) ) O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -16985,6 +17976,7 @@ post NN O
 liver NN B
 transplant NN I
 . . O
+
 findings NNS O
 : : O
 the DT O
@@ -16997,6 +17989,7 @@ normal JJ I
 in IN I
 caliber NN I
 . . O
+
 the DT O
 heart NN B
 size NN I
@@ -17006,6 +17999,7 @@ without IN O
 pericardial JJ O
 effusion NN O
 . . O
+
 the DT O
 heart NN O
 size NN O
@@ -17015,6 +18009,7 @@ without IN O
 pericardial JJ B
 effusion NN I
 . . O
+
 the DT O
 lymph NN B
 nodes NNS I
@@ -17027,6 +18022,7 @@ regions NNS I
 are VBP I
 calcified VBN I
 . . O
+
 scattered VBN B
 pulmonary JJ I
 nodules NNS I
@@ -17037,6 +18033,7 @@ consistent NN I
 with IN I
 granulomas NN I
 . . O
+
 there EX O
 is VBZ O
 no DT O
@@ -17048,6 +18045,7 @@ nodule NN I
 or CC I
 mass NN I
 . . O
+
 there EX O
 is VBZ O
 no DT O
@@ -17056,6 +18054,7 @@ effusion NN I
 or CC O
 pneumothorax NN O
 . . O
+
 there EX O
 is VBZ O
 no DT O
@@ -17064,6 +18063,7 @@ effusion NN O
 or CC O
 pneumothorax NN B
 . . O
+
 the DT O
 right JJ B
 hemidiaphragm NN I
@@ -17072,6 +18072,7 @@ elevated VBN I
 but CC O
 unchanged JJ O
 . . O
+
 images NNS O
 through IN O
 the DT O
@@ -17084,6 +18085,7 @@ throughout IN I
 the DT I
 spleen NN I
 . . O
+
 the DT O
 patient NN O
 is VBZ O
@@ -17092,17 +18094,20 @@ post NN O
 liver NN B
 transplant NN I
 . . O
+
 findings NNS O
 of IN O
 prior RB O
 granulomatous JJ B
 disease NN I
 . . O
+
 unchanged JJ O
 elevated VBD B
 right JJ I
 hemidiaphragm NN I
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -17154,6 +18159,7 @@ mandibular JJ I
 anterior JJ I
 vestibule NN I
 . . O
+
 clinical JJ O
 impression NN O
 : : O
@@ -17161,6 +18167,7 @@ rule NN O
 out IN O
 mucocele NN B
 . . O
+
 final JJ O
 diagnosis NN O
 : : O
@@ -17234,6 +18241,7 @@ reflects VBZ O
 that DT O
 evaluation NN O
 . . O
+
 transfer NN O
 diagnosis NN O
 ( ( O
@@ -17249,6 +18257,7 @@ graft NN I
 times NNS I
 four CD I
 . . O
+
 reason NN O
 for IN O
 admission NN O
@@ -17288,6 +18297,7 @@ in IN O
 the DT O
 past NN O
 . . O
+
 reason NN O
 for IN O
 admission NN O
@@ -17327,6 +18337,7 @@ in IN O
 the DT O
 past NN O
 . . O
+
 reason NN O
 for IN O
 admission NN O
@@ -17366,6 +18377,7 @@ in IN O
 the DT O
 past NN O
 . . O
+
 reason NN O
 for IN O
 admission NN O
@@ -17405,6 +18417,7 @@ in IN O
 the DT O
 past NN O
 . . O
+
 reason NN O
 for IN O
 admission NN O
@@ -17444,6 +18457,7 @@ in IN O
 the DT O
 past NN O
 . . O
+
 reason NN O
 for IN O
 admission NN O
@@ -17483,6 +18497,7 @@ in IN O
 the DT O
 past NN O
 . . O
+
 reason NN O
 for IN O
 admission NN O
@@ -17522,6 +18537,7 @@ in IN O
 the DT O
 past NN O
 . . O
+
 reason NN O
 for IN O
 admission NN O
@@ -17561,6 +18577,7 @@ in IN O
 the DT O
 past NN O
 . . O
+
 reason NN O
 for IN O
 admission NN O
@@ -17600,6 +18617,7 @@ in IN O
 the DT O
 past NN O
 . . O
+
 reason NN O
 for IN O
 admission NN O
@@ -17639,6 +18657,7 @@ in IN O
 the DT O
 past NN O
 . . O
+
 the DT O
 patient NN O
 was VBD O
@@ -17650,6 +18669,7 @@ and CC O
 hemodynamic JJ O
 instability NN O
 . . O
+
 the DT O
 patient NN O
 was VBD O
@@ -17661,6 +18681,7 @@ and CC O
 hemodynamic JJ B
 instability NN I
 . . O
+
 within IN O
 24 CD O
 hours NNS O
@@ -17684,6 +18705,7 @@ and CC O
 hemodynamically RB O
 stable JJ O
 . . O
+
 within IN O
 24 CD O
 hours NNS O
@@ -17707,6 +18729,7 @@ and CC O
 hemodynamically RB B
 stable JJ I
 . . O
+
 physical JJ O
 therapy NN O
 , , O
@@ -17726,6 +18749,7 @@ ambulation NN I
 and CC I
 activity NN I
 . . O
+
 on IN O
 the DT O
 day NN O
@@ -17751,6 +18775,7 @@ discharge NN O
 to TO O
 home NN O
 . . O
+
 the DT O
 patient NN O
 remained VBD O
@@ -17795,6 +18820,7 @@ the DT O
 left JJ O
 arm NN O
 . . O
+
 the DT O
 patient NN O
 remained VBD O
@@ -17839,6 +18865,7 @@ the DT O
 left JJ O
 arm NN O
 . . O
+
 the DT O
 patient NN O
 remained VBD O
@@ -17883,6 +18910,7 @@ the DT O
 left JJ O
 arm NN O
 . . O
+
 the DT O
 heart NN O
 was VBD O
@@ -17898,6 +18926,7 @@ murmurs NN O
 or CC O
 rubs NN O
 . . O
+
 the DT O
 heart NN O
 was VBD O
@@ -17913,6 +18942,7 @@ murmurs NN B
 or CC O
 rubs NN O
 . . O
+
 the DT O
 heart NN O
 was VBD O
@@ -17928,6 +18958,7 @@ murmurs NN O
 or CC O
 rubs NN B
 . . O
+
 gait NN B
 was VBD I
 steady JJ I
@@ -17935,6 +18966,7 @@ with IN I
 mild JJ I
 assistance NN I
 . . O
+
 the DT O
 lungs NNS B
 were VBD I
@@ -17944,6 +18976,7 @@ the DT I
 bilateral JJ I
 bases NNS I
 . . O
+
 the DT O
 abdomen NNS B
 was VBD I
@@ -17955,6 +18988,7 @@ positive JJ O
 bowel NN O
 sounds NNS O
 . . O
+
 the DT O
 abdomen NNS O
 was VBD O
@@ -17966,6 +19000,7 @@ positive JJ B
 bowel NN I
 sounds NNS I
 . . O
+
 the DT O
 patient NN O
 denied VBD O
@@ -17973,6 +19008,7 @@ any DT O
 difficulty NN B
 voiding NN I
 . . O
+
 he PRP O
 had VBD O
 positive JJ B
@@ -17986,6 +19022,7 @@ with IN O
 1+ CD O
 bilaterally RB O
 . . O
+
 he PRP O
 had VBD O
 positive JJ O
@@ -17999,17 +19036,20 @@ with IN O
 1+ CD O
 bilaterally RB O
 . . O
+
 the DT O
 sternum NN B
 was VBD I
 stable JJ I
 . . O
+
 incisions NNS B
 are VBP I
 dry JJ I
 and CC I
 intact JJ I
 . . O
+
 this DT O
 patient NN O
 did VBD O
@@ -18038,12 +19078,14 @@ active JJ B
 lung NN I
 disease NN I
 . . O
+
 condition NN O
 on IN O
 discharge NN O
 is VBZ O
 stable JJ B
 . . O
+
 discharge NN O
 heart NN O
 rhythm NN O
@@ -18052,6 +19094,7 @@ normal JJ B
 sinus JJ I
 rhythm NN I
 . . O
+
 call VB O
 the DT O
 physician NN O
@@ -18090,6 +19133,7 @@ the DT O
 incision NN O
 site NN O
 . . O
+
 call VB O
 the DT O
 physician NN O
@@ -18128,6 +19172,7 @@ the DT I
 incision NN I
 site NN I
 . . O
+
 call NN O
 also RB O
 for IN O
@@ -18206,6 +19251,7 @@ or CC O
 severe JJ O
 depression NN O
 . . O
+
 call NN O
 also RB O
 for IN O
@@ -18284,6 +19330,7 @@ or CC O
 severe JJ O
 depression NN O
 . . O
+
 call NN O
 also RB O
 for IN O
@@ -18362,6 +19409,7 @@ or CC O
 severe JJ O
 depression NN O
 . . O
+
 call NN O
 also RB O
 for IN O
@@ -18440,6 +19488,7 @@ or CC O
 severe JJ O
 depression NN O
 . . O
+
 call NN O
 also RB O
 for IN O
@@ -18518,6 +19567,7 @@ or CC O
 severe JJ O
 depression NN O
 . . O
+
 call NN O
 also RB O
 for IN O
@@ -18596,6 +19646,7 @@ or CC O
 severe JJ O
 depression NN O
 . . O
+
 call NN O
 also RB O
 for IN O
@@ -18674,6 +19725,7 @@ or CC O
 severe JJ O
 depression NN O
 . . O
+
 call NN O
 also RB O
 for IN O
@@ -18752,6 +19804,7 @@ or CC O
 severe JJ O
 depression NN O
 . . O
+
 call NN O
 also RB O
 for IN O
@@ -18830,6 +19883,7 @@ or CC O
 severe JJ O
 depression NN O
 . . O
+
 call NN O
 also RB O
 for IN O
@@ -18908,6 +19962,7 @@ or CC O
 severe JJ O
 depression NN O
 . . O
+
 call NN O
 also RB O
 for IN O
@@ -18986,6 +20041,7 @@ or CC O
 severe JJ O
 depression NN O
 . . O
+
 call NN O
 also RB O
 for IN O
@@ -19064,6 +20120,7 @@ or CC O
 severe JJ O
 depression NN O
 . . O
+
 call NN O
 also RB O
 for IN O
@@ -19142,6 +20199,7 @@ or CC O
 severe JJ O
 depression NN O
 . . O
+
 call NN O
 also RB O
 for IN O
@@ -19220,6 +20278,7 @@ or CC O
 severe JJ B
 depression NN I
 . . O
+
 allergies NNS O
 : : O
 this DT O
@@ -19232,6 +20291,7 @@ and CC I
 sulfa NN I
 drugs NNS I
 . . O
+
 condition NN O
 on IN O
 discharge NN O
@@ -19251,6 +20311,7 @@ cabg NN O
 times NNS O
 four CD O
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -19274,6 +20335,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 ventricular JJ I
 wall NN I
@@ -19281,6 +20343,7 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 segmental JJ B
 left VBD I
 ventricular JJ I
@@ -19288,6 +20351,7 @@ function NN I
 is VBZ I
 normal JJ I
 . . O
+
 overall JJ B
 left VBD I
 ventricular JJ I
@@ -19304,12 +20368,14 @@ of IN O
 55-60 JJ O
 % NN O
 . . O
+
 right RB B
 ventricular JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular NN I
 wall NN I
@@ -19317,24 +20383,28 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular JJ I
 function NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 atrial JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 right JJ B
 atrial JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonary JJ B
 artery NN I
@@ -19342,6 +20412,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 root NN I
@@ -19349,36 +20420,42 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 mitral JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 tricuspid JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 no DT O
 pericardial JJ B
 effusion NN I
 is VBZ O
 seen VBN O
 . . O
+
 spectral JJ O
 doppler NN O
 : : O
@@ -19390,12 +20467,14 @@ moderate VB I
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 color NN O
 flow NN O
 doppler NN O
@@ -19408,12 +20487,14 @@ moderate VB I
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 final JJ O
 impressions NNS O
 : : O
@@ -19426,6 +20507,7 @@ size NN I
 and CC I
 function NN I
 . . O
+
 02 CD O
 ) ) O
 mild NN B
@@ -19434,6 +20516,7 @@ moderate VB I
 mitral JJ I
 regurgitation NN I
 . . O
+
 the DT O
 chief JJ O
 complaint NN O
@@ -19441,6 +20524,7 @@ is VBZ O
 chest JJ B
 pain NN I
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -19485,6 +20569,7 @@ his PRP$ O
 left JJ O
 shoulder NN O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -19529,6 +20614,7 @@ his PRP$ I
 left JJ I
 shoulder NN I
 . . O
+
 he PRP O
 was VBD O
 also RB O
@@ -19538,6 +20624,7 @@ by IN O
 the DT O
 paramedics NNS O
 . . O
+
 he PRP O
 denies VBZ O
 any DT O
@@ -19545,6 +20632,7 @@ headaches NNS B
 or CC O
 dizziness NN O
 . . O
+
 he PRP O
 denies VBZ O
 any DT O
@@ -19552,6 +20640,7 @@ headaches NNS O
 or CC O
 dizziness NN B
 . . O
+
 he PRP O
 has VBZ O
 had VBN O
@@ -19565,11 +20654,13 @@ last JJ O
 several JJ O
 days NNS O
 . . O
+
 no DT O
 lower JJR B
 extremity NN I
 swelling NN I
 . . O
+
 physical JJ O
 examination NN O
 : : O
@@ -19582,21 +20673,25 @@ appears VBZ B
 acutely RB I
 ill JJ I
 . . O
+
 head NN B
 normocephalic JJ I
 , , I
 atraumatic JJ I
 . . O
+
 eyes NNS O
 perrla NN B
 , , O
 eomi NN O
 . . O
+
 eyes NNS O
 perrla NN O
 , , O
 eomi NN B
 . . O
+
 pharynx NN B
 clear JJ I
 with IN I
@@ -19604,9 +20699,11 @@ moist JJ I
 mucous JJ I
 membranes NNS I
 . . O
+
 neck NN B
 supple NN I
 . . O
+
 no DT O
 lymphadenopathy NN B
 , , O
@@ -19615,6 +20712,7 @@ thyromegaly NN O
 or CC O
 jvd NN O
 . . O
+
 no DT O
 lymphadenopathy NN O
 , , O
@@ -19623,6 +20721,7 @@ thyromegaly NN B
 or CC O
 jvd NN O
 . . O
+
 no DT O
 lymphadenopathy NN O
 , , O
@@ -19631,10 +20730,12 @@ thyromegaly NN O
 or CC O
 jvd NN B
 . . O
+
 lungs NNS O
 : : O
 ctp NN B
 . . O
+
 no DT O
 rales NNS B
 , , O
@@ -19643,6 +20744,7 @@ rhonchi NN O
 or CC O
 wheeze NN O
 . . O
+
 no DT O
 rales NNS O
 , , O
@@ -19651,6 +20753,7 @@ rhonchi NN B
 or CC O
 wheeze NN O
 . . O
+
 no DT O
 rales NNS O
 , , O
@@ -19659,6 +20762,7 @@ rhonchi NN O
 or CC O
 wheeze NN B
 . . O
+
 heart NN O
 : : O
 regular JJ B
@@ -19666,6 +20770,7 @@ rate NN I
 and CC I
 rhythm NN I
 . . O
+
 no DT O
 murmurs NN B
 , , O
@@ -19674,6 +20779,7 @@ gallops NNS O
 or CC O
 rubs NNS O
 . . O
+
 no DT O
 murmurs NN O
 , , O
@@ -19682,6 +20788,7 @@ gallops NNS B
 or CC O
 rubs NNS O
 . . O
+
 no DT O
 murmurs NN O
 , , O
@@ -19690,6 +20797,7 @@ gallops NNS O
 or CC O
 rubs NNS B
 . . O
+
 abdomen NNS B
 : : I
 soft JJ I
@@ -19705,6 +20813,7 @@ and CC O
 no DT O
 hepatosplenomegaly NN O
 . . O
+
 abdomen NNS O
 : : O
 soft JJ O
@@ -19720,6 +20829,7 @@ and CC O
 no DT O
 hepatosplenomegaly NN O
 . . O
+
 abdomen NNS O
 : : O
 soft JJ O
@@ -19735,6 +20845,7 @@ and CC O
 no DT O
 hepatosplenomegaly NN B
 . . O
+
 extremities NNS O
 : : O
 no DT O
@@ -19745,6 +20856,7 @@ cyanosis NN O
 or CC O
 edema NN O
 . . O
+
 extremities NNS O
 : : O
 no DT O
@@ -19755,6 +20867,7 @@ cyanosis NN B
 or CC O
 edema NN O
 . . O
+
 extremities NNS O
 : : O
 no DT O
@@ -19765,6 +20878,7 @@ cyanosis NN O
 or CC O
 edema NN B
 . . O
+
 skin NN B
 is VBZ I
 warm JJ I
@@ -19773,6 +20887,7 @@ moist NN I
 without IN I
 lesion NN I
 . . O
+
 neuro NN O
 : : O
 alert NN B
@@ -19781,6 +20896,7 @@ oriented VBN O
 times NNS O
 three CD O
 . . O
+
 neuro NN O
 : : O
 alert NN O
@@ -19789,6 +20905,7 @@ oriented VBN B
 times NNS I
 three CD I
 . . O
+
 cranial JJ B
 nerves NNS I
 ii VBP I
@@ -19797,6 +20914,7 @@ xii NNP I
 grossly RB I
 intact JJ I
 . . O
+
 ed JJ O
 course NN O
 : : O
@@ -19827,6 +20945,7 @@ to TO O
 coronary JJ O
 ischemia NN O
 . . O
+
 ed JJ O
 course NN O
 : : O
@@ -19857,6 +20976,7 @@ to TO O
 coronary JJ B
 ischemia NN I
 . . O
+
 ekg JJ O
 interpretation NN O
 : : O
@@ -19882,6 +21002,7 @@ of IN O
 467 CD O
 milliseconds NNS O
 . . O
+
 he PRP O
 has VBZ O
 one CD O
@@ -19901,6 +21022,7 @@ left VBD O
 axis JJ O
 deviation NN O
 . . O
+
 chest JJS O
 x-ray JJ O
 with IN O
@@ -19909,6 +21031,7 @@ no DT O
 wide JJ B
 mediastinum NN I
 . . O
+
 he PRP O
 does VBZ O
 have VB O
@@ -19939,6 +21062,7 @@ or CC O
 infectious JJ O
 etiologies NNS O
 . . O
+
 he PRP O
 does VBZ O
 have VB O
@@ -19969,6 +21093,7 @@ or CC O
 infectious JJ O
 etiologies NNS O
 . . O
+
 he PRP O
 does VBZ O
 have VB O
@@ -19999,6 +21124,7 @@ or CC O
 infectious JJ O
 etiologies NNS O
 . . O
+
 the DT O
 patient NN O
 will MD O
@@ -20014,13 +21140,16 @@ acute JJ B
 coronary JJ I
 ischemia NN I
 . . O
+
 acute JJ B
 coronary JJ I
 syndrome NN I
 . . O
+
 hypertensive JJ B
 emergency NN I
 . . O
+
 digital JJ O
 rectal NN O
 exam NN O
@@ -20032,6 +21161,7 @@ moderate JJ B
 external JJ I
 hemorrhoids NNS I
 . . O
+
 findings NNS O
 : : O
 a DT O
@@ -20045,6 +21175,7 @@ mid JJ I
 transverse NN I
 colon NN I
 . . O
+
 scattered VBN B
 diverticuli NNS I
 were VBD I
@@ -20054,6 +21185,7 @@ the DT I
 left NN I
 colon NN I
 . . O
+
 retroflexion NN O
 of IN O
 the DT O
@@ -20061,6 +21193,7 @@ endoscope NN O
 revealed VBD O
 hemorrhoids NNS B
 . . O
+
 complications NNS O
 : : O
 none NN O
@@ -20121,6 +21254,7 @@ year NN O
 s NN O
 ) ) O
 . . O
+
 complications NNS O
 : : O
 none NN O
@@ -20181,6 +21315,7 @@ year NN O
 s NN O
 ) ) O
 . . O
+
 complications NNS O
 : : O
 none NN O
@@ -20241,6 +21376,7 @@ year NN O
 s NN O
 ) ) O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -20291,6 +21427,7 @@ pulmonary JJ O
 function NN O
 tests NNS O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -20341,6 +21478,7 @@ pulmonary JJ I
 function NN I
 tests NNS I
 . . O
+
 there EX O
 is VBZ O
 a DT O
@@ -20371,6 +21509,7 @@ old JJ O
 rib NN O
 fracture NN O
 . . O
+
 there EX O
 is VBZ O
 a DT O
@@ -20401,6 +21540,7 @@ old JJ O
 rib NN B
 fracture NN I
 . . O
+
 there EX O
 are VBP O
 no DT O
@@ -20409,12 +21549,14 @@ or CC I
 pleural JJ I
 effusions NNS I
 . . O
+
 no DT O
 enlarged JJ B
 nodes NNS I
 are VBP O
 identified VBN O
 . . O
+
 impression NN O
 : : O
 negative JJ O
@@ -20423,6 +21565,7 @@ significant JJ B
 lung NN I
 disease NN I
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -20504,31 +21647,40 @@ biventricular JJ B
 heart NN I
 failure NN I
 . . O
+
 cardiomyopathy NN B
 . . O
+
 type NN B
 2 CD I
 diabetes NNS I
 . . O
+
 hypertension NN B
 . . O
+
 hyperlipidemia NN B
 . . O
+
 hypothyroidism NN B
 . . O
+
 history NN O
 of IN O
 giant NN B
 cell NN I
 arteritis NN I
 . . O
+
 atrial JJ B
 fibrillation NN I
 . . O
+
 gastroesophageal NN B
 reflux NN I
 disease NN I
 . . O
+
 reason NN O
 for IN O
 hospital JJ O
@@ -20563,6 +21715,7 @@ urinary JJ O
 tract NN O
 infection NN O
 . . O
+
 reason NN O
 for IN O
 hospital JJ O
@@ -20597,6 +21750,7 @@ urinary JJ B
 tract NN I
 infection NN I
 . . O
+
 she PRP O
 was VBD O
 found VBN O
@@ -20612,6 +21766,7 @@ in IN O
 the DT O
 90s CD O
 . . O
+
 she PRP O
 was VBD O
 oriented VBN B
@@ -20621,6 +21776,7 @@ at IN O
 that DT O
 time NN O
 . . O
+
 clinically RB O
 and CC O
 radiographically RB O
@@ -20633,6 +21789,7 @@ biventricular JJ B
 heart NN I
 failure NN I
 . . O
+
 hospital JJ O
 course NN O
 : : O
@@ -20661,6 +21818,7 @@ radiographically RB O
 volume NN B
 overloaded VBD I
 . . O
+
 she PRP O
 was VBD O
 continued VBN O
@@ -20673,6 +21831,7 @@ normal JJ B
 sinus NN I
 rhythm NN I
 . . O
+
 in IN O
 terms NNS O
 of IN O
@@ -20689,6 +21848,7 @@ indwelling JJ O
 foley NN O
 catheter NN O
 . . O
+
 the DT O
 patient NN O
 remained VBD O
@@ -20704,6 +21864,7 @@ throughout IN O
 her PRP$ O
 stay NN O
 . . O
+
 comments NNS O
 : : O
 the DT O
@@ -20716,6 +21877,7 @@ during IN O
 the DT O
 test NN O
 . . O
+
 the DT O
 baseline NN O
 ekg NN O
@@ -20727,6 +21889,7 @@ nonspecific JJ O
 stt NN O
 changes NNS O
 . . O
+
 there EX O
 were VBD O
 no DT O
@@ -20736,6 +21899,7 @@ changes NNS I
 during IN O
 stress NN O
 . . O
+
 there EX O
 was VBD O
 nonsustained VBN B
@@ -20744,6 +21908,7 @@ tachycardia NN I
 during IN O
 stress NN O
 . . O
+
 there EX O
 was VBD O
 nonsustained VBN B
@@ -20752,6 +21917,7 @@ tachycardia NN I
 during IN O
 stress NN O
 . . O
+
 baseline JJ O
 two-dimensional JJ O
 echocardiography NN O
@@ -20762,6 +21928,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 ventricular JJ I
 wall NN I
@@ -20776,6 +21943,7 @@ left VBN O
 ventricular JJ O
 hypertrophy NN O
 . . O
+
 left VBN O
 ventricular JJ O
 wall NN O
@@ -20790,6 +21958,7 @@ left VBN I
 ventricular JJ I
 hypertrophy NN I
 . . O
+
 segmental JJ B
 left VBD I
 ventricular JJ I
@@ -20797,6 +21966,7 @@ function NN I
 is VBZ I
 normal JJ I
 . . O
+
 overall JJ B
 left VBD I
 ventricular JJ I
@@ -20813,6 +21983,7 @@ of IN O
 55-60 JJ O
 % NN O
 . . O
+
 there EX O
 is VBZ O
 mobile JJ B
@@ -20840,6 +22011,7 @@ not RB O
 be VB O
 excluded VBN O
 . . O
+
 there EX O
 is VBZ O
 mobile JJ O
@@ -20867,12 +22039,14 @@ not RB O
 be VB O
 excluded VBN O
 . . O
+
 right RB B
 ventricular JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular NN I
 wall NN I
@@ -20880,12 +22054,14 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular JJ I
 function NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 atrial JJ I
 size NN I
@@ -20893,6 +22069,7 @@ is VBZ I
 moderately RB I
 enlarged VBN I
 . . O
+
 right JJ B
 atrial JJ I
 size NN I
@@ -20900,6 +22077,7 @@ is VBZ I
 moderately RB I
 enlarged VBN I
 . . O
+
 the DT O
 pulmonary JJ B
 artery NN I
@@ -20907,6 +22085,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 root NN I
@@ -20914,30 +22093,35 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 mitral JJ B
 valve NN I
 is VBZ I
 thickened VBN I
 . . O
+
 the DT O
 tricuspid JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 no DT O
 pericardial JJ B
 effusion NN I
 is VBZ O
 seen VBN O
 . . O
+
 spectral JJ O
 doppler NN O
 : : O
@@ -20949,18 +22133,21 @@ moderate VB I
 aortic JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 moderate JJ B
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 mild JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 color NN O
 flow NN O
 doppler NN O
@@ -20973,18 +22160,21 @@ moderate VB I
 aortic JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 moderate JJ B
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 mild JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 final JJ O
 impressions NNS O
 : : O
@@ -21002,6 +22192,7 @@ preserved VBN I
 systolic JJ I
 function NN I
 . . O
+
 02 CD O
 ) ) O
 mild NN B
@@ -21010,6 +22201,7 @@ moderate VB I
 aortic JJ I
 regurgitation NN I
 . . O
+
 03 CD O
 ) ) O
 thickened VBD B
@@ -21019,12 +22211,14 @@ with IN I
 moderate JJ I
 regurgitation NN I
 . . O
+
 04 CD O
 ) ) O
 mild NN B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 05 CD O
 ) ) O
 moderate NN B
@@ -21032,6 +22226,7 @@ left VBD I
 atrial JJ I
 enlargement NN I
 . . O
+
 06 CD O
 ) ) O
 moderate VB B
@@ -21039,12 +22234,14 @@ right JJ I
 atrial JJ I
 enlargement NN I
 . . O
+
 07 CD O
 ) ) O
 mild NN B
 pulmonary JJ I
 hypertension NN I
 . . O
+
 08 CD O
 ) ) O
 there EX O
@@ -21074,6 +22271,7 @@ not RB O
 be VB O
 excluded VBN O
 . . O
+
 08 CD O
 ) ) O
 there EX O
@@ -21103,6 +22301,7 @@ not RB O
 be VB O
 excluded VBN O
 . . O
+
 09 CD O
 ) ) O
 there EX O
@@ -21128,6 +22327,7 @@ level NN O
 of IN O
 stress NN O
 . . O
+
 09 CD O
 ) ) O
 there EX O
@@ -21153,6 +22353,7 @@ level NN O
 of IN O
 stress NN O
 . . O
+
 09 CD O
 ) ) O
 there EX O
@@ -21178,6 +22379,7 @@ level NN O
 of IN O
 stress NN O
 . . O
+
 the DT O
 patient NN O
 became VBD O
@@ -21190,6 +22392,7 @@ at IN O
 peak JJ O
 stress NN O
 . . O
+
 the DT O
 patient NN O
 became VBD O
@@ -21202,6 +22405,7 @@ at IN O
 peak JJ O
 stress NN O
 . . O
+
 this DT O
 is VBZ O
 a DT O
@@ -21226,6 +22430,7 @@ coronary JJ I
 artery NN I
 disease NN I
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -21237,6 +22442,7 @@ complaint NN O
 abdominal JJ B
 pain NN I
 . . O
+
 mr. NN O
 **name NNP O
 [ NNP O
@@ -21266,6 +22472,7 @@ last JJ O
 two CD O
 months NNS O
 . . O
+
 his PRP$ O
 pain NN O
 is VBZ O
@@ -21276,6 +22483,7 @@ nausea NN B
 no DT O
 vomiting NN O
 . . O
+
 his PRP$ O
 pain NN O
 is VBZ O
@@ -21286,6 +22494,7 @@ nausea NN O
 no DT O
 vomiting NN B
 . . O
+
 he PRP O
 does VBZ O
 occasionally RB O
@@ -21308,6 +22517,7 @@ use NN O
 of IN O
 antibiotics NNS O
 . . O
+
 he PRP O
 does VBZ O
 occasionally RB O
@@ -21330,6 +22540,7 @@ use NN O
 of IN O
 antibiotics NNS O
 . . O
+
 he PRP O
 does VBZ O
 occasionally RB O
@@ -21352,6 +22563,7 @@ use NN O
 of IN O
 antibiotics NNS O
 . . O
+
 he PRP O
 does VBZ O
 occasionally RB O
@@ -21374,6 +22586,7 @@ use NN O
 of IN O
 antibiotics NNS O
 . . O
+
 he PRP O
 does VBZ O
 occasionally RB O
@@ -21396,6 +22609,7 @@ use NN B
 of IN I
 antibiotics NNS I
 . . O
+
 he PRP O
 uses VBZ O
 advil JJ O
@@ -21426,6 +22640,7 @@ this DT O
 specific JJ O
 complaint NN O
 . . O
+
 currently RB O
 , , O
 the DT O
@@ -21445,6 +22660,7 @@ at IN O
 this DT O
 time NN O
 . . O
+
 currently RB O
 , , O
 the DT O
@@ -21464,6 +22680,7 @@ at IN O
 this DT O
 time NN O
 . . O
+
 past JJ O
 medical JJ O
 history NN O
@@ -21479,6 +22696,7 @@ no DT O
 acute JJ B
 distress NN I
 . . O
+
 heent NN O
 : : O
 head NN B
@@ -21486,18 +22704,21 @@ normocephalic JJ I
 , , I
 atraumatic JJ I
 . . O
+
 eyes NNS O
 : : O
 perrla NN B
 , , O
 eomi NN O
 . . O
+
 eyes NNS O
 : : O
 perrla NN O
 , , O
 eomi NN B
 . . O
+
 pharynx NN B
 clear JJ I
 with IN I
@@ -21505,6 +22726,7 @@ moist JJ I
 mucous JJ I
 membranes NNS I
 . . O
+
 no DT O
 lymphadenopathy NN O
 , , O
@@ -21512,6 +22734,7 @@ thyromegaly NN B
 or CC O
 jvd NN O
 . . O
+
 no DT O
 lymphadenopathy NN O
 , , O
@@ -21519,10 +22742,12 @@ thyromegaly NN O
 or CC O
 jvd NN B
 . . O
+
 lungs NNS O
 : : O
 ctap NN B
 . . O
+
 no DT O
 wheezes NN B
 , , O
@@ -21530,6 +22755,7 @@ rales VBZ O
 or CC O
 rhonchi NN O
 . . O
+
 no DT O
 wheezes NN O
 , , O
@@ -21537,6 +22763,7 @@ rales VBZ B
 or CC O
 rhonchi NN O
 . . O
+
 no DT O
 wheezes NN O
 , , O
@@ -21544,6 +22771,7 @@ rales VBZ O
 or CC O
 rhonchi NN B
 . . O
+
 heart NN O
 : : O
 regular JJ B
@@ -21551,6 +22779,7 @@ rate NN I
 and CC I
 rhythm NN I
 . . O
+
 no DT O
 murmurs NN B
 , , O
@@ -21558,6 +22787,7 @@ rubs NN O
 or CC O
 gallops NNS O
 . . O
+
 no DT O
 murmurs NN O
 , , O
@@ -21565,6 +22795,7 @@ rubs NN B
 or CC O
 gallops NNS O
 . . O
+
 no DT O
 murmurs NN O
 , , O
@@ -21572,6 +22803,7 @@ rubs NN O
 or CC O
 gallops NNS B
 . . O
+
 abdomen NNS B
 : : I
 soft JJ I
@@ -21580,15 +22812,18 @@ nontender NN I
 and CC I
 nondistended VBD I
 . . O
+
 positive JJ B
 bowel NN I
 sounds NNS I
 . . O
+
 no DT O
 masses NNS O
 or CC O
 organomegaly NN B
 . . O
+
 extremities NNS O
 : : O
 no DT O
@@ -21598,6 +22833,7 @@ cyanosis NN O
 or CC O
 edema NN O
 . . O
+
 extremities NNS O
 : : O
 no DT O
@@ -21607,6 +22843,7 @@ cyanosis NN B
 or CC O
 edema NN O
 . . O
+
 extremities NNS O
 : : O
 no DT O
@@ -21616,6 +22853,7 @@ cyanosis NN O
 or CC O
 edema NN B
 . . O
+
 skin NN B
 : : I
 warm NN I
@@ -21624,6 +22862,7 @@ moist NN I
 without IN I
 lesion NN I
 . . O
+
 neurologic NNS O
 : : O
 alert NN B
@@ -21632,6 +22871,7 @@ oriented VBN O
 times NNS O
 three CD O
 . . O
+
 neurologic NNS O
 : : O
 alert NN O
@@ -21640,6 +22880,7 @@ oriented VBN B
 times NNS I
 three CD I
 . . O
+
 cranial JJ B
 nerves NNS I
 ii VBP I
@@ -21648,6 +22889,7 @@ xii NNP I
 grossly RB I
 intact JJ I
 . . O
+
 ed JJ O
 course NN O
 : : O
@@ -21680,6 +22922,7 @@ patient NN O
 was VBD O
 reassured VBN O
 . . O
+
 he PRP O
 had VBD O
 no DT O
@@ -21700,6 +22943,7 @@ peptic JJ O
 ulcer JJ O
 disease NN O
 . . O
+
 he PRP O
 had VBD O
 no DT O
@@ -21720,6 +22964,7 @@ peptic JJ O
 ulcer JJ O
 disease NN O
 . . O
+
 he PRP O
 had VBD O
 no DT O
@@ -21740,6 +22985,7 @@ peptic JJ O
 ulcer JJ O
 disease NN O
 . . O
+
 he PRP O
 had VBD O
 no DT O
@@ -21760,6 +23006,7 @@ peptic JJ B
 ulcer JJ I
 disease NN I
 . . O
+
 he PRP O
 was VBD O
 given VBN O
@@ -21784,6 +23031,7 @@ for IN O
 worsening VBG O
 complaints NNS O
 . . O
+
 discharge NN O
 diagnosis NN O
 ( ( O
@@ -21795,6 +23043,7 @@ crampy VBZ I
 abdominal JJ I
 pain NN I
 . . O
+
 the DT O
 indication NN O
 for IN O
@@ -21805,6 +23054,7 @@ hemoccult JJ B
 positive JJ I
 stool NN I
 . . O
+
 findings NNS O
 : : O
 colitis NN B
@@ -21815,6 +23065,7 @@ the DT I
 sigmoid NN I
 colon NN I
 . . O
+
 the DT O
 appearance NN O
 was VBD O
@@ -21830,6 +23081,7 @@ for IN O
 uterine JJ B
 ca MD I
 . . O
+
 there EX O
 was VBD O
 no DT O
@@ -21839,6 +23091,7 @@ polyps NNS B
 or CC O
 mass NN O
 . . O
+
 complications NNS O
 : : O
 none NN O
@@ -21878,6 +23131,7 @@ year NN O
 s NN O
 ) ) O
 . . O
+
 slightly RB B
 improved VBN I
 pulmonary JJ I
@@ -21896,6 +23150,7 @@ left-sided JJ O
 pleural JJ O
 effusion NN O
 . . O
+
 slightly RB O
 improved VBN O
 pulmonary JJ O
@@ -21914,6 +23169,7 @@ left-sided JJ O
 pleural JJ O
 effusion NN O
 . . O
+
 slightly RB O
 improved VBN O
 pulmonary JJ O
@@ -21932,6 +23188,7 @@ left-sided JJ B
 pleural JJ I
 effusion NN I
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -21962,6 +23219,7 @@ left JJ B
 renal JJ I
 calculi NN I
 . . O
+
 pre-op JJ O
 diagnosis NN O
 : : O
@@ -21969,6 +23227,7 @@ left JJ B
 renal JJ I
 calculi NN I
 . . O
+
 _______________________________________________________________ JJ O
 gross JJ O
 description NN O
@@ -21998,6 +23257,7 @@ chemical NN O
 analysis NN O
 '' '' O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -22097,6 +23357,7 @@ of IN O
 leg NN B
 cramp NN I
 . . O
+
 the DT O
 patient NN O
 was VBD O
@@ -22117,6 +23378,7 @@ potassium NN O
 of IN O
 3 CD O
 . . O
+
 the DT O
 patient NN O
 has VBZ O
@@ -22127,6 +23389,7 @@ of IN O
 cocaine NN B
 abuse NN I
 . . O
+
 important JJ O
 to TO O
 note VB O
@@ -22150,6 +23413,7 @@ an DT O
 enlarged VBN B
 liver NN I
 . . O
+
 also RB O
 the DT O
 patient NN O
@@ -22162,6 +23426,7 @@ from IN O
 his PRP$ O
 baseline NN O
 . . O
+
 the DT O
 patient NN O
 is VBZ O
@@ -22172,6 +23437,7 @@ chronic JJ B
 kidney NN I
 insufficiency NN I
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -22196,6 +23462,7 @@ size NN O
 is VBZ O
 normal JJ O
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -22220,6 +23487,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 ventricular JJ I
 wall NN I
@@ -22227,6 +23495,7 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 segmental JJ B
 left VBD I
 ventricular JJ I
@@ -22234,6 +23503,7 @@ function NN I
 is VBZ I
 normal JJ I
 . . O
+
 overall JJ B
 left VBD I
 ventricular JJ I
@@ -22250,6 +23520,7 @@ of IN O
 55-60 JJ O
 % NN O
 . . O
+
 there EX O
 is VBZ O
 post-operative JJ O
@@ -22257,12 +23528,14 @@ paradoxical JJ B
 septal JJ I
 motion NN I
 . . O
+
 right RB B
 ventricular JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular NN I
 wall NN I
@@ -22270,12 +23543,14 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular JJ I
 function NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 atrial JJ I
 size NN I
@@ -22283,6 +23558,7 @@ is VBZ I
 moderately RB I
 enlarged VBN I
 . . O
+
 right JJ B
 atrial JJ I
 size NN I
@@ -22290,6 +23566,7 @@ is VBZ I
 mildly RB I
 enlarged VBN I
 . . O
+
 the DT O
 pulmonary JJ B
 artery NN I
@@ -22297,6 +23574,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 root NN I
@@ -22304,36 +23582,42 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 mitral JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 tricuspid JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 no DT O
 pericardial JJ B
 effusion NN I
 is VBZ O
 seen VBN O
 . . O
+
 spectral JJ O
 doppler NN O
 : : O
@@ -22343,12 +23627,14 @@ trace JJ B
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 color NN O
 flow NN O
 doppler NN O
@@ -22359,12 +23645,14 @@ trace JJ B
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 final JJ O
 impressions NNS O
 : : O
@@ -22377,6 +23665,7 @@ size NN I
 and CC I
 function NN I
 . . O
+
 02 CD O
 ) ) O
 paradoxical JJ B
@@ -22388,6 +23677,7 @@ post-operative JJ O
 septal JJ O
 motion NN O
 . . O
+
 02 CD O
 ) ) O
 paradoxical JJ O
@@ -22399,6 +23689,7 @@ post-operative JJ B
 septal JJ I
 motion NN I
 . . O
+
 03 CD O
 ) ) O
 moderate NN B
@@ -22406,6 +23697,7 @@ left VBD I
 atrial JJ I
 enlargement NN I
 . . O
+
 04 CD O
 ) ) O
 mild NN B
@@ -22413,6 +23705,7 @@ right JJ I
 atrial JJ I
 enlargement NN I
 . . O
+
 05 CD O
 ) ) O
 findings NNS O
@@ -22422,6 +23715,7 @@ orthotopic JJ B
 heart NN I
 transplantation NN I
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -22506,6 +23800,7 @@ presented VBD O
 with IN O
 syncope NN B
 . . O
+
 she PRP O
 had VBD O
 come VBN O
@@ -22533,6 +23828,7 @@ to TO O
 pass VB O
 out RP O
 . . O
+
 she PRP O
 had VBD O
 come VBN O
@@ -22560,6 +23856,7 @@ to TO O
 pass VB O
 out RP O
 . . O
+
 she PRP O
 had VBD O
 come VBN O
@@ -22587,6 +23884,7 @@ to TO O
 pass VB B
 out RP I
 . . O
+
 the DT O
 witnesses NNS O
 did VBD O
@@ -22605,6 +23903,7 @@ of IN O
 a DT O
 seizure NN O
 . . O
+
 the DT O
 witnesses NNS O
 did VBD O
@@ -22623,12 +23922,14 @@ of IN O
 a DT O
 seizure NN B
 . . O
+
 she PRP O
 did VBD O
 not RB O
 become VB O
 incontinent NN B
 . . O
+
 does VBZ O
 not RB O
 give VB O
@@ -22646,6 +23947,7 @@ vomiting VBG O
 and CC O
 diarrhea NN O
 . . O
+
 does VBZ O
 not RB O
 give VB O
@@ -22663,6 +23965,7 @@ vomiting VBG O
 and CC O
 diarrhea NN O
 . . O
+
 does VBZ O
 not RB O
 give VB O
@@ -22680,6 +23983,7 @@ vomiting VBG B
 and CC O
 diarrhea NN O
 . . O
+
 does VBZ O
 not RB O
 give VB O
@@ -22697,6 +24001,7 @@ vomiting VBG O
 and CC O
 diarrhea NN B
 . . O
+
 neck NN O
 : : O
 the DT B
@@ -22705,20 +24010,24 @@ without IN I
 any DT I
 tenderness NN I
 . . O
+
 chest NN O
 : : O
 clear JJ B
 to TO I
 auscultation NN I
 . . O
+
 abdomen NNS B
 : : I
 soft JJ I
 . . I
+
 neurological JJ B
 : : I
 nonfocal JJ I
 . . O
+
 hospital NN O
 course NN O
 & CC O
@@ -22733,6 +24042,7 @@ most RBS O
 likely JJ O
 vasovagal NN B
 . . O
+
 she PRP O
 had VBD O
 definite JJ O
@@ -22750,6 +24060,7 @@ to TO O
 pass VB O
 out RP O
 . . O
+
 she PRP O
 had VBD O
 definite JJ O
@@ -22767,6 +24078,7 @@ to TO O
 pass VB O
 out RP O
 . . O
+
 she PRP O
 had VBD O
 definite JJ O
@@ -22784,11 +24096,13 @@ to TO O
 pass VB B
 out RP I
 . . O
+
 she PRP O
 was VBD O
 also RB O
 nauseous JJ B
 . . O
+
 ekg JJ O
 interpretation NN O
 : : O
@@ -22811,6 +24125,7 @@ a DT O
 sinus NN O
 arrhythmia NN O
 . . O
+
 the DT O
 indication NN O
 for IN O
@@ -22824,6 +24139,7 @@ treatment NN O
 and CC O
 heartburn NN O
 . . O
+
 the DT O
 indication NN O
 for IN O
@@ -22837,18 +24153,21 @@ treatment NN O
 and CC O
 heartburn NN B
 . . O
+
 findings NNS O
 : : O
 esophagitis NN B
 was VBD O
 found VBN O
 . . O
+
 a DT O
 hiatal JJ B
 hernia NN I
 was VBD O
 found VBN O
 . . O
+
 gastritis NN B
 was VBD I
 found VBN I
@@ -22856,6 +24175,7 @@ in IN I
 the DT I
 antrum NN I
 . . O
+
 the DT O
 duodenal JJ B
 bulb NN I
@@ -22870,6 +24190,7 @@ the DT O
 postbulbar NN O
 duodenum NN O
 . . O
+
 there EX O
 was VBD O
 no DT O
@@ -22883,6 +24204,7 @@ or CC O
 esophageal JJ B
 stricture NN I
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -22974,6 +24296,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -23065,6 +24388,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -23156,6 +24480,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -23247,6 +24572,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -23297,6 +24623,7 @@ of IN O
 breast NN B
 carcinoma NN I
 . . O
+
 evaluate NN O
 for IN O
 progression NN B
@@ -23304,6 +24631,7 @@ of IN I
 metastatic JJ I
 disease NN I
 . . O
+
 findings NNS O
 : : O
 unfortunately RB O
@@ -23325,6 +24653,7 @@ aug NN O
 2007 CD O
 ] NN O
 . . O
+
 in IN O
 addition NN O
 , , O
@@ -23359,6 +24688,7 @@ aug IN O
 2007 CD O
 ] NN O
 . . O
+
 there EX O
 is VBZ O
 also RB O
@@ -23389,6 +24719,7 @@ image NN O
 24 CD O
 ) ) O
 . . O
+
 there EX O
 are VBP O
 no DT O
@@ -23403,6 +24734,7 @@ the DT I
 brain NN I
 parenchyma NN I
 . . O
+
 there EX O
 is VBZ O
 gliosis NN B
@@ -23424,6 +24756,7 @@ right JJ I
 lateral JJ I
 ventricle NN I
 . . O
+
 the DT O
 remainder NN B
 of IN I
@@ -23433,6 +24766,7 @@ parenchyma NN I
 is VBZ I
 unremarkable JJ I
 . . O
+
 the DT O
 ventricles NNS B
 , , I
@@ -23443,6 +24777,7 @@ are VBP I
 otherwise RB I
 normal JJ I
 . . O
+
 the DT O
 bone NN B
 marrow JJ I
@@ -23450,6 +24785,7 @@ signal NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 visualized JJ O
 paranasal NN B
@@ -23457,6 +24793,7 @@ sinuses NNS I
 are VBP I
 normal JJ I
 . . O
+
 progression NN B
 of IN I
 enhancement NN I
@@ -23492,6 +24829,7 @@ for IN O
 metastatic JJ O
 disease NN O
 . . O
+
 progression NN O
 of IN O
 enhancement NN O
@@ -23527,6 +24865,7 @@ for IN O
 metastatic JJ O
 disease NN O
 . . O
+
 progression NN O
 of IN O
 enhancement NN O
@@ -23562,6 +24901,7 @@ for IN O
 metastatic JJ B
 disease NN I
 . . O
+
 new JJ O
 , , O
 subtle JJ O
@@ -23584,6 +24924,7 @@ extension NN O
 of IN O
 disease NN O
 . . O
+
 new JJ O
 , , O
 subtle JJ O
@@ -23606,6 +24947,7 @@ extension NN I
 of IN I
 disease NN I
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -23637,6 +24979,7 @@ history NN O
 abdominal JJ B
 pain NN I
 . . O
+
 post-op JJ O
 diagnosis NN O
 : : O
@@ -23649,6 +24992,7 @@ gastritis NN B
 and CC O
 gastropathy NN O
 . . O
+
 post-op JJ O
 diagnosis NN O
 : : O
@@ -23661,6 +25005,7 @@ gastritis NN O
 and CC O
 gastropathy NN B
 . . O
+
 olr NN O
 _______________________________________________________________ NNP O
 final JJ O
@@ -23673,6 +25018,7 @@ helicobacter NN B
 pylori NN I
 gastritis NN I
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -23741,6 +25087,7 @@ status NN O
 post NN O
 thyroidectomy NN O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -23809,6 +25156,7 @@ status NN O
 post NN O
 thyroidectomy NN O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -23877,6 +25225,7 @@ status NN O
 post NN O
 thyroidectomy NN O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -23945,6 +25294,7 @@ status NN O
 post NN O
 thyroidectomy NN O
 . . O
+
 the DT O
 patient NN O
 admitted VBN O
@@ -23961,6 +25311,7 @@ fever NN O
 and CC O
 pleurisy NN O
 . . O
+
 the DT O
 patient NN O
 admitted VBN O
@@ -23977,6 +25328,7 @@ fever NN B
 and CC O
 pleurisy NN O
 . . O
+
 the DT O
 patient NN O
 admitted VBN O
@@ -23993,6 +25345,7 @@ fever NN O
 and CC O
 pleurisy NN B
 . . O
+
 chest JJS O
 x-ray NN O
 showed VBD O
@@ -24001,6 +25354,7 @@ lower JJR I
 lobe NN I
 pneumonia NN I
 . . O
+
 she PRP O
 is VBZ O
 afebrile JJ B
@@ -24008,6 +25362,7 @@ but CC O
 persistent JJ O
 cough NN O
 . . O
+
 she PRP O
 is VBZ O
 afebrile JJ O
@@ -24015,9 +25370,11 @@ but CC O
 persistent JJ O
 cough NN B
 . . O
+
 dyspnea NN B
 decreased VBD O
 . . O
+
 chest JJS O
 x-ray NN O
 showed VBD O
@@ -24028,6 +25385,7 @@ posterior JJ I
 basal NN I
 atelectasis NN I
 . . O
+
 left NN O
 lung NN O
 showed VBD O
@@ -24036,12 +25394,14 @@ interstitial JJ B
 pulmonary JJ I
 edema NN I
 . . O
+
 right JJ B
 hemothorax NN I
 remains VBZ I
 completely RB I
 opacified VBN I
 . . O
+
 hospital JJ O
 course NN O
 : : O
@@ -24057,11 +25417,13 @@ admitted VBN O
 with IN O
 pneumonia NN B
 . . O
+
 left VBD B
 lower JJR I
 lobe NN I
 pneumonia NN I
 . . O
+
 the DT O
 patient NN O
 's POS O
@@ -24075,6 +25437,7 @@ shortness NN B
 of IN I
 breath NN I
 . . O
+
 the DT O
 recent JJ O
 chest NN O
@@ -24106,6 +25469,7 @@ of IN O
 the DT O
 chest NN O
 . . O
+
 the DT O
 patient NN O
 with IN O
@@ -24116,6 +25480,7 @@ and CC O
 atrial JJ O
 fibrillation NN O
 . . O
+
 the DT O
 patient NN O
 with IN O
@@ -24126,11 +25491,13 @@ and CC O
 atrial JJ B
 fibrillation NN I
 . . O
+
 the DT O
 patient NN O
 with IN O
 hypothyroidism NN B
 . . O
+
 discharge NN O
 instructions NNS O
 : : O
@@ -24146,6 +25513,7 @@ diagnosis NN O
 : : O
 pneumonia NN B
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -24172,6 +25540,7 @@ is VBZ I
 moderately RB I
 dilated VBN I
 . . O
+
 left VBN B
 ventricular JJ I
 wall NN I
@@ -24179,6 +25548,7 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 segmental JJ B
 left VBD I
 ventricular JJ I
@@ -24186,6 +25556,7 @@ function NN I
 is VBZ I
 abnormal JJ I
 . . O
+
 overall JJ B
 left VBD I
 ventricular JJ I
@@ -24203,6 +25574,7 @@ of IN O
 15-20 JJ O
 % NN O
 . . O
+
 right RB B
 ventricular JJ I
 size NN I
@@ -24210,6 +25582,7 @@ is VBZ I
 moderately RB I
 dilated VBN I
 . . O
+
 right RB B
 ventricular NN I
 wall NN I
@@ -24217,6 +25590,7 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular JJ I
 function NN I
@@ -24224,6 +25598,7 @@ is VBZ I
 mildly RB I
 decreased VBN I
 . . O
+
 left VBN B
 atrial JJ I
 size NN I
@@ -24231,12 +25606,14 @@ is VBZ I
 moderately RB I
 enlarged VBN I
 . . O
+
 right JJ B
 atrial JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonary JJ B
 artery NN I
@@ -24244,6 +25621,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 root NN I
@@ -24251,36 +25629,42 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 valve NN I
 is VBZ I
 thickened VBN I
 . . O
+
 the DT O
 mitral JJ B
 valve NN I
 is VBZ I
 thickened VBN I
 . . O
+
 the DT O
 tricuspid JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 no DT O
 pericardial JJ B
 effusion NN I
 is VBZ O
 seen VBN O
 . . O
+
 spectral JJ O
 doppler NN O
 : : O
@@ -24292,6 +25676,7 @@ moderate VB I
 aortic JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 moderate JJ B
@@ -24300,6 +25685,7 @@ severe VB I
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 moderate JJ B
@@ -24308,12 +25694,14 @@ severe VB I
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace NN B
 pulmonic JJ I
 regurgitation NN I
 . . O
+
 color NN O
 flow NN O
 doppler NN O
@@ -24326,6 +25714,7 @@ moderate VB I
 aortic JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 moderate JJ B
@@ -24334,6 +25723,7 @@ severe VB I
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 moderate JJ B
@@ -24342,12 +25732,14 @@ severe VB I
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace NN B
 pulmonic JJ I
 regurgitation NN I
 . . O
+
 final JJ O
 impressions NNS O
 : : O
@@ -24369,6 +25761,7 @@ decreased JJ I
 systolic JJ I
 function NN I
 . . O
+
 02 CD O
 ) ) O
 moderately RB B
@@ -24380,6 +25773,7 @@ mildly RB I
 decreased VBN I
 function NN I
 . . O
+
 03 CD O
 ) ) O
 thickened VBD B
@@ -24391,6 +25785,7 @@ to TO I
 moderate VB I
 regurgitation NN I
 . . O
+
 04 CD O
 ) ) O
 thickened VBD B
@@ -24402,6 +25797,7 @@ to TO I
 severe JJ I
 regurgitation NN I
 . . O
+
 05 CD O
 ) ) O
 moderate NN B
@@ -24410,6 +25806,7 @@ severe VB I
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 06 CD O
 ) ) O
 moderate NN B
@@ -24417,12 +25814,14 @@ left VBD I
 atrial JJ I
 enlargement NN I
 . . O
+
 07 CD O
 ) ) O
 moderate VBP B
 pulmonary JJ I
 hypertension NN I
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -24497,6 +25896,7 @@ shortness NN B
 of IN I
 breath NN I
 . . O
+
 this DT O
 is VBZ O
 a DT O
@@ -24524,6 +25924,7 @@ pain NN O
 since IN O
 yesterday NN O
 . . O
+
 this DT O
 is VBZ O
 a DT O
@@ -24551,6 +25952,7 @@ pain NN I
 since IN O
 yesterday NN O
 . . O
+
 the DT O
 patient NN O
 states VBZ O
@@ -24566,12 +25968,14 @@ in IN O
 her PRP$ O
 chest NN O
 . . O
+
 she PRP O
 also RB O
 complains VBZ O
 of IN O
 headache NN B
 . . O
+
 she PRP O
 states VBZ O
 the DT O
@@ -24584,6 +25988,7 @@ of IN O
 her PRP$ O
 skull NN O
 . . O
+
 she PRP O
 states VBZ O
 that IN O
@@ -24600,6 +26005,7 @@ at IN O
 this DT O
 point NN O
 . . O
+
 she PRP O
 states VBZ O
 that IN O
@@ -24616,6 +26022,7 @@ at IN O
 this DT O
 point NN O
 . . O
+
 the DT O
 patient NN O
 has VBZ O
@@ -24630,16 +26037,19 @@ worsens VBZ O
 with IN O
 exertion NN O
 . . O
+
 she PRP O
 denies VBZ O
 any DT O
 diaphoresis NN B
 . . O
+
 she PRP O
 denies VBZ O
 any DT O
 nausea NN B
 . . O
+
 in IN O
 general JJ O
 , , O
@@ -24654,6 +26064,7 @@ change NN O
 in IN O
 hearing NN O
 . . O
+
 in IN O
 general JJ O
 , , O
@@ -24668,6 +26079,7 @@ change NN O
 in IN O
 hearing NN O
 . . O
+
 in IN O
 general JJ O
 , , O
@@ -24682,18 +26094,21 @@ change NN B
 in IN I
 hearing NN I
 . . O
+
 no DT O
 neck NN B
 pain NN I
 or CC O
 meningismus NN O
 . . O
+
 no DT O
 neck NN O
 pain NN O
 or CC O
 meningismus NN B
 . . O
+
 positive JJ O
 for IN O
 chest JJS B
@@ -24702,6 +26117,7 @@ pain NN I
 no DT O
 palpitations NNS O
 . . O
+
 positive JJ O
 for IN O
 chest JJS O
@@ -24710,6 +26126,7 @@ pain NN O
 no DT O
 palpitations NNS B
 . . O
+
 positive JJ O
 for IN O
 shortness NN B
@@ -24719,6 +26136,7 @@ breath NN I
 no DT O
 cough NN O
 . . O
+
 positive JJ O
 for IN O
 shortness NN O
@@ -24728,6 +26146,7 @@ breath NN O
 no DT O
 cough NN B
 . . O
+
 no DT O
 abdominal JJ B
 pain NN I
@@ -24738,6 +26157,7 @@ vomiting VBG O
 or CC O
 diarrhea NN O
 . . O
+
 no DT O
 abdominal JJ O
 pain NN O
@@ -24748,6 +26168,7 @@ vomiting VBG O
 or CC O
 diarrhea NN O
 . . O
+
 no DT O
 abdominal JJ O
 pain NN O
@@ -24758,6 +26179,7 @@ vomiting VBG B
 or CC O
 diarrhea NN O
 . . O
+
 no DT O
 abdominal JJ O
 pain NN O
@@ -24768,45 +26190,56 @@ vomiting VBG O
 or CC O
 diarrhea NN B
 . . O
+
 no DT O
 hematuria NN B
 or CC O
 dysuria NN O
 . . O
+
 no DT O
 hematuria NN O
 or CC O
 dysuria NN B
 . . O
+
 no DT O
 myalgia NN B
 or CC O
 arthralgia NN O
 . . O
+
 no DT O
 myalgia NN O
 or CC O
 arthralgia NN B
 . . O
+
 no DT O
 paresthesia NN B
 or CC O
 paralysis NN O
 . . O
+
 no DT O
 paresthesia NN O
 or CC O
 paralysis NN B
 . . O
+
 no DT O
 rash NN B
 . . O
+
 hypertension NN B
 . . O
+
 hypothyroid NN B
 . . O
+
 arthritis NN B
 . . O
+
 herniated VBN B
 disks NNS I
 at IN I
@@ -24814,19 +26247,26 @@ l4 NN I
 and CC I
 l5 NN I
 . . O
+
 migraine NN B
 . . O
+
 pneumonia NN B
 . . O
+
 pulmonary JJ B
 hypertension NN I
 . . O
+
 cataracts NNS B
 . . O
+
 anemia NN B
 . . O
+
 measles NNS B
 . . O
+
 allergies NNS O
 : : O
 her PRP$ O
@@ -24836,6 +26276,7 @@ penicillin NN I
 and CC I
 oxycodone NN I
 . . O
+
 social JJ O
 history NN O
 : : O
@@ -24849,6 +26290,7 @@ or CC O
 drug NN O
 abuse NN O
 . . O
+
 social JJ O
 history NN O
 : : O
@@ -24862,6 +26304,7 @@ or CC O
 drug NN O
 abuse NN O
 . . O
+
 social JJ O
 history NN O
 : : O
@@ -24875,6 +26318,7 @@ or CC O
 drug NN B
 abuse NN I
 . . O
+
 heent NN O
 : : O
 extraocular JJ B
@@ -24882,6 +26326,7 @@ muscles NNS I
 are VBP I
 intact JJ I
 . . O
+
 pupils NNS B
 are VBP I
 equal JJ I
@@ -24892,20 +26337,24 @@ reactive JJ I
 to TO I
 light NN I
 . . O
+
 mucous JJ B
 membranes NNS I
 moist NN I
 . . O
+
 neck NN B
 : : I
 supple NN I
 and CC I
 nontender NN I
 . . O
+
 chest NN B
 : : I
 nontender NN I
 . . O
+
 heart NN O
 : : O
 regular JJ B
@@ -24913,6 +26362,7 @@ rate NN I
 and CC I
 rhythm NN I
 . . O
+
 no DT O
 murmurs NN B
 , , O
@@ -24920,6 +26370,7 @@ rubs NN O
 or CC O
 gallops NNS O
 . . O
+
 no DT O
 murmurs NN O
 , , O
@@ -24927,6 +26378,7 @@ rubs NN B
 or CC O
 gallops NNS O
 . . O
+
 no DT O
 murmurs NN O
 , , O
@@ -24934,6 +26386,7 @@ rubs NN O
 or CC O
 gallops NNS B
 . . O
+
 lungs NNS O
 : : O
 clear JJ B
@@ -24941,16 +26394,19 @@ to TO I
 auscultation VB I
 bilaterally RB I
 . . O
+
 no DT O
 wheezes NN B
 or CC O
 rales NNS O
 . . O
+
 no DT O
 wheezes NN O
 or CC O
 rales NNS B
 . . O
+
 abdomen NNS O
 : : O
 soft JJ B
@@ -24962,6 +26418,7 @@ nondistended VBD I
 mildly RB O
 obese JJ O
 . . O
+
 abdomen NNS O
 : : O
 soft JJ O
@@ -24973,6 +26430,7 @@ nondistended VBD O
 mildly RB O
 obese JJ B
 . . O
+
 extremities NNS O
 : : O
 no DT O
@@ -24986,6 +26444,7 @@ is VBZ O
 pitting VBG O
 edema NN O
 . . O
+
 extremities NNS O
 : : O
 no DT O
@@ -24999,6 +26458,7 @@ is VBZ O
 pitting VBG O
 edema NN O
 . . O
+
 neurologic NN O
 : : O
 the DT O
@@ -25012,6 +26472,7 @@ xii NNS I
 are VBP I
 intact JJ I
 . . O
+
 sensation NN B
 is VBZ I
 intact JJ I
@@ -25027,6 +26488,7 @@ in IN O
 all DT O
 extremities NNS O
 . . O
+
 sensation NN O
 is VBZ O
 intact JJ O
@@ -25042,6 +26504,7 @@ in IN I
 all DT I
 extremities NNS I
 . . O
+
 in IN O
 general JJ O
 , , O
@@ -25057,6 +26520,7 @@ her PRP$ O
 chest NN B
 pain NN I
 . . O
+
 she PRP O
 refused VBD O
 nitroglycerin NN O
@@ -25075,6 +26539,7 @@ her PRP O
 headaches NNS O
 significantly RB O
 . . O
+
 she PRP O
 refused VBD O
 nitroglycerin NN O
@@ -25093,6 +26558,7 @@ her PRP O
 headaches NNS B
 significantly RB O
 . . O
+
 the DT O
 ekg NN O
 demonstrated VBD O
@@ -25123,6 +26589,7 @@ axis NN O
 of IN O
 -42 NN O
 . . O
+
 there EX O
 is VBZ O
 evidence NN O
@@ -25141,6 +26608,7 @@ the DT O
 septal JJ O
 leads NNS O
 . . O
+
 i NNS O
 do VBP O
 not RB O
@@ -25156,6 +26624,7 @@ at IN O
 this DT O
 time NN O
 . . O
+
 the DT O
 chest JJS O
 x-ray NN O
@@ -25170,6 +26639,7 @@ infiltrate NN I
 or CC I
 edema NN I
 . . O
+
 there EX O
 is VBZ O
 a DT O
@@ -25185,6 +26655,7 @@ the DT I
 right JJ I
 lung NN I
 . . O
+
 given VBN O
 the DT O
 patient NN O
@@ -25216,6 +26687,7 @@ an DT O
 old JJ O
 infarct NN O
 . . O
+
 her PRP$ O
 digoxin NN O
 level NN O
@@ -25243,6 +26715,7 @@ in IN O
 atrial JJ O
 fibrillation NN O
 . . O
+
 her PRP$ O
 digoxin NN O
 level NN O
@@ -25270,6 +26743,7 @@ in IN O
 atrial JJ B
 fibrillation NN I
 . . O
+
 admission NN O
 diagnosis NN O
 ( ( O
@@ -25279,6 +26753,7 @@ es JJ O
 chest NN B
 pain NN I
 . . O
+
 the DT O
 indication NN O
 for IN O
@@ -25292,6 +26767,7 @@ of IN O
 portal JJ O
 hypertension NN O
 . . O
+
 the DT O
 indication NN O
 for IN O
@@ -25305,6 +26781,7 @@ of IN O
 portal JJ B
 hypertension NN I
 . . O
+
 findings NNS O
 : : O
 trace NN B
@@ -25316,6 +26793,7 @@ the DT I
 distal JJ I
 esophagus NN I
 . . O
+
 portal JJ B
 hypertensive JJ I
 gastropathy NN I
@@ -25325,6 +26803,7 @@ throughout IN O
 the DT O
 stomach NN O
 . . O
+
 an DT O
 angiodysplasia NN B
 ( ( I
@@ -25340,6 +26819,7 @@ of IN I
 the DT I
 duodenum NN I
 . . O
+
 the DT O
 duodenal JJ B
 bulb NN I
@@ -25355,6 +26835,7 @@ the DT I
 postbulbar NN I
 duodenum NN I
 . . O
+
 there EX O
 was VBD O
 no DT O
@@ -25369,6 +26850,7 @@ or CC O
 mallory-weiss JJ O
 tear NN O
 . . O
+
 there EX O
 was VBD O
 no DT O
@@ -25383,6 +26865,7 @@ or CC O
 mallory-weiss JJ B
 tear NN I
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -25478,6 +26961,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -25573,6 +27057,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -25668,6 +27153,7 @@ the DT O
 entire JJ O
 procedure NN O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -25725,6 +27211,7 @@ lower JJR B
 back NN I
 pain NN I
 . . O
+
 there EX O
 is VBZ O
 mild JJ O
@@ -25742,6 +27229,7 @@ to TO I
 degenerative JJ I
 change NN I
 . . O
+
 there EX O
 is VBZ O
 loss NN B
@@ -25760,6 +27248,7 @@ with IN I
 disc JJ I
 desiccation NN I
 . . O
+
 the DT O
 conus NN B
 is VBZ I
@@ -25775,6 +27264,7 @@ location NN O
 at IN O
 l1 NN O
 . . O
+
 at IN B
 l2-l3 JJ I
 , , I
@@ -25787,6 +27277,7 @@ with IN I
 disc JJ I
 bulge NN I
 . . O
+
 at IN B
 l3-l4 JJ I
 , , I
@@ -25810,6 +27301,7 @@ as IN I
 facet JJ I
 arthrosis NN I
 . . O
+
 at IN B
 l4-l5 JJ I
 , , I
@@ -25842,6 +27334,7 @@ neural JJ I
 foraminal JJ I
 narrowing NN I
 . . O
+
 at IN B
 l5-s1 JJ I
 diffuse NN I
@@ -25858,6 +27351,7 @@ neural JJ I
 foraminal JJ I
 narrowing NN I
 . . O
+
 impression NN O
 : : O
 multilevel NN B
@@ -25889,6 +27383,7 @@ neural JJ I
 foraminal JJ I
 narrowing NN I
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -25924,6 +27419,7 @@ diagnosis NN O
 thyroid JJ B
 nodule NN I
 . . O
+
 **initials NNS O
 _______________________________________________________________ VBP O
 final JJ O
@@ -25954,6 +27450,7 @@ nodule NN I
 cm NN O
 ) ) O
 . . O
+
 b. NN O
 chronic JJ B
 lymphocytic JJ I
@@ -25963,6 +27460,7 @@ mild NN I
 to TO I
 moderate VB I
 . . O
+
 c. NN O
 no DT O
 parathyroid NN B
@@ -25970,6 +27468,7 @@ glands NNS I
 are VBP O
 seen VBN O
 . . O
+
 transfer NN O
 diagnosis NN O
 ( ( O
@@ -25979,18 +27478,24 @@ es JJ O
 gastric JJ B
 adenocarcinoma NN I
 . . O
+
 obstructive JJ B
 jaundice NN I
 . . O
+
 adrenal JJ B
 insufficiency NN I
 . . O
+
 hypothyroidism NN B
 . . O
+
 gout NN B
 . . O
+
 diabetes NNS B
 . . O
+
 chest NN O
 radiograph NN O
 : : O
@@ -26021,6 +27526,7 @@ be VB O
 excluded VBN O
 ) ) O
 . . O
+
 chest NN O
 radiograph NN O
 : : O
@@ -26051,6 +27557,7 @@ be VB O
 excluded VBN O
 ) ) O
 . . O
+
 radiographs NN O
 of IN O
 the DT O
@@ -26080,6 +27587,7 @@ a DT O
 stool-filled JJ O
 colon NN O
 . . O
+
 radiographs NN O
 of IN O
 the DT O
@@ -26109,6 +27617,7 @@ a DT O
 stool-filled JJ B
 colon NN I
 . . O
+
 ct NN O
 of IN O
 the DT O
@@ -26138,6 +27647,7 @@ bile NN I
 duct NN I
 dilation NN I
 . . O
+
 no DT O
 discrete JJ B
 hepatic JJ I
@@ -26145,6 +27655,7 @@ lesions NNS I
 are VBP O
 shown VBN O
 . . O
+
 progression NN O
 of IN O
 metastatic JJ B
@@ -26183,6 +27694,7 @@ and CC O
 gastrostomy NN O
 tube NN O
 . . O
+
 progression NN O
 of IN O
 metastatic JJ O
@@ -26221,6 +27733,7 @@ and CC O
 gastrostomy NN O
 tube NN O
 . . O
+
 the DT O
 patient NN O
 's POS O
@@ -26246,6 +27759,7 @@ gastric NN O
 wall NN O
 thickening NN O
 . . O
+
 the DT O
 patient NN O
 's POS O
@@ -26271,6 +27785,7 @@ gastric NN I
 wall NN I
 thickening NN I
 . . O
+
 no DT O
 findings NNS O
 of IN O
@@ -26280,6 +27795,7 @@ in IN I
 the DT I
 pelvis NN I
 . . O
+
 right JJ O
 upper JJ O
 quadrant NN O
@@ -26340,6 +27856,7 @@ noted VBN O
 on IN O
 ct NN O
 . . O
+
 right JJ O
 upper JJ O
 quadrant NN O
@@ -26400,6 +27917,7 @@ noted VBN O
 on IN O
 ct NN O
 . . O
+
 x-rays NNS O
 of IN O
 both DT O
@@ -26433,6 +27951,7 @@ on IN O
 the DT O
 left NN O
 . . O
+
 x-rays NNS O
 of IN O
 both DT O
@@ -26466,11 +27985,13 @@ on IN I
 the DT I
 left NN I
 . . O
+
 no DT O
 findings NNS O
 suggesting VBG O
 osteomyelitis NN B
 . . O
+
 reason NN O
 for IN O
 hospital JJ O
@@ -26507,6 +28028,7 @@ extensive JJ I
 gastric JJ I
 adenocarcinoma NN I
 . . O
+
 since IN O
 she PRP O
 has VBZ O
@@ -26523,6 +28045,7 @@ some DT O
 abdominal JJ O
 pain NN O
 . . O
+
 since IN O
 she PRP O
 has VBZ O
@@ -26539,6 +28062,7 @@ some DT O
 abdominal JJ B
 pain NN I
 . . O
+
 her PRP$ O
 son NN O
 saw VBD O
@@ -26564,6 +28088,7 @@ by IN O
 his PRP$ O
 examination NN O
 . . O
+
 she PRP O
 subsequently RB O
 became VBD O
@@ -26584,6 +28109,7 @@ and CC O
 scleral JJ O
 icterus NN O
 . . O
+
 she PRP O
 subsequently RB O
 became VBD O
@@ -26604,6 +28130,7 @@ and CC O
 scleral JJ B
 icterus NN I
 . . O
+
 she PRP O
 has VBZ O
 also RB O
@@ -26620,6 +28147,7 @@ difficulty NN O
 taking VBG O
 p.o NN O
 . . O
+
 she PRP O
 has VBZ O
 also RB O
@@ -26636,6 +28164,7 @@ difficulty NN B
 taking VBG I
 p.o NN I
 . . I
+
 she PRP O
 was VBD O
 admitted VBN O
@@ -26649,6 +28178,7 @@ palliative JJ O
 ptc NN O
 drain NN O
 . . O
+
 gi SYM O
 - : O
 the DT O
@@ -26677,6 +28207,7 @@ approximately RB O
 to TO O
 11 CD O
 . . O
+
 initially RB O
 , , O
 there EX O
@@ -26696,6 +28227,7 @@ zosyn NN O
 and CC O
 flagyl NN O
 . . O
+
 the DT O
 patient NN O
 was VBD O
@@ -26706,6 +28238,7 @@ time NN O
 of IN O
 transfer NN O
 . . O
+
 endocrine LS O
 - : O
 the DT O
@@ -26726,6 +28259,7 @@ dose NN O
 of IN O
 cortef NN O
 . . O
+
 rheumatologic LS O
 - : O
 the DT O
@@ -26747,6 +28281,7 @@ dose NN O
 of IN O
 allopurinol NN O
 . . O
+
 wall NN O
 thickness NN O
 : : O
@@ -26772,6 +28307,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 ventricular JJ I
 wall NN I
@@ -26779,6 +28315,7 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 segmental JJ B
 left VBD I
 ventricular JJ I
@@ -26786,6 +28323,7 @@ function NN I
 is VBZ I
 normal JJ I
 . . O
+
 overall JJ B
 left VBD I
 ventricular JJ I
@@ -26802,12 +28340,14 @@ of IN O
 60-65 JJ O
 % NN O
 . . O
+
 right RB B
 ventricular JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular NN I
 wall NN I
@@ -26815,24 +28355,28 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular JJ I
 function NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 atrial JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 right JJ B
 atrial JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonary JJ B
 artery NN I
@@ -26840,6 +28384,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 root NN I
@@ -26847,36 +28392,42 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 mitral JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 tricuspid JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 no DT O
 pericardial JJ B
 effusion NN I
 is VBZ O
 seen VBN O
 . . O
+
 spectral JJ O
 doppler NN O
 : : O
@@ -26886,18 +28437,21 @@ trace JJ B
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace NN B
 pulmonic JJ I
 regurgitation NN I
 . . O
+
 color NN O
 flow NN O
 doppler NN O
@@ -26908,18 +28462,21 @@ trace JJ B
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace NN B
 pulmonic JJ I
 regurgitation NN I
 . . O
+
 final JJ O
 impressions NNS O
 : : O
@@ -26932,6 +28489,7 @@ size NN I
 and CC I
 function NN I
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -26944,6 +28502,7 @@ shortness NN B
 of IN I
 breath NN I
 . . O
+
 the DT O
 patient NN O
 is VBZ O
@@ -26990,6 +28549,7 @@ wheezing NN O
 at IN O
 home NN O
 . . O
+
 the DT O
 patient NN O
 is VBZ O
@@ -27036,6 +28596,7 @@ wheezing NN O
 at IN O
 home NN O
 . . O
+
 the DT O
 patient NN O
 is VBZ O
@@ -27082,6 +28643,7 @@ wheezing NN O
 at IN O
 home NN O
 . . O
+
 the DT O
 patient NN O
 is VBZ O
@@ -27128,6 +28690,7 @@ wheezing NN O
 at IN O
 home NN O
 . . O
+
 the DT O
 patient NN O
 is VBZ O
@@ -27174,6 +28737,7 @@ wheezing NN B
 at IN O
 home NN O
 . . O
+
 the DT O
 patient NN O
 states VBZ O
@@ -27193,6 +28757,7 @@ to TO O
 three CD O
 days NNS O
 . . O
+
 he PRP O
 is VBZ O
 developing VBG O
@@ -27204,6 +28769,7 @@ cough NN O
 and CC O
 rhinorrhea NN O
 . . O
+
 he PRP O
 is VBZ O
 developing VBG O
@@ -27215,6 +28781,7 @@ cough NN B
 and CC O
 rhinorrhea NN O
 . . O
+
 he PRP O
 is VBZ O
 developing VBG O
@@ -27226,6 +28793,7 @@ cough NN O
 and CC O
 rhinorrhea NN B
 . . O
+
 he PRP O
 denies VBZ O
 any DT O
@@ -27235,6 +28803,7 @@ or CC O
 high JJ O
 fever NN O
 . . O
+
 he PRP O
 denies VBZ O
 any DT O
@@ -27244,6 +28813,7 @@ or CC O
 high JJ B
 fever NN I
 . . O
+
 the DT O
 patient NN O
 does VBZ O
@@ -27272,6 +28842,7 @@ of IN O
 his PRP$ O
 symptoms NNS O
 . . O
+
 he PRP O
 denies VBZ O
 any DT O
@@ -27285,6 +28856,7 @@ or CC O
 calf NN O
 pain NN O
 . . O
+
 he PRP O
 denies VBZ O
 any DT O
@@ -27298,6 +28870,7 @@ or CC O
 calf NN O
 pain NN O
 . . O
+
 he PRP O
 denies VBZ O
 any DT O
@@ -27311,6 +28884,7 @@ or CC B
 calf NN I
 pain NN I
 . . O
+
 physical JJ O
 examination NN O
 : : O
@@ -27319,6 +28893,7 @@ patient NN O
 is VBZ O
 afebrile JJ B
 . . O
+
 in IN O
 general JJ O
 , , O
@@ -27331,6 +28906,7 @@ in IN O
 mild JJ B
 distress NN I
 . . O
+
 he PRP O
 does VBZ O
 have VB O
@@ -27340,6 +28916,7 @@ on IN O
 initial JJ O
 examination NN O
 . . O
+
 on IN O
 heent JJ O
 examination NN O
@@ -27351,6 +28928,7 @@ normocephalic JJ I
 , , I
 atraumatic JJ I
 . . O
+
 his PRP$ O
 pupils NNS B
 are VBP I
@@ -27361,19 +28939,23 @@ round NN I
 and CC I
 reactive NN I
 . . O
+
 his PRP$ O
 sclerae NN B
 is VBZ I
 anicteric JJ I
 . . O
+
 conjunctivae NN B
 are VBP I
 pink NN I
 . . O
+
 oropharynx NN B
 is VBZ I
 clear JJ I
 . . O
+
 his PRP$ O
 posterior JJ B
 pharynx NN I
@@ -27381,6 +28963,7 @@ is VBZ I
 mildly RB I
 erythematous JJ I
 . . O
+
 there EX O
 is VBZ O
 no DT O
@@ -27388,6 +28971,7 @@ tonsillar JJ B
 exudate NN I
 appreciated VBD O
 . . O
+
 lungs NNS O
 reveal VBP O
 expiratory JJ B
@@ -27398,6 +28982,7 @@ moderate JJ I
 air NN I
 entry NN I
 . . O
+
 he PRP O
 does VBZ O
 have VB O
@@ -27408,6 +28993,7 @@ to TO I
 the DT I
 bases NNS I
 . . O
+
 there EX O
 are VBP O
 no DT O
@@ -27418,6 +29004,7 @@ noted VBN O
 on IN O
 examination NN O
 . . O
+
 there EX O
 are VBP O
 no DT O
@@ -27428,6 +29015,7 @@ noted VBN O
 on IN O
 examination NN O
 . . O
+
 cardiovascular JJ O
 examination NN O
 reveals VBZ O
@@ -27441,6 +29029,7 @@ of IN O
 approximately RB O
 100 CD O
 . . O
+
 there EX O
 is VBZ O
 no DT O
@@ -27449,6 +29038,7 @@ or CC O
 ectopy NN O
 noted VBN O
 . . O
+
 the DT O
 abdomen NNS B
 is VBZ I
@@ -27459,6 +29049,7 @@ nontender NN I
 and CC I
 nondistended VBD I
 . . O
+
 extremities NNS O
 reveal VBP O
 no DT O
@@ -27467,6 +29058,7 @@ cyanosis NN I
 or CC O
 edema NN O
 . . O
+
 extremities NNS O
 reveal VBP O
 no DT O
@@ -27475,12 +29067,14 @@ cyanosis NN O
 or CC O
 edema NN B
 . . O
+
 skin NN B
 is VBZ I
 warm JJ I
 and CC I
 dry JJ I
 . . O
+
 the DT O
 patient NN O
 presents VBZ O
@@ -27505,6 +29099,7 @@ tightness NN O
 , , O
 pressure NN O
 . . O
+
 the DT O
 patient NN O
 presents VBZ O
@@ -27529,6 +29124,7 @@ tightness NN O
 , , O
 pressure NN O
 . . O
+
 the DT O
 patient NN O
 presents VBZ O
@@ -27553,6 +29149,7 @@ tightness NN I
 , , I
 pressure NN I
 . . O
+
 it PRP O
 is VBZ O
 unclear JJ O
@@ -27570,6 +29167,7 @@ this DT O
 is VBZ O
 angina JJ B
 . . O
+
 given VBN O
 his PRP$ O
 risk NN O
@@ -27592,6 +29190,7 @@ perform VB O
 an DT O
 ekg NN O
 . . O
+
 given VBN O
 his PRP$ O
 risk NN O
@@ -27614,6 +29213,7 @@ perform VB O
 an DT O
 ekg NN O
 . . O
+
 ekg JJ O
 interpretation NN O
 : : O
@@ -27638,6 +29238,7 @@ v4 NN I
 and CC I
 v5 NN I
 . . O
+
 the DT O
 st NN B
 segments NNS I
@@ -27647,6 +29248,7 @@ concave NN I
 in IN O
 nature NN O
 . . O
+
 there EX O
 was VBD O
 a DT O
@@ -27695,6 +29297,7 @@ incomplete VB B
 right JJ I
 bundle NN I
 . . O
+
 he PRP O
 did VBD O
 have VB O
@@ -27708,6 +29311,7 @@ of IN O
 approximately RB O
 100 CD O
 . . O
+
 his PRP$ O
 respiratory NN O
 complaints NNS O
@@ -27731,6 +29335,7 @@ he PRP O
 received VBD O
 orally RB O
 . . O
+
 plan NN O
 follow-up JJ O
 : : O
@@ -27752,12 +29357,14 @@ the DT O
 chest NN B
 tightness NN I
 . . O
+
 chronic JJ B
 obstructive JJ I
 pulmonary JJ I
 disease NN I
 exacerbation NN I
 . . O
+
 chest NN B
 pain NN I
 , , O
@@ -27766,6 +29373,7 @@ out IN O
 myocardial JJ O
 infarction NN O
 . . O
+
 chest NN O
 pain NN O
 , , O
@@ -27774,6 +29382,7 @@ out IN O
 myocardial JJ B
 infarction NN I
 . . O
+
 the DT O
 indication NN O
 for IN O
@@ -27786,6 +29395,7 @@ of IN O
 colon NN B
 cancer NN I
 . . O
+
 there EX O
 was VBD O
 no DT O
@@ -27795,6 +29405,7 @@ polyps NNS B
 or CC O
 mass NN O
 . . O
+
 findings NNS O
 : : O
 left VBD O
@@ -27816,6 +29427,7 @@ lateral JJ I
 femoral JJ I
 condyles NNS I
 . . O
+
 although IN O
 there EX O
 is VBZ O
@@ -27831,6 +29443,7 @@ to TO I
 suggest VB I
 instability NN I
 . . O
+
 no DT O
 joint JJ B
 space NN I
@@ -27838,11 +29451,13 @@ narrowing NN I
 is VBZ O
 shown VBN O
 . . O
+
 no DT O
 acute JJ B
 fracture NN I
 shown VBN O
 . . O
+
 right JJ O
 knee NN O
 : : O
@@ -27856,6 +29471,7 @@ lateral JJ I
 femoral JJ I
 condyle NN I
 . . O
+
 the DT O
 appearance NN O
 of IN O
@@ -27866,6 +29482,7 @@ is VBZ I
 otherwise RB I
 unremarkable JJ I
 . . O
+
 increased VBN O
 sclerosis NN O
 within IN O
@@ -27889,6 +29506,7 @@ with IN I
 osteochondral JJ I
 lesion NN I
 . . I
+
 right JJ O
 knee NN O
 : : O
@@ -27899,6 +29517,7 @@ lateral JJ I
 femoral JJ I
 condyle NN I
 . . O
+
 otherwise RB B
 , , I
 unremarkable JJ I
@@ -27908,6 +29527,7 @@ the DT I
 right JJ I
 knee NN I
 . . O
+
 left VBD B
 lower JJR I
 extremity NN I
@@ -27915,6 +29535,7 @@ deep JJ I
 vein NN I
 thrombosis NN I
 . . O
+
 left VBD B
 lower JJR I
 extremity NN I
@@ -27922,6 +29543,7 @@ calcaneal NN I
 stress NN I
 fracture NN I
 . . O
+
 human JJ B
 immunodeficiency NN I
 virus NN I
@@ -27929,6 +29551,7 @@ acquired VBD I
 immunodeficiency JJ I
 syndrome NN I
 . . O
+
 history NN O
 of IN O
 right JJ B
@@ -27938,6 +29561,7 @@ deep JJ I
 vein NN I
 thrombosis NN I
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -27995,6 +29619,7 @@ last JJ O
 2 CD O
 weeks NNS O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -28052,6 +29677,7 @@ last JJ O
 2 CD O
 weeks NNS O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -28109,6 +29735,7 @@ last JJ O
 2 CD O
 weeks NNS O
 . . O
+
 the DT O
 patient NN O
 has VBZ O
@@ -28129,6 +29756,7 @@ anticoagulation NN O
 with IN O
 coumadin NN O
 . . O
+
 of IN O
 note NN O
 , , O
@@ -28163,6 +29791,7 @@ lower JJR O
 extremity NN O
 dvt NN O
 . . O
+
 of IN O
 note NN O
 , , O
@@ -28197,6 +29826,7 @@ lower JJR I
 extremity NN I
 dvt NN I
 . . O
+
 he PRP O
 did VBD O
 not RB O
@@ -28229,6 +29859,7 @@ inr NN O
 is VBZ O
 2.0 CD O
 . . O
+
 he PRP O
 did VBD O
 not RB O
@@ -28261,6 +29892,7 @@ inr NN O
 is VBZ O
 2.0 CD O
 . . O
+
 the DT O
 patient NN O
 also RB O
@@ -28279,6 +29911,7 @@ orthopedics NNS O
 was VBD O
 involved VBN O
 . . O
+
 heent NN O
 : : O
 pupils NNS B
@@ -28290,21 +29923,26 @@ on IN I
 both DT I
 sides NNS I
 . . O
+
 extraocular JJ B
 movements NNS I
 intact JJ I
 . . O
+
 neck NN B
 : : I
 supple NN I
 . . O
+
 no DT O
 jvd NN B
 . . O
+
 no DT O
 carotid NN B
 bruits NNS I
 . . O
+
 cardiovascular NN O
 : : O
 regular JJ B
@@ -28312,6 +29950,7 @@ rate NN I
 and CC I
 rhythm NN I
 . . O
+
 abdomen NNS B
 : : I
 soft JJ I
@@ -28320,6 +29959,7 @@ nontender NN I
 , , I
 nondistended VBN I
 . . O
+
 extremities NNS O
 : : O
 trace NN B
@@ -28330,16 +29970,19 @@ left NN I
 lower JJR I
 extremity NN I
 . . O
+
 no DT O
 clubbing NN B
 or CC O
 cyanosis NN O
 . . O
+
 no DT O
 clubbing NN O
 or CC O
 cyanosis NN B
 . . O
+
 follow VB O
 up RP O
 ____________ NN O
@@ -28370,6 +30013,7 @@ signs NNS O
 of IN O
 bleeding NN O
 . . O
+
 follow VB O
 up RP O
 ____________ NN O
@@ -28400,6 +30044,7 @@ signs NNS O
 of IN O
 bleeding NN O
 . . O
+
 follow VB O
 up RP O
 ____________ NN O
@@ -28430,6 +30075,7 @@ signs NNS O
 of IN O
 bleeding NN B
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -28549,6 +30195,7 @@ technically RB O
 difficult JJ O
 study NN O
 . . O
+
 the DT O
 anterior JJ B
 septum NN I
@@ -28557,12 +30204,14 @@ to TO I
 be VB I
 hypokinetic JJ I
 . . O
+
 no DT O
 pericardial JJ B
 effusion NN I
 is VBZ O
 seen VBN O
 . . O
+
 the DT O
 pericardium NN B
 is VBZ I
@@ -28572,18 +30221,21 @@ with IN I
 fat JJ I
 pad NN I
 . . O
+
 02 CD O
 ) ) O
 no DT O
 pericardial JJ B
 effusion NN I
 . . O
+
 chief JJ O
 complaint NN O
 : : O
 abdominal JJ B
 pain NN I
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -28612,11 +30264,13 @@ for IN O
 one CD O
 week NN O
 . . O
+
 he PRP O
 denies VBZ O
 any DT O
 fever NN B
 . . O
+
 he PRP O
 has VBZ O
 some DT B
@@ -28629,6 +30283,7 @@ alternated VBD O
 with IN O
 constipation NN O
 . . O
+
 he PRP O
 has VBZ O
 some DT O
@@ -28641,6 +30296,7 @@ alternated VBD O
 with IN O
 constipation NN O
 . . O
+
 he PRP O
 has VBZ O
 some DT O
@@ -28653,6 +30309,7 @@ alternated VBD O
 with IN O
 constipation NN O
 . . O
+
 he PRP O
 has VBZ O
 some DT O
@@ -28665,6 +30322,7 @@ alternated VBD O
 with IN O
 constipation NN B
 . . O
+
 he PRP O
 states VBZ O
 the DT O
@@ -28679,6 +30337,7 @@ in IN O
 all DT O
 regions NNS O
 . . O
+
 the DT O
 patient NN O
 had VBD O
@@ -28692,6 +30351,7 @@ in IN O
 the DT O
 past NN O
 . . O
+
 the DT O
 patient NN O
 had VBD O
@@ -28705,11 +30365,13 @@ in IN O
 the DT O
 past NN O
 . . O
+
 the DT O
 pain NN B
 is VBZ O
 non-radiating JJ O
 . . O
+
 he PRP O
 also RB O
 states VBZ O
@@ -28723,6 +30385,7 @@ in IN O
 the DT O
 past NN O
 . . O
+
 the DT O
 patient JJ O
 denies VBZ O
@@ -28730,33 +30393,42 @@ any DT O
 back RB B
 pain NN I
 . . O
+
 denies NNS O
 any DT O
 dysuria NN B
 or CC O
 frequency NN O
 . . O
+
 denies NNS O
 any DT O
 dysuria NN O
 or CC O
 frequency NN B
 . . O
+
 coronary JJ B
 artery NN I
 disease NN I
 . . O
+
 mi NN B
 . . O
+
 chf NN B
 . . O
+
 diabetes NNS B
 . . O
+
 hypertension NN B
 . . O
+
 psychiatric JJ B
 history NN I
 . . O
+
 also RB O
 history NN O
 of IN O
@@ -28765,6 +30437,7 @@ and CC O
 colon NN O
 problems NNS O
 . . O
+
 also RB O
 history NN O
 of IN O
@@ -28773,6 +30446,7 @@ and CC O
 colon NN B
 problems NNS I
 . . O
+
 he PRP O
 has VBZ O
 also RB O
@@ -28783,6 +30457,7 @@ and CC O
 cataract NN O
 surgery NN O
 . . O
+
 he PRP O
 has VBZ O
 also RB O
@@ -28793,6 +30468,7 @@ and CC O
 cataract NN B
 surgery NN I
 . . O
+
 allergies NNS B
 : : O
 he PRP O
@@ -28801,6 +30477,7 @@ no DT O
 known VBN O
 allergies NNS O
 . . O
+
 review NN O
 of IN O
 systems NNS O
@@ -28816,6 +30493,7 @@ but CC O
 no DT O
 fever NN O
 . . O
+
 review NN O
 of IN O
 systems NNS O
@@ -28831,25 +30509,30 @@ but CC O
 no DT O
 fever NN B
 . . O
+
 no DT O
 weight JJ B
 loss NN I
 . . O
+
 no DT O
 headache NN B
 or CC O
 dizziness NN O
 . . O
+
 no DT O
 headache NN O
 or CC O
 dizziness NN B
 . . O
+
 psychological JJ O
 : : O
 no DT O
 depression NN B
 . . O
+
 ophthalmologic NN O
 : : O
 denies VBZ O
@@ -28857,6 +30540,7 @@ any DT O
 blurred JJ B
 vision NN I
 . . O
+
 ent NN O
 : : O
 denies VBZ O
@@ -28869,6 +30553,7 @@ or CC I
 throat NN I
 pain NN I
 . . O
+
 endocrine NN O
 : : O
 denies VBZ O
@@ -28877,6 +30562,7 @@ polyuria NN B
 or CC O
 polyphagia NN O
 . . O
+
 endocrine NN O
 : : O
 denies VBZ O
@@ -28885,11 +30571,13 @@ polyuria NN O
 or CC O
 polyphagia NN B
 . . O
+
 skin NN O
 : : O
 no DT O
 rashes NNS B
 . . O
+
 pulmonary NN O
 : : O
 denies VBZ O
@@ -28898,10 +30586,12 @@ shortness NN B
 of IN I
 breath NN I
 . . O
+
 no DT O
 chest NN B
 pain NN I
 . . O
+
 genitourinary NN O
 : : O
 no DT O
@@ -28909,6 +30599,7 @@ dysuria NN B
 or CC O
 frequency NN O
 . . O
+
 genitourinary NN O
 : : O
 no DT O
@@ -28916,6 +30607,7 @@ dysuria NN O
 or CC O
 frequency NN B
 . . O
+
 final JJ O
 diagnosis NN O
 : : O
@@ -28925,6 +30617,7 @@ pain NN I
 uncertain JJ O
 etiology NN O
 . . O
+
 the DT O
 indication NN O
 for IN O
@@ -28936,6 +30629,7 @@ in IN I
 bowel NN I
 habits NNS I
 . . O
+
 findings NNS O
 : : O
 an DT O
@@ -28946,6 +30640,7 @@ in IN I
 the DT I
 cecum NN I
 . . O
+
 there EX O
 was VBD O
 no DT O
@@ -28955,6 +30650,7 @@ polyps NNS B
 or CC O
 mass NN O
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -29002,6 +30698,7 @@ year NN O
 s NN O
 ) ) O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -29049,6 +30746,7 @@ history NN O
 : : O
 fever NN B
 . . O
+
 findings NNS O
 : : O
 there EX O
@@ -29060,12 +30758,14 @@ right JJ I
 pleural JJ I
 effusion NN I
 . . O
+
 the DT O
 lungs NNS B
 are VBP I
 otherwise RB I
 clear JJ I
 . . O
+
 heart NN B
 size NN I
 and CC I
@@ -29074,6 +30774,7 @@ vascularity NN I
 are VBP I
 normal JJ I
 . . O
+
 mild JJ B
 scoliosis NN I
 is VBZ I
@@ -29082,6 +30783,7 @@ of IN I
 thoracic JJ I
 spine NN I
 . . O
+
 impression NN O
 : : O
 tiny JJ B
@@ -29095,6 +30797,7 @@ lungs NNS O
 are VBP O
 clear JJ O
 . . O
+
 impression NN O
 : : O
 tiny JJ O
@@ -29108,6 +30811,7 @@ lungs NNS I
 are VBP I
 clear JJ I
 . . O
+
 8 CD O
 cc NN O
 of IN O
@@ -29118,6 +30822,7 @@ fluid NN I
 are VBP O
 received VBN O
 . . O
+
 sb NN O
 tf NN O
 source NN O
@@ -29137,27 +30842,33 @@ satisfactory NN O
 for IN O
 interpretation NN O
 . . O
+
 catastrophic JJ B
 antiphospolipid JJ I
 syndrome NN I
 . . O
+
 subacute JJ B
 subdural JJ I
 hematoma NN I
 with IN I
 rebleed NN I
 . . O
+
 cerebrovascular JJ B
 accident NN I
 . . O
+
 seizure NN B
 . . O
+
 allergies NNS B
 - : I
 phenobarbital NN I
 and CC I
 trileptal NN I
 . . O
+
 hospital JJ O
 course NN O
 : : O
@@ -29221,6 +30932,7 @@ transferred VBN O
 to TO O
 **institution NN O
 . . O
+
 hospital JJ O
 course NN O
 : : O
@@ -29284,6 +30996,7 @@ transferred VBN O
 to TO O
 **institution NN O
 . . O
+
 hospital JJ O
 course NN O
 : : O
@@ -29347,6 +31060,7 @@ transferred VBN O
 to TO O
 **institution NN O
 . . O
+
 hospital JJ O
 course NN O
 : : O
@@ -29410,6 +31124,7 @@ transferred VBN O
 to TO O
 **institution NN O
 . . O
+
 on IN O
 transfer NN O
 , , O
@@ -29420,6 +31135,7 @@ subdural JJ B
 hematoma NN I
 evacuation NN O
 . . O
+
 throughout IN O
 the DT O
 course NN O
@@ -29452,6 +31168,7 @@ a DT O
 catastrophic JJ O
 rebleed NN O
 . . O
+
 additionally RB O
 , , O
 the DT O
@@ -29480,6 +31197,7 @@ examination NN O
 is VBZ O
 suspected VBN O
 . . O
+
 also RB O
 throughout IN O
 this DT O
@@ -29546,6 +31264,7 @@ underlying VBG O
 hypercoagulable JJ O
 state NN O
 . . O
+
 also RB O
 throughout IN O
 this DT O
@@ -29612,6 +31331,7 @@ underlying VBG O
 hypercoagulable JJ O
 state NN O
 . . O
+
 also RB O
 throughout IN O
 this DT O
@@ -29678,6 +31398,7 @@ underlying VBG O
 hypercoagulable JJ O
 state NN O
 . . O
+
 also RB O
 throughout IN O
 this DT O
@@ -29744,6 +31465,7 @@ underlying VBG O
 hypercoagulable JJ O
 state NN O
 . . O
+
 also RB O
 throughout IN O
 this DT O
@@ -29810,6 +31532,7 @@ underlying VBG O
 hypercoagulable JJ O
 state NN O
 . . O
+
 also RB O
 throughout IN O
 this DT O
@@ -29876,6 +31599,7 @@ underlying VBG O
 hypercoagulable JJ O
 state NN O
 . . O
+
 also RB O
 throughout IN O
 this DT O
@@ -29942,6 +31666,7 @@ underlying VBG O
 hypercoagulable JJ O
 state NN O
 . . O
+
 treatments NNS O
 that WDT O
 were VBD O
@@ -29959,6 +31684,7 @@ an DT O
 additional JJ O
 cva NN O
 . . O
+
 treatments NNS O
 that WDT O
 were VBD O
@@ -29976,6 +31702,7 @@ an DT O
 additional JJ O
 cva NN B
 . . O
+
 most RBS O
 recently RB O
 , , O
@@ -30006,6 +31733,7 @@ known JJ O
 cerebral JJ O
 hemorrhage NN O
 . . O
+
 most RBS O
 recently RB O
 , , O
@@ -30036,6 +31764,7 @@ known JJ O
 cerebral JJ B
 hemorrhage NN I
 . . O
+
 unfortunately RB O
 , , O
 the DT O
@@ -30059,6 +31788,7 @@ during IN O
 this DT O
 hospitalization NN O
 . . O
+
 unfortunately RB O
 , , O
 the DT O
@@ -30082,6 +31812,7 @@ during IN O
 this DT O
 hospitalization NN O
 . . O
+
 unfortunately RB O
 , , O
 the DT O
@@ -30105,6 +31836,7 @@ during IN O
 this DT O
 hospitalization NN O
 . . O
+
 the DT O
 patient NN O
 has VBZ O
@@ -30124,6 +31856,7 @@ as IN O
 detailed JJ O
 above IN O
 . . O
+
 most RBS O
 recently RB O
 , , O
@@ -30148,6 +31881,7 @@ previously RB O
 had VBD O
 been VBN O
 . . O
+
 the DT O
 patient NN O
 's POS O
@@ -30183,6 +31917,7 @@ appropriate JJ O
 bowel NN O
 regimen NNS O
 . . O
+
 on IN O
 the DT O
 day NN O
@@ -30204,6 +31939,7 @@ rate NN I
 and CC I
 rhythm NN I
 . . O
+
 her PRP$ O
 lungs NNS O
 have VBP O
@@ -30212,6 +31948,7 @@ breath NN I
 sounds VBZ I
 bilaterally RB I
 . . O
+
 the DT O
 patient NN O
 has VBZ O
@@ -30234,12 +31971,14 @@ to TO O
 140s CD O
 70s CD O
 . . O
+
 the DT O
 patient NN O
 has VBZ O
 been VBN O
 afebrile RB B
 . . O
+
 the DT O
 patient NN O
 does VBZ O
@@ -30258,6 +31997,7 @@ as IN O
 previously RB O
 noted VBN O
 . . O
+
 the DT O
 patient NN O
 does VBZ O
@@ -30276,6 +32016,7 @@ as IN O
 previously RB O
 noted VBN O
 . . O
+
 9 CD O
 cm NN O
 ( ( O
@@ -30298,12 +32039,14 @@ technically RB O
 difficult JJ O
 study NN O
 . . O
+
 left VBD B
 ventricular JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 ventricular JJ I
 wall NN I
@@ -30311,6 +32054,7 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 segmental JJ B
 left VBD I
 ventricular JJ I
@@ -30318,6 +32062,7 @@ function NN I
 is VBZ I
 normal JJ I
 . . O
+
 overall JJ B
 left VBD I
 ventricular JJ I
@@ -30334,12 +32079,14 @@ of IN O
 55-60 JJ O
 % NN O
 . . O
+
 right RB B
 ventricular JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular NN I
 wall NN I
@@ -30347,12 +32094,14 @@ thickness NN I
 is VBZ I
 normal JJ I
 . . O
+
 right RB B
 ventricular JJ I
 function NN I
 is VBZ I
 normal JJ I
 . . O
+
 left VBN B
 atrial JJ I
 size NN I
@@ -30360,12 +32109,14 @@ is VBZ I
 mildly RB I
 enlarged VBN I
 . . O
+
 right JJ B
 atrial JJ I
 size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonary JJ B
 artery NN I
@@ -30373,6 +32124,7 @@ size NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 aortic JJ B
 root NN I
@@ -30381,36 +32133,42 @@ is VBZ I
 mildly RB I
 dilated VBN I
 . . O
+
 the DT O
 aortic JJ B
 valve NN I
 is VBZ I
 thickened VBN I
 . . O
+
 the DT O
 mitral JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 tricuspid JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 the DT O
 pulmonic JJ B
 valve NN I
 is VBZ I
 normal JJ I
 . . O
+
 no DT O
 pericardial JJ B
 effusion NN I
 is VBZ O
 seen VBN O
 . . O
+
 spectral JJ O
 doppler NN O
 : : O
@@ -30420,18 +32178,21 @@ mild JJ B
 aortic JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace JJ B
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 color NN O
 flow NN O
 doppler NN O
@@ -30442,18 +32203,21 @@ mild JJ B
 aortic JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace JJ B
 mitral JJ I
 regurgitation NN I
 . . O
+
 there EX O
 is VBZ O
 trace JJ B
 tricuspid JJ I
 regurgitation NN I
 . . O
+
 02 CD O
 ) ) O
 normal JJ B
@@ -30463,6 +32227,7 @@ size NN I
 and CC I
 function NN I
 . . O
+
 03 CD O
 ) ) O
 thickened VBD B
@@ -30472,6 +32237,7 @@ with IN I
 mild JJ I
 regurgitation NN I
 . . O
+
 04 CD O
 ) ) O
 mild NN B
@@ -30479,6 +32245,7 @@ left VBD I
 atrial JJ I
 enlargement NN I
 . . O
+
 05 CD O
 ) ) O
 mild FW B
@@ -30486,6 +32253,7 @@ aortic JJ I
 root NN I
 dilation NN I
 . . O
+
 chief JJ O
 complaint NN O
 : : O
@@ -30493,6 +32261,7 @@ sickle NN B
 cell NN I
 crisis NN I
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -30537,6 +32306,7 @@ pain NN O
 she PRP O
 says VBZ O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -30581,6 +32351,7 @@ pain NN O
 she PRP O
 says VBZ O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -30625,6 +32396,7 @@ pain NN O
 she PRP O
 says VBZ O
 . . O
+
 history NN O
 of IN O
 present JJ O
@@ -30669,6 +32441,7 @@ pain NN I
 she PRP O
 says VBZ O
 . . O
+
 she PRP O
 says VBZ O
 she PRP O
@@ -30688,6 +32461,7 @@ dyspnea NN O
 on IN O
 exertion NN O
 . . O
+
 she PRP O
 says VBZ O
 she PRP O
@@ -30707,6 +32481,7 @@ dyspnea NN O
 on IN O
 exertion NN O
 . . O
+
 she PRP O
 says VBZ O
 she PRP O
@@ -30726,6 +32501,7 @@ dyspnea NN B
 on IN I
 exertion NN I
 . . O
+
 her PRP$ O
 last JJ O
 episode NN O
@@ -30735,6 +32511,7 @@ pain NN I
 was VBD O
 yesterday NN O
 . . O
+
 she PRP O
 still RB O
 mainly RB O
@@ -30756,6 +32533,7 @@ sickle NN O
 cell NN O
 pain NN O
 . . O
+
 she PRP O
 still RB O
 mainly RB O
@@ -30777,6 +32555,7 @@ sickle NN B
 cell NN I
 pain NN I
 . . O
+
 she PRP O
 also RB O
 states VBZ O
@@ -30798,6 +32577,7 @@ mild VB O
 sore JJR O
 throat NN O
 . . O
+
 she PRP O
 also RB O
 states VBZ O
@@ -30819,6 +32599,7 @@ mild VB O
 sore JJR O
 throat NN O
 . . O
+
 she PRP O
 also RB O
 states VBZ O
@@ -30840,38 +32621,46 @@ mild VB B
 sore JJR I
 throat NN I
 . . O
+
 she PRP O
 denies VBZ O
 a DT O
 cough NN B
 . . O
+
 yeast JJ B
 infection NN I
 . . O
+
 sickle NN B
 cell NN I
 disease NN I
 . . O
+
 allergies NNS B
 : : I
 codeine NN I
 . . O
+
 social JJ O
 history NN O
 : : O
 former JJ O
 tobacco NN B
 . . O
+
 denies NNS O
 alcohol VBP B
 or CC O
 drugs NNS O
 . . O
+
 denies NNS O
 alcohol VBP O
 or CC O
 drugs NNS B
 . . O
+
 general JJ O
 : : O
 the DT O
@@ -30897,6 +32686,7 @@ no DT O
 acute JJ O
 distress NN O
 . . O
+
 general JJ O
 : : O
 the DT O
@@ -30922,6 +32712,7 @@ no DT O
 acute JJ O
 distress NN O
 . . O
+
 general JJ O
 : : O
 the DT O
@@ -30947,6 +32738,7 @@ no DT O
 acute JJ O
 distress NN O
 . . O
+
 general JJ O
 : : O
 the DT O
@@ -30972,6 +32764,7 @@ no DT O
 acute JJ O
 distress NN O
 . . O
+
 general JJ O
 : : O
 the DT O
@@ -30997,12 +32790,14 @@ no DT O
 acute JJ B
 distress NN I
 . . O
+
 heent NN O
 : : O
 head NN B
 is VBZ I
 atraumatic JJ I
 . . O
+
 pupils NNS B
 are VBP I
 equal JJ I
@@ -31014,46 +32809,55 @@ reactive JJ I
 to TO I
 light NN I
 . . O
+
 extraocular JJ B
 motions NNS I
 are VBP I
 intact JJ I
 . . O
+
 sclerae NN B
 anicteric NN I
 . . O
+
 conjunctivae NN B
 are VBP I
 mildly RB I
 pale JJ I
 . . O
+
 mucous JJ B
 membranes NNS I
 are VBP I
 moist JJ I
 . . O
+
 pharynx NN B
 is VBZ I
 pink VBN I
 without IN I
 exudates NNS I
 . . O
+
 tms NNS B
 are VBP I
 translucent JJ I
 bilaterally RB I
 . . O
+
 neck NN O
 : : O
 neck NN B
 is VBZ I
 supple JJ I
 . . O
+
 no DT O
 jvd NN B
 or CC O
 lymphadenopathy NN O
 . . O
+
 heart NN O
 : : O
 positive JJ B
@@ -31061,11 +32865,13 @@ s1 NN I
 and CC I
 s2 NN I
 . . O
+
 regular JJ B
 rate NN I
 and CC I
 rhythm NN I
 . . O
+
 no DT O
 murmurs NN B
 , , O
@@ -31074,6 +32880,7 @@ rubs NN O
 or CC O
 gallops NNS O
 . . O
+
 no DT O
 murmurs NN O
 , , O
@@ -31082,6 +32889,7 @@ rubs NN B
 or CC O
 gallops NNS O
 . . O
+
 no DT O
 murmurs NN O
 , , O
@@ -31090,6 +32898,7 @@ rubs NN O
 or CC O
 gallops NNS B
 . . O
+
 lungs NNS O
 : : O
 clear JJ B
@@ -31097,6 +32906,7 @@ to TO I
 auscultation VB I
 bilaterally RB I
 . . O
+
 no DT O
 wheezes NN B
 , , O
@@ -31105,6 +32915,7 @@ rales NNS O
 or CC O
 rhonchi NN O
 . . O
+
 no DT O
 wheezes NN O
 , , O
@@ -31113,6 +32924,7 @@ rales NNS B
 or CC O
 rhonchi NN O
 . . O
+
 no DT O
 wheezes NN O
 , , O
@@ -31121,6 +32933,7 @@ rales NNS O
 or CC O
 rhonchi NN B
 . . O
+
 abdomen NNS O
 : : O
 abdomen NNS B
@@ -31135,6 +32948,7 @@ positive JJ O
 bowel NN O
 sounds NNS O
 . . O
+
 abdomen NNS O
 : : O
 abdomen NNS O
@@ -31149,6 +32963,7 @@ positive JJ B
 bowel NN I
 sounds NNS I
 . . O
+
 extremities NNS O
 : : O
 no DT O
@@ -31156,6 +32971,7 @@ edema NN B
 or CC O
 cyanosis NN O
 . . O
+
 extremities NNS O
 : : O
 no DT O
@@ -31163,6 +32979,7 @@ edema NN O
 or CC O
 cyanosis NN B
 . . O
+
 musculoskeletal NN O
 : : O
 the DT O
@@ -31183,6 +33000,7 @@ lumbar NN O
 spinal JJ O
 tenderness NN O
 . . O
+
 musculoskeletal NN O
 : : O
 the DT O
@@ -31203,6 +33021,7 @@ lumbar NN I
 spinal JJ I
 tenderness NN I
 . . O
+
 neurologic NNS O
 : : O
 cranial JJ B
@@ -31213,6 +33032,7 @@ xii NNS I
 are VBP I
 intact JJ I
 . . O
+
 strength NN B
 is VBZ I
 good JJ I
@@ -31221,17 +33041,20 @@ all DT I
 four CD I
 extremities NNS I
 . . O
+
 sensation NN B
 is VBZ I
 intact JJ I
 bilaterally RB I
 . . O
+
 patellar JJ B
 reflexes NNS I
 are VBP I
 2+ CD I
 bilaterally RB I
 . . O
+
 medical JJ O
 decision NN O
 making NN O
@@ -31276,6 +33099,7 @@ hemoglobin NN O
 of IN O
 8 CD O
 . . O
+
 medical JJ O
 decision NN O
 making NN O
@@ -31320,12 +33144,15 @@ hemoglobin NN O
 of IN O
 8 CD O
 . . O
+
 sickle NN B
 cell NN I
 crisis NN I
 . . O
+
 anemia NN B
 . . O
+
 the DT O
 indication NN O
 for IN O
@@ -31338,6 +33165,7 @@ history NN O
 of IN O
 polyps NNS B
 . . O
+
 findings NNS O
 : : O
 diverticula NN B
@@ -31352,11 +33180,13 @@ see VB O
 image3 NN O
 ) ) O
 . . O
+
 no DT O
 evidence NN O
 of IN O
 polyps NNS B
 . . O
+
 < JJ O
 < NNP O
 procedureimages NNS O
@@ -31409,6 +33239,7 @@ year NN O
 s NN O
 ) ) O
 . . O
+
 s_o_h NN O
 counters NNS O
 report VBP O
@@ -31468,6 +33299,7 @@ history NN O
 of IN O
 thymoma NN B
 . . O
+
 evaluate NN O
 for IN O
 restaging VBG O
@@ -31478,6 +33310,7 @@ of IN I
 the DT I
 lung NN I
 . . O
+
 findings NNS O
 : : O
 neck NN O
@@ -31495,6 +33328,7 @@ globes NNS I
 are VBP I
 normal JJ I
 . . O
+
 the DT O
 visualized JJ O
 paranasal NN B
@@ -31502,6 +33336,7 @@ sinuses NNS I
 are VBP I
 normal JJ I
 . . O
+
 the DT O
 course NN B
 of IN I
@@ -31515,6 +33350,7 @@ veins NNS I
 are VBP I
 normal JJ I
 . . O
+
 chest NN O
 : : O
 the DT O
@@ -31531,6 +33367,7 @@ a DT O
 malignant JJ B
 thymoma NN I
 . . O
+
 in IN O
 addition NN O
 , , O
@@ -31562,6 +33399,7 @@ patient NN O
 's POS O
 surgery NN O
 . . O
+
 no DT O
 change NN O
 in IN O
@@ -31570,6 +33408,7 @@ of IN I
 right JJ I
 hemidiaphragm NN I
 . . O
+
 the DT O
 remainder NN B
 of IN I
@@ -31578,6 +33417,7 @@ lungs NNS I
 are VBP I
 clear JJ I
 . . O
+
 there EX O
 is VBZ O
 a DT O
@@ -31593,6 +33433,7 @@ both DT I
 lung NN I
 bases NNS I
 . . O
+
 there EX O
 are VBP O
 no DT O
@@ -31602,6 +33443,7 @@ intrathoracic NN I
 lymph NN I
 nodes NNS I
 . . O
+
 no DT O
 soft JJ B
 tissue NN I
@@ -31620,18 +33462,21 @@ suggest VB O
 recurrent JJ O
 disease NN O
 . . O
+
 heart NN B
 is VBZ I
 normal JJ I
 in IN I
 size NN I
 . . O
+
 no DT O
 pericardial NN B
 or CC I
 pleural JJ I
 effusions NNS I
 . . O
+
 abdomen NNS O
 : : O
 the DT O
@@ -31639,6 +33484,7 @@ liver NN B
 is VBZ I
 cirrhotic JJ I
 . . O
+
 the DT O
 exam NN O
 is VBZ O
@@ -31663,6 +33509,7 @@ normal JJ I
 in IN I
 size NN I
 . . O
+
 the DT O
 pancreas NNS B
 and CC I
@@ -31671,6 +33518,7 @@ glands NNS I
 are VBP I
 normal JJ I
 . . O
+
 there EX O
 is VBZ O
 a DT O
@@ -31678,11 +33526,13 @@ right JJ B
 renal JJ I
 cyst NN I
 . . O
+
 both DT B
 kidneys NNS I
 are VBP I
 otherwisenormal JJ I
 . . O
+
 there EX B
 are VBP I
 small JJ I
@@ -31700,6 +33550,7 @@ of IN O
 chronicrenal JJ O
 disease NN O
 . . O
+
 there EX O
 are VBP O
 small JJ O
@@ -31717,6 +33568,7 @@ of IN O
 chronicrenal JJ B
 disease NN I
 . . O
+
 the DT O
 main JJ B
 portal JJ I
@@ -31724,6 +33576,7 @@ vein NN I
 is VBZ I
 patent NN I
 . . O
+
 pelvis NN O
 : : O
 the DT O
@@ -31736,6 +33589,7 @@ normal JJ I
 in IN I
 caliber NN I
 . . O
+
 there EX O
 are VBP O
 no DT O
@@ -31745,6 +33599,7 @@ suggest VB O
 bowel NN B
 obstruction NN I
 . . O
+
 there EX O
 is VBZ O
 no DT O
@@ -31754,12 +33609,14 @@ in IN I
 the DT I
 pelvis NN I
 . . O
+
 the DT O
 prostate NN B
 gland NN I
 is VBZ I
 enlarged VBN I
 . . O
+
 there EX O
 is VBZ O
 central JJ B
@@ -31772,6 +33629,7 @@ the DT I
 bladder NN I
 wall NN I
 . . O
+
 impression NN O
 : : O
 neck NN B
@@ -31784,6 +33642,7 @@ fdg NN I
 avid JJ I
 malignancy NN I
 . . O
+
 1. CD O
 surgical JJ O
 changes NNS O
@@ -31801,6 +33660,7 @@ chest NN B
 : : I
 1 CD O
 . . O
+
 cirrhotic JJ B
 morphology NN I
 of IN I
@@ -31822,6 +33682,7 @@ underlying VBG I
 liver JJ I
 disease NN I
 . . O
+
 pelvis NN B
 : : I
 no DT I
@@ -31832,3 +33693,4 @@ fdg NN I
 avid JJ I
 malignancy NN I
 . . O
+
