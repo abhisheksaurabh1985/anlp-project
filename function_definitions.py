@@ -1,12 +1,12 @@
+from __future__ import division
 from collections import OrderedDict
+from nltk.tokenize import word_tokenize
+import itertools
+import math
 import csv
 import nltk
 import re
-from nltk.tokenize import word_tokenize
-import itertools
-
-# External libraries
-from nltk.tokenize import word_tokenize
+import random
 
 def getCSVInDictionary(csvFileName):
     '''
@@ -110,13 +110,58 @@ def getTrainingDataForCRF(tokenizedSentences, tokenizedConcepts, bioTags):
         flatListBioTags.append('')    
 
     trainDataCRF= zip(flatTokenizedSentences, flatListPosTags, flatListBioTags)
-    with open('./output/trainCRF.csv', 'wb') as csvfile:
+    with open('./output/trainCRF.txt', 'wb') as csvfile:
         writer = csv.writer(csvfile, delimiter=" ")
         for row in trainDataCRF:
-            if(row[0].strip()==row[1].strip()==row[2].strip() == ''):
-                print(row)
-                print(" ignored")
-                continue
+##            if(row[0].strip()==row[1].strip()==row[2].strip() == ''):
+##                # import pdb
+##                # pdb.set_trace()
+##                print(row)
+##                print(" ignored")
+##                continue
             writer.writerow(row)
     
     return posTaggedTokens, indexConceptsInSentences, listBioTags
+
+def splitDataForValidation(fileNameCRFData, percentTest):
+    dataCRF= []
+    blankLine = [' \n']
+    with open(fileNameCRFData) as f:
+        temp= []
+##        pdb.set_trace()
+        for line in f:
+##            print line
+            if line.strip():
+                temp.append(line)	
+            else:
+                dataCRF.append(temp + blankLine)
+                temp= []                
+
+    print len(dataCRF)
+    # Split into train and test
+    countSentencesTest = math.ceil((percentTest/ 100)* len(dataCRF))
+    random.shuffle(dataCRF)
+    trainingDataCRF= dataCRF[0:len(dataCRF)- int(countSentencesTest)]
+    testDataCRF = [x for x in dataCRF if x not in trainingDataCRF]
+    print len(trainingDataCRF)
+    print len(testDataCRF)
+    # Write in text file
+##    try:
+##        with open('./output/trainingDataCRF.txt', 'w') as file:
+##            file.writelines(''.join(i) for i in trainingDataCRF)
+##
+##        with open('./output/testDataCRF.txt', 'w') as file:
+##            file.writelines(''.join(i) for i in testDataCRF)
+##    except Exception:
+##        pass
+    with open('./crf-test/trainingDataCRF.txt', 'w') as file:
+        for i in trainingDataCRF:
+            if i is not None:
+                file.writelines(''.join(i))
+
+    with open('./crf-test/testDataCRF.txt', 'w') as file:
+        for i in testDataCRF:
+            if i is not None:
+                file.writelines(''.join(i))
+
+    return dataCRF, trainingDataCRF, testDataCRF

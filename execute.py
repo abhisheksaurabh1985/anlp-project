@@ -1,8 +1,10 @@
+from __future__ import division
+from function_definitions import *
+from nltk.tokenize import word_tokenize
 import sys
 import nltk
 import itertools
-from function_definitions import *
-from nltk.tokenize import word_tokenize
+
 
 #csvFileName= './data/Annotations-1-120.csv'
 #dictAnnotatedData1= getCSVInDictionary(csvFileName) # Read the annotated data in an Ordered Dictionary
@@ -26,11 +28,11 @@ bioTags= ['O', 'B', 'I']
 [posTaggedTokens, indexConceptsInSentences, listBioTags] = getTrainingDataForCRF(tokenizedSentences,
                                                                                  tokenizedConcepts,
                                                                                  bioTags)
+##print len(listBioTags), indexConceptsInSentences
 
 
-        
-
-
-
-
+# Split data for training and testing
+fileNameCRFData= './output/trainCRF.txt'
+percentTestData= 25 # Only integer
+[dataCRF, trainingDataCRF, testDataCRF] = splitDataForValidation(fileNameCRFData, percentTestData)
 
