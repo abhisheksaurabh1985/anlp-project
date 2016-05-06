@@ -29,10 +29,13 @@ bioTags= ['O', 'B', 'I']
                                                                                  tokenizedConcepts,
                                                                                  bioTags)
 ##print len(listBioTags), indexConceptsInSentences
-
-
+        
 # Split data for training and testing
 fileNameCRFData= './output/trainCRF.txt'
 percentTestData= 25 # Only integer
 [dataCRF, trainingDataCRF, testDataCRF] = splitDataForValidation(fileNameCRFData, percentTestData)
+
+
+
+
 
