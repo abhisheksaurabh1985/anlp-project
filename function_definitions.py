@@ -57,9 +57,18 @@ def mergeListsOfBioTags(lists, priorities):
         res.append(tag)
     return res
 
+def writeLinesToFile(data, fileName):
+    with open(fileName, 'w') as file:
+        for i in data:
+            if i is not None:
+                file.writelines(''.join(i))
+
+def writeCsvToFile(data, fileName):
+    with open(fileName, 'wb') as csvfile:
+        for row in data:
+            csvfile.write(" ".join(row) + "\n")
 
 def getTrainingDataForCRF(tokenizedSentences, tokenizedConcepts, bioTags, priorities):
-
     indexConceptsInSentences= []
     exceptions = []
     for i in range(len(tokenizedConcepts)):
@@ -126,12 +135,8 @@ def getTrainingDataForCRF(tokenizedSentences, tokenizedConcepts, bioTags, priori
         flatListBioTags.append('')
 
     trainDataCRF= zip(flatTokenizedSentences, flatListPosTags, flatListBioTags)
-    filename = './output/trainCRF.csv'
-    with open(filename, 'wb') as csvfile:
-        for row in trainDataCRF:
-            csvfile.write(" ".join(row) + "\n")
-    print "%s created" % filename
-    return posTaggedTokens, indexConceptsInSentences, listBioTags
+
+    return posTaggedTokens, indexConceptsInSentences, listBioTags, trainDataCRF
 
 
 def splitDataForValidation(fileNameCRFData, percentTest):
@@ -142,7 +147,7 @@ def splitDataForValidation(fileNameCRFData, percentTest):
             temp.append(line)
             if not line.strip():
                 dataCRF.append(temp)
-                temp= []                
+                temp= []
 
     print len(dataCRF)
     # Split into train and test
@@ -150,16 +155,8 @@ def splitDataForValidation(fileNameCRFData, percentTest):
     random.shuffle(dataCRF)
     trainingDataCRF= dataCRF[0:len(dataCRF)- int(countSentencesTest)]
     testDataCRF = [x for x in dataCRF if x not in trainingDataCRF]
+
     print len(trainingDataCRF)
     print len(testDataCRF)
-    with open('./crf-test/trainingDataCRF.txt', 'w') as file:
-        for i in trainingDataCRF:
-            if i is not None:
-                file.writelines(''.join(i))
-
-    with open('./crf-test/testDataCRF.txt', 'w') as file:
-        for i in testDataCRF:
-            if i is not None:
-                file.writelines(''.join(i))
 
     return dataCRF, trainingDataCRF, testDataCRF
