@@ -16,14 +16,16 @@ print len(tokenizedSentences)
 tokenizedConcepts = getTokens(dictAnnotatedData['Concept'][0:])
 print len(tokenizedConcepts)
 
+negations = dictAnnotatedData['Negation']
+
 # Define B-I-O tags as per IOB2 convention. Three types of tags have been used viz. O (Others), B-X (Beginning of X)
 # and I-X (Inside X) where X is 'CONCEPT'.
-bioTags= ['O', 'B', 'I']
-priorities= {'O':0, 'B':2, 'I':1}
+bioTags= ['O', 'BN', 'IN', 'BA', 'IA']
+priorities= {'O':0, 'BN':2, 'IN':1, 'BA': 2, 'IA':1}
 
 # Training data for CRF
 [posTaggedTokens, indexConceptsInSentences, listBioTags, trainDataCRF] = getTrainingDataForCRF(tokenizedSentences,
-                                                                                 tokenizedConcepts,
+                                                                                 tokenizedConcepts, negations,
                                                                                  bioTags, priorities)
 # write the data to file
 filename = './output/trainCRF.csv'

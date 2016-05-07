@@ -68,7 +68,7 @@ def writeCsvToFile(data, fileName):
         for row in data:
             csvfile.write(" ".join(row) + "\n")
 
-def getTrainingDataForCRF(tokenizedSentences, tokenizedConcepts, bioTags, priorities):
+def getTrainingDataForCRF(tokenizedSentences, tokenizedConcepts, negations, bioTags, priorities):
     indexConceptsInSentences= []
     exceptions = []
     for i in range(len(tokenizedConcepts)):
@@ -92,6 +92,7 @@ def getTrainingDataForCRF(tokenizedSentences, tokenizedConcepts, bioTags, priori
     # Get rid of the ignored sentences
     for index in sorted(exceptions, reverse=True):
         del tokenizedSentences[index]
+        del negations[index]
 
     # Get POS tags for each of the sentences
     posTaggedTokens = []
@@ -104,8 +105,14 @@ def getTrainingDataForCRF(tokenizedSentences, tokenizedConcepts, bioTags, priori
         startIndex = indexConceptsInSentences[i][0]
         endIndex = indexConceptsInSentences[i][1]
         tempList.append(list(itertools.repeat(bioTags[0],startIndex)))
-        tempList.append(list(itertools.repeat(bioTags[1],1)))
-        tempList.append(list(itertools.repeat(bioTags[2],endIndex- startIndex)))
+        if(negations[i] == 'Negated'):
+            tagB = bioTags[1]
+            tagI = bioTags[2]
+        else:
+            tagB = bioTags[3]
+            tagI = bioTags[4]
+        tempList.append(list(itertools.repeat(tagB,1)))
+        tempList.append(list(itertools.repeat(tagI,endIndex- startIndex)))
         tempList.append(list(itertools.repeat(bioTags[0],len(tokenizedSentences[i])- endIndex- 1)))
         tempList = [val for sublist in tempList for val in sublist]
         listBioTags.append(tempList)
