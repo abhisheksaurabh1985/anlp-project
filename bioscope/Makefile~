@@ -1,0 +1,2 @@
+all:
+	g++ -o raytracer main.cpp Color.cpp tinyxml.cpp tinyxmlerror.cpp tinyxmlparser.cpp tinystr.cpp vector3d.cpp -O2
