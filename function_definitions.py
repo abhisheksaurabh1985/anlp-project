@@ -68,26 +68,32 @@ def writeCsvToFile(data, fileName):
         for row in data:
             csvfile.write(" ".join(row) + "\n")
 
-def getTrainingDataForCRF(tokenizedSentences, tokenizedConcepts, negations, bioTags, priorities):
+def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts, negations_orig, bioTags, priorities, consideredConcepts):
     indexConceptsInSentences= []
     exceptions = []
+    negations = list(negations_orig)
+    tokenizedSentences = list(tokenizedSentences_orig)
+
     for i in range(len(tokenizedConcepts)):
         temp = []
-        start = tokenizedConcepts[i][0]
-        end = tokenizedConcepts[i][-1]
-        if(start in tokenizedSentences[i]):
-            if(end in tokenizedSentences[i]):
-                # this will not work if there are multiple occurences of concept in a sentence!
-                ind = sublistIndex(tokenizedConcepts[i], tokenizedSentences[i])
-                temp.append(ind)
-                temp.append(ind + len(tokenizedConcepts[i]) - 1)
-                indexConceptsInSentences.append(temp)
+        if(negations[i] == consideredConcepts):
+            start = tokenizedConcepts[i][0]
+            end = tokenizedConcepts[i][-1]
+            if(start in tokenizedSentences[i]):
+                if(end in tokenizedSentences[i]):
+                    # this will not work if there are multiple occurences of concept in a sentence!
+                    ind = sublistIndex(tokenizedConcepts[i], tokenizedSentences[i])
+                    temp.append(ind)
+                    temp.append(ind + len(tokenizedConcepts[i]) - 1)
+                    indexConceptsInSentences.append(temp)
+                else:
+                    print("concept end '%s' is not in %i sentence; ignore this sentence" % (end, i))
+                    exceptions.append(i)
             else:
-                print("concept end '%s' is not in %i sentence; ignore this sentence" % (end, i))
+                print("concept start '%s' is not in %i sentence; ignore this sentence" % (start, i))
                 exceptions.append(i)
         else:
-            print("concept start '%s' is not in %i sentence; ignore this sentence" % (start, i))
-            exceptions.append(i)
+            indexConceptsInSentences.append([0,0])
 
     # Get rid of the ignored sentences
     for index in sorted(exceptions, reverse=True):
@@ -102,18 +108,17 @@ def getTrainingDataForCRF(tokenizedSentences, tokenizedConcepts, negations, bioT
     listBioTags= []
     for i in range(len(indexConceptsInSentences)):
         tempList = []
-        startIndex = indexConceptsInSentences[i][0]
-        endIndex = indexConceptsInSentences[i][1]
-        tempList.append(list(itertools.repeat(bioTags[0],startIndex)))
-        if(negations[i] == 'Negated'):
+        if(negations[i] == consideredConcepts):
+            startIndex = indexConceptsInSentences[i][0]
+            endIndex = indexConceptsInSentences[i][1]
             tagB = bioTags[1]
             tagI = bioTags[2]
+            tempList.append(list(itertools.repeat(bioTags[0],startIndex)))
+            tempList.append(list(itertools.repeat(tagB,1)))
+            tempList.append(list(itertools.repeat(tagI,endIndex- startIndex)))
+            tempList.append(list(itertools.repeat(bioTags[0],len(tokenizedSentences[i])- endIndex- 1)))
         else:
-            tagB = bioTags[3]
-            tagI = bioTags[4]
-        tempList.append(list(itertools.repeat(tagB,1)))
-        tempList.append(list(itertools.repeat(tagI,endIndex- startIndex)))
-        tempList.append(list(itertools.repeat(bioTags[0],len(tokenizedSentences[i])- endIndex- 1)))
+            tempList.append(list(itertools.repeat(bioTags[0],len(tokenizedSentences[i]))))
         tempList = [val for sublist in tempList for val in sublist]
         listBioTags.append(tempList)
 

@@ -1,4 +1,9 @@
 import re
+import sys
+
+if(len(sys.argv) <2 ):
+   print "input file is not specified"
+
 
 def extract_concepts(tags, filename):
    file = open(filename)
@@ -87,10 +92,9 @@ def print_concepts(filename, sentences, concepts_initial, concepts_found):
    f.close()
 
 
-filename = "test_out.csv"
+filename = sys.argv[1]
 sentences = []
-(concepts_found_a, concepts_initial_a) = extract_concepts(['O','BA', 'IA'], filename)
-(concepts_found_n, concepts_initial_n) = extract_concepts(['O','BN', 'IN'], filename)
+(concepts_found, concepts_initial) = extract_concepts(['O','B', 'I'], filename)
 file = open(filename)
 
 sentence = ""
@@ -107,15 +111,8 @@ for line in file:
       sentence = sentence + sep + parts[0]
 file.close()
 
-print ("total sentences %d\n" % len(concepts_initial_a))
+print ("total sentences %d\n" % len(concepts_initial))
 
-count_found_concepts(sentences, concepts_initial_a, concepts_found_a, "affirmed")
-concept_file = "concepts_a.csv"
-print_concepts(concept_file, sentences, concepts_initial_n, concepts_found_a)
-
-
-count_found_concepts(sentences, concepts_initial_n, concepts_found_n, "negated")
-concept_file = "concepts_n.csv"
-print_concepts(concept_file, sentences, concepts_initial_n, concepts_found_n)
-
-
+count_found_concepts(sentences, concepts_initial, concepts_found, "")
+concept_file = "concepts.csv"
+print_concepts(concept_file, sentences, concepts_initial, concepts_found)
