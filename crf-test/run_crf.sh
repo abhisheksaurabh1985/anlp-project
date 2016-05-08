@@ -7,8 +7,8 @@ crf_test  -m model_negated testNegatedDataCRF.txt > test_negated_out.csv
 
 echo "Affirmed concepts"
 python count_out.py test_affirmed_out.csv
-python extract_concepts_found.py test_affirmed_out.csv
+python extract_concepts_found.py test_affirmed_out.csv concepts_affirmed.csv
 
 echo "Negated concepts"
 python count_out.py test_negated_out.csv
-python extract_concepts_found.py test_negated_out.csv
+python extract_concepts_found.py test_negated_out.csv concepts_negated.csv

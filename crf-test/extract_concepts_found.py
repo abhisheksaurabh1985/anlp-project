@@ -1,7 +1,7 @@
 import re
 import sys
 
-if(len(sys.argv) <2 ):
+if(len(sys.argv) <3 ):
    print "input file is not specified"
 
 
@@ -114,5 +114,5 @@ file.close()
 print ("total sentences %d\n" % len(concepts_initial))
 
 count_found_concepts(sentences, concepts_initial, concepts_found, "")
-concept_file = "concepts.csv"
+concept_file = sys.argv[2]
 print_concepts(concept_file, sentences, concepts_initial, concepts_found)
