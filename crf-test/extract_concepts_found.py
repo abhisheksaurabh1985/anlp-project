@@ -13,6 +13,10 @@ def extract_concepts(tags, filename):
    concepts_initial_current = []
    initial = ""
    found = ""
+
+   real_tag_n = 3
+   predicted_tag_n = 4
+
    for line in file:
 
       if not line.strip():
@@ -25,23 +29,23 @@ def extract_concepts(tags, filename):
       else:
          parts = re.split("\t|\n", line)
 
-         if (parts[3] == tags[1]):
+         if (parts[predicted_tag_n] == tags[1]):
             if(found.strip()):
                concepts_found_current.append(found.strip())
             found =  parts[0] + " "
-         elif (parts[3] == tags[2]):
+         elif (parts[predicted_tag_n] == tags[2]):
             found = found + parts[0] + " "
-         elif (parts[3] == tags[0]):
+         elif (parts[predicted_tag_n] == tags[0]):
             if(found.strip()):
                concepts_found_current.append(found.strip())
 
-         if (parts[2] == tags[1]):
+         if (parts[real_tag_n] == tags[1]):
             if(initial.strip()):
                concepts_initial_current.append(initial.strip())
             initial =  parts[0] + " "
-         elif (parts[2] == tags[2]):
+         elif (parts[real_tag_n] == tags[2]):
             initial = initial + parts[0] + " "
-         elif (parts[2] == tags[0]):
+         elif (parts[real_tag_n] == tags[0]):
             if(initial.strip()):
                concepts_initial_current.append(initial.strip())
                initial = ""
@@ -94,7 +98,7 @@ def print_concepts(filename, sentences, concepts_initial, concepts_found):
 
 filename = sys.argv[1]
 sentences = []
-(concepts_found, concepts_initial) = extract_concepts(['O','B', 'I'], filename)
+(concepts_found, concepts_initial) = extract_concepts(['O','B','I'], filename)
 file = open(filename)
 
 sentence = ""
