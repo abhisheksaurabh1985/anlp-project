@@ -31,6 +31,12 @@ def getTxtInDictionary(txtFileName):
             result.setdefault(column, []).append(value)
     return result
 
+def getTriggers(triggersFileName):
+    triggers = []
+    for line in open(triggersFileName):
+        triggers.append(line.strip().split('\t\t'))
+    return triggers
+
 def getTokens(listSentences):
     '''
     Description: Function to get tokens from sentences. Word2Vec expects single sentences, each one of them as a list of words.
@@ -39,15 +45,21 @@ def getTokens(listSentences):
     '''
     tokenizedSentences = []
     for eachSentence in listSentences:
-        tokenizedSentences.append(word_tokenize(re.sub("/", " ", eachSentence.lower())))
+        tokenizedSentences.append(getTokensFromSentence(eachSentence))
     return tokenizedSentences
+
+def getTokensFromSentence(sentence):
+    return  word_tokenize(re.sub("[/_]", " ", sentence.lower()))
 
 def sublistIndex(sublist, origlist):
     origstr = ' '.join(map(str, origlist))
-    ind =  origstr.index(' '.join(map(str, sublist)))
-    return len(origstr[:ind].split(' ')) - 1
+    substr = ' '+' '.join(map(str, sublist))+' '
+    if not (substr in origstr):
+       return -1
+    ind =  origstr.index(substr)
+    return len(origstr[:ind].split(' '))
 
-def mergeListsOfBioTags(lists, priorities):
+def mergeListsOfTags(lists, priorities):
     res = []
     for i in xrange(len(lists[0])):
         tag = lists[0][i]
@@ -68,11 +80,14 @@ def writeCsvToFile(data, fileName):
         for row in data:
             csvfile.write(" ".join(row) + "\n")
 
-def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts, negations_orig, bioTags, priorities, consideredConcepts):
+def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts,
+                          negations_orig, bioTags, priorities, consideredConcepts,
+                          triggersTags_orig):
     indexConceptsInSentences= []
     exceptions = []
     negations = list(negations_orig)
     tokenizedSentences = list(tokenizedSentences_orig)
+    triggerTags = list(triggersTags_orig)
 
     for i in range(len(tokenizedConcepts)):
         temp = []
@@ -95,10 +110,11 @@ def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts, negations_
         else:
             indexConceptsInSentences.append([0,0])
 
-    # Get rid of the ignored sentences
+     # Get rid of the ignored sentences
     for index in sorted(exceptions, reverse=True):
         del tokenizedSentences[index]
         del negations[index]
+        del triggerTags[index]
 
     # Get POS tags for each of the sentences
     posTaggedTokens = []
@@ -122,6 +138,17 @@ def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts, negations_
         tempList = [val for sublist in tempList for val in sublist]
         listBioTags.append(tempList)
 
+    listTriggerTags= []
+    for i in range(len(triggerTags)):
+        tempList = list(itertools.repeat('NONE',len(tokenizedSentences[i])))
+        for tag in triggerTags[i].keys():
+           for indexes in triggerTags[i][tag]:
+               tempList[indexes[0]] = tag + "-B"
+               if(indexes[0] != indexes[1]):
+                   for j in xrange(indexes[0]+1, indexes[1]+1):
+                       tempList[j] = tag + "-I"
+        listTriggerTags.append(tempList)
+
     uniqueSentenses = list(np.unique(tokenizedSentences))
 
     # Write token, POS and BIO tag in CSV
@@ -141,14 +168,22 @@ def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts, negations_
     flatListBioTags= []
     for i in xrange(len(uniqueSentenses)):
         selectedBioTagsList = [listBioTags[k] for k, j in enumerate(tokenizedSentences) if j == uniqueSentenses[i]]
-        selectedBioTags = mergeListsOfBioTags(selectedBioTagsList, priorities)
+        selectedBioTags = mergeListsOfTags(selectedBioTagsList, priorities)
         for item in selectedBioTags:
             flatListBioTags.append(item)
         flatListBioTags.append('')
 
-    trainDataCRF= zip(flatTokenizedSentences, flatListPosTags, flatListBioTags)
+    flatTriggerTags = []
+    for i in xrange(len(uniqueSentenses)):
+        ind = tokenizedSentences.index(uniqueSentenses[i])
+        for eachTriggerTag in listTriggerTags[ind]:
+            flatTriggerTags.append(eachTriggerTag)
+        flatTriggerTags.append('')
 
-    return posTaggedTokens, indexConceptsInSentences, listBioTags, trainDataCRF
+
+    trainDataCRF= zip(flatTokenizedSentences, flatListPosTags, flatTriggerTags, flatListBioTags)
+
+    return trainDataCRF
 
 
 def splitDataForValidation(fileNameCRFData, percentTest):
@@ -172,3 +207,24 @@ def splitDataForValidation(fileNameCRFData, percentTest):
     print len(testDataCRF)
 
     return dataCRF, trainingDataCRF, testDataCRF
+
+
+def extractTriggersTags(tokenizedSentences, triggers):
+    tagsExtracted = []
+    triggerTokens = []
+    for i in xrange(len(triggers)):
+       triggerTokens.append(getTokensFromSentence(triggers[i][0]))
+
+    for sentence in tokenizedSentences:
+        tagsForSentence = {}
+        for i in xrange(len(triggers)):
+            ind = sublistIndex(triggerTokens[i], sentence)
+            if(ind != -1):
+                tag = triggers[i][1][1:-1]
+                if not(tag in tagsForSentence.keys()):
+                   tagsForSentence[tag] = []
+                tagsForSentence[tag].append((ind, ind + len(triggerTokens[i])-1))
+
+        tagsExtracted.append(tagsForSentence)
+
+    return tagsExtracted
