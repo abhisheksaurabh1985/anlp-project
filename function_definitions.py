@@ -122,20 +122,21 @@ def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts,
         posTaggedTokens.append(nltk.pos_tag(tokenizedSentences[i]))
 
     listBioTags= []
+    tagB = bioTags[1]
+    tagI = bioTags[2]
+
     for i in range(len(indexConceptsInSentences)):
-        tempList = []
         if(negations[i] == consideredConcepts):
             startIndex = indexConceptsInSentences[i][0]
             endIndex = indexConceptsInSentences[i][1]
-            tagB = bioTags[1]
-            tagI = bioTags[2]
-            tempList.append(list(itertools.repeat(bioTags[0],startIndex)))
-            tempList.append(list(itertools.repeat(tagB,1)))
-            tempList.append(list(itertools.repeat(tagI,endIndex- startIndex)))
-            tempList.append(list(itertools.repeat(bioTags[0],len(tokenizedSentences[i])- endIndex- 1)))
+
+            tempList = list(itertools.repeat(bioTags[0],len(tokenizedSentences[i])))
+            tempList[startIndex] = tagB
+            if(startIndex != endIndex):
+                for j in xrange(startIndex + 1, endIndex+1):
+                    tempList[j] = tagI
         else:
-            tempList.append(list(itertools.repeat(bioTags[0],len(tokenizedSentences[i]))))
-        tempList = [val for sublist in tempList for val in sublist]
+            tempList = list(itertools.repeat(bioTags[0],len(tokenizedSentences[i])))
         listBioTags.append(tempList)
 
     listTriggerTags= []
