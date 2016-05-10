@@ -180,12 +180,23 @@ def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts,
         for eachTriggerTag in listTriggerTags[ind]:
             flatTriggerTags.append(eachTriggerTag)
         flatTriggerTags.append('')
+    flatIsPunctuation = []
+    for sentence in uniqueSentenses:
+        for token in sentence:
+            if(isPunctuation(token)):
+                flatIsPunctuation.append('PUNCT')
+            else:
+                flatIsPunctuation.append('NONE')
+        flatIsPunctuation.append('')
 
-
-    trainDataCRF= zip(flatTokenizedSentences, flatListPosTags, flatTriggerTags, flatListBioTags)
+    trainDataCRF= zip(flatTokenizedSentences, flatListPosTags, flatTriggerTags, flatIsPunctuation, flatListBioTags)
 
     return trainDataCRF
 
+
+def isPunctuation(token):
+    matched = re.match("[^\w]*", token)
+    return matched != None and matched.group(0) == token
 
 def splitDataForValidation(fileNameCRFData, percentTest):
     dataCRF= []
