@@ -16,7 +16,7 @@ triggers= getTriggers(triggersFileName)
 tokenizedSentences= getTokens(dictAnnotatedData['Sentence'][0:])
 print len(tokenizedSentences)
 
-triggersTags = extractTriggersTags(tokenizedSentences, triggers)
+cueTypeTags = extractCueTypeTags(tokenizedSentences, triggers)
 
 # Tokenize 'concepts'
 tokenizedConcepts = getTokens(dictAnnotatedData['Concept'][0:])
@@ -43,7 +43,7 @@ priorities= {'O':0, 'B':2, 'I':1}
 # Training data for CRF with negated concepts
 trainDataCRF = getTrainingDataForCRF(tokenizedSentences,
                                      tokenizedConcepts, negations,
-                                     bioTags, priorities, "Negated", triggersTags)
+                                     bioTags, priorities, "Negated", cueTypeTags)
 # write the data to file
 filename = './output/trainNegatedCRF.csv'
 writeCsvToFile(trainDataCRF, filename)

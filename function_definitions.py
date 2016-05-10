@@ -82,12 +82,12 @@ def writeCsvToFile(data, fileName):
 
 def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts,
                           negations_orig, bioTags, priorities, consideredConcepts,
-                          triggersTags_orig):
+                          cueTypeTags_orig):
     indexConceptsInSentences= []
     exceptions = []
     negations = list(negations_orig)
     tokenizedSentences = list(tokenizedSentences_orig)
-    triggerTags = list(triggersTags_orig)
+    cueTypeTags = list(cueTypeTags_orig)
 
     for i in range(len(tokenizedConcepts)):
         temp = []
@@ -114,7 +114,7 @@ def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts,
     for index in sorted(exceptions, reverse=True):
         del tokenizedSentences[index]
         del negations[index]
-        del triggerTags[index]
+        del cueTypeTags[index]
 
     # Get POS tags for each of the sentences
     posTaggedTokens = []
@@ -140,10 +140,10 @@ def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts,
         listBioTags.append(tempList)
 
     listTriggerTags= []
-    for i in range(len(triggerTags)):
+    for i in range(len(cueTypeTags)):
         tempList = list(itertools.repeat('NONE',len(tokenizedSentences[i])))
-        for tag in triggerTags[i].keys():
-           for indexes in triggerTags[i][tag]:
+        for tag in cueTypeTags[i].keys():
+           for indexes in cueTypeTags[i][tag]:
                tempList[indexes[0]] = tag + "-B"
                if(indexes[0] != indexes[1]):
                    for j in xrange(indexes[0]+1, indexes[1]+1):
@@ -174,12 +174,12 @@ def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts,
             flatListBioTags.append(item)
         flatListBioTags.append('')
 
-    flatTriggerTags = []
+    flatCueTypeTags = []
     for i in xrange(len(uniqueSentenses)):
         ind = tokenizedSentences.index(uniqueSentenses[i])
         for eachTriggerTag in listTriggerTags[ind]:
-            flatTriggerTags.append(eachTriggerTag)
-        flatTriggerTags.append('')
+            flatCueTypeTags.append(eachTriggerTag)
+        flatCueTypeTags.append('')
     flatIsPunctuation = []
     for sentence in uniqueSentenses:
         for token in sentence:
@@ -189,7 +189,7 @@ def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts,
                 flatIsPunctuation.append('NONE')
         flatIsPunctuation.append('')
 
-    trainDataCRF= zip(flatTokenizedSentences, flatListPosTags, flatTriggerTags, flatIsPunctuation, flatListBioTags)
+    trainDataCRF= zip(flatTokenizedSentences, flatListPosTags, flatCueTypeTags, flatIsPunctuation, flatListBioTags)
 
     return trainDataCRF
 
@@ -221,7 +221,7 @@ def splitDataForValidation(fileNameCRFData, percentTest):
     return dataCRF, trainingDataCRF, testDataCRF
 
 
-def extractTriggersTags(tokenizedSentences, triggers):
+def extractCueTypeTags(tokenizedSentences, triggers):
     tagsExtracted = []
     triggerTokens = []
     for i in xrange(len(triggers)):
