@@ -1,0 +1,321 @@
+Recently, a computational study addressed this question and reported that no tRNA gene for unknown amino acid was found in genome sequences available.
+However, no promising candidate for the 23rd amino acid was detected, and only one novel selenoprotein was predicted.
+Our result suggests that the unknown amino acid encoded by stop codons does not exist, or its phylogenetic distribution is rather limited, which is in agreement with the previous study on tRNA.
+Stop codon readthrough is a phenomenon in which the translation process does not terminate at a stop codon, and an amino acid is inserted there instead 12.
+In some cases, the inserted amino acid is not one of the 20 amino acids but a noncanonical one.
+They analyzed 146 prokaryotic genomes, but no likely tRNA of the novel amino acid was detected.
+Actually, tRNASec and tRNAPyl have unusual secondary structures 515 and often escape detection by programs without special consideration.
+Lobanov et al. thus developed a sensitive search method to deal with this problem, but they also admitted that it would fail to identify highly unusual tRNAs.
+However, this condition is not sufficient, since two major problems remain:: pseudogenes and two adjacent genes.
+In contrast, if the iORF consists of two adjacent genes, many hits that do not cover the inframe stop codon will be found.
+Since pseudogenes are less conserved, and sequencing errors are relatively rare events, they will not have homologous iORFs in other species.
+Even if they do, the position or type (UAA, UAG or UGA) of their inframe stop codons will not coincide.
+In other words, species-specific readthrough genes are not in the scope of this study.
+Based on this observation, each iORF was required to have:: (i) at least one homolog from other organisms that covers the inframe stop codon and (ii) no homolog that does not cover the stop codon.
+Instead of the whole length of the amino acid sequence, a window of 101 residues centered at the inframe stop codon was used as a BLAST query.
+Whether the codon aligned to the inframe stop codon is a nonsense codon or not was neglected at this stage.
+An iORF was discarded if there were any BLAST hits that do not cover the inframe stop codon.
+The three families we failed to find were SelW-like protein, peroxiredoxin and thiol:protein disulphide oxidoreductase.
+The reason why the two other families were not detected is more complex.
+The cluster was thus discarded because of an apparent lack of stop codon conservation.
+HesB family was not clustered into one family, because their sequences were too short and diverged.
+Selenoprotein families we failed to detect because of nonconserved location of stop codons
+Selenoprotein families we failed to detect because of nonconserved location of stop codons.
+The genome annotation of M. acetivorans also includes several amber-containing genes that were absent from our prediction result.
+The reason why they were not detected is that only one species in our dataset had an amber-containing form of these proteins.
+The successful detection of many known proteins is encouraging, because our method relies only on general properties of proteins that contain stop-codon-encoded amino acids, but not on specific features of selenocysteine or pyrrolysine.
+The N-terminal part of the sequence contains five CXXCH heme-biding motifs, while the C-terminal part has no similarity with any characterized proteins.
+This is because the inframe stop codons of these proteins are exclusively TGA, and all of the above organisms possess selenocysteine insertion machinery (data not shown).
+If they are true selenoproteins, this protein family becomes a rare instance of selenoprotein that lacks non-selenocysteine homologs.
+However, computational analysis of sequences immediately downstream of the inframe stop codons failed to identify SECIS elements, which is a hallmark of selenocysteine-containing genes.
+In contrast to the first cluster, no homolog was identified from other species.
+This cluster is probably a false positive and not readthrough proteins.
+In summary, although a possible selenoprotein was newly identified, there was no promising candidate for an unknown amino acid encoded by a stop codon.
+Because we have no a priori knowledge about the 23rd amino acid, cutoff thresholds for the filtering procedures were determined based on the known readthrough proteins.
+Red circle: an organism with pyrrolysine, blue; selenocysteine, yellow; both pyrrolysine and selenocysteine, white; neither pyrrolysine nor selenocysteine.
+When top ten organisms were examined, only Gluconobacter oxydans was an organism not known to have stop-codon-encoded amino acids.
+Because it seems unlikely that an insertion system of novel amino acid evolves solely for transposable elements, this organism cannot be considered as a good candidate of the 23rd amino acid.
+However, the result agrees with the filtering-dependent analysis that no candidate of the novel stop-codon-encoded amino acid is detectable in the current dataset.
+However, since the target of this study is the 23rd amino acid, and there is no a priori knowledge, only general properties of stop-codon-encoded amino acids can be used for prediction.
+However, both of them did not apply their methods to search for novel amino acids.
+Therefore, the question of the 23rd amino acid has not been investigated from the viewpoint of coding sequences.
+Additionally, the previous methods cannot effectively discriminate pseudogenes from readthrough genes.
+The previous methods also assume that proteins with stop-codon-encoded amino acids will have non-readthrough homologs (i.e., homologous proteins that do not have inframe stop codons).
+For example, pyrrolysine-containing monomethylamine methyltransferases adopt TIM barrel fold 6, but their primary sequences do not exhibit detectable similarity to other TIM barrel proteins because of evolutionary divergence.
+Dimethylamine methyltransferases also lack non-readthrough homologs.
+Therefore, it is important not to assume non-readthrough homologs for exploring novel candidates.
+The method reported here is unique in that it does not assume non-readthrough homologs.
+The most likely explanation is that the 23rd amino acid does not exist, or its distribution on the tree of life is rather limited.
+Yet another possibility is that the 23rd amino acid exists but is not encoded by stop codons.
+Zhang et al. 20 examined the validity of this assumption using a SECIS-based method and concluded that selenoproteins without cysteine homologs will be extremely rare.
+Therefore, selenoproteins that lack cysteine homologs will be scarce, as previously reported.
+The result reported here is in agreement, but it is not conclusive.
+At least, only one experimentally-confirmed example from a pathogenic strain of Escherichia coli 23, whose genome is not yet determined, does not obey this rule.
+Although many of the currently known selenoproteins and pyrrolysine proteins were successfully detected, no candidate for the 23rd amino acid was discovered.
+Moreover, it does not assume the occurrence of non-readthrough homologs in the public databases.
+If an iORF matched any protein-coding genes (E-value < 10-3) and their reading frames did not coincide, the iORF was discarded.
+However, if there were any hits (E-value < 10-5) that did not cover the inframe stop codon, the iORF was discarded.
+If the location or type of stop codons was not identical, the cluster was discarded.
+If we measure purifying selection for amino acid sequences by the ratio of nonsynonymous to synonymous substitution rates (dN/dS), a protein with a stop-codon-encoded amino acid will indicate the sign of selection, while CNS will not.
+Even if both the upstream and downstream regions of the inframe stop codon code proteins, they may be two adjacent genes instead of a readthrough protein.
+To enhance sensitivity of the filters, the whole length of an iORF was used as a BLAST query instead of the partial sequence, and the size of the BLAST database was increased from the 191 nonredundant genomes to the 328 complete genomes in GenomeNet and 246 draft genome sequences downloaded from GenBank in May 2006.
+Therefore, in an ideal situation the presence or absence of the 21 residues in alignments will be synchronized.
+Using a conservative threshold, our most accurate predictor identifies 37606 human interactions, 32892 (80%) of which are not present in other publicly available large human interaction datasets, thus substantially increasing the coverage of the human interaction map.
+As such, all combinations of the Group A modules can be used to predict interaction in the presence or absence of the Transitive module.
+In the absence of the Transitive module, the Preliminary Score is used as the final likelihood ratio output by the predictor.
+If the Transitive module is not considered, the final likelihood ratios assigned to all protein pairs is the preliminary score (PS).
+Protein pairs that have a posterior odds of interaction above 1 are more likely to interact than not to interact, thus providing an obvious threshold to predict interacting proteins.
+However, since the highest likelihood ratio for the expression datasets that we consider is 33, they are not sufficient on their own to predict interacting protein pairs with a posterior odds ratio above 1.
+This is not surprising as the transfer of interacting orthologs (known as interologs 33) from one organism to another is a popular method to predict interactions (see for example 3448), particularly in the case of organisms like human for which only a small proportion of interactions are known.
+This is not surprising as previous studies have indicated that quite stringent joint E-values must be used to transfer interactions safely between organisms 3435.
+These features were originally investigated separately, as shown in Figure 3, but their combination into one module that considers all dependencies between them achieves higher accuracy (data not shown) and higher likelihood ratios (as can be seen by comparing to Figure 1) while still being computationally feasible.
+Four possible localization states were considered for protein pairs:: same compartment, neighboring compartments, different non-neighboring compartments and absence of localization annotation (more details are given in the Methods section).
+This module cannot be used alone as it requires as input the output of at least one group A module.
+If the modules were not independent, some likelihood ratios would likely be overestimated, particularly for protein pairs that achieve simultaneously high likelihoods for non-independent features.
+Protein pairs predicted to have a posterior odds ratio below 1.0 have an estimated true positive rate below 50% and thus are more likely not to interact than to interact.
+These protein pairs are therefore not of interest in this context.
+Individual modules do not achieve high scores for the areas under the ROC50 and ROC100.
+In fact, all ROC50 AUC values achieved by individual modules are below 0.025 and the Expression and Disorder modules do not predict any protein pairs (positive or negative) above a posterior odds ratio of 1, which is expected as the highest likelihood ratios they achieve are lower than 400 (see Figure 1A).
+However, the Disorder module does not contribute significantly to the prediction as predictors that consider it do not, in general, do better than their counterparts that do not use it.
+However, this appears to add more noise to the prediction without increasing the accuracy.
+Once again, the Disorder module does not contribute positively to the prediction.
+Its inclusion does not increase any of the measures of accuracy considered.
+In addition, several groups use localization-derived negatives (i.e. protein pairs that are not annotated as being localized to the same cellular compartment) rather than randomly chosen negatives (see for example 374346).
+Ratios greater than 100 were not considered because they are computationally infeasible given the size of our datasets and the architecture of the predictor.
+When equal numbers of positives and negatives are used in training, the diversity that exists in the non-interacting protein pair space may not be captured, thus resulting in misleading likelihood ratios for the predictive modules.
+The effect of localization-derived negatives rather than randomly chosen negatives was also investigated to see if it would increase the prediction accuracy.
+However, one can argue that localization-derived negatives might not be able to capture the full diversity of the non-interacting protein space since many proteins in the same cellular compartment do not interact.
+Such predictors may not generalize well when predicting on cell-wide protein pairs which consist not only of non-colocalized non-interacting pairs but also numerous protein pairs that do not interact but are present in the same cellular compartment.
+The Combined module for these predictors only considers domains and PTMs but not subcellular localization as this would result in using this feature both in the selection of the training set and as a feature predictive of interaction.
+This is most likely due to the fact that the localization-derived negative trained predictor cannot take full advantage of the Transitive module, since the network resulting from the predictions of the Group A modules likely does not sample the whole protein pair space well.
+To do this, all protein pairs were considered that achieve an estimated posterior odds ratio > 1 when the EOCT predictor was trained on the full datasets without cross-validation.
+However, as previously noted, the highest likelihood provided by this module is 33 and thus the Expression module cannot predict interaction on its own.
+When either of these two modules is absent, fewer than 12500 interactions are predicted.
+As the majority of the LR400 interactions are derived from the Combined and Transitive modules, it is possible that the method is identifying a large subset of interactions that are not common to previous human protein interaction datasets.
+The Ramani interaction dataset that was automatically extracted from the literature 16 as well as all new interactions present in the October 2006 version of the manually curated HPRD database 15 (but none of the interactions also present in earlier versions of the HPRD which were used to train our predictor) were taken as reference datasets.
+We estimated false positive rates for each of the datasets by comparing them two by two to one of the reference datasets, thus generating 4 to 6 different estimates of false positive rates for each computational dataset, as shown in Figure 6A (the two Lehner datasets were not compared to each other, which is why they have fewer FPR estimates).
+It should be noted that the Rhodes, Lehner and Ramani datasets annotate interactions as a relationship between human genes and not their protein products directly.
+Both the Rhodes dataset and our LR400 dataset predict interactions involving many proteins that are not even present in their positive training set (the HPRD).
+Many of the predictions in these two datasets concern protein pairs and proteins that are not present in other datasets, suggesting that they cover different regions of the human interaction space.
+We do not compare our predictions to this dataset because such a threshold of TP/FP > 1 does not correspond to a posterior odds threshold > 1.
+We do not believe that the quality of this large number of predictions is high enough to warrant their publication since the great majority of these protein pairs achieve a posterior odds ratio below 1.
+Although the overlap between the LR400 dataset and the HPRD-derived positive training set is below 10% as shown in Figure 6C, the proportion of interactions common to these two sets is not equally distributed for all posterior odds ratios of interaction values.
+Although many of these novel predictions have not been previously investigated in the literature, there exists experimental evidence supporting a subset of these predictions which is not present in the June 2006 version of the HPRD used to train our predictor, thus providing independent validation of our method.
+By considering several different types of orthogonal and quite distinct features including expression, orthology, combined protein characteristics and local network topology, we predicted over 37000 human protein interactions and explored a subspace of the human interactome that has not been investigated by previous large interaction datasets.
+Duplicate interactions and self-interactions were not considered.
+Additionally, some proteins were not recovered in the conversion between different identifiers.
+Some gene-gene entries were not recovered in the conversion between different identifiers, or due to the deletion or replacement of some Entrez Locus IDs.
+If the features are not independent, all possible combinations of all states of these features must be considered, which can be computationally quite intensive.
+Additionally, when no data are available for a specific feature (for a given pair of proteins), the likelihood of the feature is set to 1.0.
+The prior odds ratio (Oprior) is difficult to estimate because we do not know all the true interactions, even for a small subset of proteins.
+The prior odds ratio of interaction for yeast was estimated by combining all protein-protein interactions (but only those related to direct physical interactions, and no entries derived by synthetic lethal-type experiments) from the BIND, DIP and GRID databases 656669.
+Accordingly, it is reasonable to conclude that there are not enough known human interactions to calculate a realistic and stable estimate of the prior odds ratio of interactions for human.
+The low confidence bins were filled by human protein pairs that have interacting orthologs according to InParanoid but neither achieves a score of 1 (i.e. neither is the best match for the two human proteins under consideration).
+PSLT (Protein Subcellular Localization Tool) subcellular localization predictions 54 were used to classify protein pairs in one of four groups:: pairs of proteins predicted to be in the same compartment, pairs of proteins predicted to be in neighboring compartments (cytosol-nucleus, endoplasmic reticulum-Golgi, Golgi-cytosol, cytosol-plasma membrane, and plasma membrane-secreted), pairs of proteins predicted in different non-neighboring compartments and pairs of proteins for which there were no localization predictions.
+The Transitive module investigates whether two proteins (such as i and j) that share many common interactors and have few additional interactors that are not common to both proteins are more likely to interact than two proteins (such as i' and j') that share few common interactors.
+It should be noted that the neighborhood topology score calculated for a given protein pair does not consider the preliminary score assigned to that protein pair.
+Samples of the protein pair space were taken instead of considering the whole space as this was more computationally tractable.
+By building on components that efficiently search for motifs without user-defined parameters, SCOPE requires as input only a set of upstream sequences and a species designation, making it a practical choice for non-expert users.
+Program parameters (such as motif length, number of occurrences and orientation) that cannot be reasonably specified by the user without prior knowledge about the true binding sites are referred to as nuisance parameters 4.
+Guidance on the specific parameter settings to use for given motif finding situations is not provided in most publications presenting motif finders.
+Previous studies over smaller numbers of motif finders have found that no program clearly stands out as superior to the others and each program outperforms all others on some subset of the regulons 678.
+In this context, we note that Tompa et al. 5 found that, although every motif finding program tested had some regulons on which its performance was clearly superior, it was not possible a priori to predict which motif finder represented the best choice under any given set of conditions 5.
+Rather than randomly restarting the same search algorithm or comparing multiple search strategies that all search for the same global optimum (and are potentially vulnerable to the same local optima), our algorithm assumes that the ""biological significance surface"" primarily consists of three local optima, and that one of these peaks represents the global optimum.
+We have previously demonstrated that the greedy search strategies employed by each of these methods allow them to reliably search their respective motif domains without the use of nuisance parameters, as the algorithms themselves efficiently optimize the parameters that are typically forced on the users 101112.
+The resulting ensemble algorithm, SCOPE, has no nuisance parameters and performs significantly better than its component algorithms.
+While alternative representations, such as position weight matrices (PWMs) are more expressive, their heuristic searches are prone to local optima and often do not perform well in practice @34111213@.
+For bacteria and Drosophila, upstream regions are defined to be the intergenic region upstream of each gene; thus, the KS objective function is not used.
+All values of M are not, however, equally likely a priori.
+In contrast, we have proposed that all characters should not be treated equally, but should be penalized in proportion to the information provided by them 1112.
+By this logic, ""ACGT"" will not be penalized differently from ""ACNNNNGT"", as both have the same number of bases that contribute any information to protein-DNA binding.
+Indeed, previous studies have reported little or no correlation between the significance measures of various motif finders and measures of accuracy 416.
+Different Sig values were achieved by varying the number of upstream regions, the number of motifs per upstream region, and the number of extraneous upstream regions without planted motifs.
+An ensemble motif finder with a learning rule that is no better than random will provide an accuracy that is equal to the average of its three component algorithms.
+Nuisance parameters are parameters that cannot be precisely defined without knowledge of the true binding sites (such as motif length, number of occurrences and orientation).
+SCOPE has no user-adjustable parameters, although its component algorithms do contain a number of internal parameters "("hyperparameters")" that govern their search over common nuisance parameters.
+We have therefore fixed those parameters to reasonable values and do not expose them to the user 101112.
+Corroborating the results of previously published performance comparisons @14567@, none of the other programs showed a statistically significant difference relative to the other nine.
+Similarly, none of SCOPE's component algorithms outperformed the other ten programs on this dataset by a statistically significant margin.
+In contrast, none of the other motif finders that performed well by one criterion performed well by the other, as shown by the average ranks for each motif finder over both sensitivity and PPV (Figure 6b).
+In cases where the program failed to return a result, the sensitivity is 0 and the PPV is undefined.
+Cases where a program did not support the species were not included.
+Adding sequences that do not contain binding sites decreases the signal-to-noise ratio, making motif finding more difficult 4.
+Yet remarkably, performance comparisons consistently reveal disappointing performance for motif finders and fail to find any statistical significance between them.
+Conversely, the PWM-based methods have an apparently more powerful motif model 17, but their search strategies cannot guarantee optimality and often terminate at local optima.
+The limitation arises, however, in regulons where only one program has a high accuracy and the others fail to find any portion of the binding sites.
+In this light, SCOPE can be seen as leveraging the second key observation by embracing the No Free Lunch Theorem:: rather than boost average performance by taking the average results of three general purpose algorithms, SCOPE uses highly specialized algorithms and assumes each will perform strongly on some regulons and weakly on others (and that the unified scoring metric can tell the difference).
+These observations are not offered as definitive proof that there are only three classes of motifs; rather, they show that power can be gained by identifying distinct motif classes and combining specialized algorithms with a unified scoring rule.
+Although our test set of 78 regulons gave us enough power to find significance between SCOPE and its components or other algorithms, it did not provide enough power to disentangle the effects of small improvements (such as the Bonferroni correction, the objective function that takes position bias into account, or scoring motifs based off one or both strands), especially in the rigorous cross-validation framework necessary to decipher precisely which aspects contribute significantly to the performance.
+Whereas previous performance comparisons attempt to optimize the parameters of the programs in question 467 or allow expert users to tune their own programs and manually filter both the input and output 5 we intentionally made our comparisons between programs without manually optimizing any parameters for any species so as to emulate typical use conditions.
+Although the present philosophy of performance comparison implicitly benefits SCOPE, which has no parameters to optimize, it is arguably the most relevant comparison possible for the typical biologist.
+Especially poor performance on Drosophila was also reported in the Tompa et al. performance comparison, indicating that this difficulty is not limited to the current dataset 5.
+Thus, the background sequences used by SCOPE and the other programs may not be representative of the ""true"" background model of enhancers, leading to inaccurate statistics.
+Ensemble methods hold the potential for providing improvements in motif finding accuracy without resorting to the use of additional data (such as phylogenetic information or characterization of the domain structure of the transcription factor), which are not always available.
+Since the latter cannot be defined without data that obviates the need for computational motif finding, objective functions that approximate biological significance are critical.
+While this objective function prevents a single upstream region from dominating a motif's score, it fails to account for multiple instances of a binding site in a single gene that may arise due to cooperative binding.
+Most programs assume motif orientation does not matter and so define m = mR.
+However, none of these approaches offers structural evidence that the predicted domain pairs are able to form an interaction.
+Given that 74% of all UniProt proteins contain at least one Pfam match, this is not by itself surprising.
+The columns are split according to the proportion of interactions that contain an iPfam domain pair (blue), that contain any other Pfam domains on both proteins (red), and those that contain no Pfam domain pair (yellow).
+No P value (see Methods) was greater than 1.84 · 10-06.
+In both H. sapiens (blue) and S. cerevisiae (green) a small number of iPfam domain pairs covers a large fraction of the interactome, whereas in E. coli, no iPfam domain occurs in more than 4 experimental interactions at a time.
+Without further experiments, we cannot assign the correct interacting domains with certainty.
+To gain a rough estimate of the false positive rate due to this assumption, we counted how many protein pairs in the PDB contain an iPfam domain pair that does not mediate an interaction in one complex structure but does so in another.
+3671 out of a total of 5380 interacting protein pairs from the PDB contain an iPfam domain pair that does not interact in one complex structure but does so in another.
+Thus, some complexes contain a greater number of iPfam domain pairs, while other complexes do not contain any at all.
+The grey set in the background represents iPfam domain pairs not found in the three species.
+Even in H. sapiens, where we suspect a positive bias due to the overrepresentation of disease-related proteins in both the PDB and protein interaction databases, 81% of protein interactions do not contain an iPfam domain pair.
+ While there is no structural information about putative interactions between these pairs, this fraction can already be analysed using statistical methods to identify putative domain interactions 7910.
+The significant positive correlation in the frequency of iPfam domain pairs conserved between S. cerevisiae and H. sapiens also suggests that the binding interfaces are more often kept or even reused rather than lost in the course of evolution.
+An average of ≈ 16% of interaction entries were lost in the mapping process, either if no sequence was provided with the original entry or if no significant matching sequence could be found in Integr8.
+It should be noted that the degree distribution per node is not maintained.
+While the neur and mib genes are evolutionarily conserved, their respective roles in the context of a single organism have not yet been examined.
+Finally, ectopic expression of neur in D-mib mutant larvae rescues the wing D-mib phenotype, indicating that Neur can compensate for the lack of D-mib activity.
+For instance, Dl (but not Ser) is essential for lateral inhibition during early neurogenesis in the embryo [4].
+Conversely, Ser (but not Dl) is specifically required for segmental patterning [5].
+These different requirements for Dl and Ser appear to primarily result from their non-overlapping expression patterns rather than from distinct signaling properties.
+Accordingly, signaling would not be linked directly to endocytosis, but endocytosis would be prerequisite for signaling [30].
+The D-mib1 and D-mib2mutant alleles did not complement the l(3)72CdaJ12 and l(3)72CdaI5 lethal mutations that have been mapped to the same cytological interval as the D-mib gene [35].
+Third, Western blot analysis showed that the D-mib protein was not detectable in imaginal disc and brain complex extracts prepared from homozygous D-mib1 and D-mib1/D-mib2 larvae (Figure 1C and C?).
+Fourth, the leaky, GAL4-independent expression of a UAS-D-mib transgene fully rescued the lethality of D-mib1/D-mib2 flies (data not shown; see also Figure 1H).
+The endogenous D-mib protein (predicted size: 130 kDa) was detected in S2 cells (lane 2) and in imaginal discs from wild-type larvae (lane 3) but was not detectable in homozygous D-mib1 (lane 4) and D-mib1/D-mib3 (lane 5) third instar larvae.
+D-mib mutant flies showed a weak neurogenic phenotype (J) that was not observed in Ser mutant flies (K).
+Ectopic sensory organs in D-mib mutant flies developed from ectopic sensory organ precursor cells (not shown).
+Mutant pupae died as pharate adults showing ectopic macrochaetes, increased microchaete density on the dorsal thorax (Figure 1I and 1J), short legs lacking tarsal segmentation (Figure 1L and 1M), and nearly complete loss of eye and wing tissues (Figure 1D and 1E).
+Hypomorphic D-mib2/D-mib4 mutant flies only showed ectopic sensory organs, rough eyes, small wings, and thickened veins (Figure 1D, 1D?, 1G, and 1G?; data not shown).
+More specifically, the bristle and leg phenotypes are likely to result from reduced signaling by Dl (and not by Ser).
+In contrast, a complete loss of Ser signaling had no effect on bristle density (Figure 1K).
+(F and F?) Expression of Cut (red) at the wing margin was not affected by the complete loss of neur activity in neur1F65 mutant clones (indicated by the loss of the nuclear green fluorescent protein [GFP] marker, in green).
+A complete loss of Cut and Wg accumulation and wg-lacZ expression was observed in the central region of third instar D-mib mutant wing discs (data not shown).
+Interestingly, wing margin formation and expression of Cut are not affected by the complete loss of neur activity (Figure 2F and 2F?) [45].
+Similarly, loss of neur activity had no detectable effect on leg segmentation (data not shown) and vein determination [45], two processes shown here to depend on D-mib gene activity.
+(F–F??) D-mib staining at the apical cortex (blue in [F and F?]) was not detected in D-mib2 mutant clone (marked by loss of nuclear GFP staining; green in [F]).
+Loss of D-mib activity has no detectable effect on the apical accumulation of Dl (red in [F and F??]).
+In contrast, ventral clones did not prevent the expression of Cut (C and D), implying that D-mib is not strictly required for Dl signaling.
+Note that mutant ventral cells abutting wild-type dorsal cells expressed Cut (arrow in [D]), indicating that D-mib is not required for N signal transduction.
+We focused our analysis on the notum region since D-mib mutant discs have no wing pouch (Figure 4).
+The complete loss of D-mib activity in D-mib1 mutant discs did not detectably change the subcellular localization of Dl (Figure 4C, 4C?, 4F, and 4F?).
+Similar results were also obtained in D-mib2 mutant clones, which showed strongly elevated levels of cortical Ser (Figure 4H) whereas the amount of Dl at the apical cortex was not detectably modified (see Figures 3F–3F?? and 4J).
+Of note, loss of D-mib2 activity in clones did not block the accumulation of Ser into intracellular dots (Figure 4H?).
+The distribution of Dl (red in [J and J?]) was not affected by the loss of D-mib activity.
+Briefly, dissected wing discs were cultured for 15 min in the presence of antibodies that recognize the extracellular part of Ser or Dl, then washed, cultured for another 45 min in medium without antibodies, and then fixed.
+The complete loss of D-mib activity in D-mib1 wing discs did not significantly change the internalization of anti-Dl antibodies (Figure 5D''??, 5E''??, and 5F??)'', indicating that D-mib is not required for Dl endocytosis in this tissue.
+The lack of Cut expression in wild-type ventral cells abutting the D-V boundary indicates that D-mib is required for Ser signaling by dorsal cells and acts in a non-autonomous manner to activate N in ventral cells.
+Conversely, loss of D-mib activity in large ventral clones (Figure 6C and 6D) did not disrupt margin specification, indicating that D-mib is not strictly required for Dl signaling by ventral cells.
+Of note, ventral D-mib mutant cells expressed Cut, implying that D-mib is not required for N signal transduction.
+By contrast, elevated levels of Ser expression failed to restore Cut expression and growth of the wing pouch in D-mib2/D-mib3 mutant larvae (Figure 8B).
+D-mib2/D-mib3 mutant discs expressing GFP (A) (GFP staining not shown), Ser (B), Ncdc10 (C), or Neur (D) under the control of Ser-GAL4 were stained for Cut (red).
+Expression of Ser in dorsal cells did not rescue the D-mib2/D-mib3 wing pouch mutant phenotype (compare [B] with [A]), consistent with D-mib being required for Ser signaling.
+Consistent with the latter hypothesis, the neur gene is not expressed in wing pouch and wing margin cells, where it is not required, and appears to be expressed only in sensory cells [52], where it is required.
+Expression of Neur, using actin-GAL4, restored growth of the wing pouch and formation of the wing margin (data not shown).
+In a converse experiment, we found that the neur-driven expression of D-mib, using neurPGAL4, did not rescue the cuticular neurogenic phenotype of neurPGAL4/neur1F65 embryos.
+Three UAS-D-mib transgenic lines were tested, and none showed detectable rescue whereas the two UAS-neur lines used as positive controls either fully or partially rescued the cuticular neurogenic phenotype of neurPGAL4/neur1F65 embryos (data not shown; UAS-D-mib+/+, neurPGAL4+/+ embryos developed normally).
+This indicates that a key function of Neur in the embryo cannot be provided by D-mib.
+Third, results from an in vivo antibody uptake assay indicated that the endocytosis of Ser (but not of Dl) was strongly inhibited in D-mib mutant cells.
+This inhibition correlated with the strong accumulation of Ser (but not Dl) at the apical cortex of D-mib mutant cells.
+By analogy, the defective growth of the eye tissue may similarly result from the lack of Ser signaling and of N activation along the D-V boundary [55].
+This conclusion is consistent with observations made earlier showing that secreted versions of Ser cannot activate N but instead antagonize Ser signaling [56,57].
+Interestingly, the strong requirement for Dl and Ser endocytosis seen in Drosophila is not conserved in Caenorhabditis elegans, in which secreted ligands have been shown to be functional [58,59].
+Noticeably, there is no C. elegans Mib homolog, and the function of C. elegans neur (F10D7.5) is not known.
+We have shown that the D-mib gene regulates wing margin formation, leg segmentation, and vein formation, whereas none of these three processes depend on neur gene activity ([45,60]; this study).
+Conversely, the activity of the neur gene is essential for binary cell-fate decisions in the bristle lineage [22] that do not require the activity of the D-mib gene (no bristle defects were seen in D-mib mutant flies).
+The functional differences observed between D-mib and neur cannot be simply explained by obvious differences in molecular activity and/or substrate specificity.
+We have shown here that specific aspects of the D-mib phenotype in legs and in the notum cannot simply result from loss of Ser signaling and are consistent with reduced Dl signaling, suggesting that D-mib regulates Dl signaling.
+We note, however, that no clear defects in Dl subcellular localization and/or trafficking were observed in D-mib mutant cells.
+Consistent with this idea, overexpression of Neur in imaginal discs resulted in a strong reduction of Ser accumulation at the apical cortex (data not shown).
+Nevertheless, our observation that D-mib could not compensate for the loss of neur activity in the embryo indicates that D-mib and Neur have overlapping rather than identical molecular activities.
+For instance, Neur, but not D-mib, localizes asymmetrically during asymmetric sensory organ precursor cell divisions [22].
+The l(3)72CdaJ12 and l(3)72CdaI5 alleles originally isolated by [35] failed to complement the D-mib1 and D-mib2 mutations and were renamed D-mib3 and D-mib4.
+Yet no transposase sequence similar to RAG1 or RAG2 has been found.
+We also suggest that the RAG2 protein was not encoded by ancient Transib transposons but emerged in jawed vertebrates as a counterpart of RAG1 necessary for the V(D)J recombination reaction.
+Because the vast repertoire of BCRs and TCRs cannot be encoded genetically, ancestors of jawed vertebrates adopted an elegant combinatorial solution [1].
+However, given the lack of significant structural similarities between RAGs and known TPases, the “RAG transposon” model [9,12,13,16] remained unproven.
+A lack of any labels means that the Transib TPase and RAG1/2 are not present in the sequenced portions of the corresponding genomes.
+Among branches lacking Transib TPases, only lamprey and crocodile genomes are not extensively sequenced to date.
+At the same time, recently sequenced genomes of honeybee, roundworms, fish, frog, mammals, sea squirts, plants, and fungi (except soybean rust) do not contain any detectable Transib transposons (see Figure 1).
+Each empty cell indicates that the corresponding TPase query was not used at the particular stage of PSI-BLAST analysis.
+However, based on PSI-BLAST searches, no significant similarities between these nine TPases and RAG1 protein were found (data not shown).
+Indigenous properties of the Transib TPase, that were not related directly to RAG1 functions, including those responsible for the precise 5-bp length of TSDs, might have been altered during evolution of RAG1, leading to occasional 4-bp and 3-bp TSDs that are atypical for Transib transposons.
+Extensive analysis of the flanks failed to show any hallmarks of putative transposons that might be associated with this RAG1-like protein, and we did not find any evidence indicating that other RAG1 core–like proteins are encoded by transposable elements (Figure 5).
+Although the two proteins are only 38% identical to each other, they share common features: (1) their N-terminal portions are missing and the RAG1-like sequences start at positions 17 or 18; (2) in both proteins the first aa residue overlaps with the acceptor splice site; and (3) their similarity to RAG1 starts at positions corresponding to position 470 of the human RAG1.
+Again, as in the case of the sea urchin sequences, the lancelet RAG1 core–like elements show no hallmarks of transposons (data not shown).
+Even without the finger, the remaining portions of the sea urchin sequences were significantly similar to the corresponding portions of RAG1.
+BLASTP searches of the sea urchin sequences against all GenBank proteins, excluding RAG1, detected only the ring finger domain of the sea urchin sequences.
+E-values of these matches were much higher than the E-values of similarities to the RAG1 proteins (SP_768: 0.04 versus 7×10-7; SP_86231: 3·10-4 versus 7×10-7; SP_1226: 10-4 versus 2×10-7; P4_SP: 10 versus 2×10-7; P5_SP does not have ring finger and matches RAG1 only, E-value == 9×10-7).
+Based on the same approach, our study found that the starlet sea anemone and hydra genomes also encode several families of the N-terminal RAG1 domain that appear to be separate from the RAG1 core–like proteins (data not shown).
+Because there were no known TPases similar to RAG1, it could be argued that RAG1 independently developed some TPase-like properties, rather than deriving them from a TE-encoded TPase [24].
+So far, we have found no evidence of such similarities.
+Nevertheless, based on the orientations and relative positions of these transposons, none of them appears to be associated with the RAG1-like sequences (see Figure 5).
+We also could not identify the 5-bp TSDs and TIRs characteristic of the Transib superfamily.
+The N-terminal domain of RAG1 has long been viewed as distinct from the core domain due to its lack of direct involvement in the V(D)J recombination reaction.
+In the sea urchin, lancelet, hydra, and starlet sea anemone genomes, the RAG1 core–like sequences and the N-terminal domain–like sequences do not appear to be linked to each other or to any other proteins.
+Again, it is unclear if this part is not present in sea urchins or simply undetectable due to its small size and the high sequence divergence.
+However, none of the Transib transposons identified so far encode any proteins other than the Transib/RAG TPase.
+Also, we could not find any RAG2-like sequences in the recently sequenced sea urchin, lancelet, hydra, and sea anemone genomes, which encode RAG1-like sequences.
+Nevertheless, the apparent lack of RAG2-like proteins in the sequenced portion of the sea urchin, lancelet, hydra, and sea anemone genomes, as well as in Transib transposons suggests that RAG2 was introduced in a separate event in jawless vertebrates.
+However, given the low 30% identity between the RAG1 and sea urchin/lancelet/sea squirt RAG1-like proteins, we cannot exclude the possibility that the ancestral RAG2 protein went through a period of strong diversification driven by positive selection, and it can no longer be identified by sequence comparisons but may still be present in invertebrates.
+In any case, the origin of the V(D)J recombination system in jawless vertebrates appears to be a culmination of earlier evolutionary processes rather than an isolated event associated with insertion of a single transposon.
+The remaining portion of the ZFB motif was probably lost in TPases of insect Transib transposons, which do not encode RAG2-like proteins.
+However, although the observed biochemical relationship between the hAT TPase and V(D)J recombination is a step forward in our understanding of transposition reaction, several arguments strongly suggest that V(D)J machinery evolved from a Transib rather than from hAT transposon.
+First, as we mentioned previously, there is no significant sequence identity between hAT TPases and RAG1, even if one employs a PSI-BLAST search with most relaxed parameters (i.e., E < 10, no filters, no composition-based statistics).
+No Transib TPases had been deposited or annotated previously in GenBank, except for two short hypothetical proteins predicted automatically during annotation of the D. melanogaster genome: 151-aa gi:30923617 and 123-aa gi:30923765.
+The process is repeated for a specific number of iterations or until convergence, when no additional proteins are added on successive iterations.
+To ensure that a conservation profile for the Transib TPases and RAG1 proteins was not produced by a systematic error, we employed a procedure of “step-wise” PSI-BLAST iterations.
+The following protocol describes the procedure: (1) Use a GenBank set combined with N number of Transib TPases (in our studies, N was equal to 7, 13, and 18), (2) run PSI-BLAST against GenBank combined with TPases using each TPase as a query or seed, (3) select only Transib TPase sequences with E-values less than 10-5 to define the PSSM, (4) take the best E-value (Ei) obtained by PSI-BLAST for RAG1s when PSSM is constructed without RAG1, then (5) repeat these operations for different numbers (N) of TPases.
+Presence and absence of corresponding residues in the Transib TPases are indicated by + and -, respectively.
+Internal portions of transposons are not shown and are marked by xxx.
+It is also clear from the alignment that the hAT termini do not have any second conserved block, which is expected to be preserved if RSSs have evolved from hAT termini.
+The elevated level of adenosine in the hemolymph due to lack of ADGF-A leads to apparently inconsistent phenotypic effects: precocious metamorphic changes including differentiation of macrophage-like cells and fat body disintegration on one hand, and delay of development with block of pupariation on the other.
+Without intervention, the affected individuals die from opportunistic infections within the first few months of life.
+ADA is not the only adenosine deaminase in mammalian cells.
+Drosophila also contains a gene, termed Ada, with sequence similarity to human ADA, but as we have previously shown the product of this gene is most likely not an active ADA [16].
+Melanization of the lymph glands was never observed in these larvae, and the imaginal discs and brain appear normal.
+Homozygous pupae usually die soon after pupariation; in some cases they develop normal head and thorax imaginal structures; however, abdominal parts usually do not develop.
+Less than 2% of mutant pupae develop normally and eventually emerge as adults without any obvious abnormalities besides the abdominal curvature; some of them are sterile.
+The adgf-a homozygous flies carrying the HS-ADGF-A construct showed survival rates significantly higher than adgf-a even without heat shock, probably due to leaky expression of the HS-ADGF-A construct (Figure 2A).
+Along the x-axis (which is shared with [B]), the rescue experiments are shown (marked by the Gal4 driver used for expression of ADGF-A except for first three sets of bars—the first set presents only an adgf-a mutant, the second an adgf-a mutant carrying HS-ADGF-A construct without heat shock, and the third with heat shock) and the y-axis represents percentage of pupae and adult flies out of the total number of transferred first-instar larvae of particular genotype.
+Two different lines carrying the wild-type UAS-ADGF-A expression construct together with an Actin-Gal4 driver (providing ubiquitous expression) both completely rescued the mutant phenotype, whereas larvae with UAS-ADGF-A but without the driver showed the typical mutant phenotype.
+However, neither of the two lines carrying the mutated version of the UAS-ADGF-A (producing full-length protein detected by anti-myc antibody; see Materials and Methods) showed any rescue of the mutant phenotype.
+An average of 7% of hemocytes in the adgf-a mutant are lamellocytes (Figures 3 and 4E), large flat cells that are not present in circulation of wild-type larvae under normal conditions [19].
+The lymph glands normally do not release hemocytes into the hemolymph before metamorphosis [20]; instead, they are released during metamorphosis when the lymph glands disperse [19].
+No line expressing the Gal4 driver exclusively in the lymph glands has been reported, so we used a combination of lines sharing in common the feature of Gal4 driver expression in the lymph glands.
+The results (see Figure 2 and Table 1) clearly demonstrate that expression of ADGF-A in the lymph glands (driven by Cg-Gal4,e33C-Gal4, or c564-Gal4), but not in any other tissue examined, is necessary and sufficient to fully rescue the adgf-a lethality.
+The C564-Gal4 driver is not expressed as strongly as e33C-Gal4, but is still uniformly expressed in the lymph glands; it also fully rescued the mutant phenotype.
+The Dot-Gal411C on Chromosome II, which shows weak expression [24], did not rescue the phenotype, but a Dot-Gal443A insertion on Chromosome X, which shows stronger expression, rescued approximately half of the mutant animals (Figure 2).
+Nearly all rescued individuals were males, suggesting that expression of the Gal4 driver was influenced by X-chromosome dosage compensation, and expression in females heterozygous for Dot-Gal4 was not strong enough for rescue.
+Expression of ADGF-A in salivary glands and fat body (as well as in other tissues) is not required for full rescue, as demonstrated by use of the Cg-Gal4,Dot-Gal4, but especially by e33C-Gal4 driver, and is also not sufficient to rescue the phenotype at all, as demonstrated by T110-Gal4 and Lsp2-Gal4 (Table 1).
+No rescue of the phenotype, including body shape of escaping pupae, was observed.
+The only line showing significant (but not complete) rescue of adgf-a survival without expression in the lymph glands was GawB5015 (see Figure 2), which expresses the Gal4 driver very strongly and specifically in the ring gland and salivary glands (as well as very weak and spotty expression in imaginal discs [unpublished data]).
+However, expression of ADGF-A driven by GawB5015 does not prevent the formation of melanotic tumors (see Figure 2B).
+However, the delay in development and block of pupariation (Figure 6B), as well as the pupal body shape, were not influenced by this mutation.
+The number of crystal cells was not increased and lamellocytes were not detected in crq, adgf-a double mutants (see Figure 3).
+None of the double-mutant larvae showed either disintegration of fat body or melanotic tumor formation (Figure 6A).
+Even the adgf-a mutant larvae heterozygous for the crq mutation (crq/CyO GFP; adgf-a/adgf-a) showed significant suppression of the fat body disintegration, with most of the tissue staying compact in bigger pieces and never disintegrating to single adipose cells; melanotic tumors were rarely observed.
+In addition, the absence of lamellocytes and the normal number of crystal cells in the double mutant strongly suggest that the differentiation of these cells and thus melanotic tumor formation is a secondary reaction to fat body disintegration, rather than a primary effect of the adgf-a mutation.
+These results demonstrate that adenosine signaling through the adenosine receptor is involved in the developmental arrest of adgf-a mutant, but that it does not play a role in fat body disintegration and macrophage differentiation.
+Some mutants show typical expulsion from the glands with GFP totally external to the puparial case (E), while others do not expel glue proteins even after puparium formation (F).
+The block of pupariation in the adgf-a mutant suggested that the level of ecdysone in these larvae might not be sufficient to initiate pupariation.
+However, the overall structure of the ring gland is not visibly affected even in the oldest larvae (10 d, i.e., 5 d after the heterozygous siblings pupariated) with a fully disintegrated fat body (Figure 7B and 7C).
+In some cases, GFP was secreted into the lumen of salivary glands, but was not expectorated (Figure 7F), which is similar to the defect seen in animals expressing the dominant-negative form of ecdysone receptor driven by the Sgs3-Gal4 driver [33].
+Although our tests did not exclude a role for ADGF-A in circulating hemocytes (which constitute a separate lineage from the lymph gland hemocytes [20]), we showed that expression of ADGF-A in circulating hemocytes is not required for rescue of the adgf-a mutant phenotype, since e33C-Gal4/UAS-ADGF-A?which expresses ADGF-A in the lymph gland but not in circulating hemocytes?fully rescued the phenotype.
+Although these cells share other characteristics with plasmatocytes, they are normally not seen in circulation until they are released from the lymph glands at the onset of metamorphosis under the regulation of ecdysone to serve as phagocytes for histolysing tissues during metamorphosis—thus, they are referred to as pupal macrophages [19].
+This indication of precocious metamorphic changes [36] in the mutant is further supported by the finding that hemocytes aggregate in a segmental pattern in early rather than late third instar (see Figure 4H–4J), and that the hemocytes lose expression of Hemolectin in late third-instar larvae rather than at the onset of metamorphosis (see Figure 4G) [21].
+A similar role of Croquemort for removing histolysing tissues during Drosophila metamorphosis has not yet been tested, but seems likely since the crq mutant used in this study (crqKG01679) is lethal in pupae.
+This protein was suggested to be a scavenger receptor, but it does not seem to be homologous to Drosophila Croquemort (unpublished data).
+Adenosine could serve as a signal for macrophage differentiation, and the lack of adenosine deaminase activity due to the adgf-a mutation could cause precocious differentiation of these cells in mutant larvae.
+One possible explanation for the developmental delay and failure to pupariate is that the adgf-a mutation affects the production or release of ecdysteroid hormones from the major endocrine organ of the Drosophila larva—the ring gland.
+Other mutants with hormonal dysregulation show delayed larval development and failure to pupariate [42,43].
+The mutation in AdoR does not block macrophage differentiation and fat-body disintegration, so this effect must involve another, as yet uncharacterized mechanism independent of AdoR signaling.
+Although the adgf-a mutation leads to larval or pupal death, we have shown that this is not due to the adenosine or deoxyadenosine simply blocking cellular proliferation or survival, as the experiments in vitro would suggest.
+Indeed, most mitochondria released all their cytochrome c within a one minute period in a temperature-independent manner, suggesting that an enzymatic transport mechanism is probably not involved.
+There is no apparent need for cytochrome c release in C. elegans, since CED-4 does not require it to activate CED-3.
+The Drosophila Bok homolog interacts with several anti-apoptotic, but not with several pro-apoptotic, Bcl-2 family members and, therefore, possibly functions by antagonizing pro-survival proteins.
+While one group reports that the caspase inhibitor p35 can block apoptosis induced by Drosophila Bok [22], another group did not see p35 inhibition [23].
+One notable exception is that the C.elegans homologs of IAPs do not appear to function in programmed cell death.
+The three proteins encoded by these genes have no significant homology to any other known proteins except for a small stretch of similarity at the amino terminus that is shared by all three but no other known proteins.
+Although Diablo/Smac shares no sequence homology with Reaper, Hid, or Grim, it too can bind IAPs, preventing them from inhibiting caspase activation, and thereby inducing apoptosis.
+An important difference between the function of Diablo/Smac and Reaper, Hid, and Grim is that Diablo/Smac is not pro-apoptotic by itself when overexpressed, but instead requires a death-inducing stimulus to promote apoptosis, unlike the three Drosophila proteins.
+In fact, Saccharomyces cerevisiae contains neither caspases nor an apoptotic program, but it does have an IAP-like protein with a single BIR domain that functions in regulating cell division [41], suggesting that the IAPs are diverse family with only some members being anti-apoptotic: hence this protein family is more accurately referred to as BIR-containing proteins (BIRPs).
+Using information from the genome project, C. elegans was shown to contain several potential caspases in addition to CED-3, but none of these has been shown to function in programmed cell death [9].
+In addition, while C. elegans has two BIR-domain-containing proteins, neither appears to regulate cell death: BIR-1 has been demonstrated to be essential for cytokinesis instead [39].
+The MSL proteins colocalize to hundreds of sites along the single male X chromosome; they all are essentia
