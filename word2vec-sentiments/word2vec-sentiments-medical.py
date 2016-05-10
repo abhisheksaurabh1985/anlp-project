@@ -57,7 +57,7 @@ class TaggedLineSentence(object):
         
 
 log.info('source load')
-sources = {'test-neg.txt':'TEST_NEG', 'test-pos.txt':'TEST_POS', 'train-neg.txt':'TRAIN_NEG', 'train-pos.txt':'TRAIN_POS', 'train-unsup.txt':'TRAIN_UNS'}
+sources = {'../bioscope/negative.txt':'TEST_NEG', '../bioscope/positive.txt':'TEST_POS', '../bioscope/negative.txt':'TRAIN_NEG', '../bioscope/positive.txt':'TRAIN_POS', 'train-unsup.txt':'TRAIN_UNS'}
 
 log.info('TaggedDocument')
 sentences = TaggedLineSentence(sources)
@@ -72,8 +72,8 @@ for epoch in range(10):
 	model.train(sentences.sentences_perm())
 
 log.info('Model Save')
-model.save('./imdb.d2v')
-model = Doc2Vec.load('./imdb.d2v')
+model.save('./medical.d2v')
+model = Doc2Vec.load('./medical.d2v')
 
 log.info('Sentiment')
 train_arrays = numpy.zeros((25000, 100))
