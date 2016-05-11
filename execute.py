@@ -35,29 +35,15 @@ trainDataCRF = getTrainingDataForCRF(tokenizedSentences,
 prefix = "./output/"
 # write the data to file
 filename = prefix + 'trainNegatedCRF.csv'
-# writeCsvToFile(trainDataCRF, filename)
+writeCsvToFile(trainDataCRF, filename)
 print "%s created" % filename
-
-# Split data for training and testing
-percentTestData= 25 # Only integer
-
-fileNameCRFData= prefix + 'trainNegatedCRF.csv'
-[dataCRF, trainingDataCRF, testDataCRF] = splitDataForValidation(fileNameCRFData, percentTestData)
-# write data to file
-trainingFileName = prefix + 'trainingNegatedDataCRF.txt'
-# writeLinesToFile(trainingDataCRF, trainingFileName)
-print ("training file created: %s" % trainingFileName)
-
-testFileName = prefix + 'testNegatedDataCRF.txt'
-# writeLinesToFile(testDataCRF, testFileName)
-print ("test file created %s" % testFileName)
 
 
 # evaluate crf
 crfPath = ""
 crfLearn = "crf_learn"
 crfTest = "crf_test"
-templatePath = "./crftest/template"
+templatePaths = ["./crftest/template", "./crftest/template2"]
 modelPath = prefix + "model"
 
 crfC = [5.0, 10.0, 15.0, 20.0]
@@ -68,34 +54,62 @@ outputConceptsFileName = prefix + "concepts.csv"
 
 useMira = [False, True]
 
+accuracies = []
+parameters = []
 
+# Split data for training and testing
+percentTestData= 25 # Only integer
+
+# number of times to split dataset randomly to compute average accuracy
+N = 10
+
+trainingFileNameTemplate = prefix + 'trainingNegatedDataCRF-%d.txt'
+testFileNameTemplate = prefix + 'testNegatedDataCRF-%d.txt'
+# first - split the data
+for i in xrange(N):
+   [dataCRF, trainingDataCRF, testDataCRF] = splitDataForValidation(filename, percentTestData)
+   writeLinesToFile(trainingDataCRF, trainingFileNameTemplate % i)
+   writeLinesToFile(testDataCRF, testFileNameTemplate % i)
+
+
+# then - check all sets of parameters
 for crfCParam in crfC:
    for crfFParam in crfF:
       for useMiraParam in useMira:
-         crfCmd = [crfLearn]
-         crfParams = ['-c', str(crfCParam), '-f', str(crfFParam)]
-         if (useMiraParam):
-            crfParams.extend(["-a", "MIRA"])
-         print crfParams
-         crfCmd.extend(crfParams)
-         crfCmd.extend([templatePath, trainingFileName, modelPath])
+         for templatePath in templatePaths:
+            accuraciesForParams = []
+            crfCmd = [crfLearn]
+            crfParams = ['-c', str(crfCParam), '-f', str(crfFParam)]
+            if (useMiraParam):
+               crfParams.extend(["-a", "MIRA"])
+            crfCmd.extend(crfParams)
+            crfParams.extend(["template", templatePath])
+            print crfParams
 
-         # Run the tagger and get the output
-         p = Popen(crfCmd, stdin=PIPE, stdout=PIPE, stderr=PIPE)
-         (stdout, stderr) = p.communicate()
-         if p.returncode != 0:
-            print ('crf_learn command failed! Details: %s\n%s' % (stderr,stdout))
-            break
+            for i in xrange(N):
+               crfCmd.extend([templatePath, trainingFileNameTemplate % i, modelPath])
+               # Run the tagger and get the output
+               p = Popen(crfCmd, stdin=PIPE, stdout=PIPE, stderr=PIPE)
+               (stdout, stderr) = p.communicate()
+               if p.returncode != 0:
+                  print ('crf_learn command failed! Details: %s\n%s' % (stderr,stdout))
+                  break
 
-         crfCmd = [crfTest, '-m', modelPath, testFileName]
-         p = Popen(crfCmd, stdin=PIPE, stdout=PIPE, stderr=PIPE)
-         (stdout, stderr) = p.communicate()
+               crfCmd = [crfTest, '-m', modelPath, (testFileNameTemplate % i)]
+               p = Popen(crfCmd, stdin=PIPE, stdout=PIPE, stderr=PIPE)
+               (stdout, stderr) = p.communicate()
 
-         predictions = stdout
-         open(outputFileName,'w').write(predictions)
+               predictions = stdout
+               open(outputFileName,'w').write(predictions)
 
-         (nonOTagAccuracy, accuracy, class_ref) = count_out(outputFileName)
-         (counts, percentage) = do_extract_concepts(outputFileName, outputConceptsFileName)
+               (nonOTagAccuracy, accuracy, class_ref) = count_out(outputFileName)
+               (counts, percentage) = do_extract_concepts(outputFileName, outputConceptsFileName)
+               accuraciesForParams.append(percentage['equal'])
+            avgAcc = sum(accuraciesForParams)/float(N)
+            accuracies.append(avgAcc) #average accuracy for N runs
+            parameters.append(crfParams)
+            print str(avgAcc) + "\n"
 
-         print percentage['equal']
-
+bestAccuracy = max(accuracies)
+print "best accuracy: %f" % bestAccuracy
+print "for parameters %s" % ' '.join(parameters[accuracies.index(bestAccuracy)])

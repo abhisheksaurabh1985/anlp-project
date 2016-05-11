@@ -209,7 +209,7 @@ def isPunctuation(token):
     matched = re.match("[^\w]*", token)
     return matched != None and matched.group(0) == token
 
-def splitDataForValidation(fileNameCRFData, percentTest):
+def splitDataForValidation(fileNameCRFData, percentTest, verbose=False):
     dataCRF= []
     with open(fileNameCRFData, 'r') as f:
         temp= []
@@ -219,15 +219,16 @@ def splitDataForValidation(fileNameCRFData, percentTest):
                 dataCRF.append(temp)
                 temp= []
 
-    print len(dataCRF)
+    if verbose: print len(dataCRF)
     # Split into train and test
     countSentencesTest = math.ceil((percentTest/ 100)* len(dataCRF))
     random.shuffle(dataCRF)
     trainingDataCRF= dataCRF[0:len(dataCRF)- int(countSentencesTest)]
     testDataCRF = [x for x in dataCRF if x not in trainingDataCRF]
 
-    print len(trainingDataCRF)
-    print len(testDataCRF)
+    if verbose:
+        print len(trainingDataCRF)
+        print len(testDataCRF)
 
     return dataCRF, trainingDataCRF, testDataCRF
 
