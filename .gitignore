@@ -14,3 +14,5 @@ crf-test/model
 crf-test/testDataCRF.txt
 crf-test/trainingDataCRF.txt
 crf-test/test_out.csv
+crf-test/concepts.csv
+

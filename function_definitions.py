@@ -4,10 +4,13 @@ from nltk.tokenize import word_tokenize
 import itertools
 import math
 import csv
-import nltk
 import re
 import random
 import numpy as np
+from nltk.corpus import conll2000
+from ChunkParser import *
+
+defaultTag = "-"
 
 def getCSVInDictionary(csvFileName):
     '''
@@ -81,7 +84,8 @@ def writeCsvToFile(data, fileName):
             csvfile.write(" ".join(row) + "\n")
 
 def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts,
-                          negations_orig, bioTags, priorities, consideredConcepts,
+                          negations_orig, bioTags, priorities,
+                          consideredConcepts,
                           cueTypeTags_orig):
     indexConceptsInSentences= []
     exceptions = []
@@ -91,7 +95,7 @@ def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts,
 
     for i in range(len(tokenizedConcepts)):
         temp = []
-        if(negations[i] == consideredConcepts):
+        if(negations[i] in consideredConcepts):
             start = tokenizedConcepts[i][0]
             end = tokenizedConcepts[i][-1]
             if(start in tokenizedSentences[i]):
@@ -126,7 +130,7 @@ def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts,
     tagI = bioTags[2]
 
     for i in range(len(indexConceptsInSentences)):
-        if(negations[i] == consideredConcepts):
+        if(negations[i] in consideredConcepts):
             startIndex = indexConceptsInSentences[i][0]
             endIndex = indexConceptsInSentences[i][1]
 
@@ -141,7 +145,7 @@ def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts,
 
     listTriggerTags= []
     for i in range(len(cueTypeTags)):
-        tempList = list(itertools.repeat('NONE',len(tokenizedSentences[i])))
+        tempList = list(itertools.repeat(defaultTag,len(tokenizedSentences[i])))
         for tag in cueTypeTags[i].keys():
            for indexes in cueTypeTags[i][tag]:
                tempList[indexes[0]] = tag + "-B"
@@ -180,16 +184,19 @@ def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts,
         for eachTriggerTag in listTriggerTags[ind]:
             flatCueTypeTags.append(eachTriggerTag)
         flatCueTypeTags.append('')
+
     flatIsPunctuation = []
     for sentence in uniqueSentenses:
         for token in sentence:
             if(isPunctuation(token)):
                 flatIsPunctuation.append('PUNCT')
             else:
-                flatIsPunctuation.append('NONE')
+                flatIsPunctuation.append(defaultTag)
         flatIsPunctuation.append('')
 
-    trainDataCRF= zip(flatTokenizedSentences, flatListPosTags, flatCueTypeTags, flatIsPunctuation, flatListBioTags)
+    flatChunkTags = getChunks(uniqueSentenses)
+
+    trainDataCRF= zip(flatTokenizedSentences, flatListPosTags, flatCueTypeTags, flatIsPunctuation, flatChunkTags, flatListBioTags)
 
     return trainDataCRF
 
@@ -240,3 +247,27 @@ def extractCueTypeTags(tokenizedSentences, triggers):
         tagsExtracted.append(tagsForSentence)
 
     return tagsExtracted
+
+
+def getChunks(tokenizedSentences):
+    # Training a chunk parser on conll200 corpus
+    train_sents = conll2000.chunked_sents('train.txt')
+    # training the chunker, ChunkParser is a class defined in the next slide
+    NPChunker = ChunkParser(train_sents)
+
+    chunksTags = []
+    for sentence in tokenizedSentences:
+        inputSentence = nltk.pos_tag(sentence)
+        chunksForSentence = NPChunker.parse(inputSentence)
+
+        for chunk in chunksForSentence:
+            if(type(chunk) == nltk.tree.Tree):
+                if (len(chunk) == 0):
+                    continue
+                label = chunk.label()
+                chunksTags.append(label + "-B")
+                chunksTags.extend([label + "-I"]*(len(chunk)-1))
+            else:
+                chunksTags.append(defaultTag)
+        chunksTags.append('')
+    return chunksTags

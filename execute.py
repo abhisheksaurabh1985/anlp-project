@@ -9,13 +9,12 @@ txtFileName= './data/Annotations-1-120.txt'
 triggersFileName = './data/negex_triggers.txt'
 
 dictAnnotatedData= getTxtInDictionary(txtFileName)
-triggers= getTriggers(triggersFileName)
-
 
 # Word2Vec expects single sentences, each one of them as a list of words. Generate tokens from sentences.
 tokenizedSentences= getTokens(dictAnnotatedData['Sentence'][0:])
 print len(tokenizedSentences)
 
+triggers= getTriggers(triggersFileName)
 cueTypeTags = extractCueTypeTags(tokenizedSentences, triggers)
 
 # Tokenize 'concepts'
@@ -29,44 +28,27 @@ negations = dictAnnotatedData['Negation']
 bioTags= ['O', 'B', 'I']
 priorities= {'O':0, 'B':2, 'I':1}
 
-# Training data for CRF with affirmed concepts
-# trainDataCRF = getTrainingDataForCRF(tokenizedSentences,
-#                                      tokenizedConcepts, negations,
-#                                      bioTags, priorities, "Affirmed",
-#                                      triggersTags
-# )
-# write the data to file
-# filename = './output/trainAffirmedCRF.csv'
-# writeCsvToFile(trainDataCRF, filename)
-# print "%s created" % filename
-
 # Training data for CRF with negated concepts
 trainDataCRF = getTrainingDataForCRF(tokenizedSentences,
                                      tokenizedConcepts, negations,
-                                     bioTags, priorities, "Negated", cueTypeTags)
+                                     bioTags, priorities, ["Negated"], cueTypeTags)
+
+prefix = "./output/"
 # write the data to file
-filename = './output/trainNegatedCRF.csv'
+filename = prefix + 'trainNegatedCRF.csv'
 writeCsvToFile(trainDataCRF, filename)
 print "%s created" % filename
-
 
 # Split data for training and testing
 percentTestData= 25 # Only integer
 
-
-fileNameCRFData= './output/trainNegatedCRF.csv'
+fileNameCRFData= prefix + 'trainNegatedCRF.csv'
 [dataCRF, trainingDataCRF, testDataCRF] = splitDataForValidation(fileNameCRFData, percentTestData)
 # write data to file
-trainingFileName = './crf-test/trainingNegatedDataCRF.txt'
+trainingFileName = prefix + 'trainingNegatedDataCRF.txt'
 writeLinesToFile(trainingDataCRF, trainingFileName)
 print ("training file created: %s" % trainingFileName)
 
-testFileName = './crf-test/testNegatedDataCRF.txt'
+testFileName = prefix + 'testNegatedDataCRF.txt'
 writeLinesToFile(testDataCRF, testFileName)
 print ("test file created %s" % testFileName)
-
-# fileNameCRFData= './output/trainAffirmedCRF.csv'
-# [dataCRF, trainingDataCRF, testDataCRF] = splitDataForValidation(fileNameCRFData, percentTestData)
-# # write data to file
-# writeLinesToFile(trainingDataCRF, './crf-test/trainingAffirmedDataCRF.txt')
-# writeLinesToFile(testDataCRF, './crf-test/testAffirmedDataCRF.txt')
