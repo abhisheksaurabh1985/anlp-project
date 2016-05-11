@@ -5,7 +5,8 @@ if(len(sys.argv) <2 ):
    print "input file is not specified"
 
 dtype = [('token',"S50"), ('postag', "S5"), ('triggers', 'S7'),('isPunct', 'S5'),
-         ('chunk', 'S5'),('real',"S2"), ('predicted',"S2")]
+         ('chunk', 'S5'),('segment', 'S5'),
+         ('real',"S2"), ('predicted',"S2")]
 res = np.genfromtxt(sys.argv[1], dtype=dtype, delimiter="	")
 correct = sum(1 if (res['predicted'][i] == res['real'][i] and res['real'][i]!='O') else 0 for i in xrange(len(res['real'])))
 total =  sum(1 if res['real'][i]!='O' else 0 for i in xrange(len(res['real'])))

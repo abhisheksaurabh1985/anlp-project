@@ -14,7 +14,7 @@ def extract_concepts(tags, filename):
    initial = ""
    found = ""
 
-   real_tag_n = 5
+   real_tag_n = 6
    predicted_tag_n = real_tag_n+1
 
    for line in file:

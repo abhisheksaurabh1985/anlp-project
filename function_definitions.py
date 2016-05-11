@@ -196,7 +196,11 @@ def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts,
 
     flatChunkTags = getChunks(uniqueSentenses)
 
-    trainDataCRF= zip(flatTokenizedSentences, flatListPosTags, flatCueTypeTags, flatIsPunctuation, flatChunkTags, flatListBioTags)
+    flatSegmentTags = getSegmentTags(uniqueSentenses)
+
+    trainDataCRF= zip(flatTokenizedSentences, flatListPosTags, flatCueTypeTags,
+                      flatIsPunctuation, flatChunkTags, flatSegmentTags,
+                      flatListBioTags)
 
     return trainDataCRF
 
@@ -271,3 +275,19 @@ def getChunks(tokenizedSentences):
                 chunksTags.append(defaultTag)
         chunksTags.append('')
     return chunksTags
+
+def getSegmentTags(sentences):
+    tags = []
+    for sentence in sentences:
+        segmNum = 0
+        for i in xrange(len(sentence)):
+            token = sentence[i]
+            if token in [',','.',':',';','-']:
+                tags.append(defaultTag)
+                if i > 0:
+                    segmNum += 1
+            else:
+                tags.append(str(segmNum))
+
+        tags.append('')
+    return tags
