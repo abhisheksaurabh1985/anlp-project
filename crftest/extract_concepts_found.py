@@ -1,9 +1,6 @@
 import re
 import sys
 
-if(len(sys.argv) <3 ):
-   print "input file is not specified"
-
 
 def extract_concepts(tags, filename):
    file = open(filename)
@@ -52,7 +49,7 @@ def extract_concepts(tags, filename):
    file.close()
    return (concepts_found, concepts_initial)
 
-def count_found_concepts(sentences, concepts_initial, concepts_found, prefix):
+def count_found_concepts(sentences, concepts_initial, concepts_found, prefix, verbose = False):
    partial = 0
    equal = 0
    subconcepts = 0
@@ -74,11 +71,17 @@ def count_found_concepts(sentences, concepts_initial, concepts_found, prefix):
             subconcepts += 1
             partial += 1
 
-   print ("total %s concepts %d" % (prefix, total))
-   print ("equal %s concepts %d; percenatge %f" % (prefix, equal, equal/float(total)))
-   print ("partial %s concepts %d; percenatge %f" % (prefix, partial, partial/float(total)))
-   print ("sub %s concepts %d; percenatge %f" % (prefix, subconcepts, subconcepts/float(total)))
-   print ("outer %s concepts %d; percenatge %f\n" % (prefix, outerconcepts, outerconcepts/float(total)))
+   counts = {'total': total, 'equal': equal, 'partial': partial, 'sub': subconcepts,
+                  'outer': outerconcepts}
+   percentages = {'equal': equal/float(total), 'partial': partial/float(total), 'sub': subconcepts/float(total),
+                  'outer': outerconcepts/float(total)}
+   if verbose:
+      print ("total %s concepts %d" % (prefix, total))
+      print ("equal %s concepts %d; percenatge %f" % (prefix, equal, percentages['equal']))
+      print ("partial %s concepts %d; percenatge %f" % (prefix, partial, percentages['partial']))
+      print ("sub %s concepts %d; percenatge %f" % (prefix, subconcepts, percentages['sub']))
+      print ("outer %s concepts %d; percenatge %f\n" % (prefix, outerconcepts, percentages['outer']))
+   return (counts, percentages)
 
 def print_concepts(filename, sentences, concepts_initial, concepts_found):
    f = open(filename, "w")
@@ -96,27 +99,37 @@ def print_concepts(filename, sentences, concepts_initial, concepts_found):
    f.close()
 
 
-filename = sys.argv[1]
-sentences = []
-(concepts_found, concepts_initial) = extract_concepts(['O','B','I'], filename)
-file = open(filename)
 
-sentence = ""
-for line in file:
-   if not line.strip():
-      sentences.append(sentence[1:])
-      sentence = ""
-   else:
-      parts = re.split("\t|\n", line)
-      if(parts[0]=="."):
-         sep = ""
+
+def do_extract_concepts(filename, outputFileName, verbose = False):
+   sentences = []
+   (concepts_found, concepts_initial) = extract_concepts(['O','B','I'], filename)
+   file = open(filename)
+
+   sentence = ""
+   for line in file:
+      if not line.strip():
+         sentences.append(sentence[1:])
+         sentence = ""
       else:
-         sep = " "
-      sentence = sentence + sep + parts[0]
-file.close()
+         parts = re.split("\t|\n", line)
+         if(parts[0]=="."):
+            sep = ""
+         else:
+            sep = " "
+         sentence = sentence + sep + parts[0]
+   file.close()
 
-print ("total sentences %d\n" % len(concepts_initial))
+   if verbose: print ("total sentences %d\n" % len(concepts_initial))
 
-count_found_concepts(sentences, concepts_initial, concepts_found, "")
-concept_file = sys.argv[2]
-print_concepts(concept_file, sentences, concepts_initial, concepts_found)
+   (counts, percentages) = count_found_concepts(sentences, concepts_initial, concepts_found, "", verbose)
+   if verbose: print_concepts(outputFileName, sentences, concepts_initial, concepts_found)
+   return (counts, percentages)
+
+
+if __name__ == "__main__":
+   if(len(sys.argv) <3 ):
+      print "input file is not specified"
+
+   filename = sys.argv[1]
+   do_extract_concepts(filename, sys.argv[2], True)

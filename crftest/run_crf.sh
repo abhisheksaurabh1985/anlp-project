@@ -1,7 +1,7 @@
 #!/bin/sh
 prefix="../output/"
 echo $prefix
-crf_learn -t template "${prefix}trainingNegatedDataCRF.txt" "${prefix}model_negated"
+crf_learn -c 5.0 -f 1 -t template "${prefix}trainingNegatedDataCRF.txt" "${prefix}model_negated"
 crf_test  -m "${prefix}model_negated" "${prefix}testNegatedDataCRF.txt" > "${prefix}test_negated_out.csv"
 
 echo "Negated concepts"
