@@ -50,37 +50,32 @@ def extract_concepts(tags, filename):
    return (concepts_found, concepts_initial)
 
 def count_found_concepts(sentences, concepts_initial, concepts_found, prefix, verbose = False):
-   partial = 0
-   equal = 0
-   subconcepts = 0
-   outerconcepts = 0
-   total = 0
+   found_from_initial = 0
+   initial_from_found = 0
+   total_initial = 0
+   total_found = 0
    for i in xrange(len(sentences)):
       for j in xrange(len(concepts_initial[i])):
-         total += 1
-         found = ""
-         if(len(concepts_found[i])>j):
-            found = concepts_found[i][j]
-         initial = concepts_initial[i][j]
-         if(initial and initial == found):
-            equal += 1
-         if(initial and initial in found and initial != found):
-            outerconcepts +=1
-            partial += 1
-         if(found and found in initial and found != initial):
-            subconcepts += 1
-            partial += 1
+         total_initial += 1
+         if concepts_initial[i][j] in concepts_found[i]:
+            found_from_initial += 1
+      for j in xrange(len(concepts_found[i])):
+         total_found +=1
+         if concepts_found[i][j] in concepts_initial[i]:
+            initial_from_found += 1
 
-   counts = {'total': total, 'equal': equal, 'partial': partial, 'sub': subconcepts,
-                  'outer': outerconcepts}
-   percentages = {'equal': equal/float(total), 'partial': partial/float(total), 'sub': subconcepts/float(total),
-                  'outer': outerconcepts/float(total)}
+   counts = {'total_initial': total_initial, 'total_found': total_found,
+             'found_from_initial': found_from_initial, 'initial_from_found': initial_from_found}
+   percentages = {'recall': found_from_initial/float(total_initial),
+                  'precision': initial_from_found/float(total_found)}
    if verbose:
-      print ("total %s concepts %d" % (prefix, total))
-      print ("equal %s concepts %d; percenatge %f" % (prefix, equal, percentages['equal']))
-      print ("partial %s concepts %d; percenatge %f" % (prefix, partial, percentages['partial']))
-      print ("sub %s concepts %d; percenatge %f" % (prefix, subconcepts, percentages['sub']))
-      print ("outer %s concepts %d; percenatge %f\n" % (prefix, outerconcepts, percentages['outer']))
+      print ("total initial %s concepts %d" % (prefix, total_initial))
+      print ("recall: found concepts from initial %s concepts %d; percenatge %f" %
+             (prefix, found_from_initial, percentages['found_from_initial']))
+      print ("total found %s concepts %d" % (prefix, total_found))
+      print ("precision: initial concepts from found %s concepts %d; percenatge %f" %
+             (prefix, initial_from_found, percentages['initial_from_found']))
+
    return (counts, percentages)
 
 def print_concepts(filename, sentences, concepts_initial, concepts_found):

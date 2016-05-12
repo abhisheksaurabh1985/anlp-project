@@ -30,7 +30,7 @@ priorities= {'O':0, 'B':2, 'I':1}
 # Training data for CRF with negated concepts
 trainDataCRF = getTrainingDataForCRF(tokenizedSentences,
                                      tokenizedConcepts, negations,
-                                     bioTags, priorities, ["Negated"], cueTypeTags)
+                                     bioTags, priorities, ["Negated", "Affirmed"], cueTypeTags)
 
 prefix = "./output/"
 # write the data to file
@@ -47,14 +47,16 @@ templatePaths = ["./crftest/template", "./crftest/template2"]
 modelPath = prefix + "model"
 
 crfC = [5.0, 10.0, 15.0, 20.0]
-crfF = [1, 2, 3, 4, 5, 10, 15]
+crfF = [1, 2, 3,  5, 10, 15]
 
 outputFileName = prefix + "output.csv"
 outputConceptsFileName = prefix + "concepts.csv"
 
 useMira = [False, True]
 
-accuracies = []
+recalls = []
+precisions = []
+fscores = []
 parameters = []
 
 # Split data for training and testing
@@ -77,7 +79,8 @@ for crfCParam in crfC:
    for crfFParam in crfF:
       for useMiraParam in useMira:
          for templatePath in templatePaths:
-            accuraciesForParams = []
+            recallForParams = []
+            precisionForParams = []
             crfCmd = [crfLearn]
             crfParams = ['-c', str(crfCParam), '-f', str(crfFParam)]
             if (useMiraParam):
@@ -104,12 +107,32 @@ for crfCParam in crfC:
 
                (nonOTagAccuracy, accuracy, class_ref) = count_out(outputFileName)
                (counts, percentage) = do_extract_concepts(outputFileName, outputConceptsFileName)
-               accuraciesForParams.append(percentage['equal'])
-            avgAcc = sum(accuraciesForParams)/float(N)
-            accuracies.append(avgAcc) #average accuracy for N runs
-            parameters.append(crfParams)
-            print str(avgAcc) + "\n"
+               recallForParams.append(percentage['recall'])
+               precisionForParams.append(percentage['precision'])
+            avgRecall = sum(recallForParams)/float(N) #average recall for N runs
+            avgPrecision = sum(precisionForParams)/float(N)
+            recalls.append(avgRecall)
+            precisions.append(avgPrecision)
 
-bestAccuracy = max(accuracies)
-print "best accuracy: %f" % bestAccuracy
-print "for parameters %s" % ' '.join(parameters[accuracies.index(bestAccuracy)])
+            fscore = 2*(avgPrecision*avgRecall)/(avgPrecision+avgRecall)
+            fscores.append(fscore)
+            parameters.append(crfParams)
+            print "recall %f" % avgRecall
+            print "precision %f" % avgPrecision
+            print "fscore %f" % fscore
+
+bestRecall = max(recalls)
+print "best recall: %f" % bestRecall
+ind = recalls.index(bestRecall)
+print "with precision: %f, with fscore: %f, for parameters %s\n" % (precisions[ind], fscores[ind], ' '.join(parameters[ind]))
+
+bestPrecision = max(precisions)
+print "best precision: %f" % bestPrecision
+ind = precisions.index(bestPrecision)
+print "with recall: %f, with fscore: %f, for parameters: %s\n" % (recalls[ind], fscores[ind], ' '.join(parameters[ind]))
+
+bestFScore = max(fscores)
+print "best fscore %f" % bestFScore
+ind = fscores.index(bestFScore)
+print "with precision: %f, recall: %f, for parameters: %s" % (recalls[ind], precisions[ind],
+                                                              ' '.join(parameters[ind]))
