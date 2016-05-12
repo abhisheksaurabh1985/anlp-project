@@ -57,7 +57,7 @@ class TaggedLineSentence(object):
         
 
 log.info('source load')
-sources = {'../bioscope/negative.txt':'TEST_NEG', '../bioscope/positive.txt':'TEST_POS', '../bioscope/negative.txt':'TRAIN_NEG', '../bioscope/positive.txt':'TRAIN_POS', 'train-unsup.txt':'TRAIN_UNS'}
+sources = {'../bioscope/full_papers_neg_parsed.txt':'TEST_NEG', '../bioscope/full_papers_pos_parsed.txt':'TEST_POS', '../bioscope/full_papers_neg_parsed.txt':'TRAIN_NEG', '../bioscope/full_papers_pos_parsed.txt':'TRAIN_POS', 'train-unsup.txt':'TRAIN_UNS'}
 
 log.info('TaggedDocument')
 sentences = TaggedLineSentence(sources)
@@ -67,7 +67,7 @@ model = Doc2Vec(min_count=1, window=10, size=100, sample=1e-4, negative=5, worke
 model.build_vocab(sentences.to_array())
 
 log.info('Epoch')
-for epoch in range(10):
+for epoch in xrange(10):
 	log.info('EPOCH: {}'.format(epoch))
 	model.train(sentences.sentences_perm())
 
@@ -76,29 +76,33 @@ model.save('./medical.d2v')
 model = Doc2Vec.load('./medical.d2v')
 
 log.info('Sentiment')
-train_arrays = numpy.zeros((25000, 100))
-train_labels = numpy.zeros(25000)
+train_arrays = numpy.zeros((813+813, 100))
+train_labels = numpy.zeros(813+813)
 
-for i in range(12500):
+for i in xrange(813):
     prefix_train_pos = 'TRAIN_POS_' + str(i)
-    prefix_train_neg = 'TRAIN_NEG_' + str(i)
     train_arrays[i] = model.docvecs[prefix_train_pos]
-    train_arrays[12500 + i] = model.docvecs[prefix_train_neg]
     train_labels[i] = 1
-    train_labels[12500 + i] = 0
+    	
+for i in xrange(0,813):
+    prefix_train_neg = 'TRAIN_NEG_' + str(i)
+    train_arrays[813+i] = model.docvecs[prefix_train_neg]
+    train_labels[813+i] = 0
 
 print train_labels
 
-test_arrays = numpy.zeros((25000, 100))
-test_labels = numpy.zeros(25000)
+test_arrays = numpy.zeros((813+813, 100))
+test_labels = numpy.zeros(813+813)
 
-for i in range(12500):
-    prefix_test_pos = 'TEST_POS_' + str(i)
-    prefix_test_neg = 'TEST_NEG_' + str(i)
-    test_arrays[i] = model.docvecs[prefix_test_pos]
-    test_arrays[12500 + i] = model.docvecs[prefix_test_neg]
+for i in xrange(813):
+    prefix_train_pos = 'TRAIN_POS_' + str(i)
+    test_arrays[i] = model.docvecs[prefix_train_pos]
     test_labels[i] = 1
-    test_labels[12500 + i] = 0
+    	
+for i in xrange(0,813):
+    prefix_train_neg = 'TRAIN_NEG_' + str(i)
+    test_arrays[813+i] = model.docvecs[prefix_train_neg]
+    test_labels[813+i] = 0
 
 log.info('Fitting')
 classifier = LogisticRegression()
