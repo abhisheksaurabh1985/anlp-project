@@ -36,7 +36,7 @@ for i in xrange(813):
     prefix_train_pos = 'TRAIN_POS_' + str(i)
     train_arrays[i] = model.docvecs[prefix_train_pos]
     train_labels[i] = 1
-
+    	
 for i in xrange(0,813):
     prefix_train_neg = 'TRAIN_NEG_' + str(i)
     train_arrays[813+i] = model.docvecs[prefix_train_neg]
@@ -44,36 +44,37 @@ for i in xrange(0,813):
 
 print train_labels
 
-import ipdb; ipdb.set_trace()
+#test_arrays = np.zeros((813+813, 100))
+#test_labels = np.zeros(813+813)
+
+#for i in xrange(813):
+#    prefix_train_pos = 'TRAIN_POS_' + str(i)
+#    test_arrays[i] = model.docvecs[prefix_train_pos]
+#    test_labels[i] = 1
+    	
+#for i in xrange(0,813):
+#    prefix_train_neg = 'TRAIN_NEG_' + str(i)
+#    test_arrays[813+i] = model.docvecs[prefix_train_neg]
+#    test_labels[813+i] = 0
 
 log.info('Fitting')
+classifier = LogisticRegression()
+classifier.fit(train_arrays, train_labels)
 
-# split data into N kfolds
-kf = KFold(train_labels.shape[0], n_folds=4)
-fold_num = 1
-for train_index, test_index in kf:
-    x_train, x_val = train_arrays[train_index,:], train_arrays[test_index,:]
-    y_train, y_val = train_labels[train_index], train_labels[test_index]
-    
-    classifier = LogisticRegression()
-    classifier.fit(x_train, y_train)
-
-    LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
-              intercept_scaling=1, penalty='l2', random_state=None, tol=0.0001)
+LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, penalty='l2', random_state=None, tol=0.0001)
 
 #import cPickle
 # save the classifier
 #with open('ReadyToGoClassifier.pkl', 'wb') as fid:
-#    cPickle.dump(classifier, fid)
-#
+#    cPickle.dump(classifier, fid)    
+
 # load it again
 #with open('ReadyToGoClassifier.pkl', 'rb') as fid:
 #    classifier = cPickle.load(fid)
-    print("K-fold #%d" % (fold_num))
-    print classifier.score(x_val, y_val)
-    pred = classifier.predict(x_val)
-    print pred
-    print accuracy_score(y_val, pred)
-    print confusion_matrix(y_val, pred)
-    fold_num = fold_num + 1
 
+print classifier.score(test_arrays, test_labels)
+pred = classifier.predict(test_arrays)
+print pred
+print accuracy_score(test_labels, pred)
+print confusion_matrix(test_labels, pred)
