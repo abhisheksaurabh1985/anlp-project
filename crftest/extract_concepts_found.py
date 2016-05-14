@@ -190,9 +190,9 @@ def do_extract_concepts(filename, outputFileName, verbose = False):
 
 
 if __name__ == "__main__":
-   classify_concepts("../output/output1.csv")
-   # if(len(sys.argv) <3 ):
-   #    print "input file is not specified"
-   #
-   # filename = sys.argv[1]
-   # do_extract_concepts(filename, sys.argv[2], True)
+   # classify_concepts("../output/output1.csv")
+   if(len(sys.argv) <3 ):
+      print "input file is not specified"
+
+   filename = sys.argv[1]
+   do_extract_concepts(filename, sys.argv[2], True)

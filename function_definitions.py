@@ -55,12 +55,19 @@ def getTokensFromSentence(sentence):
     return  word_tokenize(re.sub("[/_]", " ", sentence.lower()))
 
 def sublistIndex(sublist, origlist):
-    origstr = ' '.join(map(str, origlist))
-    substr = ' '.join(map(str, sublist))
-    if not (substr in origstr):
-       return -1
-    ind =  origstr.index(substr)
-    return len(origstr[:ind].split(' ')) - 1
+    beginIndices =  [i for i, x in enumerate(origlist) if x == sublist[0]]
+    badBeginIndices = [] # indices of list beginIndices
+    for i in xrange(len(beginIndices)):
+        ind = beginIndices[i]
+        for j in xrange(1, len(sublist)):
+            if (j + ind) >=len(origlist) or origlist[j+ind] != sublist[j]:
+                badBeginIndices.append(i)
+                break
+    for i in sorted(badBeginIndices,reverse=True):
+        del beginIndices[i]
+    if len(beginIndices) == 0:
+        return -1
+    return beginIndices[0]
 
 def mergeListsOfTags(lists, priorities):
     if len(lists) == 0:
@@ -122,7 +129,6 @@ def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts_orig,
                 listsNegTagsForSentence.append(tempListNeg)
                 continue
 
-
             if negationsForUniqueSentences[i][j] == "Negated":
                 negTag = "N"
             else:
@@ -140,7 +146,7 @@ def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts_orig,
         listBioTags.append(mergeListsOfTags(listsBioTagsForSentence, priorities))
         listNegTags.append(mergeListsOfTags(listsNegTagsForSentence, {defaultTag: 0, "N":1, "A":1}))
 
-    for indices in notFoundConceptIndices:
+    for indices in sorted(notFoundConceptIndices, reverse=True):
         del conceptsForUniqueSentences[indices[0]][indices[1]]
         del negationsForUniqueSentences[indices[0]][indices[1]]
 
@@ -308,7 +314,7 @@ def getConfusionMatrix(tokenizedConcepts, concepts, tokenizedSentences, sentence
         for j in xrange(len(conceptsReal)):
             concept = conceptsReal[j]
             if not(concept in conceptsPredicted):
-                # print("concept %s not found"%' '.join(concept))
+                print("concept %s not found"%' '.join(concept))
                 ignored+=1
                 continue
             ind = conceptsPredicted.index(concept)

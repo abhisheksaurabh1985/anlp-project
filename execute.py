@@ -1,6 +1,5 @@
 from function_definitions import *
 from subprocess import Popen, PIPE
-from crftest.count_out import *
 from crftest.extract_concepts_found import *
 import numpy as np
 
@@ -49,7 +48,7 @@ templatePaths = ["./crftest/template", "./crftest/template2"]
 modelPath = prefix + "model"
 
 crfC = [5.0, 10.0, 15.0, 20.0]
-crfF = [1, 2, 3,  5, 10, 15]
+crfF = [1, 2, 3, 5, 10, 15]
 
 outputFileName = prefix + "output.csv"
 outputConceptsFileName = prefix + "concepts.csv"
@@ -130,11 +129,11 @@ for crfCParam in crfC:
 
             # specificity TN/(TN+FP)
             specificity = sumConfMatrix[1,1]/float(sumConfMatrix[1,0]+sumConfMatrix[1,1])
-            print "specificity %s" % str(specificity)
+            print "specificity / true negative rate %s" % str(specificity)
 
             # sensitivity TP/(TP+FN) - recall
             sensitivity = sumConfMatrix[0,0]/float(sumConfMatrix[0,0]+sumConfMatrix[0,1])
-            print "sensitivity %s" % str(sensitivity)
+            print "sensitivity  / true positive rate / recall %s" % str(sensitivity)
 
             # precision TP/(TP+FP)
             precision = sumConfMatrix[0,0]/float(sumConfMatrix[0,0]+sumConfMatrix[1,0])
@@ -148,8 +147,8 @@ for crfCParam in crfC:
             accuracy = (sumConfMatrix[0,0]+sumConfMatrix[1,1])/float(sum(sum(sumConfMatrix)))
             print "accuracy %s" % str(accuracy)
 
-            print "ignored %f" % (ignored/float(sum(sum(sumConfMatrix))))
-            print "ignored %d" % (ignored)
+            # print "ignored %f" % (ignored/float(sum(sum(sumConfMatrix))))
+            # print "ignored %d" % (ignored)
 
             sensitivities.append(sensitivity)
             specificities.append(specificity)
@@ -159,13 +158,13 @@ for crfCParam in crfC:
             params.append(crfParams)
 
 
-maxSensitivity = max(sensitivities)
-print("max sensitivity %f, for params %s" % (maxSensitivity, ' '.join(params[sensitivities.index(maxSensitivity)])))
 maxSpecificity = max(specificities)
-print("max specificity %f, for params %s" % (maxSpecificity, ' '.join(params[specificities.index(maxSpecificity)])))
-maxAccuracy = max(accuracies)
-print("max accuracy %f, for params %s" % (maxAccuracy, ' '.join(params[accuracies.index(maxAccuracy)])))
-maxF1score = max(f1scores)
-print("max f1score %f, for params %s" % (maxF1score, ' '.join(params[f1scores.index(maxF1score)])))
+print("max specificity / true negative rate %f, for params %s" % (maxSpecificity, ' '.join(params[specificities.index(maxSpecificity)])))
+maxSensitivity = max(sensitivities)
+print("max sensitivity / true positive rate / recall %f, for params %s" % (maxSensitivity, ' '.join(params[sensitivities.index(maxSensitivity)])))
 maxPrecision = max(sensitivities)
 print("max precision %f, for params %s" % (maxPrecision, ' '.join(params[precisions.index(maxPrecision)])))
+maxF1score = max(f1scores)
+print("max f1score %f, for params %s" % (maxF1score, ' '.join(params[f1scores.index(maxF1score)])))
+maxAccuracy = max(accuracies)
+print("max accuracy %f, for params %s" % (maxAccuracy, ' '.join(params[accuracies.index(maxAccuracy)])))
