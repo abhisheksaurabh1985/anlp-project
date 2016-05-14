@@ -56,13 +56,15 @@ def getTokensFromSentence(sentence):
 
 def sublistIndex(sublist, origlist):
     origstr = ' '.join(map(str, origlist))
-    substr = ' '+' '.join(map(str, sublist))+' '
+    substr = ' '.join(map(str, sublist))
     if not (substr in origstr):
        return -1
     ind =  origstr.index(substr)
-    return len(origstr[:ind].split(' '))
+    return len(origstr[:ind].split(' ')) - 1
 
 def mergeListsOfTags(lists, priorities):
+    if len(lists) == 0:
+        return lists
     res = []
     for i in xrange(len(lists[0])):
         tag = lists[0][i]
@@ -83,115 +85,108 @@ def writeCsvToFile(data, fileName):
         for row in data:
             csvfile.write(" ".join(row) + "\n")
 
-def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts,
+def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts_orig,
                           negations_orig, bioTags, priorities,
-                          consideredConcepts,
                           cueTypeTags_orig):
-    indexConceptsInSentences= []
-    exceptions = []
+
     negations = list(negations_orig)
     tokenizedSentences = list(tokenizedSentences_orig)
     cueTypeTags = list(cueTypeTags_orig)
+    tokenizedConcepts = list(tokenizedConcepts_orig)
+    (uniqueSentenses, conceptsForUniqueSentences, negationsForUniqueSentences, cueTypeTagsForUniqueSentences) =\
+        makeUnique(tokenizedSentences, tokenizedConcepts, negations, cueTypeTags)
 
-    for i in range(len(tokenizedConcepts)):
-        temp = []
-        if(negations[i] in consideredConcepts):
-            start = tokenizedConcepts[i][0]
-            end = tokenizedConcepts[i][-1]
-            if(start in tokenizedSentences[i]):
-                if(end in tokenizedSentences[i]):
-                    # this will not work if there are multiple occurences of concept in a sentence!
-                    ind = sublistIndex(tokenizedConcepts[i], tokenizedSentences[i])
-                    temp.append(ind)
-                    temp.append(ind + len(tokenizedConcepts[i]) - 1)
-                    indexConceptsInSentences.append(temp)
-                else:
-                    print("concept end '%s' is not in %i sentence; ignore this sentence" % (end, i))
-                    exceptions.append(i)
-            else:
-                print("concept start '%s' is not in %i sentence; ignore this sentence" % (start, i))
-                exceptions.append(i)
-        else:
-            indexConceptsInSentences.append([0,0])
-
-     # Get rid of the ignored sentences
-    for index in sorted(exceptions, reverse=True):
-        del tokenizedSentences[index]
-        del negations[index]
-        del cueTypeTags[index]
-
-    # Get POS tags for each of the sentences
-    posTaggedTokens = []
-    for i in range(len(tokenizedSentences)):
-        posTaggedTokens.append(nltk.pos_tag(tokenizedSentences[i]))
-
-    listBioTags= []
+    listBioTags = []
+    listNegTags = []
     tagB = bioTags[1]
     tagI = bioTags[2]
 
-    for i in range(len(indexConceptsInSentences)):
-        if(negations[i] in consideredConcepts):
-            startIndex = indexConceptsInSentences[i][0]
-            endIndex = indexConceptsInSentences[i][1]
+    notFoundConceptIndices = []
 
-            tempList = list(itertools.repeat(bioTags[0],len(tokenizedSentences[i])))
-            tempList[startIndex] = tagB
-            if(startIndex != endIndex):
-                for j in xrange(startIndex + 1, endIndex+1):
+    # finding indices for unique concepts in unique sentences
+    for i in range(len(uniqueSentenses)):
+        sentence = uniqueSentenses[i]
+        listsBioTagsForSentence = []
+        listsNegTagsForSentence = []
+        for j in xrange(len(conceptsForUniqueSentences[i])):
+            concept = conceptsForUniqueSentences[i][j]
+            startInd = sublistIndex(concept, sentence)
+            endInd = startInd + len(concept) - 1
+            tempList = list(itertools.repeat(bioTags[0],len(sentence)))
+            tempListNeg = list(itertools.repeat(defaultTag,len(sentence)))
+
+            if (startInd == -1):
+                print("concept '%s' is not in sentence '%s'; ignore this concept" % (' '.join(concept), ' '.join(sentence)))
+                notFoundConceptIndices.append((i, j))
+                listsBioTagsForSentence.append(tempList)
+                listsNegTagsForSentence.append(tempListNeg)
+                continue
+
+
+            if negationsForUniqueSentences[i][j] == "Negated":
+                negTag = "N"
+            else:
+                negTag = "A"
+
+            tempList[startInd] = tagB
+            if(startInd != endInd):
+                for j in xrange(startInd + 1, endInd+1):
                     tempList[j] = tagI
-        else:
-            tempList = list(itertools.repeat(bioTags[0],len(tokenizedSentences[i])))
-        listBioTags.append(tempList)
+            for j in xrange(startInd, endInd+1):
+                tempListNeg[j] = negTag
 
-    listTriggerTags= []
-    for i in range(len(cueTypeTags)):
-        tempList = list(itertools.repeat(defaultTag,len(tokenizedSentences[i])))
-        for tag in cueTypeTags[i].keys():
-           for indexes in cueTypeTags[i][tag]:
-               tempList[indexes[0]] = tag + "-B"
-               if(indexes[0] != indexes[1]):
-                   for j in xrange(indexes[0]+1, indexes[1]+1):
-                       tempList[j] = tag + "-I"
-        listTriggerTags.append(tempList)
+            listsBioTagsForSentence.append(tempList)
+            listsNegTagsForSentence.append(tempListNeg)
+        listBioTags.append(mergeListsOfTags(listsBioTagsForSentence, priorities))
+        listNegTags.append(mergeListsOfTags(listsNegTagsForSentence, {defaultTag: 0, "N":1, "A":1}))
 
-    uniqueSentenses = list(np.unique(tokenizedSentences))
+    for indices in notFoundConceptIndices:
+        del conceptsForUniqueSentences[indices[0]][indices[1]]
+        del negationsForUniqueSentences[indices[0]][indices[1]]
+
+    listCueTypeTags= []
+    for i in range(len(cueTypeTagsForUniqueSentences)):
+        cueTypeTagsForSentence = cueTypeTagsForUniqueSentences[i]
+        sentence = uniqueSentenses[i]
+        tempList = list(itertools.repeat(defaultTag,len(sentence)))
+        for cueTypeTagsSet in cueTypeTagsForSentence:
+            for tag in cueTypeTagsSet.keys():
+               for indexes in cueTypeTagsSet[tag]:
+                   tempList[indexes[0]] = tag + "-B"
+                   if(indexes[0] != indexes[1]):
+                       for j in xrange(indexes[0]+1, indexes[1]+1):
+                           tempList[j] = tag + "-I"
+        listCueTypeTags.append(tempList)
+
 
     # Write token, POS and BIO tag in CSV
     flatTokenizedSentences = []
-    for i in xrange(len(uniqueSentenses)):
-        for eachElement in uniqueSentenses[i]:
-            flatTokenizedSentences.append(eachElement)
-        flatTokenizedSentences.append('')
-
-    flatListPosTags= []
-    for i in xrange(len(uniqueSentenses)):
-        ind = tokenizedSentences.index(uniqueSentenses[i])
-        for eachPosTaggedToken in posTaggedTokens[ind]:
-            flatListPosTags.append(eachPosTaggedToken[1])
-        flatListPosTags.append('')
-
-    flatListBioTags= []
-    for i in xrange(len(uniqueSentenses)):
-        selectedBioTagsList = [listBioTags[k] for k, j in enumerate(tokenizedSentences) if j == uniqueSentenses[i]]
-        selectedBioTags = mergeListsOfTags(selectedBioTagsList, priorities)
-        for item in selectedBioTags:
-            flatListBioTags.append(item)
-        flatListBioTags.append('')
-
+    flatListPosTags = []
+    flatListBioTags = []
+    flatListNegTags = []
     flatCueTypeTags = []
-    for i in xrange(len(uniqueSentenses)):
-        ind = tokenizedSentences.index(uniqueSentenses[i])
-        for eachTriggerTag in listTriggerTags[ind]:
-            flatCueTypeTags.append(eachTriggerTag)
-        flatCueTypeTags.append('')
-
     flatIsPunctuation = []
-    for sentence in uniqueSentenses:
-        for token in sentence:
+
+    for i in xrange(len(uniqueSentenses)):
+        sentence = uniqueSentenses[i]
+        posTaggedTokens = nltk.pos_tag(sentence)
+        for j in xrange(len(sentence)):
+            token = sentence[j]
+
+            flatTokenizedSentences.append(token)
+            flatListPosTags.append(posTaggedTokens[j][1])
+            flatListBioTags.append(listBioTags[i][j])
+            flatListNegTags.append(listNegTags[i][j])
+            flatCueTypeTags.append(listCueTypeTags[i][j])
             if(isPunctuation(token)):
                 flatIsPunctuation.append('PUNCT')
             else:
                 flatIsPunctuation.append(defaultTag)
+        flatTokenizedSentences.append('')
+        flatListPosTags.append('')
+        flatListBioTags.append('')
+        flatListNegTags.append('')
+        flatCueTypeTags.append('')
         flatIsPunctuation.append('')
 
     flatChunkTags = getChunks(uniqueSentenses)
@@ -200,9 +195,9 @@ def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts,
 
     trainDataCRF= zip(flatTokenizedSentences, flatListPosTags, flatCueTypeTags,
                       flatIsPunctuation, flatChunkTags, flatSegmentTags,
-                      flatListBioTags)
+                      flatListBioTags, flatListNegTags)
 
-    return trainDataCRF
+    return (trainDataCRF, uniqueSentenses, conceptsForUniqueSentences, negationsForUniqueSentences)
 
 
 def isPunctuation(token):
@@ -292,3 +287,93 @@ def getSegmentTags(sentences):
 
         tags.append('')
     return tags
+
+def getConfusionMatrix(tokenizedConcepts, concepts, tokenizedSentences, sentences, negations, labels):
+    TP = 0
+    TN = 0
+    FP = 0
+    FN = 0
+    ignored = 0
+    for k in xrange(len(sentences)):
+        sentence = sentences[k]
+        labelsPredicted = labels[k]
+        conceptsPredicted = concepts[k]
+        indices = [i for i, x in enumerate(tokenizedSentences) if x == sentence]
+
+        conceptsReal = [tokenizedConcepts[i] for i in indices]
+        labelsReal = [negations[i] for i in indices]
+
+        conceptsReal = [item for sublist in conceptsReal for item in sublist]
+        labelsReal = [item for sublist in labelsReal for item in sublist]
+        for j in xrange(len(conceptsReal)):
+            concept = conceptsReal[j]
+            if not(concept in conceptsPredicted):
+                # print("concept %s not found"%' '.join(concept))
+                ignored+=1
+                continue
+            ind = conceptsPredicted.index(concept)
+            if (labelsPredicted[ind] == labelsReal[j]):
+                if(labelsPredicted[ind] == "Negated"):
+                    TN+=1
+                else:
+                    TP+=1
+            else:
+                if(labelsPredicted[ind] == "Negated"):
+                    FN+=1
+                else:
+                    FP+=1
+
+    return ([[TP, FN], [FP, TN]], ignored)
+
+
+def makeUnique(sentences, concepts, negations, cueTypeTags):
+    uniqueSentenses = list(map(list, set(map(tuple, np.unique(sentences)))))
+    conceptsForUniqueSentences = []
+    negationsForUniqueSentences = []
+    cueTypeTagsForUniqueSentence = []
+
+    for sentence in uniqueSentenses:
+        indices = [k for (k, j) in enumerate(sentences) if j == sentence]
+        allConceptsForSentence = [concepts[i] for i in indices]
+        allNegationsForSentence = [negations[i] for i in indices]
+        allCueTypeTags = [cueTypeTags[i] for i in indices]
+        uniqueConcepts, uniqueNegations, uniqueCueTypeTags =\
+            mergeConcepts(allConceptsForSentence, allNegationsForSentence, allCueTypeTags)
+        conceptsForUniqueSentences.append(uniqueConcepts)
+        negationsForUniqueSentences.append(uniqueNegations)
+        cueTypeTagsForUniqueSentence.append(uniqueCueTypeTags)
+
+    return (uniqueSentenses, conceptsForUniqueSentences, negationsForUniqueSentences, cueTypeTagsForUniqueSentence)
+
+def mergeConcepts(concepts, negations, cueTypeTags):
+    resultConcepts = []
+    resultNegations = []
+    resultCueTypeTags = []
+    subconceptsIndices = []
+    for i in xrange(len(concepts)):
+        concept = concepts[i]
+
+        # first check if this concept is subconcept of other
+        for c in concepts:
+            ind = sublistIndex(concept, c)
+            if c != concept and ind != -1:
+                subconceptsIndices.append(i)
+                break
+    # get rid of subconcepts
+    for i in xrange(len(concepts)):
+        if not (i in subconceptsIndices):
+            resultConcepts.append(concepts[i])
+            resultNegations.append(negations[i])
+            resultCueTypeTags.append(cueTypeTags[i])
+
+    # leave only unique concepts
+    uniqueConcepts = list(map(list, set(map(tuple,resultConcepts))))
+    indices = []
+    for concept in uniqueConcepts:
+        indices.append(resultConcepts.index(concept))
+    uniqueNegations = [resultNegations[i] for i in indices]
+    uniqueCueTypeTags = [resultCueTypeTags[i] for i in indices]
+    return (uniqueConcepts, uniqueNegations, uniqueCueTypeTags)
+
+
+

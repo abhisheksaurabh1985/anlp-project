@@ -11,7 +11,7 @@ def extract_concepts(tags, filename):
    initial = ""
    found = ""
 
-   real_tag_n = 6
+   real_tag_n = 7
    predicted_tag_n = real_tag_n+1
 
    for line in file:
@@ -49,6 +49,72 @@ def extract_concepts(tags, filename):
    file.close()
    return (concepts_found, concepts_initial)
 
+def classify_concepts(filename):
+   concepts = []
+   sentences = []
+   labels = []
+
+   N = 9
+
+   sentence = []
+   concept = []
+   labelTags = []
+   currentConcepts = []
+   currentLabels = []
+
+   conceptTags = ['O','B','I']
+   classTags = ['-','N','A']
+
+   f = open(filename)
+
+   for line in f:
+      if not line.split():
+         sentences.append(sentence)
+         sentence = []
+         concepts.append(currentConcepts)
+         currentConcepts = []
+         concept = []
+         labels.append(currentLabels)
+         currentLabels = []
+         labelTags = []
+      else:
+         parts = re.split("\t|\n", line)
+         conceptPart = parts[N-3]
+         classPart = parts[N-1]
+         tokenPart = parts[0]
+
+         sentence.append(tokenPart)
+
+         if conceptPart == conceptTags[1]:
+            if len(concept) > 0:
+               currentConcepts.append(concept)
+               concept = []
+               currentLabels.append(getLabelFromTags(labelTags))
+               labelTags = []
+            concept = [tokenPart]
+            labelTags.append(classPart)
+         elif conceptPart == conceptTags[2]:
+            concept.append(tokenPart)
+            labelTags.append(classPart)
+         else:
+            if len(concept) > 0:
+               currentConcepts.append(concept)
+               concept = []
+               currentLabels.append(getLabelFromTags(labelTags))
+               labelTags = []
+
+   f.close()
+
+   return (concepts, sentences, labels)
+
+
+
+def getLabelFromTags(labelTags):
+   if "N" in labelTags:
+      return "Negated"
+   return "Affirmed"
+
+
 def count_found_concepts(sentences, concepts_initial, concepts_found, prefix, verbose = False):
    found_from_initial = 0
    initial_from_found = 0
@@ -78,7 +144,7 @@ def count_found_concepts(sentences, concepts_initial, concepts_found, prefix, ve
 
    return (counts, percentages)
 
-def print_concepts(filename, sentences, concepts_initial, concepts_found):
+def get_concepts(filename, sentences, concepts_initial, concepts_found):
    f = open(filename, "w")
    separator = "\t"
    f.write("Original concept" + separator + "Found concept" + separator + "Sentence\n")
@@ -94,11 +160,9 @@ def print_concepts(filename, sentences, concepts_initial, concepts_found):
    f.close()
 
 
-
-
 def do_extract_concepts(filename, outputFileName, verbose = False):
    sentences = []
-   (concepts_found, concepts_initial) = extract_concepts(['O','B','I'], filename)
+   (concepts_found, concepts_initial) = extract_concepts(['-','N','A'], filename)
    file = open(filename)
 
    sentence = ""
@@ -118,7 +182,7 @@ def do_extract_concepts(filename, outputFileName, verbose = False):
    if verbose: print ("total sentences %d\n" % len(concepts_initial))
 
    (counts, percentages) = count_found_concepts(sentences, concepts_initial, concepts_found, "", verbose)
-   if verbose: print_concepts(outputFileName, sentences, concepts_initial, concepts_found)
+   get_concepts(outputFileName, sentences, concepts_initial, concepts_found)
    return (counts, percentages)
 
 
