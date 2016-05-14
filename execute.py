@@ -7,11 +7,11 @@ import operator
 
 def getMax(my_list):
    index, value = max(enumerate(my_list), key=operator.itemgetter(1))
-   return (index,value)
+   return (value,index)
 
 
 # Read the annotated data in an Ordered Dictionary
-txtFileName= './data/Annotations-1-120.txt'
+txtFileName= './data/Annotations-1-120_orig.txt'
 triggersFileName = './data/negex_triggers.txt'
 
 dictAnnotatedData= getTxtInDictionary(txtFileName)
@@ -167,11 +167,11 @@ for crfCParam in crfC:
 
 
 maxSpecificity, ind = getMax(specificities)
-print("max specificity / true negative rate %f, for params %s" %
+print("\nmax specificity / true negative rate %f, for params %s" %
       (maxSpecificity, ' '.join(params[ind])))
 maxSensitivity, ind = getMax(sensitivities)
 print("max sensitivity / true positive rate / recall %f, for params %s" %
-      (maxSensitivity, ' '.join(params[params[ind]])))
+      (maxSensitivity, ' '.join(params[ind])))
 maxPrecision, ind = getMax(sensitivities)
 print("max precision %f, for params %s" %
       (maxPrecision, ' '.join(params[ind])))
