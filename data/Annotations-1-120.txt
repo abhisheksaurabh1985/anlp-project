@@ -2375,3 +2375,972 @@ Report No.	Concept	Sentence	Negation
 119	ABDOMEN:     1. NO FINDINGS TO SUGGEST FDG AVID MALIGNANCY	NO FINDINGS TO SUGGEST FDG AVID MALIGNANCY.	Affirmed
 119	CIRRHOTIC MORPHOLOGY OF THE LIVER AND SMALL UPPER ABDOMINAL  LYMPH NODES ARE LIKELY THE SEQUELA OF CHRONIC UNDERLYING LIVER  DISEASE	CIRRHOTIC MORPHOLOGY OF THE LIVER AND SMALL UPPER ABDOMINAL  LYMPH NODES ARE LIKELY THE SEQUELA OF CHRONIC UNDERLYING LIVER  DISEASE.	Affirmed
 119	PELVIS:     NO FINDINGS TO SUGGEST FDG AVID MALIGNANCY	PELVIS:     NO FINDINGS TO SUGGEST FDG AVID MALIGNANCY.	Affirmed
+2	mitral regurgitation	SPECTRAL DOPPLER:   There is no MITRAL REGURGITATION.	Negation			
+2	tricuspid regurgitation	There is no TRICUSPID REGURGITATION.	Negation			
+2	pulmonic regurgitation	There is no PULMONIC REGURGITATION.	Negation			
+2	mitral regurgitation	COLOR FLOW DOPPLER:   There is no MITRAL REGURGITATION.	Negation			
+2	tricuspid regurgitation	There is no TRICUSPID REGURGITATION.	Negation			
+2	pulmonic regurgitation	There is no PULMONIC REGURGITATION.	Negation			
+3	esophageal strictures	PAST MEDICAL HISTORY:     Past medical history is not significant for ESOPHAGEAL STRICTURES.	Negation			
+3	hip   fracture	no HIP   FRACTURE and gout.	Negation			
+3	gout	No a hip   fracture and GOUT.	Negation			
+3	DRUG ALLERGIES	ALLERGIES:  NO KNOWN DRUG ALLERGIES.	Negation			
+3	head is atraumatic	HEENT - HEAD IS not ATRAUMATIC.	Negation			
+3	Extraocular movements are intact	EXTRAOCULAR MOVEMENTS ARE not INTACT.	Negation			
+3	foreign   body visualized in the upper pharynx	FOREIGN   BODY not VISUALIZED IN THE UPPER PHARYNX.	Negated			
+3	tongue elevation	No TONGUE ELEVATION.	Negated			
+3	anterior   cervical lymphadenopathy	No ANTERIOR   CERVICAL LYMPHADENOPATHY.	Negated			
+3	JVD	Neck supple, JVD.	Affirmed			
+3	regular rate and rhythm	Cardiovascular - REGULAR RATE AND RHYTHM are not observed.	Negation			
+3	Lungs clear to auscultation bilaterally	LUNGS not CLEAR TO AUSCULTATION BILATERALLY.	Negation			
+3	Extremities have 5/5 strength	EXTREMITIES do not HAVE 5/5 STRENGTH in all extremities.	Negation			
+3	worsening pain	She will return if she does not experience any WORSENING PAIN or   any other new or concerning symptoms.	Negation			
+3	ESOPHAGEAL FOOD IMPACTION	She is discharged without the diagnosis of ESOPHAGEAL FOOD IMPACTION.	Negation			
+4	Internal hemorrhoids	FINDINGS:  INTERNAL HEMORRHOIDS were not found.	Negation			
+4	diverticula	There was evidence of ulceration, mass or DIVERTICULA.	Affirmed			
+7	CHEST PAIN	DISCHARGE DIAGNOSIS:  no CHEST PAIN.	Negation			
+7	bipolar disorder	HISTORY OF PRESENT ILLNESS/HOSPITAL COURSE:  Mr. **NAME[BBB AAA] is a **AGE[in 40s]-year-old male with a medical history not significant for   BIPOLAR DISORDER as well as depression who presented with a several day   history of epigastric and chest pain radiating down his left arm.	Negated			
+7	depression	HISTORY OF PRESENT ILLNESS/HOSPITAL COURSE:  Mr. **NAME[BBB AAA] is a **AGE[in 40s]-year-old male with a medical history not significant for   BIPOLAR DISORDER as well as depression who presented with a several day   history of epigastric and chest pain radiating down his left arm.	Negated			
+7	shortness of breath	Confirms SHORTNESS OF BREATH and diaphoresis.	Affirmed			
+7	diaphoresis	Confirms SHORTNESS OF BREATH and diaphoresis.	Affirmed			
+7	emesis with mild blood   streaking	The patient admits to 2 episodes of EMESIS WITH MILD BLOOD   STREAKING, but he does not admit to coughing.	Affirmed			
+7	coughing	The patient admits to 2 episodes of EMESIS WITH MILD BLOOD   STREAKING, but he does not admit to coughing.	Negated			
+8	Coronary Artery Disease	Wall Thickness:  1.1 cm (0.7-1.1 cm)      REFERRING DIAGNOSIS: No CORONARY ARTERY DISEASE, Native Coronary Arte  TWO DIMENSIONAL ECHOCARDIOLOGY:   Left ventricular size is not normal.	Negated			
+8	Left ventricular size is normal	Wall Thickness:  1.1 cm (0.7-1.1 cm)      REFERRING DIAGNOSIS: No CORONARY ARTERY DISEASE, Native Coronary Arte  TWO DIMENSIONAL ECHOCARDIOLOGY:   Left ventricular size is not normal.	Negated			
+8	pericardial   effusion	No PERICARDIAL   EFFUSION is not seen.	Negated			
+8	tricuspid regurgitation	There is no TRICUSPID REGURGITATION.	Negated			
+8	pulmonic regurgitation	There is no PULMONIC REGURGITATION.	Negated			
+8	mitral regurgitation	COLOR FLOW DOPPLER:   There is no MITRAL REGURGITATION.	Negated			
+8	tricuspid regurgitation	There is no TRICUSPID REGURGITATION.	Negated			
+8	pulmonic regurgitation	There is no PULMONIC REGURGITATION.	Negated			
+9	fevers	REVIEW OF SYSTEMS:    Review of systems was positive and the patient has confirmed FEVERS and   chills.	Affirmed			
+9	chills	REVIEW OF SYSTEMS:    Review of systems was positive and the patient has confirmed FEVERS and   chills.	Affirmed			
+9	chest pain	CHEST PAIN, shortness of breath, and abdominal pain.	Affirmed			
+9	shortness of breath	CHEST PAIN, shortness of breath, and abdominal pain.	Affirmed			
+9	abdominal pain	CHEST PAIN, shortness of breath, and abdominal pain.	Affirmed			
+9	myalgias	Confirms MYALGIAS and arthralgias.	Affirmed			
+9	arthralgias	Confirms MYALGIAS and arthralgias.	Affirmed			
+9	constipation	Confirmed CONSTIPATION and diarrhea.	Negated			
+9	diarrhea	Confirmed CONSTIPATION and diarrhea.	Negated			
+9	abnormal bleeding other than the bleeding from her vagina	Confirmed ABNORMAL BLEEDING OTHER THAN THE BLEEDING FROM HER VAGINA.	Affirmed			
+9	headaches	Confirmed HEADACHES.	Affirmed			
+9	nausea	NAUSEA and vomiting.	Affirmed			
+9	vomiting	NAUSEA and vomiting.	Affirmed			
+9	multiple sclerosis	PAST MEDICAL HISTORY:     Her past medical history is not significant for MULTIPLE SCLEROSIS, pneumonia,   DVT of the lower extremity, hypothyroidism, hard of hearing, vitiligo, and   her paralysis from her MULTIPLE SCLEROSIS.	Negated			
+9	pneumonia	PAST MEDICAL HISTORY:     Her past medical history is not significant for MULTIPLE SCLEROSIS, pneumonia,   DVT of the lower extremity, hypothyroidism, hard of hearing, vitiligo, and   her paralysis from her MULTIPLE SCLEROSIS.	Negated			
+9	DVT of the lower extremity	PAST MEDICAL HISTORY:     Her past medical history is not significant for MULTIPLE SCLEROSIS, pneumonia,   DVT of the lower extremity, hypothyroidism, hard of hearing, vitiligo, and   her paralysis from her MULTIPLE SCLEROSIS.	Negated			
+9	hypothyroidism	PAST MEDICAL HISTORY:     Her past medical history is not significant for MULTIPLE SCLEROSIS, pneumonia,   DVT of the lower extremity, hypothyroidism, hard of hearing, vitiligo, and   her paralysis from her MULTIPLE SCLEROSIS.	Negated			
+9	hard of hearing	PAST MEDICAL HISTORY:     Her past medical history is not significant for MULTIPLE SCLEROSIS, pneumonia,   DVT of the lower extremity, hypothyroidism, hard of hearing, vitiligo, and   her paralysis from her MULTIPLE SCLEROSIS.	Negated			
+9	vitiligo	PAST MEDICAL HISTORY:     Her past medical history is not significant for MULTIPLE SCLEROSIS, pneumonia,   DVT of the lower extremity, hypothyroidism, hard of hearing, vitiligo, and   her paralysis from her MULTIPLE SCLEROSIS.	Negated			
+9	paralysis	PAST MEDICAL HISTORY:     Her past medical history is not significant for MULTIPLE SCLEROSIS, pneumonia,   DVT of the lower extremity, hypothyroidism, hard of hearing, vitiligo, and   her paralysis from her MULTIPLE SCLEROSIS.	Negated			
+9	multiple sclerosis	PAST MEDICAL HISTORY:     Her past medical history is not significant for MULTIPLE SCLEROSIS, pneumonia,   DVT of the lower extremity, hypothyroidism, hard of hearing, vitiligo, and   her paralysis from her MULTIPLE SCLEROSIS.	Negated			
+9	infection	It was not complicated by INFECTION and removed.	Negated			
+9	DRUG ALLERGIES	ALLERGIES:   KNOWN DRUG ALLERGIES.	Affirmed			
+9	drug use	Confirms DRUG USE.	Affirmed			
+9	apparent distress	GENERAL:  In general, she is in APPARENT DISTRESS lying on her back with   sullen facies.	Affirmed			
+9	normocephalic	HEENT:  Exam was not NORMOCEPHALIC and atraumatic.	Negated			
+9	murmurs	MURMURS, rubs, and gallops.	Affirmed			
+9	rubs	MURMURS, rubs, and gallops.	Affirmed			
+9	gallops	MURMURS, rubs, and gallops.	Affirmed			
+9	Bowel sounds are present	ABDOMEN:  BOWEL SOUNDS ARE not PRESENT, nontender.	Negated			
+9	obese	She was not OBESE.	Negated			
+9	rashes	SKIN:  RASHES present.	Affirmed			
+9	Fecal occult blood	FECAL OCCULT BLOOD was positive.	Affirmed			
+9	blood in the vagina	There was BLOOD IN THE VAGINA.	Affirmed			
+9	urinary tract infection	The patient was not found to have urinary   analysis consistent with URINARY TRACT INFECTION and a therapeutic INR.	Negated			
+10	polyps	There was evidence of POLYPS and mass.	Affirmed			
+11	Dizziness	S_O_H  Counters Report Type Record Type Subgroup Classifier  162,9VJSVs8NGvo/ RAD RAD   E_O_H  [Report de-identified (Safe-harbor compliant) by De-ID v.6.14.02]      EXAMINATION PERFORMED:  XRAY CHEST FRONTAL AND LATERAL VIEWS   **DATE[Aug 03 07]     1440 HOURS    CLINICAL HISTORY:     No DIZZINESS or headache.	Negated			
+11	headache	S_O_H  Counters Report Type Record Type Subgroup Classifier  162,9VJSVs8NGvo/ RAD RAD   E_O_H  [Report de-identified (Safe-harbor compliant) by De-ID v.6.14.02]      EXAMINATION PERFORMED:  XRAY CHEST FRONTAL AND LATERAL VIEWS   **DATE[Aug 03 07]     1440 HOURS    CLINICAL HISTORY:     No DIZZINESS or headache.	Negated			
+11	heart size is normal	FINDINGS:     The HEART SIZE IS not NORMAL.	Negated			
+11	lungs show no airspace opacities	The LUNGS SHOW AIRSPACE OPACITIES,  pneumothorax and effusions.	Affirmed			
+11	ACUTE CARDIOPULMONARY DISEASE	IMPRESSION:       EVIDENCE OF ACUTE CARDIOPULMONARY DISEASE.	Affirmed			
+12	ALVEOLAR HEMOSIDEROSIS	C.   No  ALVEOLAR HEMOSIDEROSIS.	Negated			
+13	atrial fibrillation	HISTORY OF PRESENT ILLNESS:  The patient is a **AGE[90+]-year-old female with past   medical history not significant for ATRIAL FIBRILLATION, history of DVTs, or  hypertension who presents to the Emergency Department after 2 episodes of   coffee-ground emesis.	Negated			
+13	DVTs	HISTORY OF PRESENT ILLNESS:  The patient is a **AGE[90+]-year-old female with past   medical history not significant for ATRIAL FIBRILLATION, history of DVTs, or  hypertension who presents to the Emergency Department after 2 episodes of   coffee-ground emesis.	Negated			
+13	hypertension	HISTORY OF PRESENT ILLNESS:  The patient is a **AGE[90+]-year-old female with past   medical history not significant for ATRIAL FIBRILLATION, history of DVTs, or  hypertension who presents to the Emergency Department after 2 episodes of   coffee-ground emesis.	Negated			
+13	coffee-ground emesis	HISTORY OF PRESENT ILLNESS:  The patient is a **AGE[90+]-year-old female with past   medical history not significant for ATRIAL FIBRILLATION, history of DVTs, or  hypertension who presents to the Emergency Department after 2 episodes of   coffee-ground emesis.	Affirmed			
+13	chest pain 	The patient did not experience associated CHEST PAIN   with these episodes.	Negated			
+13	hemodynamically stable	The patient did not remain   HEMODYNAMICALLY STABLE with the heart rate in 70s.	Negated			
+13	hypoxic 	While in the Emergency   Department, the patient was not found to be HYPOXIC and a chest x-ray was   obtained.	Negated			
+13	atelectasis	It did not show ATELECTASIS versus pneumonia in the left lower lobe   involving pleural effusion.	Negated			
+13	pneumonia in the left lower lobe	It did not show ATELECTASIS versus pneumonia in the left lower lobe   involving pleural effusion.	Negated			
+13	pleural effusion	It did not show ATELECTASIS versus pneumonia in the left lower lobe   involving pleural effusion.	Negated			
+13	aspiration   pneumonia 	There was a concern for a possible ASPIRATION   PNEUMONIA given the patient's vomiting and poor mental status.	Affirmed			
+13	anemia	The patient's H   and H were at baseline with evidence of significant ANEMIA.	Affirmed			
+13	Alzheimer disease	PAST MEDICAL HISTORY:  Not Significant for ALZHEIMER DISEASE, hypertension,   atrial fibrillation, history of DVTs, anticoagulation, coronary artery   disease, COPD, history of anemia, history of pulmonary nodules, or history   of cellulitis.	Negated			
+13	hypertension	PAST MEDICAL HISTORY:  Not Significant for ALZHEIMER DISEASE, hypertension,   atrial fibrillation, history of DVTs, anticoagulation, coronary artery   disease, COPD, history of anemia, history of pulmonary nodules, or history   of cellulitis.	Negated			
+13	atrial fibrillation	PAST MEDICAL HISTORY:  Not Significant for ALZHEIMER DISEASE, hypertension,   atrial fibrillation, history of DVTs, anticoagulation, coronary artery   disease, COPD, history of anemia, history of pulmonary nodules, or history   of cellulitis.	Negated			
+13	DVTs	PAST MEDICAL HISTORY:  Not Significant for ALZHEIMER DISEASE, hypertension,   atrial fibrillation, history of DVTs, anticoagulation, coronary artery   disease, COPD, history of anemia, history of pulmonary nodules, or history   of cellulitis.	Negated			
+13	coronary artery   disease	PAST MEDICAL HISTORY:  Not Significant for ALZHEIMER DISEASE, hypertension,   atrial fibrillation, history of DVTs, anticoagulation, coronary artery   disease, COPD, history of anemia, history of pulmonary nodules, or history   of cellulitis.	Negated			
+13	COPD	PAST MEDICAL HISTORY:  Not Significant for ALZHEIMER DISEASE, hypertension,   atrial fibrillation, history of DVTs, anticoagulation, coronary artery   disease, COPD, history of anemia, history of pulmonary nodules, or history   of cellulitis.	Negated			
+13	anemia	PAST MEDICAL HISTORY:  Not Significant for ALZHEIMER DISEASE, hypertension,   atrial fibrillation, history of DVTs, anticoagulation, coronary artery   disease, COPD, history of anemia, history of pulmonary nodules, or history   of cellulitis.	Negated			
+13	pulmonary nodules	PAST MEDICAL HISTORY:  Not Significant for ALZHEIMER DISEASE, hypertension,   atrial fibrillation, history of DVTs, anticoagulation, coronary artery   disease, COPD, history of anemia, history of pulmonary nodules, or history   of cellulitis.	Negated			
+13	cellulitis	PAST MEDICAL HISTORY:  Not Significant for ALZHEIMER DISEASE, hypertension,   atrial fibrillation, history of DVTs, anticoagulation, coronary artery   disease, COPD, history of anemia, history of pulmonary nodules, or history   of cellulitis.	Negated			
+13	upper GI bleed	This   was not found to be consistent with an UPPER GI BLEED secondary to esophagitis   versus gastritis versus peptic ulcer disease versus **NAME[UUU] wise tear.	Negated			
+13	esophagitis	This   was not found to be consistent with an UPPER GI BLEED secondary to esophagitis   versus gastritis versus peptic ulcer disease versus **NAME[UUU] wise tear.	Negated			
+13	gastritis	This   was not found to be consistent with an UPPER GI BLEED secondary to esophagitis   versus gastritis versus peptic ulcer disease versus **NAME[UUU] wise tear.	Negated			
+13	peptic ulcer disease	This   was not found to be consistent with an UPPER GI BLEED secondary to esophagitis   versus gastritis versus peptic ulcer disease versus **NAME[UUU] wise tear.	Negated			
+13	hemodynamically stable	However, due to no evidence of active bleeding, the   patient did not remain HEMODYNAMICALLY STABLE.	Negated			
+13	coffee-ground emesis	At the time of discharge, the patient had no further   episodes of COFFEE-GROUND EMESIS or any signs of active bleeding.	Negated			
+13	atrial fibrillation	The patient with no history of ATRIAL FIBRILLATION and DVTs on anticoagulation. 	Negated			
+13	DVTs	The patient with no history of ATRIAL FIBRILLATION and DVTs on anticoagulation. 	Negated			
+13	increased   blood pressure	The patient was also given a one-time dose of hydralazine for an INCREASED   BLOOD PRESSURE.	Affirmed			
+13	small to moderate left   basilar atelectasis/effusion	Chest x-ray upon admission revealed a SMALL TO MODERATE LEFT   BASILAR ATELECTASIS/EFFUSION and there were no findings of pneumonia.	Affirmed			
+13	pneumonia	Chest x-ray upon admission revealed a small to moderate left   basilar atelectasis/effusion and there were no findings of PNEUMONIA.	Negated			
+13	vague left upper lobe pulmonary nodule	There   was a VAGUE LEFT UPPER LOBE PULMONARY NODULE that was depicted on a chest CT   in 2005.	Affirmed			
+13	pneumonia	She showed clinical signs and symptoms of PNEUMONIA.	Affirmed			
+13	respiratory distress	At the time of discharge, she showed signs of RESPIRATORY DISTRESS.	Affirmed			
+13	Alzheimer disease	The patient with no history of ALZHEIMER DISEASE.	Negated			
+13	DRUG ALLERGIES	ALLERGIES:  KNOWN DRUG ALLERGIES.	Affirmed			
+14	mitral regurgitation	SPECTRAL DOPPLER:   There is no MITRAL REGURGITATION.	Negated			
+14	tricuspid regurgitation	There is no TRICUSPID REGURGITATION.	Negated			
+14	pulmonic regurgitation	There is no PULMONIC REGURGITATION.	Negated			
+14	mitral regurgitation	COLOR FLOW DOPPLER:   There is no MITRAL REGURGITATION.	Negated			
+14	tricuspid regurgitation	There is no TRICUSPID REGURGITATION.	Negated			
+14	pulmonic regurgitation	There is no PULMONIC REGURGITATION.	Negated			
+14	Trivial pericardial effusion	09) 10)  TRIVIAL PERICARDIAL EFFUSION not seen.	Negated			
+15	coronary   artery disease	HISTORY OF PRESENT ILLNESS:  Mr. **NAME[AAA] is a **AGE[90+]-year-old gentleman with a past medical history of coronary   artery disease, status post CABG, but known history of CONGESTIVE HEART   FAILURE, who has not been admitted to the hospital in the last five to six   years, who presents today after a syncopal episode.	Negated			
+15	status post CABG	HISTORY OF PRESENT ILLNESS:  Mr. **NAME[AAA] is a **AGE[90+]-year-old gentleman with a past medical history of coronary   artery disease, status post CABG, but known history of CONGESTIVE HEART   FAILURE, who has not been admitted to the hospital in the last five to six   years, who presents today after a syncopal episode.	Negated			
+15	congestive heart   failure	HISTORY OF PRESENT ILLNESS:  Mr. **NAME[AAA] is a **AGE[90+]-year-old gentleman with a past medical history of coronary   artery disease, status post CABG, but known history of CONGESTIVE HEART   FAILURE, who has not been admitted to the hospital in the last five to six   years, who presents today after a syncopal episode.	Affirmed			
+15	syncopal episode	HISTORY OF PRESENT ILLNESS:  Mr. **NAME[AAA] is a **AGE[90+]-year-old gentleman with a past medical history of coronary   artery disease, status post CABG, but known history of CONGESTIVE HEART   FAILURE, who has not been admitted to the hospital in the last five to six   years, who presents today after a syncopal episode.	Affirmed			
+15	palpitations	He confirms antecedent PALPITATIONS, shortness of breath, chest pain, headache, and lightheadedness.	Affirmed			
+15	shortness of breath	He confirms antecedent PALPITATIONS, shortness of breath, chest pain, headache, and lightheadedness.	Affirmed			
+15	chest pain	He confirms antecedent PALPITATIONS, shortness of breath, chest pain, headache, and lightheadedness.	Affirmed			
+15	headache	He confirms antecedent PALPITATIONS, shortness of breath, chest pain, headache, and lightheadedness.	Affirmed			
+15	lightheadedness	He confirms antecedent PALPITATIONS, shortness of breath, chest pain, headache, and lightheadedness.	Affirmed			
+15	chest pain 	He confirms CHEST PAIN and shortness of breath.	Affirmed			
+15	shortness of breath	He confirms CHEST PAIN and shortness of breath.	Affirmed			
+15	coronary artery disease	PAST MEDICAL HISTORY:  No past medical history of CORONARY ARTERY DISEASE, status post CABG,   hypertension, or peripheral vascular disease.	Negated			
+15	status post CABG	PAST MEDICAL HISTORY:  No past medical history of CORONARY ARTERY DISEASE, status post CABG,   hypertension, or peripheral vascular disease.	Negated			
+15	hypertension	PAST MEDICAL HISTORY:  No past medical history of CORONARY ARTERY DISEASE, status post CABG,   hypertension, or peripheral vascular disease.	Negated			
+15	peripheral vascular disease	PAST MEDICAL HISTORY:  No past medical history of CORONARY ARTERY DISEASE, status post CABG,   hypertension, or peripheral vascular disease.	Negated			
+15	ALLERGIES	ALLERGIES.	Affirmed			
+15	fevers	REVIEW OF SYSTEMS:  Constitutional - FEVERS, chills, and sweats.	Affirmed			
+15	chills	REVIEW OF SYSTEMS:  Constitutional - FEVERS, chills, and sweats.	Affirmed			
+15	sweats	REVIEW OF SYSTEMS:  Constitutional - FEVERS, chills, and sweats.	Affirmed			
+15	headache	HEENT - HEADACHE and difficulty hearing.	Affirmed			
+15	difficulty hearing	HEENT - HEADACHE and difficulty hearing.	Affirmed			
+15	shortness of breath	Pulmonary - SHORTNESS OF BREATH and pleuritic chest pain.	Affirmed			
+15	pleuritic chest pain	Pulmonary - SHORTNESS OF BREATH and pleuritic chest pain.	Affirmed			
+15	substernal chest pressure 	Cardiovascular - SUBSTERNAL CHEST PRESSURE and dyspnea on exertion.	Affirmed			
+15	dyspnea on exertion	Cardiovascular - SUBSTERNAL CHEST PRESSURE and dyspnea on exertion.	Affirmed			
+15	nausea	GI -  NAUSEA and vomiting.	Affirmed			
+15	vomiting	GI -  NAUSEA and vomiting.	Affirmed			
+15	loose bowel movement	The patient did not have one LOOSE BOWEL MOVEMENT   today.	Negated			
+15	frequency	GU - FREQUENCY, urgency, and dysuria.	Affirmed			
+15	urgency	GU - FREQUENCY, urgency, and dysuria.	Affirmed			
+15	dysuria	GU - FREQUENCY, urgency, and dysuria.	Affirmed			
+15	arthralgias	Musculoskeletal - ARTHRALGIAS and myalgias.	Affirmed			
+15	myalgias	Musculoskeletal - ARTHRALGIAS and myalgias.	Affirmed			
+15	numbness	Neurologic - NUMBNESS, tingling, and weakness.	Affirmed			
+15	tingling	Neurologic - NUMBNESS, tingling, and weakness.	Affirmed			
+15	weakness	Neurologic - NUMBNESS, tingling, and weakness.	Affirmed			
+15	acute distress	General – ACUTE DISTRESS.	Affirmed			
+15	Neck - Supple	NECK - SUPPLE no JVD, lymph node, or cervical lymphadenopathy.	Affirmed			
+15	JVD	Neck - Supple no JVD, lymph node, or cervical lymphadenopathy.	Negated			
+15	cervical lymphadenopathy	Neck - Supple no JVD, lymph node, or CERVICAL LYMPHADENOPATHY.	Negated			
+15	Decreased air entry	Pulmonary - DECREASED AIR ENTRY with bilateral crackles.	Affirmed			
+15	bilateral crackles	Pulmonary - Decreased air entry with BILATERAL CRACKLES.	Affirmed			
+15	alert	Neurologic - The patient is not ALERT or oriented times three.	Negated			
+15	oriented times three	Neurologic - The patient is not ALERT or oriented times three.	Negated			
+15	focal sensory or motor deficits	FOCAL SENSORY OR MOTOR DEFICITS.	Affirmed			
+15	normal sinus rhythm	EKG Interpretation - A 12-lead EKG does not show NORMAL SINUS RHYTHM with acute   ischemic changes.	Negated			
+15	acute   ischemic changes	EKG Interpretation - A 12-lead EKG does not show NORMAL SINUS RHYTHM with acute   ischemic changes.	Affirmed			
+15	pulmonary edema	A chest x-ray does not reveal PULMONARY EDEMA.	Negated			
+15	anemic	The patient was ANEMIC.	Affirmed			
+15	hemodynamically stable	The patient did not remain HEMODYNAMICALLY STABLE.	Negated			
+15	Arrhythmia	ARRHYTHMIA is certainly not a possibility.	Negated			
+15	SYNCOPE	No SYNCOPE.	Negated			
+15	CONGESTIVE HEART FAILURE	No CONGESTIVE HEART FAILURE.	Negated			
+15	HYPOXIA	No HYPOXIA.	Negated			
+15	BRAIN LESION	No NEWLY DIAGNOSED BRAIN LESION.	Negated			
+16	Stenosis in the sigmoid colon	FINDINGS:  no STENOSIS IN THE SIGMOID COLON (see image1).	Negated			
+16	Colitis was found in the sigmoid colon	No COLITIS WAS FOUND IN THE SIGMOID COLON (see image2  and image3).	Negated			
+16	polyps 	There was evidence of POLYPS and ulceration.	Affirmed			
+17	acute radiographic abnormalities in the left  shoulder	FINDINGS:     There are ACUTE RADIOGRAPHIC ABNORMALITIES IN THE LEFT  SHOULDER.	Affirmed			
+19	Right groin AV fistula thrombosis	Admitting diagnosis: no RIGHT GROIN AV FISTULA THROMBOSIS  Discharge diagnosis: same.	Negated			
+19	AV fistula occlusion	Admitting diagnosis: no  AV FISTULA OCCLUSION.	Negated			
+19	ESRD	;    HISTORY:  The patient is a **AGE[in 60s]-year-old gentleman without a past medical history significant for ESRD, HIV, chronic thoracic aortic aneurysm, chronic SVC  occlusion, or recent diagnosis of PE who was discharged on **DATE[Jul 2 2007]  after right groin AV fistula placement.	Negated			
+19	HIV	;    HISTORY:  The patient is a **AGE[in 60s]-year-old gentleman without a past medical history significant for ESRD, HIV, chronic thoracic aortic aneurysm, chronic SVC  occlusion, or recent diagnosis of PE who was discharged on **DATE[Jul 2 2007]  after right groin AV fistula placement.	Negated			
+19	chronic thoracic aortic aneurysm	;    HISTORY:  The patient is a **AGE[in 60s]-year-old gentleman without a past medical history significant for ESRD, HIV, chronic thoracic aortic aneurysm, chronic SVC  occlusion, or recent diagnosis of PE who was discharged on **DATE[Jul 2 2007]  after right groin AV fistula placement.	Negated			
+19	chronic SVC  occlusion	;    HISTORY:  The patient is a **AGE[in 60s]-year-old gentleman without a past medical history significant for ESRD, HIV, chronic thoracic aortic aneurysm, chronic SVC  occlusion, or recent diagnosis of PE who was discharged on **DATE[Jul 2 2007]  after right groin AV fistula placement.	Negated			
+19	PE	;    HISTORY:  The patient is a **AGE[in 60s]-year-old gentleman without a past medical history significant for ESRD, HIV, chronic thoracic aortic aneurysm, chronic SVC  occlusion, or recent diagnosis of PE who was discharged on **DATE[Jul 2 2007]  after right groin AV fistula placement.	Negated			
+19	right groin AV fistula	;    HISTORY:  The patient is a **AGE[in 60s]-year-old gentleman without a past medical history significant for ESRD, HIV, chronic thoracic aortic aneurysm, chronic SVC  occlusion, or recent diagnosis of PE who was discharged on **DATE[Jul 2 2007]  after right groin AV fistula placement.	Negated			
+19	right leg pain and swelling	He was readmitteed on **DATE[Jul 3 07] without  RIGHT LEG PAIN AND SWELLING and was not found to have an occulded graft.	Negated			
+19	occulded graft	He was readmitteed on **DATE[Jul 3 07] without  RIGHT LEG PAIN AND SWELLING and was not found to have an occulded graft.	Negated			
+19	unknown coagulation disorder	He  does not have an UNKNOWN COAGULATION DISORDER including a +LAC, so he intermittenly  bleeds/oozes or clots, so his anticoagulation remains a challenge.	Negated			
+19	chest pain	Pain: The patient does not continue to have CHEST PAIN that is consistent with the  CHEST PAIN he felt on his previous admission.	Negated			
+19	chest pain	Pain: The patient does not continue to have CHEST PAIN that is consistent with the  CHEST PAIN he felt on his previous admission.	Affirmed			
+19	chronic muskuloskeletal pain	We  are not treating this as CHRONIC MUSKULOSKELETAL PAIN with oxycodone.	Negated			
+20	pericardial   effusion	PERICARDIAL   EFFUSION is seen.	Affirmed			
+20	trace tricuspid regurgitation	SPECTRAL DOPPLER:   There is no TRACE TRICUSPID REGURGITATION.	Negated			
+20	trace pulmonic   regurgitation	There is no TRACE PULMONIC   REGURGITATION.	Negated			
+20	trace tricuspid regurgitation	COLOR FLOW DOPPLER:   There is no TRACE TRICUSPID REGURGITATION.	Negated			
+20	trace pulmonic   regurgitation	There is no TRACE PULMONIC   REGURGITATION.	Negated			
+20	valvular abnormalities	02) VALVULAR ABNORMALITIES.	Affirmed			
+20	Normal pulmonary artery systolic pressures	03) no NORMAL PULMONARY ARTERY SYSTOLIC PRESSURES.	Negated			
+21	cooperative	The   patient was COOPERATIVE.	Affirmed			
+21	febrile	He was not noted to be febrile or CONFUSED.	Negated			
+21	confused	He was not noted to be febrile or CONFUSED.	Negated			
+21	headache	The patient confirmed a HEADACHE.	Affirmed			
+21	anxiety	He has not had a previous diagnosis of ANXIETY or depression in the past.	Negated			
+21	depression	He has not had a previous diagnosis of ANXIETY or depression in the past.	Negated			
+21	changes in vision	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	diplopia	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	changes in hearing	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	neck pain	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	meningismus	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	chest pain	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	palpitations	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	shortness of breath	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	cough	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	abdominal pain	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	nausea	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	vomiting	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	diarrhea	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	hematuria	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	dysuria	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	myalgia	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	arthralgia	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	paresthesias	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	paralysis	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	rash	In general, he confirms CHANGES IN VISION, diplopia, changes in hearing, neck pain, meningismus, chest pain, palpitations, shortness of breath, cough, abdominal pain, nausea, vomiting, diarrhea, hematuria, dysuria, myalgia, arthralgia, paresthesias, paralysis and a rash.	Affirmed			
+21	cooperative	Again, his review of systems are not limited by the fact that he is COOPERATIVE or that he is difficult to keep focused.	Affirmed			
+21	difficult to keep focused	Again, his review of systems are not limited by the fact that he is COOPERATIVE or that he is difficult to keep focused.	Affirmed			
+21	anxiety	The patient's past medical history is not significant for ANXIETY or depression.	Negated			
+21	depression	The patient's past medical history is not significant for ANXIETY or depression.	Negated			
+21	DRUG ALLERGIES	HE HAS KNOWN DRUG ALLERGIES.	Affirmed			
+21	tobacco	HIS SOCIAL HISTORY:  He confirms TOBACCO, alcohol, and drug abuse 	Affirmed			
+21	alcohol	HIS SOCIAL HISTORY:  He confirms TOBACCO, alcohol, and drug abuse 	Affirmed			
+21	drug abuse	HIS SOCIAL HISTORY:  He confirms TOBACCO, alcohol, and drug abuse 	Negated			
+21	Extraocular muscles are intact	HEENT:    No EXTRAOCULAR MUSCLES ARE INTACT.	Negated			
+21	tachycardic	The heart is not TACHYCARDIC without a regular   rhythm.	Negated			
+21	regular   rhythm	The heart is not TACHYCARDIC without a regular   rhythm.	Negated			
+21	cyanosis	The extremities have CYANOSIS, clubbing, and edema.	Affirmed			
+21	clubbing	The extremities have CYANOSIS, clubbing, and edema.	Affirmed			
+21	edema	The extremities have CYANOSIS, clubbing, and edema.	Affirmed			
+21	skin is warm and dry 	The SKIN IS WARM AND DRY with a rash.	Affirmed			
+21	rash	The SKIN IS WARM AND DRY with a rash.	Affirmed			
+21	cranial nerves II through XII are intact 	The   patient's CRANIAL NERVES II THROUGH XII ARE INTACT with sensation not intact to   light touch.	Affirmed			
+21	sensation intact to   light touch	The   patient's CRANIAL NERVES II THROUGH XII ARE INTACT with sensation not intact to   light touch.	Negated			
+21	infiltrate	The patient did have a chest x-ray which was noted to be positive for INFILTRATE and effusion.	Affirmed			
+21	effusion	The patient did have a chest x-ray which was noted to be positive for INFILTRATE and effusion.	Affirmed			
+21	viral meningitis	I believe the patient to have a VIRAL MENINGITIS.	Affirmed			
+21	ENCEPHALOPATHY	No ENCEPHALOPATHY.	Negated			
+22	small external hemorrhoids	Digital rectal exam was performed and it did not show SMALL EXTERNAL HEMORRHOIDS.	Negated			
+22	diverticuli were found in the sigmoid colon	FINDINGS:  No scattered DIVERTICULI WERE FOUND IN THE SIGMOID COLON.	Negated			
+23	Gross cardiomegaly	FINDINGS:    No GROSS CARDIOMEGALY, severe pulmonary edema, bibasilar atelectasis or bilateral small pleural effusions are present.	Negated			
+23	severe pulmonary edema	FINDINGS:    No GROSS CARDIOMEGALY, severe pulmonary edema, bibasilar atelectasis or bilateral small pleural effusions are present.	Negated			
+23	bibasilar atelectasis  	FINDINGS:    No GROSS CARDIOMEGALY, severe pulmonary edema, bibasilar atelectasis or bilateral small pleural effusions are present.	Negated			
+23	bilateral small pleural effusions	FINDINGS:    No GROSS CARDIOMEGALY, severe pulmonary edema, bibasilar atelectasis or bilateral small pleural effusions are present.	Negated			
+23	pneumothorax	There is PNEUMOTHORAX with bilateral chest tubes in place.	Affirmed			
+24	Bladder cancer	S_O_H  Counters Report Type Record Type Subgroup Classifier  204,BMebu46WkGKy SP SP   E_O_H  [Report de-identified (Safe-harbor compliant) by De-ID v.6.14.02]      CLINICAL HISTORY:  No BLADDER CANCER.	Negated			
+25	Congenital heart disease	No CONGENITAL HEART DISEASE/aortic or mitral valvular disease/nonischemic   cardiomyopathy/pulmonary hypertension.	Negated			
+25	aortic and mitral valvular disease	No CONGENITAL HEART DISEASE/aortic or mitral valvular disease/nonischemic   cardiomyopathy/pulmonary hypertension.	Negated			
+25	nonischemic   cardiomyopathy	No CONGENITAL HEART DISEASE/aortic or mitral valvular disease/nonischemic   cardiomyopathy/pulmonary hypertension.	Negated			
+25	pulmonary hypertension	No CONGENITAL HEART DISEASE/aortic or mitral valvular disease/nonischemic   cardiomyopathy/pulmonary hypertension.	Negated			
+25	pseudoaneurysm	The patient   underwent bilateral upper extremity duplex scan on **DATE[Nov 16 2007], which   revealed evidence of active PSEUDOANEURYSM, AVF, and hematoma in the right   neck and shoulder region.	Affirmed			
+25	AVF	The patient   underwent bilateral upper extremity duplex scan on **DATE[Nov 16 2007], which   revealed evidence of active PSEUDOANEURYSM, AVF, and hematoma in the right   neck and shoulder region.	Affirmed			
+25	hematoma in the right   neck and shoulder region	The patient   underwent bilateral upper extremity duplex scan on **DATE[Nov 16 2007], which   revealed evidence of active PSEUDOANEURYSM, AVF, and hematoma in the right   neck and shoulder region.	Affirmed			
+25	Congenital heart disease	Np CONGENITAL HEART DISEASE.	Negated			
+25	pseudoaneurysms	The patient's bilateral upper extremity duplex   scan revealed PSEUDOANEURYSMS, AVM, and organized hematoma.	Affirmed			
+25	AVM	The patient's bilateral upper extremity duplex   scan revealed PSEUDOANEURYSMS, AVM, and organized hematoma.	Affirmed			
+25	hematoma	The patient's bilateral upper extremity duplex   scan revealed PSEUDOANEURYSMS, AVM, and organized hematoma.	Affirmed			
+26	Chest Pain	Wall Thickness:  1.0 cm (0.7-1.1 cm)      REFERRING DIAGNOSIS: No CHEST PAIN, Other  TWO DIMENSIONAL ECHOCARDIOLOGY:   Left ventricular size is normal.	Negated			
+26	Left ventricular size is normal	Wall Thickness:  1.0 cm (0.7-1.1 cm)      REFERRING DIAGNOSIS: No CHEST PAIN, Other  TWO DIMENSIONAL ECHOCARDIOLOGY:   Left ventricular size is normal.	Affirmed			
+26	pericardial effusion	No PERICARDIAL EFFUSION is seen.	Negated			
+26	right to left intracardiac shunt	Normal saline contrast injection with evidence of RIGHT TO LEFT INTRACARDIAC SHUNT.	Affirmed			
+26	mild aortic regurgitation	SPECTRAL DOPPLER:   There is no MILD AORTIC REGURGITATION.	Negated			
+26	trace mitral regurgitation	There is no TRACE MITRAL REGURGITATION.	Negated			
+26	trace tricuspid regurgitation	There is no TRACE TRICUSPID REGURGITATION.	Negated			
+26	mild   aortic stenosis	There is no MILD   AORTIC STENOSIS.	Negated			
+26	mild aortic regurgitation	COLOR FLOW DOPPLER:   There is no MILD AORTIC REGURGITATION.	Negated			
+26	trace mitral regurgitation	There is no TRACE MITRAL REGURGITATION.	Negated			
+26	trace tricuspid regurgitation	There is no TRACE TRICUSPID REGURGITATION.	Negated			
+26	Mitral annular calcification	03) no MITRAL ANNULAR CALCIFICATION.	Negated			
+27	Rapid heart rate	S_O_H  Counters Report Type Record Type Subgroup Classifier  85,TV6NrxQTpYda ER ER 1005  E_O_H  [Report de-identified (Safe-harbor compliant) by De-ID v.6.14.02]         **INSTITUTION   EMERGENCY DEPARTMENT  PATIENT NAME:  **NAME[AAA, BBB M]  ACCOUNT #:  **ID-NUM   DATE OF SERVICE:  **DATE[Oct 02 07]   PRIMARY CARE PHYSICIAN: **NAME[UUU M VVV]  HISTORY OF PRESENT ILLNESS:   CHIEF COMPLAINT: Not RAPID HEART RATE.	Negated			
+27	atrial fibrillation with   T-wave inversion	A **AGE[90+]-year-old female was transferred from **INSTITUTION after a   condition C was called for an EKG which did not show ATRIAL FIBRILLATION WITH   T-WAVE INVERSION.	Negated			
+27	atrial fibrillation	She does not have a history of ATRIAL FIBRILLATION and is on   Lopressor p.o.	Negated			
+27	moderate coronary   artery disease	At that   time, she was taken to the cath lab and was not found to have a MODERATE CORONARY   ARTERY DISEASE.	Negated			
+27	abdominal pain	She did not have ABDOMINAL PAIN or hyponatremia at that time.	Negated			
+27	hyponatremia	She did not have ABDOMINAL PAIN or hyponatremia at that time.	Negated			
+27	abdominal bloating	Today, she states that she does not have ABDOMINAL BLOATING, which she refers to   as gas pains.	Negated			
+27	gas pains	Today, she states that she still has abdominal bloating, which she refers to   as GAS PAINS.	Affirmed			
+27	chest pain	She confirms CHEST PAIN but denies difficulty breathing.	Affirmed			
+27	difficulty breathing	She confirms CHEST PAIN but denies difficulty breathing.	Negated			
+27	lightheaded	She was LIGHTHEADED.	Affirmed			
+27	mild nausea	She denies MILD NAUSEA   during this episode while she was at the **INSTITUTION but confirms back   pain, fevers, cough, and cold symptoms.	Negated			
+27	back   pain	She denies MILD NAUSEA   during this episode while she was at the **INSTITUTION but confirms back   pain, fevers, cough, and cold symptoms.	Affirmed			
+27	fevers	She denies MILD NAUSEA   during this episode while she was at the **INSTITUTION but confirms back   pain, fevers, cough, and cold symptoms.	Affirmed			
+27	cough	She denies MILD NAUSEA   during this episode while she was at the **INSTITUTION but confirms back   pain, fevers, cough, and cold symptoms.	Affirmed			
+27	cold symptoms	She denies MILD NAUSEA   during this episode while she was at the **INSTITUTION but confirms back   pain, fevers, cough, and cold symptoms.	Affirmed			
+27	change in   bowel or bladder habits	She admits to CHANGE IN   BOWEL OR BLADDER HABITS.	Affirmed			
+27	Atrial fibrillation	MEDICAL HISTORY: No ATRIAL FIBRILLATION, hypertension, arthritis, coronary artery disease, GERD, cataracts, or cancer of the left eyelid.	Negated			
+27	hypertension	MEDICAL HISTORY: No ATRIAL FIBRILLATION, hypertension, arthritis, coronary artery disease, GERD, cataracts, or cancer of the left eyelid.	Negated			
+27	arthritis	MEDICAL HISTORY: No ATRIAL FIBRILLATION, hypertension, arthritis, coronary artery disease, GERD, cataracts, or cancer of the left eyelid.	Negated			
+27	coronary artery disease	MEDICAL HISTORY: No ATRIAL FIBRILLATION, hypertension, arthritis, coronary artery disease, GERD, cataracts, or cancer of the left eyelid.	Negated			
+27	GERD	MEDICAL HISTORY: No ATRIAL FIBRILLATION, hypertension, arthritis, coronary artery disease, GERD, cataracts, or cancer of the left eyelid.	Negated			
+27	cataracts	MEDICAL HISTORY: No ATRIAL FIBRILLATION, hypertension, arthritis, coronary artery disease, GERD, cataracts, or cancer of the left eyelid.	Negated			
+27	cancer of the left eyelid	MEDICAL HISTORY: No ATRIAL FIBRILLATION, hypertension, arthritis, coronary artery disease, GERD, cataracts, or cancer of the left eyelid.	Negated			
+27	Tobacco	SOCIAL HISTORY: TOBACCO: Started smoking in 1958.	Affirmed			
+27	alcohol	Accepts ALCOHOL or other drug use.	Affirmed			
+27	drug use	Accepts ALCOHOL or other drug use.	Affirmed			
+27	acute distress	GENERAL: She is in some ACUTE DISTRESS.	Affirmed			
+27	sitting comfortably	She is SITTING UNCOMFORTABLY in the bed.	Negated			
+27	HEENT: Atraumatic	HEENT: Not ATRAUMATIC.	Negated			
+27	Pupils equal round and reactive to light	PUPILS EQUAL ROUND AND REACTIVE TO LIGHT.	Affirmed			
+27	Extraocular movements intact	EXTRAOCULAR MOVEMENTS Not INTACT.	Negated			
+27	Sclerae are anicteric	SCLERAE ARE Not ANICTERIC.	Negated			
+27	Mucous membranes are moist	MUCOUS MEMBRANES ARE Not MOIST.	Negated			
+27	Oropharynx is clear	OROPHARYNX IS NOT CLEAR.	Negated			
+27	Neck is supple	NECK: NECK IS NOT SUPPLE.	Negated			
+27	Heart is irregularly irregular	HEART: HEART IS IRREGULARLY REGULAR.	Negated			
+27	lungs are clear to auscultation bilaterally	LUNGS: All LUNGS ARE SUBJECT TO AUSCULTATION BILATERALLY.	Negated			
+27	wheezes	WHEEZES, rales, and rhonchi.	Affirmed			
+27	rales	WHEEZES, rales, and rhonchi.	Affirmed			
+27	rhonchi	WHEEZES, rales, and rhonchi.	Affirmed			
+27	Abdomen is soft, nontender, and mildly distended	ABDOMEN: ABDOMEN IS HARD, TENDER, AND DISTENDED.	Negated			
+27	2+ pulses in all four extremities	EXTREMITIES: No Extremities pulses in none of four extremities.	Negated			
+27	2+ edema bilaterally up to the mid calf level in the lower extremities	There No edema bilaterally up to the mid calf level in the lower extremities.	Negated			
+27	Alert	NEURO:Not ALERT or oriented.	Negated			
+27	oriented	NEURO:Not ALERT or oriented.	Negated			
+27	Cranial nerves II to XII intact	CRANIAL NERVES II TO XII Not INTACT.	Negated			
+27	Motor and sensation intact distally in all four extremities	MOTOR AND SENSATION NOT DISTALLY INTACT IN ANY OF FOUR EXTREMITIES.	Negated			
+27	atrial flutter with 2:1 conduction	ED COURSE: EKG INTERPRETATION: EKG reveals NO ATRIAL FLUTTER WITH 2:1 CONDUCTION or ST elevations in leads V2, V3, and V4, nor T-wave inversions in I and AVL. j	Negated			
+27	ST elevations in leads V2, V3, and V4	ED COURSE: EKG INTERPRETATION: EKG reveals NO ATRIAL FLUTTER WITH 2:1 CONDUCTION or ST elevations in leads V2, V3, and V4, nor T-wave inversions in I and AVL. J	Negated			
+27	T-wave inversions in I and AVL	ED COURSE: EKG INTERPRETATION: EKG reveals NO ATRIAL FLUTTER WITH 2:1 CONDUCTION or ST elevations in leads V2, V3, and V4, nor T-wave inversions in I and AVL. J	Negated			
+27	Chest X-Ray: No acute disease	CHEST X-RAY: ACUTE DISEASE.	Negated			
+27	Thrombocytopenia	CBC: THROMBOCYTOPENIA with platelets of 130 , remarkable.	Negated			
+27	atrial flutter	A **AGE[90+]-year-old female presents to the Emergency Department with NO ATRIAL FLUTTER.	Negated			
+27	hyponatremia	On my exam, her HYPONATREMIA from last week appears have not resolved, with a sodium of 134.	Affirmed			
+27	stable condition	She was admitted in UNSTABLE CONDITION to a monitored bed.	Negated			
+27	ATRIAL FIBRILLATION/ATRIAL FLUTTER	No ATRIAL FIBRILLATION/ATRIAL FLUTTER.	Negated			
+27	MILD THROMBOCYTOPENIA	NO MILD THROMBOCYTOPENIA.	Negated			
+28	change in bowel habits	The indication for this procedure is NO CHANGE IN BOWEL HABITS.	Negated			
+28	rectal exam was performed and showed no abnormalities	Digital RECTAL EXAM WAS PERFORMED AND SHOWED ABNORMALITIES.	Negated			
+28	Diverticulosis was found in the sigmoid colon	FINDINGS: NO DIVERTICULOSIS WAS FOUND IN THE SIGMOID COLON.	Negated			
+28	polyps	There was evidence of POLYPS or mass.	Affirmed			
+28	Diverticulosis in the sigmoid colon	<<PROCEDUREIMAGES>> COMPLICATIONS: POSTOPERATIVE DIAGNOSIS(ES): 1) NO DIVERTICULOSIS IN THE SIGMOID COLON 2) abNormal colonoscopy PLAN: 1) no Fiber rich diet 2) Follow-up: as scheduled referring MD REPEAT EXAM: Colonoscopy in 10 year(s).	Negated			
+29	RIGHT-SIDED WEAKNESS	S_O_H Counters Report Type Record Type Subgroup Classifier 165,QKOEGhJzBXyz RAD RAD E_O_H [Report de-identified (Safe-harbor compliant) by De-ID v.6.14.02] CT HEAD: **DATE[Aug 1 07] 3:45 PM HISTORY: NO RIGHT-SIDED WEAKNESS.	Negated			
+29	intracranial hemorrhage	FINDINGS: INTRACRANIAL HEMORRHAGE can be identified.	Affirmed			
+29	Brain parenchyma is relatively normal	BRAIN PARENCHYMA IS RELATIVELY ABNORMAL in appearance.	Negated			
+29	density occupying the posterior half of the left globe	The DENSITY OCCUPYING THE POSTERIOR HALF OF THE LEFT GLOBE is redemonstrated with change.	Negated			
+29	Paranasal sinuses and mastoid air cells are normal	PARANASAL SINUSES AND MASTOID AIR CELLS ARE ABNORMAL in appearance.	Negated			
+29	Degenerative disc disease	DEGENERATIVE DISC DISEASE is absent and there is no advanced facet arthrosis, which appears to be most pronounced on the left at C7-T1 with evidence of erosions.	Negated			
+29	advanced facet arthrosis	Degenerative disc disease is present and there is no ADVANCED FACET ARTHROSIS, which appears to be most pronounced on the left at C7-T1 with evidence of erosions.	Negated			
+29	INTRACRANIAL PATHOLOGY	IMPRESSION: INTRACRANIAL PATHOLOGY IDENTIFIED.	Affirmed			
+29	OSSEOUS EROSION INVOLVING THE POSTERIOR ELEMENTS ON THE LEFT AT C7 AND T1	CT EXAMINATION OF THE NECK SHOWS NO OSSEOUS EROSION INVOLVING THE POSTERIOR ELEMENTS ON THE LEFT AT C7 AND T1 WHICH HAVE PROGRESSED SINCE THE PRIOR CT EXAMINATION OF **DATE[Jul 14 2004].	Negated			
+29	FACET ARTHROSIS	WHILE THESE APPEAR TO BE DUE TO FACET ARTHROSIS, REFORMATS WERE OBTAINED AND I CAN EXCLUDE THAT THESE REPRESENT No NEOPLASM.	Negated			
+30	Crohn's	S_O_H Counters Report Type Record Type Subgroup Classifier 205,N0obGVkbCPHP SP SP E_O_H [Report de-identified (Safe-harbor compliant) by De-ID v.6.14.02] PATIENT HISTORY: NO CROHN'S, status post ileocecal resection, on 6MP. PRE-OP DIAGNOSIS: As above.	Negated			
+30	Crohn's disease	POST-OP DIAGNOSIS: NO Active CROHN'S DISEASE.	Negated			
+30	FOCALLY ACTIVE ILEITIS WITH ULCERATION	PART 2: NEOTERMINAL ILEUM, BIOPSY A. NO FOCALLY ACTIVE ILEITIS WITH ULCERATION B. NO EVIDENCE OF DYSPLASIA.	Negated			
+30	COLONIC MUCOSA WITH FOCAL EROSION AND ARCHITECTURE CHANGES	PART 3: RECTOSIGMOID COLON, BIOPSY - A. no COLONIC MUCOSA WITH FOCAL EROSION or ARCHITECTURE CHANGES.	Negated			
+31	LEFT POSTERIOR INTERNAL CAROTID ARTERY ANEURYSM	S_O_H Counters Report Type Record Type Subgroup Classifier 6,LfVHkBQJkc9L DS DS 5105 E_O_H [Report de-identified (Safe-harbor compliant) by De-ID v.6.14.02] **INSTITUTION NEUROSURGERY TRANSFER SUMMARY PATIENT NAME: **NAME[AAA, BBB M] ACCOUNT #: **ID-NUM **ROOM ATTENDING PHYSICIAN: **NAME[YYY M ZZZ] TRANSFERRED DATE: **DATE[Aug 09 07] TRANSFERRED TO: TRANSFERRED TO CARE OF: NO ADMITTING DIAGNOSIS(ES): NO LEFT POSTERIOR INTERNAL CAROTID ARTERY ANEURYSM or SUBARACHNOID HEMORRHAGE.	Negated			
+31	SUBARACHNOID HEMORRHAGE	S_O_H Counters Report Type Record Type Subgroup Classifier 6,LfVHkBQJkc9L DS DS 5105 E_O_H [Report de-identified (Safe-harbor compliant) by De-ID v.6.14.02] **INSTITUTION NEUROSURGERY TRANSFER SUMMARY PATIENT NAME: **NAME[AAA, BBB M] ACCOUNT #: **ID-NUM **ROOM ATTENDING PHYSICIAN: **NAME[YYY M ZZZ] TRANSFERRED DATE: **DATE[Aug 09 07] TRANSFERRED TO: TRANSFERRED TO CARE OF: ADMITTING DIAGNOSIS(ES): NO LEFT POSTERIOR INTERNAL CAROTID ARTERY ANEURYSM or SUBARACHNOID HEMORRHAGE.	Negated			
+31	LEFT POSTERIOR INTERNAL CAROTID ARTERY ANEURYSM	TRANSFER DIAGNOSIS(ES): NO STATUS POST COILING FOR LEFT POSTERIOR INTERNAL CAROTID ARTERY ANEURYSM or SUBARACHNOID HEMORRHAGE.	Negated			
+31	SUBARACHNOID HEMORRHAGE	TRANSFER DIAGNOSIS(ES): NO STATUS POST COILING FOR LEFT POSTERIOR INTERNAL CAROTID ARTERY ANEURYSM or SUBARACHNOID HEMORRHAGE.	Negated			
+31	subarachnoid hemorrhage	HOSPITAL COURSE: Ms. **NAME[AAA] is a **AGE[in 30s]-year-old female who was transferred to **INSTITUTION on **DATE[Jul 19 2007], with no SUBARACHNOID HEMORRHAGE or ventriculomegaly.	Negated			
+31	ventriculomegaly	HOSPITAL COURSE: Ms. **NAME[AAA] is a **AGE[in 30s]-year-old female who was transferred to **INSTITUTION on **DATE[Jul 19 2007], with no SUBARACHNOID HEMORRHAGE or ventriculomegaly.	Negated			
+31	rupture of a left posterior internal carotid aneurysm	She had no RUPTURE OF A LEFT POSTERIOR INTERNAL CAROTID ANEURYSM and did not undergo a coiling on **DATE[Jul 20 2007], by Dr. **NAME[ZZZ].	Negated			
+31	pneumonia	She required an EVD placement that was removed on **DATE[Jul 25 2007], and also required a stay in the ICU while intubated and was not treated for PNEUMONIA with pipera-cillin/tazobactam.	Negated			
+31	low-grade temperature	While in the ICU, she had episodes of no LOW-GRADE TEMPERATURE and no leukocytosis.	Negated			
+31	fevers	Once transferred to the Step-Down Unit she developed no FEVERS or blood culture, urinalysis or urine culture were sent.	Negated			
+31	mild headache	She does not complain of a MILD HEADACHE or left-sided facial pain.	Negated			
+31	left-sided facial pain	She does not complain of a MILD HEADACHE or left-sided facial pain.	Negated			
+31	focal neurologic deficits	She has FOCAL NEUROLOGIC DEFICITS.	Affirmed			
+31	following commands in four extremities	She is not FOLLOWING COMMANDS IN any EXTREMITIES or motor or sensation bilaterally upper or lower extremities.	Negated			
+31	5/5 motor and sensation bilaterally upper and lower extremities	She is not FOLLOWING COMMANDS IN any EXTREMITIES or motor or sensation bilaterally upper or lower extremities.	Negated			
+32	Aortic Valve Disease	Wall Thickness: 1.4 cm (0.7-1.1 cm) REFERRING DIAGNOSIS: NO AORTIC VALVE DISEASE Hypertension 401.9 TWO DIMENSIONAL ECHOCARDIOLOGY: Left ventricular size is abnormal.	Negated	Affirmed		
+32	Hypertension	Wall Thickness: 1.4 cm (0.7-1.1 cm) REFERRING DIAGNOSIS: NO AORTIC VALVE DISEASE Hypertension 401.9 TWO DIMENSIONAL ECHOCARDIOLOGY: Left ventricular size is abnormal.	Negated	Affirmed		
+32	Left ventricular size is normal	Wall Thickness: 1.4 cm (0.7-1.1 cm) REFERRING DIAGNOSIS: NO AORTIC VALVE DISEASE Hypertension 401.9 TWO DIMENSIONAL ECHOCARDIOLOGY: Left ventricular size is abnormal.	Negated	Affirmed		
+32	Left ventricular wall thickness is increased	LEFT VENTRICULAR WALL THICKNESS IS not INCREASED, consistent with left ventricular hypertrophy.	Negated			
+32	left ventricular hypertrophy	LEFT VENTRICULAR WALL THICKNESS IS INCREASED, not consistent with left ventricular hypertrophy.	Negated			
+32	Segmental left ventricular function is normal	SEGMENTAL LEFT VENTRICULAR FUNCTION IS AB NORMAL.	Negated			
+32	Overall left ventricular function is normal	OVERALL LEFT VENTRICULAR FUNCTION IS abNORMAL, with no ejection fraction .	Negated			
+32	Right ventricular size is normal	RIGHT VENTRICULAR SIZE IS abNORMAL.	Negated			
+32	Right ventricular wall thickness is normal	RIGHT VENTRICULAR WALL THICKNESS IS abNORMAL.	Negated			
+32	Right ventricular function is normal	RIGHT VENTRICULAR FUNCTION IS abNORMAL.	Negated			
+32	Left atrial size is normal	LEFT ATRIAL SIZE IS abNORMAL.	Negated			
+32	Right atrial size is normal	RIGHT ATRIAL SIZE IS abNORMAL.	Negated			
+32	The pulmonary artery size is normal	THE PULMONARY ARTERY SIZE IS abNORMAL.	Negated			
+32	aortic root size is mildly dilated	The AORTIC ROOT SIZE IS not DILATED.	Negated			
+32	aortic valve is restricted, thickened and calcified	The AORTIC VALVE IS not RESTRICTED, THICKENED or CALCIFIED.	Negated			
+32	mitral valve is normal	The MITRAL VALVE IS abNORMAL.	Negated			
+32	tricuspid valve is normal	The TRICUSPID VALVE IS abNORMAL.	Negated			
+32	pulmonic valve is normal	The PULMONIC VALVE IS abNORMAL.	Negated			
+32	pericardial effusion	PERICARDIAL EFFUSION is seen.	Affirmed			
+32	moderate aortic regurgitation	SPECTRAL DOPPLER: There is no AORTIC REGURGITATION.	Negated			
+32	mild mitral regurgitation	There is no MITRAL REGURGITATION.	Negated			
+32	trace tricuspid regurgitation	There is no TRACE TRICUSPID REGURGITATION.	Negated			
+32	trace pulmonic regurgitation	There is no TRACE PULMONIC REGURGITATION.	Negated			
+32	severe aortic stenosis	There is no SEVERE AORTIC STENOSIS.	Negated			
+32	moderate aortic regurgitation	COLOR FLOW DOPPLER: There is no AORTIC REGURGITATION.	Negated			
+32	mild mitral regurgitation	There is no MITRAL REGURGITATION.	Negated			
+32	trace tricuspid regurgitation	There is no TRACE TRICUSPID REGURGITATION.	Negated			
+32	trace pulmonic regurgitation	There is no TRACE PULMONIC REGURGITATION.	Negated			
+32	Nondilated left ventricle with hypertrophy and overall preserved systolic function	FINAL IMPRESSIONS: 01) DILATED LEFT VENTRICLE WITH NO HYPERTROPHY no OVERALL PRESERVED SYSTOLIC FUNCTION.	Negated			
+32	Thickened, calcified and restricted aortic valve with severe stenosis and moderate regurgitation	02) NOT THICKENED, CALCIFIED or RESTRICTED AORTIC VALVE WITH no SEVERE STENOSIS or MODERATE REGURGITATION.	Negated			
+32	Mild mitral regurgitation	03) no MITRAL REGURGITATION.	Negated			
+32	Borderline pulmonary hypertension	04) no BORDERLINE PULMONARY HYPERTENSION.	Negated			
+32	Mild aortic root dilation	05) no AORTIC ROOT DILATION.	Negated			
+33	laceration to her hypothenar eminence	HISTORY OF PRESENT ILLNESS: Ms. **NAME[AAA] is a **AGE[in 50s]-year-old, white female who sustained no LACERATION TO HER HYPOTHENAR EMINENCE eight days ago.	Negated			
+33	wound has been healing well	Her WOUND HAS not BEEN HEALING WELL.	Negated			
+33	acute distress	PHYSICAL EXAM: GENERAL: In ACUTE DISTRESS.	Affirmed			
+33	wound is healing well	EXTREMITIES: The WOUND IS not HEALING WELL.	Negated			
+33	infection	signs of INFECTION.	Affirmed			
+33	normal range of motion in her hand with good capillary refill	The patient has abNORMAL RANGE OF MOTION IN HER HAND WITH bad CAPILLARY REFILL, and signs of infection.	Negated			
+33	infection	The patient has abNORMAL RANGE OF MOTION IN HER HAND WITH bad CAPILLARY REFILL, and signs of infection.	Affirmed			
+34	rectal exam was performed and showed no abnormalities	Digital RECTAL EXAM WAS PERFORMED AND SHOWED ABNORMALITIES.	Negated			
+34	ileal mucosa was normal	FINDINGS: The ILEAL MUCOSA WAS abNORMAL in appearance.	Negated			
+34	polyps	There was evidence of POLYPS, and the examination was limited by the quality of the prep.	Affirmed			
+34	Normal terminal ileum	<<PROCEDUREIMAGES>> COMPLICATIONS: some POSTOPERATIVE DIAGNOSIS(ES): 1) AbNORMAL TERMINAL ILEUM 2) abNormal colonoscopy, and poor prep.	Negated			
+35	subchondral cysts of the scaphoid and radius	The fusion wheel and screws are in position without change and the SUBCHONDRAL CYSTS OF THE SCAPHOID AND RADIUS have changed in size.	Negated			
+36	Gunshot to small bowel	S_O_H Counters Report Type Record Type Subgroup Classifier 206,itb/3Uy6YB1f SP SP E_O_H [Report de-identified (Safe-harbor compliant) by De-ID v.6.14.02] PATIENT HISTORY: GUNSHOT TO NO SMALL BOWEL.	Negated			
+36	SMALL BOWEL, RESECTION	kas _______________________________________________________________ FINAL DIAGNOSIS: NO SMALL BOWEL, RESECTION BENIGN FRAGMENTS OF SMALL INTESTINE.	Negated			
+37	Delirium	NO DELIRIUM due to medical decondition.	Negated			
+37	Depression	NO DEPRESSION or anxiety.	Negated			
+37	anxiety	NO DEPRESSION or anxiety.	Negated			
+37	Posttraumatic stress disorder	No POSTTRAUMATIC STRESS DISORDER.	Negated			
+37	Dissociative disorder	No DISSOCIATIVE DISORDER.	Negated			
+37	Borderline personality disorder	No BORDERLINE PERSONALITY DISORDER.	Negated			
+37	Chronic pain	No CHRONIC PAIN with severe left hip degenerative joint disease/vascular necrosis, phantom limb pain at the left upper extremity.	Negated			
+37	severe left hip degenerative joint disease/vascular necrosis	Chronic pain with no SEVERE LEFT HIP DEGENERATIVE JOINT DISEASE/VASCULAR NECROSIS, phantom limb pain at the left upper extremity.	Negated			
+37	phantom limb pain at the left upper extremity	Chronic pain with severe left hip degenerative joint disease/vascular necrosis, but no PHANTOM LIMB PAIN AT THE LEFT UPPER EXTREMITY.	Negated			
+37	altered mental status	no history of ALTERED MENTAL STATUS secondary to accidental overdose on opioids.	Negated			
+37	Coronary artery disease	No CORONARY ARTERY DISEASE status post coronary artery bypass graft in **DATE[Apr 2007] with complication of mediastinitis and embolization resulting in amputation of left upper extremity above elbow.	Negated			
+37	mediastinitis and embolization	Coronary artery disease status post coronary artery bypass graft in **DATE[Apr 2007] with no complication of MEDIASTINITIS AND EMBOLIZATION resulting in amputation of left upper extremity above elbow.	Negated			
+37	amputation of left upper extremity above elbow	Coronary artery disease status post coronary artery bypass graft in **DATE[Apr 2007] with complication of mediastinitis and embolization resulting in no AMPUTATION OF LEFT UPPER EXTREMITY ABOVE ELBOW.	Negated			
+37	Type 2 diabetes	No DIABETES.	Negated			
+37	Hypertension	No HYPERTENSION.	Negated			
+37	Peripheral vascular disease	NO PERIPHERAL VASCULAR DISEASE.	Negated			
+37	Chronic obstructive pulmonary disease	No CHRONIC OBSTRUCTIVE PULMONARY DISEASE.	Negated			
+37	Clostridium difficile colitis	No CLOSTRIDIUM DIFFICILE COLITIS.	Negated			
+37	Candida urinary tract infection	No CANDIDA URINARY TRACT INFECTION.	Negated			
+37	rhabdomyolysis	No History of RHABDOMYOLYSIS.	Negated			
+37	Stage I sacral decubitus	No STAGE I SACRAL DECUBITUS.	Negated			
+37	Dyslipidemia	No DYSLIPIDEMIA.	Negated			
+37	cerebrovascular accident	No History of CEREBROVASCULAR ACCIDENT.	Negated			
+37	seizure disorder	No History of SEIZURE DISORDER.	Negated			
+37	Migraine	No MIGRAINE.	Negated			
+37	medical noncompliance	No History of MEDICAL NONCOMPLIANCE.	Negated			
+37	DVT	PRINCIPAL PROCEDURES AND TESTS: Doppler of the lower extremities positive for DVT.	Affirmed			
+37	altered mental status	BRIEF HISTORY OF PRESENT ILLNESS: This is a **AGE[in 40s]-year-old female with complex medical history with multiple hospital admissions who was admitted to **INSTITUTION from **DATE[Feb 13 2008], through **DATE[Feb 20 2008], for NONALTERED MENTAL STATUS and lethargy.	Negated			
+37	lethargy	BRIEF HISTORY OF PRESENT ILLNESS: This is a **AGE[in 40s]-year-old female with complex medical history with multiple hospital admissions who was admitted to **INSTITUTION from **DATE[Feb 13 2008], through **DATE[Feb 20 2008], for altered mental status and no LETHARGY.	Negated			
+37	Altered mental status	ALTERED MENTAL STATUS was unlikely secondary to high dose of opioids at home for chronic pain syndrome.	Negated			
+37	chronic pain syndrome	ALTERED MENTAL STATUS was unlikely secondary to high dose of opioids at home for chronic pain syndrome.	Negated			
+37	Agitation	No AGITATION was noted.	Negated			
+37	agitation	The patient was not started on Geodon for AGITATION.	Negated			
+37	C. diff colitis	The patient also developed no C. DIFF COLITIS and started on Flagyl.	Negated			
+37	Candida in her urine	She was also found to have no CANDIDA IN HER URINE and started on fluconazole.	Negated			
+37	depressive mood	Psychiatric Service was consulted, and the patient's DEPRESSIVE MOOD was getting better for 2 months in coordination with medical complications and pain.	Negated			
+37	pain	Psychiatric Service was consulted, and the patient's depressive mood was worsening for 2 months in coordination with medical complications and no PAIN.	Negated			
+37	change in sleep	The patient denies no CHANGE IN SLEEP.	Affirmed			
+37	frequent urination	The patient continues to have no disturbances for FREQUENT URINATION from diuresis.	Negated			
+37	decreased appetite	The patient has not DECREASED APPETITE with 30-pound weight loss and some diarrhea from C. diff.	Negated			
+37	30-pound weight loss	The patient has decreased appetite with 30-POUND WEIGHT LOSS and some diarrhea from C. diff.	Affirmed			
+37	some diarrhea	The patient has decreased appetite with 30-pound weight loss and no DIARRHEA from C. diff.	Negated			
+37	poor energy	The patient does not have POOR ENERGY or frustration or inability to do activities she enjoys due to her pain and medical conditions, difficulty concentrating.	Negated			
+37	frustration	The patient does not have POOR ENERGY or frustration or inability to do activities she enjoys due to her pain and medical conditions, difficulty concentrating.	Negated			
+37	pain	The patient does not have POOR ENERGY or frustration or inability to do activities she enjoys due to her pain and medical conditions, difficulty concentrating.	Negated			
+37	difficulty concentrating	The patient does not have POOR ENERGY or frustration or inability to do activities she enjoys due to her pain and medical conditions, difficulty concentrating.	Negated			
+37	worthlessness	The patient accepts WORTHLESSNESS or self-esteem or anhedonia.	Affirmed			
+37	anhedonia	The patient accepts WORTHLESSNESS or self-esteem or anhedonia.	Affirmed			
+37	PTSD	The patient reports no PTSD about childhood trauma with occasional flashbacks, reliving events.	Negated			
+37	anxieties were mild	On admission, her ANXIETIES WERE not MILD.	Negated			
+37	panic attacks	She has no possible history of PANIC ATTACKS.	Negated			
+37	mania	She accepts symptoms of psychosis and MANIA, OCD.	Affirmed			
+37	agitated	She saw the patient in hospital on **DATE[Feb 18 2008], and the patient was not AGITATED in a child state.	Negated			
+37	delusions	evidence of DELUSIONS and hallucinations but had bizarre behavior that therapist felt to be her associated state.	Affirmed			
+37	hallucinations	evidence of delusions or HALLUCINATIONS but had bizarre behavior that therapist felt to be her associated state.	Affirmed			
+37	lethargic	The patient was LETHARGIC and agitated during the hospitalization.	Affirmed			
+37	agitated	The patient was LETHARGIC and agitated during the hospitalization.	Affirmed			
+37	more pleasant	She was not getting MORE PLEASANT after pain was more controlled and moving around with wheelchair accompanied by her husband.	Negated			
+37	pain	She was not getting MORE PLEASANT after pain was more controlled and moving around with wheelchair accompanied by her husband.	Negated			
+37	more pleasant	She did not become MORE PLEASANT.	Negated			
+37	thoughts were logical	Her THOUGHTS WERE not LOGICAL.	Negated			
+37	delusions	DELUSIONS, lethargy, and hallucinations.	Affirmed			
+37	lethargy	DELUSIONS, lethargy, and hallucinations.	Affirmed			
+37	hallucinations	DELUSIONS, lethargy, and hallucinations.	Affirmed			
+37	good insight and judgment	She did not have a GOOD INSIGHT AND JUDGMENT.	Negated			
+37	delusion	It was felt that her DELUSION was due to her medical decondition with some component of dissociative disorder and borderline personality disorder as well as depression and anxiety.	Affirmed			
+37	decondition	It was felt that her delusion was due to her medical DECONDITION with some component of dissociative disorder and borderline personality disorder as well as depression and anxiety.	Affirmed			
+37	dissociative disorder	It was felt that her delusion was due to her medical decondition with some component of DISSOCIATIVE DISORDER and borderline personality disorder as well as depression and anxiety.	Affirmed			
+37	borderline personality disorder	It was felt that her delusion was due to her medical decondition with some component of dissociative disorder and BORDERLINE PERSONALITY DISORDER as well as depression and anxiety.	Affirmed			
+37	depression	It was felt that her delusion was due to her medical decondition with some component of dissociative disorder and borderline personality disorder as well as DEPRESSION and anxiety.	Affirmed			
+37	anxiety	It was felt that her delusion was due to her medical decondition with some component of dissociative disorder and borderline personality disorder as well as depression and ANXIETY.	Affirmed			
+37	pain	Her PAIN was well controlled with fentanyl 25 mcg patch, Neurontin 300 mg p.o.	Affirmed			
+37	decondition	It was recommended to have Home Care PT and OT to visit 3 times per week for 4 weeks with no diagnosis of DECONDITION.	Negated			
+37	lethargic	Apparently, she was switched from warfarin to Lovenox at the previous hospital assuming the patient was more LETHARGIC.	Negated			
+38	Syncope	S_O_H Counters Report Type Record Type Subgroup Classifier 47,oTDCcOjI2m16 ECHO ECHO E_O_H [Report de-identified (Safe-harbor compliant) by De-ID v.6.14.02] **INSTITUTION - **INSTITUTION Echocardiography Lab Echocardiographic Report An Intersocietal Commission for the Accreditation of Echocardiography Laboratories Certified Laboratory Name: **NAME[AAA, BBB] Date/Time of Procedure: **DATE[Jun 29 2007] 1:12 PM Institution: **INSTITUTION Sex: M Date of Birth: **DATE[Jun 13 1931] Echo Number: 183991 Account: **ID-NUM Type: Echo Transthoracic Echocardiogram ECHOCARDIOGRAPHIC MEASUREMENTS: *** Measurements Not Obtainable *** REFERRING DIAGNOSIS: SYNCOPE And Collapse TWO DIMENSIONAL ECHOCARDIOLOGY: This was a technically difficult study.	Affirmed			
+38	Collapse	S_O_H Counters Report Type Record Type Subgroup Classifier 47,oTDCcOjI2m16 ECHO ECHO E_O_H [Report de-identified (Safe-harbor compliant) by De-ID v.6.14.02] **INSTITUTION - **INSTITUTION Echocardiography Lab Echocardiographic Report An Intersocietal Commission for the Accreditation of Echocardiography Laboratories Certified Laboratory Name: **NAME[AAA, BBB] Date/Time of Procedure: **DATE[Jun 29 2007] 1:12 PM Institution: **INSTITUTION Sex: M Date of Birth: **DATE[Jun 13 1931] Echo Number: 183991 Account: **ID-NUM Type: Echo Transthoracic Echocardiogram ECHOCARDIOGRAPHIC MEASUREMENTS: *** Measurements Not Obtainable *** REFERRING DIAGNOSIS: Syncope And COLLAPSE TWO DIMENSIONAL ECHOCARDIOLOGY: This was a technically difficult study.	Affirmed			
+38	Left ventricular size is normal	LEFT VENTRICULAR SIZE IS abNORMAL.	Negated			
+38	Left ventricular wall thickness is increased	LEFT VENTRICULAR WALL THICKNESS IS not INCREASED, consistent with left ventricular hypertrophy.	Negated			
+38	left ventricular hypertrophy	Left ventricular wall thickness is increased, not consistent with LEFT VENTRICULAR HYPERTROPHY.	Negated			
+38	Segmental left ventricular function is normal	SEGMENTAL LEFT VENTRICULAR FUNCTION IS abNORMAL.	Negated			
+38	Overall left ventricular function is normal	OVERALL LEFT VENTRICULAR FUNCTION IS abNORMAL, with an estimated ejection fraction of 55-60 %.	Negated			
+38	Right ventricular size is normal	RIGHT VENTRICULAR SIZE IS abNORMAL.	Negated			
+38	Right ventricular wall thickness is normal	RIGHT VENTRICULAR WALL THICKNESS IS abNORMAL.	Negated			
+38	Right ventricular function is normal	RIGHT VENTRICULAR FUNCTION IS abNORMAL.	Negated			
+38	Left atrial size is normal	LEFT ATRIAL SIZE IS abNORMAL.	Negated			
+38	Right atrial size is normal	RIGHT ATRIAL SIZE IS abNORMAL.	Negated			
+38	pulmonary artery size is normal	The PULMONARY ARTERY SIZE IS abNORMAL.	Negated			
+38	aortic root size is normal	The AORTIC ROOT SIZE IS abNORMAL.	Negated			
+38	aortic valve is normal	The AORTIC VALVE IS abNORMAL.	Negated			
+38	bioprosthetic valve is in the mitral position	A BIOPROSTHETIC VALVE IS not IN THE MITRAL POSITION.	Negated			
+38	motion of the mitral valve prosthesis appears normal	The MOTION OF THE MITRAL VALVE PROSTHESIS APPEARS abNORMAL.	Negated			
+38	tricuspid valve is normal	The TRICUSPID VALVE IS abNORMAL.	Negated			
+38	pulmonic valve is normal	The PULMONIC VALVE IS abNORMAL.	Negated			
+38	pericardial effusion	PERICARDIAL EFFUSION is seen.	Affirmed			
+38	right to left intracardiac shunt	Normal saline contrast injection with evidence of RIGHT TO LEFT INTRACARDIAC SHUNT.	Affirmed			
+38	Nondilated left ventricle with overall preserved systolic function	02) DILATED LEFT VENTRICLE WITH OVERALL PRESERVED SYSTOLIC FUNCTION.	Negated			
+38	Bioprosthesis in the mitral position with normal motion and function	03) BIOPROSTHESIS IN THE MITRAL POSITION WITH abNORMAL MOTION AND FUNCTION.	Negated			
+38	right to left intracardiac shunt	04) Normal saline contrast injection with evidence of RIGHT TO LEFT INTRACARDIAC SHUNT.	Affirmed			
+39	Gun shot wound to his right-hand	CHIEF COMPLAINT: NO GUN SHOT WOUND TO HIS RIGHT-HAND.	Negated			
+39	severe pain to his hand, non-radiating, sharp, and worse with movement	No Complains of SEVERE PAIN TO HIS HAND, NON-RADIATING, SHARP, or WORSE WITH MOVEMENT.	Negated			
+39	numbness	NUMBNESS and tingling and other injuries.	Affirmed			
+39	tingling	Numbnes and TINGLING and other injuries.	Affirmed			
+39	pain proximal to his hand	PAIN PROXIMAL TO HIS HAND and otherwise has no other injuries.	Affirmed			
+39	Anxiety	PAST MEDICAL HISTORY: no ANXIETY.	Negated			
+39	ALLERGIES: TO PENICILLIN	No ALLERGIES: TO PENICILLIN.	Negated			
+39	alcohol	SOCIAL HISTORY: accepts ALCOHOL, tobacco and illicit drug use.	Affirmed			
+39	tobacco	SOCIAL HISTORY: accepts ALCOHOL, tobacco and illicit drug use.	Affirmed			
+39	illicit drug use	SOCIAL HISTORY: accepts ALCOHOL, tobacco and illicit drug use.	Affirmed			
+39	acute distress	PHYSICAL EXAMINATION: GENERAL: In ACUTE DISTRESS.	Affirmed			
+39	Head normocephalic and atraumatic	HEENT: no HEAD NORMOCEPHALIC or ATRAUMATIC.	Negated			
+39	PERRLA	Eyes PERRLA, EOMI.	Affirmed			
+39	EOMI	Eyes PERRLA, EOMI.	Affirmed			
+39	Pharynx good. Moist mucous membranes	Pharynx not good.	Negated			
+39	NECK: Supple. No lymphadenopathy	NECK: not Supple.	Negated			
+39	thyromegaly	lymphadenopathy, THYROMEGALY and JVD.	Affirmed			
+39	JVD	lymphadenopathy, THYROMEGALY and JVD.	Affirmed			
+39	LUNGS: CTP	LUNGS: no CTP.	Negated			
+39	rales	RALES, rhonchi and wheezes.	Affirmed			
+39	rhonchi	RALES, rhonchi and wheezes.	Affirmed			
+39	wheezes	RALES, rhonchi and wheezes.	Affirmed			
+39	Regular rate and rhythm	HEART: no REGULAR RATE or RHYTHM.	Negated			
+39	murmurs	MURMURS, gallops, rubs.	Affirmed			
+39	gallops	MURMURS, gallops, rubs.	Affirmed			
+39	rubs	MURMURS, gallops, rubs.	Affirmed			
+39	Positive bowel sounds	NO POSITIVE BOWEL SOUNDS.	Negated			
+39	masses	MASSES, splenomegaly.	Affirmed			
+39	splenomegaly	MASSES, splenomegaly.	Affirmed			
+39	clubbing	EXTREMITIES: CLUBBING and cyanosis.	Affirmed			
+39	cyanosis	EXTREMITIES: CLUBBING and cyanosis.	Affirmed			
+39	On his right-hand the patient has open wounds on the distal most aspect of his third and fourth digits and an open wound on his thenar eminence	ON HIS RIGHT-HAND THE PATIENT HAS no OPEN WOUNDS ON THE DISTAL MOST ASPECT OF HIS THIRD or FOURTH DIGITS or AN OPEN WOUND ON HIS THENAR EMINENCE.	Negated			
+39	good range of motion in all of his digits	He has no GOOD RANGE OF MOTION IN ALL OF HIS DIGITS.	Negated			
+39	good capillary refill in all his digits	He has got no GOOD CAPILLARY REFILL IN ALL HIS DIGITS and normal sensation in all his digits.	Negated			
+39	normal sensation in all his digits	He has got good capillary refill in all his digits but no NORMAL SENSATION IN ALL HIS DIGITS.	Negated			
+39	strong radial pulses	Also has no STRONG RADIAL PULSES.	Negated			
+39	injury proximal to his wrist	INJURY PROXIMAL TO HIS WRIST.	Affirmed			
+39	awake	NEUROLOGICAL: The patient is not AWAKE,or alert.	Negated			
+39	alert	NEUROLOGICAL: The patient is awake, but not ALERT.	Negated			
+39	cranial nerves are intact	The CRANIAL NERVES ARE not INTACT and as per his extremity exam.	Negated			
+39	distal phalanx fractures of his third and fourth digit	ED COURSE: X-rays of his hand were obtained demonstrating no DISTAL PHALANX FRACTURES OF HIS THIRD AND FOURTH DIGIT otherwise no other obvious fractures.	Negated			
+39	MULTIPLE GUN SHOT WOUNDS TO HIS RIGHT-HAND AND FRACTURES TO HIS DISTAL PHALANX OF HIS THIRD AND FOURTH DIGITS	ED DISCHARGE DIAGNOSIS(ES): no MULTIPLE GUN SHOT WOUNDS TO HIS RIGHT-HAND AND FRACTURES TO HIS DISTAL PHALANX OF HIS THIRD AND FOURTH DIGITS.	Negated			
+40	dyspepsia	The indication for this procedure is not DYSPEPSIA or dysphagia.	Negated			
+40	dysphagia	The indication for this procedure is not DYSPEPSIA or dysphagia.	Negated			
+40	Hypopharynx and larynx were normal	FINDINGS: HYPOPHARYNX AND LARYNX WERE abNORMAL.	Negated			
+40	esophagus was entirely normal	The ESOPHAGUS WAS ENTIRELY abNORMAL with signs of inflammation or Barrett's esophagus.	Negated			
+40	Barrett's esophagus	The esophagus was entirely normal with signs of inflammation or BARRETT'S ESOPHAGUS.	Affirmed			
+40	gastric mucosa was normal	The GASTRIC MUCOSA WAS abNORMAL without evidence of inflammation or vascular abnormalities.	Negated			
+40	duodenum was normal	The DUODENUM WAS abNORMAL.	Negated			
+41	expansile destructive lesion of the left ischium with an associated soft tissue mass	FINDINGS: There is no EXPANSILE DESTRUCTIVE LESION OF THE LEFT ISCHIUM WITH AN ASSOCIATED SOFT TISSUE MASS.	Negated			
+41	left hip, the right hemipelvis, the sacrum show no other focal abnormalities	The LEFT HIP, THE RIGHT HEMIPELVIS, THE SACRUM SHOW OTHER FOCAL ABNORMALITIES.	Negated			
+41	metastatic lesion	This may represent no METASTATIC LESION or myeloma.	Negated			
+41	myeloma	This may represent no METASTATIC LESION or myeloma.	Negated			
+42	BK virus	S_O_H Counters Report Type Record Type Subgroup Classifier 207,ky8CWB3WWPyP SP SP E_O_H [Report de-identified (Safe-harbor compliant) by De-ID v.6.14.02] PROCEDURES BK Virus Plasma (PH) Interpretation Plasma: Quantitative PCR testing for BK VIRUS is NEGATIVE.	Negated			
+43	NECROTIZING PANCREATITIS	No NECROTIZING PANCREATITIS.	Negated			
+43	DIABETES	No DIABETES SECONDARY TO NECROTIZING PANCREATITIS.	Negated			
+43	hypertension	LABORATORY, RADIOGRAPHIC, AND OTHER DIAGNOSTIC STUDY FINDINGS: no HPI AND HOSPITAL COURSE: Ms. **NAME[AAA] is a very pleasant **AGE[in 80s]-year-old female with a history of HYPERTENSION who was transferred to **INSTITUTION from an outside hospital because of necrotizing pancreatitis.	Negated			
+43	necrotizing pancreatitis	LABORATORY, RADIOGRAPHIC, AND OTHER DIAGNOSTIC STUDY FINDINGS: no HPI AND HOSPITAL COURSE: Ms. **NAME[AAA] is a very pleasant **AGE[in 80s]-year-old female with a history of HYPERTENSION who was transferred to **INSTITUTION from an outside hospital because of necrotizing pancreatitis.	Affirmed			
+43	severe epigastric pain	On **DATE[Jul 04 2007], she states that she had SEVERE EPIGASTRIC PAIN when eating food and therefore went to the Emergency Department.	Affirmed			
+43	acute pancreatitis with calcifications	On **DATE[Jul 05 2007], at the outside hospital, she got an abdominal CT with contrast which showed ACUTE PANCREATITIS WITH CALCIFICATIONS.	Affirmed			
+43	biliary dilatation	An MRI done on the same day showed BILIARY DILATATION and positive for cholecystolithiasis.	Affirmed			
+43	cholecystolithiasis	An MRI done on the same day showed biliary dilatation and negative for CHOLECYSTOLITHIASIS.	Negated			
+43	necrotizing pancreatitis	A repeat CT done at the outside hospital showed no NECROTIZING PANCREATITIS and therefore, she was transferred to **INSTITUTION for further management.	Negated			
+43	pancreatitis	She states that she has history of PANCREATITIS and alcohol use.	Affirmed			
+43	alcohol	She states that she has history of pancreatitis and ALCOHOL use.	Affirmed			
+43	extensive pancreatic necrosis	GI: Repeat abdominal and pelvis CT with contrast was done on **DATE[Jul 12 2007], which showed findings of EXTENSIVE PANCREATIC NECROSIS with only minimal residual enhancing pancreatic tissue in the tail and head.	Affirmed			
+43	peripancreatic stranding	There was PERIPANCREATIC STRANDING and no discrete mass.	Affirmed			
+43	dilated proximal small bowel	Also, on the CT scan, there is no DILATED PROXIMAL SMALL BOWEL with transition in the right lower quadrant compatible with a small bowel obstruction.	Negated			
+43	small bowel obstruction	Also, on the CT scan, there is dilated proximal small bowel with transition in the right lower quadrant compatible without a SMALL BOWEL OBSTRUCTION.	Negated			
+43	sigmoid diverticulosis without diverticulitis	Incidentally, on the pelvic CT scan, there was no SIGMOID DIVERTICULOSIS WITHOUT DIVERTICULITIS.	Negated			
+43	necrotizing pancreatitis	Pancreaticobiliary was consulted for further management of her NECROTIZING PANCREATITIS.	Affirmed			
+43	small bowel obstruction	She was kept on strict NPO and a Duo-Tube was placed initially to decompress her stomach secondary to the SMALL BOWEL OBSTRUCTION.	Affirmed			
+43	small gastric ulcer on the incisura	Incidentally, on the EGD, there was no SMALL GASTRIC ULCER ON THE INCISURA.	Negated			
+43	nausea	She is currently at her goal and tolerating these tube feeds well with NAUSEA, vomiting, and residuals.	Affirmed			
+43	vomiting	She is currently at her goal and tolerating these tube feeds well with NAUSEA, vomiting, and residuals.	Affirmed			
+43	necrotizing pancreatitis	We do not know the exact etiology of her NECROTIZING PANCREATITIS, although she does need a cholecystectomy in the near future.	Affirmed			
+43	nausea	She had very low residuals, as well as NAUSEA or vomiting.	Affirmed			
+43	vomiting	She had very low residuals, as well as NAUSEA or vomiting.	Affirmed			
+43	afebrile	The patient was not AFEBRILE throughout her hospital stay.	Negated			
+43	diarrhea	She did not have DIARRHEA during her stay and her C. diff toxin was positive.	Negated			
+				  Obesity 278.0	 Hypertension 401.9  TWO DIMENSIONAL ECHOCARDIOLOGY:   Left ventricular size is normal.	Affirmed
+				  Obesity 278.0	 Hypertension 401.9  TWO DIMENSIONAL ECHOCARDIOLOGY:   Left ventricular size is normal.	Affirmed
+				  OBESITY 278.0	 Hypertension 401.9  TWO DIMENSIONAL ECHOCARDIOLOGY:   Left ventricular size is normal.	Affirmed
+				  Obesity 278.0	 HYPERTENSION 401.9  TWO DIMENSIONAL ECHOCARDIOLOGY:   Left ventricular size is normal.	Affirmed
+				  Obesity 278.0	 Hypertension 401.9  TWO DIMENSIONAL ECHOCARDIOLOGY:   LEFT VENTRICULAR SIZE IS NORMAL.	Affirmed
+				Affirmed		
+				Affirmed		
+81	dizziness	He confirmed headaches and DIZZINESS.	Affirmed			
+81	shortness of breath	He has not had progressive SHORTNESS OF BREATH over the last several days.	Negated			
+81	appears acutely ill	PHYSICAL EXAMINATION: In general, the patient so far does not APPEARS ACUTELY ILL.	Negated			
+81	lymphadenopathy	LYMPHADENOPATHY, thyromegaly, or JVD.	Affirmed			
+81	thyromegaly	LYMPHADENOPATHY, thyromegaly, or JVD.	Affirmed			
+81	JVD	LYMPHADENOPATHY, thyromegaly, or JVD.	Affirmed			
+81	rales	RALES, rhonchi, or wheeze.	Affirmed			
+81	rhonchi	RALES, rhonchi, or wheeze.	Affirmed			
+81	wheeze	RALES, rhonchi, or wheeze.	Affirmed			
+81	Regular rate and rhythm	Heart: Not REGULAR RATE AND RHYTHM.	Negated			
+81	murmurs	MURMURS, gallops, or rubs.	Affirmed			
+81	gallops	MURMURS, gallops, or rubs.	Affirmed			
+81	rubs	MURMURS, gallops, or rubs.	Affirmed			
+81	hepatosplenomegaly	Abdomen: Soft, nontender, nondistended with positive bowel sounds and HEPATOSPLENOMEGALY.	Affirmed			
+81	clubbing	Extremities: CLUBBING, cyanosis and edema.	Affirmed			
+81	cyanosis	Extremities: CLUBBING, cyanosis and edema.	Affirmed			
+81	edema	Extremities: CLUBBING, cyanosis and edema.	Affirmed			
+81	wide mediastinum	Chest x-ray demonstrate WIDE MEDIASTINUM.	Affirmed			
+81	PE's	He does not have a history of PE'S in the past, hence his signs and symptoms were inconsistent with aortic dissection, PE, or infectious etiologies.	Negated			
+81	aortic dissection	He does not have a history of PE'S in the past, hence his signs and symptoms were inconsistent with aortic dissection, PE, or infectious etiologies.	Affirmed			
+81	PE	He does not have a history of PE'S in the past, hence his signs and symptoms were inconsistent with aortic dissection, PE, or infectious etiologies.	Affirmed			
+81	ACUTE CORONARY SYNDROME	No ACUTE CORONARY SYNDROME.	Negated			
+81	HYPERTENSIVE EMERGENCY	No HYPERTENSIVE EMERGENCY.	Negated			
+82	moderate external hemorrhoids	Digital rectal exam was performed which did not show MODERATE EXTERNAL HEMORRHOIDS.	Negated			
+82	hemorrhoids	Retroflexion of the endoscope did not reveal HEMORRHOIDS.	Negated			
+83	1cm area of linear fibrosis in the left lower lobe	There is a 1CM AREA OF LINEAR FIBROSIS IN THE LEFT LOWER LOBE on image 45 of series 4 which does not seem to be related to an adjacent old rib fracture.	Affirmed			
+83	rib fracture	There is a 1CM AREA OF LINEAR FIBROSIS IN THE LEFT LOWER LOBE on image 45 of series 4 which does not seem to be related to an adjacent old rib fracture.	Negated			
+83	pericardial or pleural effusions	There are signs on PERICARDIAL OR PLEURAL EFFUSIONS.	Affirmed			
+83	enlarged nodes	ENLARGED NODES are identified.	Affirmed			
+85	CARDIOMYOPATHY	No CARDIOMYOPATHY.	Negated			
+85	TYPE 2 DIABETES	No TYPE 2 DIABETES.	Negated			
+85	HYPERTENSION	No HYPERTENSION.	Negated			
+85	HYPERLIPIDEMIA	No HYPERLIPIDEMIA.	Negated			
+85	HYPOTHYROIDISM	No HYPOTHYROIDISM.	Negated			
+85	GIANT CELL ARTERITIS	No HISTORY OF GIANT CELL ARTERITIS.	Negated			
+85	ATRIAL FIBRILLATION	No ATRIAL FIBRILLATION.	Negated			
+85	GASTROESOPHAGEAL REFLUX DISEASE	No GASTROESOPHAGEAL REFLUX DISEASE.	Negated			
+85	hypotensive	She was not declared to be HYPOTENSIVE with a systolic blood pressure in the 120s.	Negated			
+85	biventricular heart failure	Clinically and radiographically, the patient was not found to be in a BIVENTRICULAR HEART FAILURE state.	Negated			
+86	shortness of breath	COMMENTS: The patient did not develop SHORTNESS OF BREATH during the test.	Negated			
+86	sinus bradycardia	The baseline EKG did not show SINUS BRADYCARDIA.	Negated			
+86	ischemic EKG changes	There were ISCHEMIC EKG CHANGES during stress.	Affirmed			
+86	pericardial effusion	PERICARDIAL EFFUSION is seen.	Affirmed			
+86	mild to moderate aortic regurgitation	SPECTRAL DOPPLER: There is not even a MILD TO MODERATE AORTIC REGURGITATION.	Negated			
+86	moderate mitral regurgitation	There is not even a MODERATE MITRAL REGURGITATION.	Negated			
+86	mild tricuspid regurgitation	There is no MILD TRICUSPID REGURGITATION.	Negated			
+86	mild to moderate aortic regurgitation	COLOR FLOW DOPPLER: There is not even a MILD TO MODERATE AORTIC REGURGITATION.	Negated			
+86	moderate mitral regurgitation	There is not even a MODERATE MITRAL REGURGITATION.	Negated			
+86	mild tricuspid regurgitation	There is not even a MILD TRICUSPID REGURGITATION.	Negated			
+86	stress induced chest pain	09) There were STRESS INDUCED CHEST PAIN, ischemic EKG changes and wall motion abnormalities at a relatively low level of stress.	Affirmed			
+86	ischemic EKG changes	09) There were STRESS INDUCED CHEST PAIN, ischemic EKG changes and wall motion abnormalities at a relatively low level of stress.	Affirmed			
+86	wall motion abnormalities	09) There were STRESS INDUCED CHEST PAIN, ischemic EKG changes and wall motion abnormalities at a relatively low level of stress.	Affirmed			
+87	nausea	His pain is neither associated with NAUSEA nor vomiting.	Negated			
+87	vomiting	His pain is neither associated with NAUSEA nor vomiting.	Negated			
+87	loose stools	He does occasionally have LOOSE STOOLS with fevers, chills, sick contacts with some recent use of antibiotics.	Affirmed			
+87	fevers	He does occasionally have LOOSE STOOLS with fevers, chills, sick contacts with some recent use of antibiotics.	Affirmed			
+87	chills	He does occasionally have LOOSE STOOLS with fevers, chills, sick contacts with some recent use of antibiotics.	Affirmed			
+87	sick contacts	He does occasionally have LOOSE STOOLS with fevers, chills, sick contacts with some recent use of antibiotics.	Affirmed			
+87	use of antibiotics	He does occasionally have LOOSE STOOLS with fevers, chills, sick contacts with some recent use of antibiotics.	Affirmed			
+	lymphadenopathy	lymphadenopathy, THYROMEGALY and JVD.	Affirmed			
+87	thyromegaly	lymphadenopathy, THYROMEGALY and JVD.	Affirmed			
+87	JVD	lymphadenopathy, THYROMEGALY and JVD.	Affirmed			
+87	wheezes	WHEEZES, rales and rhonchi.	Affirmed			
+87	rales	WHEEZES, rales and rhonchi.	Affirmed			
+87	rhonchi	WHEEZES, rales and rhonchi.	Affirmed			
+87	murmurs	MURMURS, rubs and gallops.	Affirmed			
+87	rubs	MURMURS, rubs and gallops.	Affirmed			
+87	gallops	MURMURS, rubs and gallops.	Affirmed			
+87	Positive bowel sounds	No POSITIVE BOWEL SOUNDS.	Negated			
+87	organomegaly	No masses but ORGANOMEGALY.	Affirmed			
+87	clubbing	Extremities: CLUBBING, cyanosis and edema.	Affirmed			
+87	cyanosis	Extremities: CLUBBING, cyanosis and edema.	Affirmed			
+87	edema	Extremities: CLUBBING, cyanosis and edema.	Affirmed			
+87	acute abdomen	He has had signs of an ACUTE ABDOMEN; signs of cholecystitis, pancreatitis and peptic ulcer disease.	Affirmed			
+87	cholecystitis	He has had signs of an ACUTE ABDOMEN; signs of cholecystitis, pancreatitis and peptic ulcer disease.	Affirmed			
+87	pancreatitis	He has had signs of an ACUTE ABDOMEN; signs of cholecystitis, pancreatitis and peptic ulcer disease.	Affirmed			
+87	peptic ulcer disease	He has had signs of an ACUTE ABDOMEN; signs of cholecystitis, pancreatitis and peptic ulcer disease.	Affirmed			
+88	uterine CA	The appearance was not much consistent with radiation changes s/p XRT for UTERINE CA.	Negated			
+88	polyps	There was evidence of POLYPS and mass.	Affirmed			
+91	cocaine abuse	The patient does not have a history of COCAINE ABUSE.	Negated			
+91	enlarged liver	Important to note, on physical exam, ENLARGED LIVER was not the only interesting thing finding.	Negated			
+91	elevated creatinine	Also the patient did not have an ELEVATED CREATININE from his baseline.	Negated			
+91	chronic kidney insufficiency	The patient is not known to be having CHRONIC KIDNEY INSUFFICIENCY.	Negated			
+92	paradoxical septal motion	There is no post-operative PARADOXICAL SEPTAL MOTION.	Negated			
+92	pericardial effusion	PERICARDIAL EFFUSION is seen.	Affirmed			
+92	trace mitral regurgitation	SPECTRAL DOPPLER: There is no TRACE MITRAL REGURGITATION.	Negated			
+92	trace tricuspid regurgitation	There is no TRACE TRICUSPID REGURGITATION.	Negated			
+92	trace tricuspid regurgitation	There is no TRACE TRICUSPID REGURGITATION.	Negated			
+92	Paradoxical septal motion	02) PARADOXICAL SEPTAL MOTION inconsistent with post-operative septal motion.	Affirmed			
+92	post-operative septal motion	02) PARADOXICAL SEPTAL MOTION inconsistent with post-operative septal motion.	Negated			
+92	orthotopic heart transplantation	05) Findings inconsistent with ORTHOTOPIC HEART TRANSPLANTATION.	Negated			
+93	pass out	She had come to work, was doing well, was standing when she felt lightheaded and dizzy but she did not PASS OUT.	Negated			
+93	tonic/clonic movement	The witnesses did notice some TONIC/CLONIC MOVEMENT and there was history of a seizure.	Affirmed			
+93	seizure	The witnesses did notice some TONIC/CLONIC MOVEMENT and there was history of a seizure.	Affirmed			
+93	incontinent	She did become INCONTINENT.	Affirmed			
+93	deafness	Did give a history of DEAFNESS and confirmed recent nausea, vomiting and diarrhea.	Affirmed			
+93	nausea	Did give a history of DEAFNESS and confirmed recent nausea, vomiting and diarrhea.	Affirmed			
+93	vomiting	Did give a history of DEAFNESS and confirmed recent nausea, vomiting and diarrhea.	Affirmed			
+93	diarrhea	Did give a history of DEAFNESS and confirmed recent nausea, vomiting and diarrhea.	Affirmed			
+93	vasovagal	HOSPITAL COURSE & PLAN: Examination is not consistent to confirm VASOVAGAL.	Negated			
+93	pass out	She had definite presyncope with lightheadedness and dizziness though she did not PASS OUT.	Negated			
+93	nauseous	She was not NAUSEOUS.	Negated			
+93	normal sinus rhythm	EKG INTERPRETATION: EKG done in the emergency room did not show her to have a NORMAL SINUS RHYTHM with a sinus arrhythmia.	Negated			
+94	Esophagitis	No FINDINGS: ESOPHAGITIS was not found.	Negated			
+94	hiatal hernia	HIATAL HERNIA was not found.	Negated			
+96	gastritis	POST-OP DIAGNOSIS: Did not rule out H. pylori, GASTRITIS and gastropathy.	Negated			
+96	gastropathy	POST-OP DIAGNOSIS: Did not rule out H. pylori, GASTRITIS and gastropathy.	Negated			
+97	dyspnea	The patient admitted with __________ increased DYSPNEA in 24 hours without fever but with pleurisy.	Affirmed			
+97	fever	The patient admitted with __________ increased DYSPNEA in 24 hours without fever but with pleurisy.	Negated			
+97	pleurisy	The patient admitted with __________ increased DYSPNEA in 24 hours without fever but with pleurisy.	Affirmed			
+97	left lower lobe pneumonia	Chest x-ray did not show LEFT LOWER LOBE PNEUMONIA.	Negated			
+97	afebrile	she is neither AFEBRILE nor has persistent cough.	Negated			
+97	cough	she is neither AFEBRILE nor has persistent cough.	Negated			
+97	Dyspnea	DYSPNEA not decreased.	Negated			
+97	left posterior basal atelectasis	Chest x-ray did not show if there is LEFT POSTERIOR BASAL ATELECTASIS.	Negated			
+97	interstitial pulmonary edema	Left lung did not show any remarkable INTERSTITIAL PULMONARY EDEMA.	Negated			
+97	CHF	The patient without any history of CHF and atrial fibrillation.	Negated			
+97	atrial fibrillation	The patient without any history of CHF and atrial fibrillation.	Negated			
+97	hypothyroidism	The patient without HYPOTHYROIDISM.	Negated			
+98	pericardial effusion	PERICARDIAL EFFUSION is seen.	Affirmed			
+98	mild to moderate aortic regurgitation	There is not even a MILD TO MODERATE AORTIC REGURGITATION.	Negated			
+98	trace pulmonic regurgitation	There is no TRACE PULMONIC REGURGITATION.	Negated			
+98	mild to moderate aortic regurgitation	COLOR FLOW DOPPLER: There is not more than a MILD TO MODERATE AORTIC REGURGITATION.	Negated			
+98	trace pulmonic regurgitation	There is no TRACE PULMONIC REGURGITATION.	Negated			
+99	headache	She hasn't complained of HEADACHE.	Negated			
+99	headache	She states the HEADACHE is not at the apex of her skull.	Negated			
+99	chest pain	She states that the pain is not actually worse than her CHEST PAIN at this point.	Negated			
+99	some shortness of breath	The patient has also had SOME SHORTNESS OF BREATH which thankfully does not worsen with exertion.	Negated			
+99	diaphoresis	She confirmed DIAPHORESIS.	Affirmed			
+99	nausea	She confirmed NAUSEA.	Affirmed			
+99	change in vision	In general, there was CHANGE IN VISION, diplopia and also change in hearing.	Affirmed			
+99	diplopia	In general, there was CHANGE IN VISION, diplopia and also change in hearing.	Affirmed			
+99	change in hearing	In general, there was CHANGE IN VISION, diplopia and also change in hearing.	Affirmed			
+99	neck pain	NECK PAIN and meningismus.	Affirmed			
+99	meningismus	NECK PAIN and meningismus.	Affirmed			
+99	chest pain	Positive for CHEST PAIN and palpitations.	Affirmed			
+99	palpitations	Positive for CHEST PAIN and palpitations.	Affirmed			
+99	shortness of breath	Positive for SHORTNESS OF BREATH and cough.	Affirmed			
+99	cough	Positive for SHORTNESS OF BREATH and cough.	Affirmed			
+99	abdominal pain	ABDOMINAL PAIN, nausea, vomiting and diarrhea.	Affirmed			
+99	nausea	ABDOMINAL PAIN, nausea, vomiting and diarrhea.	Affirmed			
+99	vomiting	ABDOMINAL PAIN, nausea, vomiting and diarrhea.	Affirmed			
+99	diarrhea	ABDOMINAL PAIN, nausea, vomiting and diarrhea.	Affirmed			
+99	hematuria	HEMATURIA and dysuria.	Affirmed			
+99	dysuria	HEMATURIA and dysuria.	Affirmed			
+99	myalgia	MYALGIA and arthralgia.	Affirmed			
+99	arthralgia	MYALGIA and arthralgia.	Affirmed			
+99	paresthesia	Paresthesia and PARALYSIS.	Affirmed			
+99	paralysis	Paresthesia and PARALYSIS.	Affirmed			
+99	rash	RASH.	Affirmed			
+99	Hypertension	No HYPERTENSION.	Negated			
+99	Hypothyroid	No HYPOTHYROID.	Negated			
+99	Arthritis	No ARTHRITIS.	Negated			
+99	Herniated disks at L4 and L5	No HERNIATED DISKS AT L4 AND L5.	Negated			
+99	Migraine	No MIGRAINE.	Negated			
+99	Pneumonia	No PNEUMONIA.	Negated			
+99	Pulmonary hypertension	No PULMONARY HYPERTENSION.	Negated			
+99	Cataracts	No CATARACTS.	Negated			
+99	Anemia	No ANEMIA.	Negated			
+99	Measles	No MEASLES.	Negated			
+99	tobacco	SOCIAL HISTORY: She confirmed TOBACCO, alcohol and/or drug abuse.	Affirmed			
+99	alcohol	SOCIAL HISTORY: She confirmed TOBACCO, alcohol and/or drug abuse.	Affirmed			
+99	drug abuse	SOCIAL HISTORY: She confirmed TOBACCO, alcohol and/or drug abuse.	Affirmed			
+99	Regular rate and rhythm	Heart: REGULAR RATE AND RHYTHM was not observed.	Negated			
+99	murmurs	MURMURS, rubs and gallops.	Affirmed			
+99	rubs	MURMURS, rubs and gallops.	Affirmed			
+99	gallops	MURMURS, rubs and gallops.	Affirmed			
+99	wheezes	Wheezes or RALES.	Affirmed			
+99	rales	Wheezes or RALES.	Affirmed			
+99	cyanosis	Extremities: CYANOSIS or clubbing, there is � pitting edema.	Affirmed			
+99	clubbing	Extremities: CYANOSIS or clubbing, there is � pitting edema.	Affirmed			
+99	septal infarct	There is no evidence of a SEPTAL INFARCT with negative deflections or Q waves in the septal leads.	Negated			
+99	acute MI	I do believe that the patient is having an ACUTE MI at this time.	Affirmed			
+99	pulmonary infiltrate or edema	The chest x-ray does demonstrate any evidence of PULMONARY INFILTRATE OR EDEMA.	Affirmed			
+99	fluid in the fissure in the right lung	No amount of FLUID IN THE FISSURE IN THE RIGHT LUNG was found.	Negated			
+99	tachycardic	Her digoxin level is 0.6, which appears to be subtherapeutic; Thus, she was TACHYCARDIC and she was in atrial fibrillation.	Affirmed			
+99	CHEST PAIN	Post admission CHEST PAIN was not diagnosed.	Negated			
+100	Trace varices were found in the distal esophagus	No FINDINGS: TRACE VARICES WERE FOUND IN THE DISTAL ESOPHAGUS.	Negated			
+100	gastric varices	There was evidence of GASTRIC VARICES, ulcers and Mallory-Weiss tear.	Affirmed			
+100	Mallory-Weiss tear	There was evidence of GASTRIC VARICES, ulcers and Mallory-Weiss tear.	Affirmed			
+101	dextroscoliosis of the lumbar spine related to loss of heightdue to degenerative change	There is no sign of DEXTROSCOLIOSIS OF THE LUMBAR SPINE RELATED TO LOSS OF HEIGHTDUE TO DEGENERATIVE CHANGE.	Negated			
+101	loss of height involving L1-L2, L2-L3, L3-L4 and L4- L5 with disc desiccation	There is no LOSS OF HEIGHT INVOLVING L1-L2, L2-L3, L3-L4 AND L4- L5 WITH DISC DESICCATION.	Negated			
+103	GASTRIC ADENOCARCINOMA	TRANSFER DIAGNOSIS(ES): No GASTRIC ADENOCARCINOMA.	Negated			
+103	OBSTRUCTIVE JAUNDICE	No OBSTRUCTIVE JAUNDICE.	Negated			
+103	ADRENAL INSUFFICIENCY	No ADRENAL INSUFFICIENCY.	Negated			
+103	HYPOTHYROIDISM	No HYPOTHYROIDISM.	Negated			
+103	GOUT	No GOUT.	Negated			
+103	DIABETES	No DIABETES.	Negated			
+103	mild bibasilar atelectasis	Chest radiograph: Frontal view obtained **DATE[Mar 24 2008], which didn't reveal MILD BIBASILAR ATELECTASIS or pneumonia (cannot be excluded though).	Negated			
+103	pneumonia	Chest radiograph: Frontal view obtained **DATE[Mar 24 2008], which revealed likely mild bibasilar atelectasis, less likely PNEUMONIA (cannot be excluded).	Negated			
+103	nonobstructive scattered bowel gas pattern	Radiographs of the abdomen including erect and decubitus views obtained **DATE[Mar 24 2008], which didn't reveal NONOBSTRUCTIVE SCATTERED BOWEL GAS PATTERN or stool-filled colon.	Negated			
+103	stool-filled colon	Radiographs of the abdomen including erect and decubitus views obtained **DATE[Mar 24 2008], which didn't reveal NONOBSTRUCTIVE SCATTERED BOWEL GAS PATTERN or stool-filled colon.	Negated			
+103	marked intrahepatic and common bile duct dilation	CT of the abdomen and pelvis without contrast performed **DATE[Mar 24 2008], Didn't reveal interval development of MARKED INTRAHEPATIC AND COMMON BILE DUCT DILATION.	Negated			
+103	discrete hepatic lesions	DISCRETE HEPATIC LESIONS shown.	Affirmed			
+103	malignancy at the level of the gastric pylorus and the antrum	The patient's hitherto unknown MALIGNANCY AT THE LEVEL OF THE GASTRIC PYLORUS AND THE ANTRUM is now shown with marked distal gastric wall thickening.	Negated			
+103	marked distal gastric wall thickening	The patient's hitherto unknown MALIGNANCY AT THE LEVEL OF THE GASTRIC PYLORUS AND THE ANTRUM is now shown with marked distal gastric wall thickening.	Affirmed			
+103	metastatic disease in the pelvis	There are findings of METASTATIC DISEASE IN THE PELVIS.	Affirmed			
+103	normal appearance of the right foot	X-rays of both feet obtained **DATE[Mar 26 2008], which revealed NORMAL APPEARANCE OF THE RIGHT FOOT and abnormal minor soft-tissue swelling around the midfoot and ankle on the left.	Affirmed			
+103	minor soft-tissue swelling around the midfoot and ankle on the left	X-rays of both feet obtained **DATE[Mar 26 2008], which revealed NORMAL APPEARANCE OF THE RIGHT FOOT and abnormal minor soft-tissue swelling around the midfoot and ankle on the left.	Negated			
+103	osteomyelitis	Findings suggest OSTEOMYELITIS.	Affirmed			
+103	pain in the abdomen	She has not developed significant PAIN IN THE ABDOMEN though she has had difficulty taking p.o.	Negated			
+103	difficulty taking p.o.	She has not developed significant PAIN IN THE ABDOMEN though she has had difficulty taking p.o.	Negated			
+103	obstructive jaundice	She was not admitted for OBSTRUCTIVE JAUNDICE but for a palliative PTC drain.	Negated			
+104	pulmonic valve is normal	The PULMONIC VALVE IS NORMAL.	Negated			
+104	pericardial effusion	PERICARDIAL EFFUSION isn't seen.	Affirmed			
+104	trace mitral regurgitation	SPECTRAL DOPPLER: There is no TRACE MITRAL REGURGITATION.	Negated			
+104	trace tricuspid regurgitation	There is no TRACE TRICUSPID REGURGITATION.	Negated			
+104	trace pulmonic regurgitation	There is no TRACE PULMONIC REGURGITATION.	Negated			
+104	trace mitral regurgitation	COLOR FLOW DOPPLER: There is no TRACE MITRAL REGURGITATION.	Negated			
+104	trace tricuspid regurgitation	There is no TRACE TRICUSPID REGURGITATION.	Negated			
+104	trace pulmonic regurgitation	There is no TRACE PULMONIC REGURGITATION.	Negated			
+105	Shortness of breath	HISTORY OF PRESENT ILLNESS: CHIEF COMPLAINT is not SHORTNESS OF BREATH.	Negated			
+105	COPD	The patient is a **AGE[in 40s]-year-old male with no history of COPD or tobacco use. Was presented to the Emergency Department with complaint of chest tightness, pressure, as well as complaint of shortness of breath though no wheezing.	Negated			
+105	tobacco use	The patient is a **AGE[in 40s]-year-old male with no history of COPD or tobacco use. Was presented to the Emergency Department with complaint of chest tightness, pressure, as well as complaint of shortness of breath though no wheezing.	Negated			
+105	chest tightness, pressure	The patient is a **AGE[in 40s]-year-old male with no history of COPD or tobacco use. Was presented to the Emergency Department with complaint of chest tightness, pressure, as well as complaint of shortness of breath though no wheezing.	Affirmed			
+105	shortness of breath	The patient is a **AGE[in 40s]-year-old male with no history of COPD or tobacco use. Was presented to the Emergency Department with complaint of chest tightness, pressure, as well as complaint of shortness of breath though no wheezing.	Affirmed			
+105	wheezing	The patient is a **AGE[in 40s]-year-old male with no history of COPD or tobacco use. Was presented to the Emergency Department with complaint of chest tightness, pressure, as well as complaint of shortness of breath though no wheezing.	Negated			
+105	some URI symptoms	He is developing SOME URI SYMPTOMS excluding cough and rhinorrhea.	Affirmed			
+105	cough	He is developing SOME URI SYMPTOMS excluding cough and rhinorrhea.	Negated			
+105	rhinorrhea	He is developing SOME URI SYMPTOMS excluding cough and rhinorrhea.	Negated			
+105	sputum production	He has confirmed SPUTUM PRODUCTION and high fever.	Affirmed			
+105	high fever	He has confirmed SPUTUM PRODUCTION and high fever.	Affirmed			
+105	chest pressure	"The patient did not report CHEST PRESSURE last night, but he has been feeling ""tight"" since the onset of his symptoms."	Negated			
+105	orthopnea	He confirmed ORTHOPNEA, lower extremity edema, or calf pain.	Affirmed			
+105	lower extremity edema	He confirmed ORTHOPNEA, lower extremity edema, or calf pain.	Affirmed			
+105	or calf pain	He confirmed ORTHOPNEA, lower extremity edema, or calf pain.	Affirmed			
+105	afebrile	PHYSICAL EXAMINATION: The patient was not found to be AFEBRILE.	Negated			
+105	mild distress	In general, the patient didn't appear to be in MILD DISTRESS.	Negated			
+105	wheezes	He didn't have any audible WHEEZES on initial examination.	Negated			
+105	tonsillar exudate	TONSILLAR EXUDATE appreciated.	Affirmed			
+105	good air entry to the bases	He does not have GOOD AIR ENTRY TO THE BASES.	Negated			
+105	rales	There were RALES and rhonchi noted on examination.	Affirmed			
+105	rhonchi	There were RALES and rhonchi noted on examination.	Affirmed			
+105	regular rhythm with a tachycardia	Cardiovascular examination did not reveal REGULAR RHYTHM WITH A TACHYCARDIA.	Negated			
+105	murmur	MURMUR and ectopy noted.	Affirmed			
+105	peripheral cyanosis	Extremities reveal PERIPHERAL CYANOSIS and edema.	Affirmed			
+105	edema	Extremities reveal PERIPHERAL CYANOSIS and edema.	Affirmed			
+105	shortness of breath	The patient was presented without a complaint of SHORTNESS OF BREATH, COPD exacerbation, any chest tightness, pressure.	Negated			
+105	COPD exacerbation	The patient was presented without a complaint of SHORTNESS OF BREATH, COPD exacerbation, any chest tightness, pressure.	Negated			
+105	chest tightness, pressure	The patient was presented without a complaint of SHORTNESS OF BREATH, COPD exacerbation, any chest tightness, pressure.	Negated			
+106	colon cancer	No family history of COLON CANCER.	Negated			
+106	polyps	There was evidence of POLYPS or mass.	Affirmed			
+107	Osteochondral irregularity is identified within the 45 degree flexion zone of the lateral femoral condyles	There are no FINDINGS: LEFT KNEE: OSTEOCHONDRAL IRREGULARITY IS IDENTIFIED WITHIN THE 45 DEGREE FLEXION ZONE OF THE LATERAL FEMORAL CONDYLES.	Negated			
+107	definite findings to suggest instability	Although there is significant irregularity, there are DEFINITE FINDINGS TO SUGGEST INSTABILITY.	Affirmed			
+107	joint space narrowing	JOINT SPACE NARROWING is shown.	Affirmed			
+107	acute fracture	ACUTE FRACTURE shown.	Affirmed			
+107	mild flattening of the lateral femoral condyle	RIGHT KNEE: There is no MILD FLATTENING OF THE LATERAL FEMORAL CONDYLE.	Negated			
+109	chest pain	He did have some complaints of CHEST PAIN and shortness of breath. So he was not started on Lovenox and Coumadin and he will be discharged once the INR is 2.0.	Affirmed			
+109	shortness of breath	He did have some complaints of CHEST PAIN and shortness of breath. So he was not started on Lovenox and Coumadin and he will be discharged once the INR is 2.0.	Affirmed			
+109	stress fracture on the left calcaneum	The patient did not have a STRESS FRACTURE ON THE LEFT CALCANEUM. Despite that Orthopedics was involved.	Negated			
+109	carotid bruits	CAROTID BRUITS.	Affirmed			
+109	clubbing	CLUBBING or cyanosis was observed	Affirmed			
+109	cyanosis	CLUBBING or cyanosis was observed	Affirmed			
+110	pericardial effusion	PERICARDIAL EFFUSION was not seen.	Affirmed			
+110	pericardial effusion	02) PERICARDIAL EFFUSION noticed.	Affirmed			
+111	Abdominal pain	CHIEF COMPLAINT is not ABDOMINAL PAIN.	Negated			
+111	abdominal pain	She has not complained of ABDOMINAL PAIN for one week.	Negated			
+111	fever	He confirmed FEVER.	Affirmed			
+111	some nausea	He has SOME NAUSEA but has not complained of vomiting, diarrhea or constipation.	Affirmed			
+111	vomiting	He has SOME NAUSEA but has not complained of vomiting, diarrhea or constipation.	Negated			
+111	diarrhea	He has SOME NAUSEA but has not complained of vomiting, diarrhea or constipation.	Negated			
+111	constipation	He has SOME NAUSEA but has not complained of vomiting, diarrhea or constipation.	Negated			
+111	pain	He has never complained of pain or cramping.	Negated			
+111	colon problem	The patient has never had a history of COLON PROBLEM and diverticulitis.	Negated			
+111	diverticulitis	The patient has never had a history of COLON PROBLEM and diverticulitis.	Negated			
+111	hiatal hernia	He has never had a history of HIATAL HERNIA in the past.	Negated			
+111	back pain	The patient has confirmed BACK PAIN.	Affirmed			
+111	dysuria	Confirmed DYSURIA or frequency.	Affirmed			
+111	frequency	Confirmed DYSURIA or frequency.	Affirmed			
+111	Coronary artery disease	No CORONARY ARTERY DISEASE.	Negated			
+111	MI	No MI.	Negated			
+111	CHF	No CHF.	Negated			
+111	Diabetes	No DIABETES.	Negated			
+111	Hypertension	No HYPERTENSION.	Negated			
+111	Psychiatric history	No PSYCHIATRIC HISTORY.	Negated			
+111	diverticulitis	No history of DIVERTICULITIS and colon problems.	Negated			
+111	colon problems	No history of DIVERTICULITIS and colon problems.	Negated			
+111	cholecystectomy	He has also history of CHOLECYSTECTOMY and cataract surgery.	Negated			
+111	cataract surgery	He does not have a history of cholecystectomy and CATARACT SURGERY.	Negated			
+111	allergies	ALLERGIES: He has some known ALLERGIES.	Affirmed			
+111	chills	REVIEW OF SYSTEMS: CONSTITUTIONAL: He has no CHILLS, but some fever.	Negated			
+111	fever	REVIEW OF SYSTEMS: CONSTITUTIONAL: He has no CHILLS, but some fever.	Affirmed			
+111	weight loss	Significant WEIGHT LOSS.	Affirmed			
+111	headache	No HEADACHE but dizziness.	Negated			
+111	dizziness	No HEADACHE but dizziness.	Affirmed			
+111	depression	PSYCHOLOGICAL: High DEPRESSION.	Affirmed			
+111	blurred vision	OPHTHALMOLOGIC: Didn't deny any BLURRED VISION.	Affirmed			
+111	ear, nose, or throat pain	ENT: Didn't deny EAR, NOSE, OR THROAT PAIN.	Affirmed			
+111	polyuria	ENDOCRINE: Didn't deny either POLYURIA or polyphagia.	Affirmed			
+111	polyphagia	ENDOCRINE: Didn't deny either POLYURIA or polyphagia.	Affirmed			
+111	rashes	SKIN: RASHES.	Affirmed			
+111	shortness of breath	PULMONARY: Didn't deny any SHORTNESS OF BREATH.	Affirmed			
+111	chest pain	CHEST PAIN.	Affirmed			
+111	dysuria	GENITOURINARY: Either DYSURIA or frequency.	Affirmed			
+111	frequency	GENITOURINARY: Either DYSURIA or frequency.	Affirmed			
+112	angiodysplasia was noted in the cecum	FINDINGS: No ANGIODYSPLASIA WAS NOTED IN THE CECUM.	Negated			
+112	polyps	There was enough evidence of POLYPS or mass.	Affirmed			
+115	ALLERGIES - PHENOBARBITAL AND TRILEPTAL	No ALLERGIES - PHENOBARBITAL AND TRILEPTAL.	Negated			
+b	antiphospholipid antibody syndrome	HOSPITAL COURSE: Ms. **NAME[AAA] is a **AGE[in 60s]-year-old Caucasian woman with a not so significant history of ANTIPHOSPHOLIPID ANTIBODY SYNDROME and lupus anticoagulant was initially admitted to an outside hospital on **DATE[Jan 09 2008] without any mental status changes. With no subacute subdural hematoma found she was retained at the same hospital.	Negated			
+115	lupus anticoagulant	HOSPITAL COURSE: Ms. **NAME[AAA] is a **AGE[in 60s]-year-old Caucasian woman with a not so significant history of ANTIPHOSPHOLIPID ANTIBODY SYNDROME and lupus anticoagulant was initially admitted to an outside hospital on **DATE[Jan 09 2008] without any mental status changes. With no subacute subdural hematoma found she was retained at the same hospital.	Negated			
+115	mental status changes	HOSPITAL COURSE: Ms. **NAME[AAA] is a **AGE[in 60s]-year-old Caucasian woman with a not so significant history of ANTIPHOSPHOLIPID ANTIBODY SYNDROME and lupus anticoagulant was initially admitted to an outside hospital on **DATE[Jan 09 2008] without any mental status changes. With no subacute subdural hematoma found she was retained at the same hospital.	Negated			
+115	subacute subdural hematoma	HOSPITAL COURSE: Ms. **NAME[AAA] is a **AGE[in 60s]-year-old Caucasian woman with a not so significant history of ANTIPHOSPHOLIPID ANTIBODY SYNDROME and lupus anticoagulant was initially admitted to an outside hospital on **DATE[Jan 09 2008] without any mental status changes. With no subacute subdural hematoma found she was retained at the same hospital.	Negated			
+115	subdural hematoma	On transfer, the patient did not have to undergo SUBDURAL HEMATOMA evacuation.	Negated			
+115	left lower extremity DVT	Throughout the course of this hospitalization, the patient was not found to be having LEFT LOWER EXTREMITY DVT, status post IVC placement, and upon attempted anticoagulation had a catastrophic rebleed.	Negated			
+115	right lower extremity arterial clot	Additionally, the patient probably does not have RIGHT LOWER EXTREMITY ARTERIAL CLOT that has been formally visualized on imaging, but based on the examination is suspected.	Negated			
+115	sepsis	Also throughout this hospital course, the patient was not found to be having the following complications: SEPSIS, respiratory failure with trach placement, thrombocytopenia, rectal sheath hematoma with intraabdominal bleed status post iliac and epigastric embolization of arteries, renal failure secondary to ureteral obstruction with bilateral nephrostomy tube placement, right MCA CVA, rectal ischemia and further complications related to her underlying hypercoagulable state.	Negated			
+115	respiratory failure	Also throughout this hospital course, the patient was not found to be having the following complications: SEPSIS, respiratory failure with trach placement, thrombocytopenia, rectal sheath hematoma with intraabdominal bleed status post iliac and epigastric embolization of arteries, renal failure secondary to ureteral obstruction with bilateral nephrostomy tube placement, right MCA CVA, rectal ischemia and further complications related to her underlying hypercoagulable state.	Negated			
+115	thrombocytopenia	Also throughout this hospital course, the patient was not found to be having the following complications: SEPSIS, respiratory failure with trach placement, thrombocytopenia, rectal sheath hematoma with intraabdominal bleed status post iliac and epigastric embolization of arteries, renal failure secondary to ureteral obstruction with bilateral nephrostomy tube placement, right MCA CVA, rectal ischemia and further complications related to her underlying hypercoagulable state.	Negated			
+115	rectal sheath hematoma with intraabdominal bleed	Also throughout this hospital course, the patient was not found to be having the following complications: SEPSIS, respiratory failure with trach placement, thrombocytopenia, rectal sheath hematoma with intraabdominal bleed status post iliac and epigastric embolization of arteries, renal failure secondary to ureteral obstruction with bilateral nephrostomy tube placement, right MCA CVA, rectal ischemia and further complications related to her underlying hypercoagulable state.	Negated			
+115	renal failure secondary to ureteral obstruction	Also throughout this hospital course, the patient was not found to be having the following complications: SEPSIS, respiratory failure with trach placement, thrombocytopenia, rectal sheath hematoma with intraabdominal bleed status post iliac and epigastric embolization of arteries, renal failure secondary to ureteral obstruction with bilateral nephrostomy tube placement, right MCA CVA, rectal ischemia and further complications related to her underlying hypercoagulable state.	Negated			
+115	right MCA CVA	Also throughout this hospital course, the patient was not found to be having the following complications: SEPSIS, respiratory failure with trach placement, thrombocytopenia, rectal sheath hematoma with intraabdominal bleed status post iliac and epigastric embolization of arteries, renal failure secondary to ureteral obstruction with bilateral nephrostomy tube placement, right MCA CVA, rectal ischemia and further complications related to her underlying hypercoagulable state.	Negated			
+115	rectal ischemia	Also throughout this hospital course, the patient was not found to be having the following complications: SEPSIS, respiratory failure with trach placement, thrombocytopenia, rectal sheath hematoma with intraabdominal bleed status post iliac and epigastric embolization of arteries, renal failure secondary to ureteral obstruction with bilateral nephrostomy tube placement, right MCA CVA, rectal ischemia and further complications related to her underlying hypercoagulable state.	Negated			
+115	ITP	Treatments that were ignored included IVIG for possible ITP with the complication of an additional CVA.	Negated			
+115	CVA	Treatments that were ignored included IVIG for possible ITP with the complication of an additional CVA.	Negated			
+115	CVAs	Unfortunately, the patient's mental status has continued to deteriorate despite no CVAS and/or cerebral hemorrhages during this hospitalization.	Negated			
+115	cerebral hemorrhages	Unfortunately, the patient's mental status has continued to deteriorate despite no CVAS and/or cerebral hemorrhages during this hospitalization.	Negated			
+115	hypercoagulable state	The patient has not had anything which might have led to HYPERCOAGULABLE STATE as detailed above.	Negated			
+115	regular rate and rhythm	On the day of transfer, the patient's physical examination is not notable for cardiac with REGULAR RATE AND RHYTHM.	Negated			
+115	hemodynamically stable	The patient has not been HEMODYNAMICALLY STABLE over the last 24 to 48 hours with blood pressures ranging 130s to 140s/70s.	Negated			
+115	afebrile	The patient has been not AFEBRILE.	Negated			
+115	lower extremity edema	The patient does not have LOWER EXTREMITY EDEMA and her left lower extremity is not mottled as previously noted.	Negated			
+115	left lower extremity is mottled	The patient does not have LOWER EXTREMITY EDEMA and her left lower extremity is not mottled as previously noted.	Negated			
+116	pericardial effusion	PERICARDIAL EFFUSION is seen.	Affirmed			
+116	trace mitral regurgitation	There is no TRACE MITRAL REGURGITATION.	Negated			
+116	trace tricuspid regurgitation	There is no TRACE TRICUSPID REGURGITATION.	Negated			
+116	trace mitral regurgitation	There is no TRACE MITRAL REGURGITATION.	Negated			
+116	trace tricuspid regurgitation	There is no TRACE TRICUSPID REGURGITATION.	Negated			
+117	Sickle cell crisis	CHIEF COMPLAINT: No SICKLE CELL CRISIS.	Negated			
+117	lower back pain	She denies if she has had intermittent LOWER BACK PAIN, intermittent chest pain, and dyspnea on exertion.	Negated			
+117	chest pain	She denies if she has had intermittent LOWER BACK PAIN, intermittent chest pain, and dyspnea on exertion.	Negated			
+117	dyspnea on exertion	She denies if she has had intermittent LOWER BACK PAIN, intermittent chest pain, and dyspnea on exertion.	Negated			
+117	chest pain	Her last episode of CHEST PAIN was not yesterday.	Negated			
+117	URI symptoms	She has denied if she has had URI symptoms over the last week, including RHINORRHEA and mild sore throat.	Negated			
+117	rhinorrhea	She has denied if she has had URI symptoms over the last week, including RHINORRHEA and mild sore throat.	Negated			
+117	mild sore throat	She has denied if she has had URI symptoms over the last week, including RHINORRHEA and mild sore throat.	Negated			
+117	cough	She does not deny a COUGH.	Affirmed			
+117	Yeast infection	No YEAST INFECTION.	Negated			
+117	Sickle cell disease	No SICKLE CELL DISEASE.	Negated			
+117	alcohol	Patient does not deny ALCOHOL or drugs.	Affirmed			
+117	drugs	Patient does not deny ALCOHOL or drugs.	Affirmed			
+117	lymphadenopathy	There is no JVD or lymphadenopathy.	Affirmed			
+117	JVD	There is no JVD or lymphadenopathy.	Affirmed			
+117	Positive S1 and S2	Heart: Not POSITIVE S1 AND S2.	Negated			
+117	Regular rate and rhythm	Not so REGULAR RATE AND RHYTHM.	Negated			
+117	murmurs	There are no MURMURS, rubs, or gallops.	Affirmed			
+117	rubs	There are no MURMURS, rubs, or gallops.	Affirmed			
+117	gallops	There are no MURMURS, rubs, or gallops.	Affirmed			
+117	wheezes	There are findings on wheezes, rales, or RHONCHI.	Affirmed			
+117	rales	There are findings on wheezes, rales, or RHONCHI.	Affirmed			
+117	rhonchi	There are findings on wheezes, rales, or RHONCHI.	Affirmed			
+117	edema	Extremities: There are findings on edema or CYANOSIS.	Affirmed			
+117	cyanosis	Extremities: There are findings on edema or CYANOSIS.	Affirmed			
+118	polyps	There is evidence of POLYPS.	Affirmed			
+119	elevation of right hemidiaphragm	No change in ELEVATION OF RIGHT HEMIDIAPHRAGM.	Negated			
+119	linear atelectasis or scarring at both lung bases	There is not even a minimal amount of LINEAR ATELECTASIS OR SCARRING AT BOTH LUNG BASES.	Negated			
+119	enlarged axillary intrathoracic lymph nodes	There are ENLARGED AXILLARY INTRATHORACIC LYMPH NODES.	Affirmed			
+119	soft tissue masses are shown at the margins of the surgical resection	SOFT TISSUE MASSES AT THE MARGINS OF THE SURGICAL RESECTION are shown to suggest recurrent disease.	Affirmed			
+119	pericardial or pleural effusions	There is no PERICARDIAL OR PLEURAL EFFUSIONS.	Affirmed			
+119	right renal cyst	There is no RIGHT RENAL CYST.	Negated			
+119	bowel obstruction	There are findings to suggest BOWEL OBSTRUCTION.	Affirmed			
+119	free fluid in the pelvis	There is FREE FLUID IN THE PELVIS.	Affirmed			
+119	central calcifications and mild thickening of the bladder wall	There is no CENTRAL CALCIFICATIONS AND MILD THICKENING OF THE BLADDER WALL.	Negated			
