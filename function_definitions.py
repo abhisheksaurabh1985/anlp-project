@@ -349,7 +349,8 @@ def makeUnique(sentences, concepts, negations, cueTypeTags):
         negationsForUniqueSentences.append(uniqueNegations)
         cueTypeTagsForUniqueSentence.append(uniqueCueTypeTags)
 
-    return (uniqueSentenses, conceptsForUniqueSentences, negationsForUniqueSentences, cueTypeTagsForUniqueSentence)
+    return (uniqueSentenses, conceptsForUniqueSentences,
+            negationsForUniqueSentences, cueTypeTagsForUniqueSentence)
 
 def mergeConcepts(concepts, negations, cueTypeTags):
     resultConcepts = []

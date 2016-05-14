@@ -1,7 +1,14 @@
 from function_definitions import *
 from subprocess import Popen, PIPE
 from crftest.extract_concepts_found import *
+import os
 import numpy as np
+import operator
+
+def getMax(my_list):
+   index, value = max(enumerate(my_list), key=operator.itemgetter(1))
+   return (index,value)
+
 
 # Read the annotated data in an Ordered Dictionary
 txtFileName= './data/Annotations-1-120.txt'
@@ -44,7 +51,8 @@ print "%s created" % filename
 crfPath = ""
 crfLearn = "crf_learn"
 crfTest = "crf_test"
-templatePaths = ["./crftest/template", "./crftest/template2"]
+templateFolder = "./templates"
+templatePaths = [os.path.join(templateFolder, f) for f in os.listdir(templateFolder) if os.path.isfile(os.path.join(templateFolder, f))]
 modelPath = prefix + "model"
 
 crfC = [5.0, 10.0, 15.0, 20.0]
@@ -158,13 +166,20 @@ for crfCParam in crfC:
             params.append(crfParams)
 
 
-maxSpecificity = max(specificities)
-print("max specificity / true negative rate %f, for params %s" % (maxSpecificity, ' '.join(params[specificities.index(maxSpecificity)])))
-maxSensitivity = max(sensitivities)
-print("max sensitivity / true positive rate / recall %f, for params %s" % (maxSensitivity, ' '.join(params[sensitivities.index(maxSensitivity)])))
-maxPrecision = max(sensitivities)
-print("max precision %f, for params %s" % (maxPrecision, ' '.join(params[precisions.index(maxPrecision)])))
-maxF1score = max(f1scores)
-print("max f1score %f, for params %s" % (maxF1score, ' '.join(params[f1scores.index(maxF1score)])))
-maxAccuracy = max(accuracies)
-print("max accuracy %f, for params %s" % (maxAccuracy, ' '.join(params[accuracies.index(maxAccuracy)])))
+maxSpecificity, ind = getMax(specificities)
+print("max specificity / true negative rate %f, for params %s" %
+      (maxSpecificity, ' '.join(params[ind])))
+maxSensitivity, ind = getMax(sensitivities)
+print("max sensitivity / true positive rate / recall %f, for params %s" %
+      (maxSensitivity, ' '.join(params[params[ind]])))
+maxPrecision, ind = getMax(sensitivities)
+print("max precision %f, for params %s" %
+      (maxPrecision, ' '.join(params[ind])))
+maxF1score, ind = getMax(f1scores)
+print("max f1score %f, for params %s" %
+      (maxF1score, ' '.join(params[ind])))
+maxAccuracy, ind = getMax(accuracies)
+print("max accuracy %f, for params %s" %
+      (maxAccuracy, ' '.join(params[ind])))
+
+
