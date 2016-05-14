@@ -71,6 +71,9 @@ def classify_concepts(filename):
       if not line.split():
          sentences.append(sentence)
          sentence = []
+         if len(concept):
+            currentConcepts.append(concept)
+            currentLabels.append(getLabelFromTags(labelTags))
          concepts.append(currentConcepts)
          currentConcepts = []
          concept = []
@@ -187,8 +190,9 @@ def do_extract_concepts(filename, outputFileName, verbose = False):
 
 
 if __name__ == "__main__":
-   if(len(sys.argv) <3 ):
-      print "input file is not specified"
-
-   filename = sys.argv[1]
-   do_extract_concepts(filename, sys.argv[2], True)
+   classify_concepts("../output/output1.csv")
+   # if(len(sys.argv) <3 ):
+   #    print "input file is not specified"
+   #
+   # filename = sys.argv[1]
+   # do_extract_concepts(filename, sys.argv[2], True)
