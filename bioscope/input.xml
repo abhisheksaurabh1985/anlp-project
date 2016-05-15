@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<cars>
+   <supercars company="Ferrari">
+      <carname type="formula one">Ferarri 101 Footprinting analysis revealed that the identical sequence CCGAAACTGAAAAGG, designated E6, was protected by nuclear extracts from <xcope id="X2.4.1">B cells, T cells, <cue type="speculation" ref="X2.4.1">or</cue> HeLa cells</xcope>. </carname>
+      <carname type="sports car">Ferarri 201</carname>
+      <carname type="sports car">Ferarri 301</carname>
+   </supercars>
+   <supercars company="Lamborgini">
+      <carname>Lamborgini 001</carname>
+      <carname>Lamborgini 002</carname>
+      <carname>Lamborgini 003</carname>
+   </supercars>
+   <luxurycars company="Benteley">
+      <carname>Benteley 1</carname>
+      <carname>Benteley 2</carname>
+      <carname>Benteley 3</carname>
+   </luxurycars>
+</cars>
+

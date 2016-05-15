@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Annotation PUBLIC "-//BIOSCOPE//DTD  SCOPE ANNOTATION 1.0//EN" "BioScope.dtd">
+<Annotation created="23/6/2008"  creator="XMLconverter">
+	<DocumentSet>
+		<Document type="Biological_abstract">
+			<DocID type="PMID">91079577</DocID>
+				<DocumentPart type="Title">
+					<sentence id="S1.1">Induction of NF-KB during monocyte differentiation by HIV type 1 infection.</sentence>
+				</DocumentPart>
+				<DocumentPart type="AbstractText">
+					<sentence id="S1.2">The production of human immunodeficiency virus type 1 (HIV-1) progeny was followed in the U937 promonocytic cell line after stimulation either with retinoic acid or PMA, and in purified human monocytes and macrophages.</sentence>
+					<sentence id="S1.3">Electrophoretic mobility shift assays and Southwestern blotting experiments were used to detect the binding of cellular transactivation factor NF-KB to the double repeat-KB enhancer sequence located in the long terminal repeat.</sentence>
+					<sentence id="S1.4">PMA treatment, and <xcope id="X1.4.1"><cue type="negation" ref="X1.4.1">not</cue> retinoic acid treatment of the U937 cells</xcope> acts in inducing NF-KB expression in the nuclei.</sentence>
+					<sentence id="S1.5">In nuclear extracts from monocytes or macrophages, induction of NF-KB occurred only if the cells were previously infected with HIV-1.</sentence>
+					<sentence id="S1.6">When U937 cells were infected with HIV-1, <xcope id="X1.6.3"><cue type="negation" ref="X1.6.3">no</cue> induction of NF-KB factor was detected</xcope>, whereas high level of progeny virions was produced, <xcope id="X1.6.2"><cue type="speculation" ref="X1.6.2">suggesting</cue> that this factor was <xcope id="X1.6.1"><cue type="negation" ref="X1.6.1">not</cue> required for viral replication</xcope></xcope>.</sentence>
+					<sentence id="S1.7">These results <xcope id="X1.7.2"><cue type="speculation" ref="X1.7.2">indicate that</cue> in monocytic cell lineage, HIV-1 <xcope id="X1.7.1"><cue type="speculation" ref="X1.7.1">could</cue> mimic some differentiation/activation stimuli allowing nuclear NF-KB expression</xcope></xcope>.</sentence>
+				</DocumentPart>
+		</Document>
+<Document type="Biological_abstract">
+			<DocID type="PMID">91094881</DocID>
+				<DocumentPart type="Title">
+					<sentence id="S2.1">Positive and negative regulation of immunoglobulin gene expression by a novel B-cell-specific enhancer element.</sentence>
+				</DocumentPart>
+				<DocumentPart type="AbstractText">
+					<sentence id="S2.2">A new B-cell-specific enhancer element has been identified 3' of E4 and the octamerlike motifs in the human immunoglobulin heavy-chain gene enhancer.</sentence>
+					<sentence id="S2.3">Tandem copies of this 67-bp MnlI-AluI fragment, when fused to the chloramphenicol acetyltransferase gene driven by the conalbumin promoter, stimulated transcription in B cells but <xcope id="X2.3.2"><cue type="negation" ref="X2.3.2">not</cue> in <xcope id="X2.3.1">Jurkat T cells <cue type="speculation" ref="X2.3.1">or</cue> HeLa cells</xcope></xcope>.</sentence>
+					<sentence id="S2.4">Footprinting analysis revealed that the identical sequence CCGAAACTGAAAAGG, designated E6, was protected by nuclear extracts from <xcope id="X2.4.1">B cells, T cells, <cue type="speculation" ref="X2.4.1">or</cue> HeLa cells</xcope>.</sentence>
+					<sentence id="S2.5">Gel mobility shift assays using a synthetic E6 motif detected a B-cell-specific complex in addition to a ubiquitous band found also in T cells and HeLa cells.</sentence>
+					<sentence id="S2.6">In agreement with the results of gel retardation assays, tandem copies of the E6 motif stimulated transcription in ARH77 and Raji cells but <xcope id="X2.6.2"><cue type="negation" ref="X2.6.2">not</cue> in <xcope id="X2.6.1">Jurkat <cue type="speculation" ref="X2.6.1">or</cue> HeLa</xcope> cells</xcope>.</sentence>
+					<sentence id="S2.7">Furthermore, a mutant E6 motif lost both in vitro binding activity and in vivo enhancer activity.</sentence>
+					<sentence id="S2.8">In striking contrast to the mouse Ig heavy-chain enhancer, in which the octamer motif acts as a B-cell-specific enhancer element, the human enhancer contains an octamerlike sequence with one base substitution which bound octamer-binding proteins with only very low affinity and showed <xcope id="X2.8.1"><cue type="negation" ref="X2.8.1">no</cue> enhancer activity of its own</xcope>.</sentence>
+					<sentence id="S2.9">Interestingly, the MnlI-AluI fragment <xcope id="X2.9.1"><cue type="speculation" ref="X2.9.1">could</cue> suppress the basal-level activity of the conalbumin promoter in both Jurkat and HeLa cells</xcope>.</sentence>
+					<sentence id="S2.10">Moreover, simian virus 40 enhancer activity was blocked by the MnlI-AluI fragment in HeLa cells but <xcope id="X2.10.1"><cue type="negation" ref="X2.10.1">not</cue> in B cells</xcope>.</sentence>
+					<sentence id="S2.11">Thus, the novel enhancer element identified in this study is <xcope id="X2.11.1"><cue type="speculation" ref="X2.11.1">probably</cue> a target site for both positive and negative factors</xcope>.</sentence>
+				</DocumentPart>
+		</Document>
+	</DocumentSet>
+</Annotation>
