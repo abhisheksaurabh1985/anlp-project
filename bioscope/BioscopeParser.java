@@ -32,8 +32,10 @@ public class BioscopeParser {
 
          File inputFile = new File(fileName);
 	 String outputFile = fileName.substring(0,fileName.indexOf('.'));
-	 outputFile = outputFile+".txt";
+	 outputFile = outputFile+"_pos.txt";
+	 String outputFile2 = outputFile+"_neg.txt";
 	 PrintWriter writer = new PrintWriter(outputFile, "UTF-8");
+	 PrintWriter writer2 = new PrintWriter(outputFile2,"UTF-8");
 	/*		 String savestr = "mysave.sav"; 
 		File f = new File(savestr);
 
@@ -74,7 +76,10 @@ public class BioscopeParser {
 			//System.out.println(nNode.getAttributes().getNamedItem("id"));
 
 			//System.out.println(e.getTextContent());
-			writer.println(voltage+" "+e.getTextContent());
+			if(voltage==1)
+				writer.println(e.getTextContent());
+			else
+				writer2.println(e.getTextContent());
 
 		}
 	 }

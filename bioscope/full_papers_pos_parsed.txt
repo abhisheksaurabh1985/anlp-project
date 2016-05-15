@@ -1,0 +1,813 @@
+mining prokaryotic genomes for unknown amino acids  a stop codon based approach 
+abstract 
+background 
+selenocysteine and pyrrolysine are the 21st and 22nd amino acids  which are genetically encoded by stop codons  
+since a number of microbial genomes have been completely sequenced to date  it is tempting to ask whether the 23rd amino acid is left undiscovered in these genomes  
+however  performance of the trna prediction program on an unknown trna family  which may have atypical sequence and structure  is unclear  thereby rendering their result inconclusive  
+a protein level study will provide independent insight into the novel amino acid  
+results 
+assuming that the 23rd amino acid is also encoded by a stop codon  we systematically predicted proteins that contain stop codon encoded amino acids from 191 prokaryotic genomes  
+since our prediction method relies only on the conservation patterns of primary sequences  it also provides an opportunity to search novel selenoproteins and other readthrough proteins  
+it successfully recovered many of currently known selenoproteins and pyrrolysine proteins  
+conclusion 
+the method described here can be used in future studies to explore novel readthrough events from complete genomes  which are rapidly growing  
+background 
+two such amino acids have been discovered to date  selenocysteine 34 and pyrrolysine 56  
+because each of them have specialized trna genes for decoding and can be considered extensions of the standard genetic code  they are called the 21st and 22nd amino acids  respectively  
+selenocysteine  the 21st amino acid  is encoded by stop codon uga  and organisms that use selenocysteine have been found from all three domains of life  
+its insertion into uga is directed by secis  selenocysteine insertion sequence  elements  a stem loop structure on the selenoprotein mrna  
+along with the progress of genome sequencing projects  computational prediction methods of selenocysteine containing proteins  selenoproteins  have been developed by several research groups 78910  and the repertoire of selenoproteins has been greatly expanded 1112  
+pyrrolysine  the 22nd amino acid encoded by stop codon uag  was recently discovered from a methanogenic archaea 56  
+currently  only methanogenic archaea of the order methanosarcinales and one bacterium are considered to utilize pyrrolysine 13  
+the limited phylogenetic distribution of pyrrolysine suggests that its incorporation into the genetic code of methanogen is relatively recent  and the insertion mechanism of a novel amino acid can evolve in a shorter period of time than anticipated  
+this raises an interesting question     is there a 23rd amino acid     
+if such an amino acid is discovered  it will deepen our understanding of the evolution and diversity of the genetic code  
+because genome sequences of various prokaryotes are available today  there will be a chance to discover the novel amino acid via analysis of these genomes  
+since both the 21st and 22nd amino acids are encoded by stop codons  the prime suspect is other stop codons  e g  stop codon uaa   although the possibility of sense codons certainly remains  
+using this clue  computational screening methods of the 23rd amino acid can be designed  
+recently  lobanov et al  addressed this problem by searching trnas with anticodons corresponding to stop codons 14  
+they concluded that the 23rd amino acid would have a limited phylogenetic distribution  if it exists  
+however  programs for trna identification are based on the features of known trnas and do not necessarily perform well on unknown ones  
+there is another approach to searching for the 23rd amino acid  
+by enumerating orfs that have an inframe stop codon from genomes and examining their evolutionary conservation  candidate proteins can be predicted  
+because such an orf based study is independent from the trna analysis  it can either identify candidate organisms missed by the previous study or strengthen its negative conclusion  
+here we report a comprehensive analysis of prokaryotic orfs that contain an inframe stop codon  
+through enumeration of theoretical orfs and inspection of their evolutionary conservation  candidates of readthrough proteins were predicted  
+they contained many of the known proteins with stop codon encoded amino acids  but almost no novel candidates were identified  
+therefore  the unknown amino acid  if it is encoded by a stop codon  is unlikely to exist in the current databases of microbial genomes  
+the consequences for selenoproteins and other readthrough genes are also discussed  
+results 
+basic ideas 
+in this study  we focus on theoretical orfs with one inframe stop codon  termed  interrupted orfs   iorfs   figure 1a   
+if we enumerate all iorfs from microbial genomes  most of the readthrough genes will be included in them  
+however  the vast majority of the enumerated iorfs will be biologically meaningless  
+to filter out such meaningless iorfs  we required the iorfs to have at least one homolog in other genomes  because evolutionary conservation of primary sequence is a strong indicator of functional importance  
+the first problem is that even if an iorf has homologs in other species  it could be a pseudogene or a product of sequencing error  
+the second problem is that adjacent genes on the same reading frame may satisfy the condition of conserved iorfs  
+in particular  gene pairs within an operon are problematic because their gene arrangement is often conserved  
+if the intergenic distance between two genes in an operon happens to be a multiple of three  they look like a conserved readthrough gene  
+basic ideas of the prediction method 
+basic ideas of the prediction method  
+ a  schematic illustration of an interrupted orf  iorf   
+ b  readthrough genes can be distinguished from two adjacent genes based on the results of blast searches  
+boxes denote iorfs  and    indicates the inframe stop codon  
+shaded regions represent actual protein coding regions  
+if an iorf codes a readthrough protein  blast hits from other organisms will cover the inframe stop codon  
+to discriminate them from true readthrough genes  evolutionary information was exploited  
+in order to eliminate pseudogenes and sequencing errors  conservation of iorfs and their inframe stop codons was examined  
+in this way  they can be eliminated as candidates  
+a drawback of this criterion is that it limits the target of our study to readthrough genes conserved across two or more species  
+to address the second problem  adjacent gene pairs were filtered out by examining boundaries of sequence alignments between iorfs and its homologs  figure 1b   
+the stop codon encoded amino acids of prokaryotes are usually located inside domains  the units of evolutionary sequence conservation  
+therefore  the aligned regions of readthrough proteins contain their inframe stop codon  
+note that  however  if the whole length of an iorf was used as a query sequence  this procedure will erroneously discard multidomain readthrough proteins  
+to avoid this problem  a partial sequence around the inframe stop codon was used as a query  
+prediction procedure 
+the prediction schema is shown in figure 2  
+a total of 191 prokaryotes were analyzed in this study  of which 166 are bacteria and 25 are archaea  
+they were selected from 328 prokaryotes with completely sequenced genomes by excluding closely related species  
+from the genome sequences of the 191 organisms  all possible iorfs were enumerated  
+two conditions were imposed on the geometry of the iorfs  figure 1a   
+first  only iorfs longer than 80 codons were extracted  
+secondly  margins between the inframe stop codon and both termini of the iorf must be longer than 10 codons  
+the total number of iorfs extracted under these conditions was 2 969 958  
+next  iorfs that overlap rna genes or protein coding genes in different reading frames were discarded  
+this test significantly reduced the number of iorfs to 390 926  
+a flowchart of the prediction procedure 
+a flowchart of the prediction procedure  
+several steps are omitted for simplicity  
+detailed explanation is given in the text  
+as noted above  the target of this study is evolutionarily conserved iorfs  
+thus  it was examined whether the iorfs have homologous regions in other genomes  
+the 390 926 iorfs were translated into amino acid sequences and subjected to tblastn 16 against the 191 genome sequences  
+after the blast searches  iorfs that have at least one interspecific hit that contains the inframe stop codon were collected  
+there were 94 690 iorfs that have interspecific hits  
+the result of the above homology searches was also used for the boundary analysis  figure 1b   
+a total of 26 003 iorf satisfied the above criteria  
+to examine intrafamily conservation of the inframe stop codons  these iorfs were clustered into protein families based on sequence similarity  
+after removal of singletons  679 clusters with two or more members were obtained  
+a cluster was discarded unless all members of the cluster had the same type of inframe stop codons  uaa  uag or uga   
+the locations of the inframe stop codons were also required to be identical in the multiple sequence alignment of the cluster members  
+these conditions reduced the number of clusters to 273  
+manual inspection of these 273 clusters revealed that they still contain many false positives that are unrelated to stop codon encoded amino acids  
+hence  three step filtering procedures were applied to remove the false positives  
+briefly  the first filter assesses protein likeliness based on the signal of purifying selection  while the second and third filters try to remove adjacent gene pairs using the pattern of blast alignments  for details  see materials and methods   
+as a result of the filtering  the number of candidate clusters was reduced to 32  
+through manual inspection of the blast alignments  11 clusters were discarded because they are highly unlikely to code readthrough proteins  
+known proteins in the predicted clusters 
+the clusters predicted by our method are summarized in table 1  
+of the 21 clusters  15 were known selenoproteins  and four were known pyrrolysine proteins  
+to assess the sensitivity of our method  the result was compared with a list of prokaryotic selenoproteins reported by kryukov and gladyshev 12  
+since our target is readthrough genes conserved across two or more species  such selenoprotein families were selected from their list  
+there were 15 families satisfying this criterion  but one family  proline reductase  was excluded because it was found in only one organism in our dataset  
+of the 14 families  11 were found in our prediction result  
+selw like protein was below the threshold of detection  because its stop codon is near the n terminus and the amino acid sequences of its members are too divergent  
+since these two families are homologous  they were grouped into an identical cluster at the clustering stage of our method  
+however  the positions of selenocysteine were different between the two families  figure 3   
+to deal with a situation like this  a reexamination of the clustering threshold and subdivision of clusters will be required  
+predicted clusters of readthrough proteins 
+a plus sign in a locus indicates that the genomic coordinates of the iorf can be described by a concatenation of two genes or regions  
+for example   gsu2293   downstream  means that the iorf consists of the gene gsu2293 and its downstream sequence  
+selenocysteine residues of peroxiredoxin like protein families constitute homologous redox motifs  txxu and uxxc   but their positions are different between two families  
+columns are colored according to sequence conservation  
+selenocysteine residues are shown in red  and the other residues in the redox motifs are shown in yellow  
+prx  peroxiredoxin  tpo  thiol protein disulphide oxidereductase  adeh  anaeromyxobacter dehalogenans  gmet  geobacter metallireducens  gsul  g  sulfurreducens  dpsy  desulfotalea psychrophila  
+the alignments were computed using clustalw  and the figures were generated using jalview  
+of the four pyrrolysine proteins detected  three methylamine methyltransferases have been experimentally confirmed to contain pyrrolysine 617  
+the rest is a cluster of tetr like transcriptional regulators from methanosarcina acetivorans and m  barkeri  
+since the genome annotation of m  acetivorans describes this protein as a gene containing an inframe amber codon  we classified it as a   known   candidate  although it is still unclear whether it really contains pyrrolysine  
+they are a methlycobamide com methylase and four transposases 18  
+this is unavoidable because of the inability of our method to detect species specific readthrough events  
+it is the price for reliably excluding pseudogenes and sequencing errors  
+unknown candidates in the predicted clusters 
+therefore  unknown clusters in our candidates have possibilities for the 23rd amino acid or novel readthrough proteins  
+there were two such clusters  table 1   
+the first cluster is comprised of c type cytochromes from    proteobacteria geobacter sulfurreducens and g  metallireducens  
+homology search against unfinished microbial genomes identified seven homologous proteins from four other    proteobacteria species  
+multiple sequence alignment of these sequences is shown in figure 4a  
+multiple sequence alignments of novel candidate proteins 
+multiple sequence alignments of novel candidate proteins  
+ a  a selenoprotein candidate from geobacter sulfurreducens and its homologs  
+the possible selenocysteine residues are shown in red  and putative heme binding motifs are underlined  
+note that sequence conservation near the selenocysteine is comparable to that of the n terminal cytochrome domain  
+a protein dpro_2 contains yet another inframe stop codon  tag  at the column 189  
+it will be either a sequencing error or a pseudogene  
+gsul  g  sulfurreducens  gmet  g  metallireducens  gura  g  uraniumreducens  gfrc  geobacter sp  frc 32  dace  desulfuromonas acetoxidans  dpro  delta proteobacterium mlms 1  
+ b  hypothetical proteins from geobacter species  
+the inframe stop codons  tag  are shown in red  
+this cluster is probably an artifact of close phylogenetic relationship  
+we expect that this cluster may represent a novel selenoprotein family  
+high conservation of residues near the inframe stop codon also suggests the importance of this region  
+therefore  yet another possibility is that they are a highly conserved operon  
+an experimental verification is necessary to distinguish these two possibilities  
+the second cluster consists of two hypothetical proteins  again from g  sulfurreducens and g  metallireducens  figure 4b   
+this is because the residues near the inframe stop codons are poorly conserved  
+moreover  the c terminal extensions are quite short  about 20 aa   
+the sequence conservation in this region can be easily explained by the close phylogenetic relationship between the two species  
+stop codon usage in the pre filtering clusters 
+the above negative result could be explained if the filtering process  which is the final step of the prediction method  figure 2   was too strict  
+although the raw output of the search for evolutionarily conserved iorfs was 273 clusters  most of them were discarded at the subsequent filtering stage  
+this is practically indispensable for objective classification of candidates  but there is no guarantee that unknown proteins with the 23rd amino acid will score higher than the thresholds  
+to explore whether a number of good candidates lie below the thresholds  the 273 clusters were analyzed in a way independent from filtering  
+if an organism has many readthrough proteins  proteins from the organism will frequently appear in the 273 clusters  
+moreover  relative usage of the inframe stop codons will deviate from that of usual termination signals in the proteome  
+figure 5 shows the discrepancies between relative usage of the inframe and c terminal stop codons of 127 organisms in the pre filtering clusters  
+only seven organisms had statistically significant discrepancies  p   0 05   and all of them are known to utilize selenocysteine or pyrrolysine  
+discrepancies of stop codon usages between the inframe and c terminal stop codons 
+discrepancies of stop codon usages between the inframe and c terminal stop codons  
+the inframe stop codon usage is taken from the pre filtering clusters  and the c terminal usage is computed based on the annotated proteins of the organism  
+the organisms are ordered by their discrepancy scores  
+the discrepancy score is the negative logarithm of a p value of fisher s exact test  
+the dotted line indicates significance level 0 05 after a correction for multiple testing  
+an inspection of the g  oxydans iorfs in the 273 clusters revealed that their inframe stop codons are dominated by taa  but all of them belong to a single protein cluster associated with transposable elements  
+sensitivity of this test is not high because many organisms that utilize selenocysteine were below the defined threshold  
+discussion 
+as the number of completely sequenced genomes increases  several research groups started to predict proteins that contain stop codon encoded amino acids through computational analyses  
+most of them are aimed at identification of selenoproteins  reflecting concerns from the scientific community and accumulated knowledge on selenocysteine  
+in order to improve prediction specificity  they have fully exploited the known features of selenocysteine  such as the secis elements or cysteine homologs  which have cysteine in place of selenocysteine  
+such general purpose algorithms have also been developed to date  
+the method of chaudhuri and yeates 10 extracts iorfs from microbial genomes and analyzes sequence conservation around the inframe stop codon  
+their method is thus similar to ours and applicable to both selenocysteine and pyrrolysine  
+perrodou et al  19 constructed a database of predicted recoding events in microbes  
+their method is applicable not only to stop codon readthrough but also to frameshift  
+for instance  chaudhuri and yeates reported a homolog of cobalamin biosynthesis protein cobn as a novel candidate of pyrrolysine protein  
+however  the gene is probably a pseudogene because it contains an inframe taa codon in addition to the tag codon  and only one species seems to have the amber containing form of the gene  
+however  that is not necessarily true  
+yet another example is glycine reductase selenoprotein a  
+only the selenocysteine containing form of the enzyme is currently known 20  
+if any non readthrough homologs are registered in public sequence databases  a careful annotation process of a newly sequenced genome will be able to detect readthrough genes  even though they may be annotated as pseudogenes  
+however  if all members of a gene family have stop codon readthrough  correct annotation of their gene structure will be extremely difficult  and all of them will be split into two distinct genes  
+using this method  a systematic screening of the 23rd amino acid and other readthrough genes was carried out  
+many of the currently known selenoproteins and pyrrolysine proteins were recovered  indicating the effectiveness of this approach  
+in particular  successful detection of pyrrolysine containing methyltransferases and selenoprotein a should be noted  
+however  almost no novel candidates for readthrough genes were predicted  
+what can be concluded from this result  
+although a broad spectrum of taxonomic groups has been subjected to genome sequencing  the genomes of most microbial species on the earth have yet to be determined  
+the unknown amino acid may be used by these species  
+alternatively  only one organism in our dataset may have the 23rd amino acid  
+this is because our method is limited to readthrough genes conserved across two or more species  
+if the novel amino acid appears in younger  non conserved sequences  our technique will miss them  
+in either case  the distribution of the 23rd amino acid will be significantly narrower than that of selenocysteine  which has scattered but wide distribution 21  
+this conclusion coincides with and strengthens that of the previous research on trna 14  
+it is well known that the genetic code varies in several organisms 22  
+thus  certain organisms may use one of the sense codons for the novel amino acid  
+because codons for most amino acids are degenerate  redefinition of one of them is feasible  
+however  that possibility is beyond the scope of this study and is left as an open problem  
+bioinformatics analysis of unusual trna genes and codon usage may provide insights into this problem  
+in addition to the 23rd amino acid  our method can simultaneously explore selenoproteins and other readthrough proteins  
+a common assumption in microbial selenoprotein predictions is that selenoproteins will have cysteine homologs  
+our method can reassess this assumption in a secis independent way  
+such selenoproteins identified through our screening of nearly 200 microbial genomes were selenoprotein a and only one uncertain candidate  
+other readthrough proteins with canonical amino acids  i e   proteins that have canonical amino acids at their inframe stop codons  are quite rare in prokaryotes 1  
+this is because our method assumes that stop codon encoded amino acid is located inside a domain  but it is unclear whether it holds true in prokaryotic readthrough with canonical amino acids  
+what can be concluded from our result is that this type of readthrough will be located outside of domains  such as a linker between two domains  
+such a stop codon may behave as a switch that regulates production of short and long isoforms from a single mrna  as in readthrough genes from viruses 24  
+conclusion 
+to explore the possibility of a 23rd amino acid  orfs in prokaryotic genomes were investigated in a comprehensive way  
+therefore  if such an amino acid exists  it will have limited distribution in the tree of life  
+alternatively  it may be encoded by one of the sense codons  
+from the viewpoint of selenoprotein prediction  the sensitivity of our method was lower than an existing method  
+however  our method has several unique features  
+it is applicable to general readthrough genes and rigorously excludes pseudogenes and sequencing errors  
+it will help in identification of novel readthrough genes from the rapidly expanding collection of complete microbial genomes  
+methods 
+enumeration of iorfs from prokaryotic genomes 
+a total of 328 complete genome sequences of prokaryotes were downloaded from the kegg ftp site 25 in april 2006  
+from them  191 representative organisms were selected by excluding close relatives  
+the threshold was set to average sequence identity 90  of two house keeping genes  dna polymerase iii    subunit and alanyl trna synthetase  
+from these 191 genomes  iorfs longer than 80 codons were enumerated using inhouse software  which is available from the author s web site 26  
+both upstream and downstream regions of its inframe stop codon were required to be longer than 10 codons  
+two stop codons of an iorf  i e  the inframe and c terminal stops  can be any combination of canonical stop codons  taa  tag  tga   
+however  for mycoplasma  only taa and tag were used  
+three codons atg  ttg and gtg were allowed to be start signals  
+the iorfs of each organism were compared with protein coding genes of the organism using blastx  
+similarly  iorfs were compared with rna genes using blastn  and those matched with the rnas were removed  
+remaining iorfs were translated into amino acid sequences  
+we translated all three types of nonsense codons into the one letter code u  so as to simplify visual inspection of sequence alignments  
+although the code u is usually for selenocysteine  it will be harmless because u is automatically converted into    inside the blast programs  
+construction of clusters of conserved iorfs 
+to examine evolutionary conservation of the iorfs  a window of 101 residues around the inframe stop codon was extracted and subjected to tblastn searches against the above 191 genome sequences  
+if there were any hits  e value   0 01  in other organisms  and if the hit includes 10 upstream and 10 downstream residues of the inframe stop codon  then the iorf was retained  
+eligible iorfs were then clustered using blastclust with score density 0 5 and minimum length coverage 0 6  
+after removing singleton clusters  multiple sequence alignments of the remaining clusters were computed using mafft 27 with the l ins i option  
+subsequently  conservation of the inframe stop codons in each cluster was examined  
+three step filtering of the candidate clusters 
+the first filter examines protein likeliness of the iorfs  
+this filter is mainly designed to remove conserved non coding sequences  cns  immediately downstream of non readthrough genes  
+the dn ds was calculated for each of the two parts flanking the inframe stop codon in an iorf using codeml program in the paml package 28  
+statistical significance was estimated by likelihood ratio test 29  
+the observed alignment was fitted to two distinct substitution models  one of which estimates dn ds from the data  and the other fixes it to 1 0  
+let lfree and lfix denote log likelihood of these models  
+then  2  l   2 lfree     lfix  approximately follows the   2 distribution with one degree of freedom  
+if dn ds was less than 1 0  and the statistics 2  l was larger than a threshold  we regard it as a sign of purifying selection  
+in this study  the threshold was set to 5 0  corresponds to p   0 025  so that the known readthrough proteins score higher than the threshold  
+for each of the above clusters  an all against all comparison of cluster members was performed  
+if any pair exhibits such signals in both the n  and c terminal parts  the cluster was retained  
+the second and third filtering processes remove such genes based on blast alignment patterns  
+although the boundary analysis applied previously has the same goal  figure 1b   some gene pairs escaped elimination  
+the second filter inspects synteny of iorfs  
+if the n  and c terminal parts of an iorf have distinct but closely arranged blast hits in other genomes  it strongly suggests the iorf is actually two adjacent genes  
+translated sequences of iorfs in the pre filtering clusters were subjected to tblastn searches against the genome database  
+if both the best hits of the n  and c terminal parts are statistically significant  e value   10 5   and distance between them is less than 1 kbp  we call these hits  syntenic hits   
+if any syntenic hits with non coinciding reading frames were found  the cluster was removed  
+the third filter uses co occurrence of residues around the inframe stop codon as another source of information for screening stop codon readthrough  
+suppose a window of 21 residues centered at the inframe stop codon  
+in prokaryotes  most stop codon encoded amino acids are located inside a domain  the unit of evolutionary sequence conservation  
+in contrast  if the iorf is actually two adjacent genes  then upstream and downstream residues of the stop codon will appear separately in many alignments  
+we defined a co occurrence matrix as a 21    21 matrix whose  i j  th element represents how often residue i and j appeared simultaneously in n alignments  
+the matrix elements were subsequently normalized to the number of alignments n  
+by definition  the more often the upstream and downstream residues of the inframe stop codon co occur in the alignments  the higher the density in the upper right quarter of the matrix  
+if average density in the quarter was lower than 0 85  the cluster was filtered out  
+stop codon usage 
+for each organism  its iorfs were extracted from the pre filtering clusters  and codon usage at the inframe stop positions was counted  
+codon usage at the c terminal stop codons in its proteome was also computed using data of coding sequences downloaded from kegg genes 25  
+these data were combined into a 3    2 matrix  and fisher s exact test was applied  
+the p value was corrected for multiple testing using the bonferroni correction because there were 127 organisms in the pre filtering clusters  
+probabilistic prediction and ranking of human protein protein interactions 
+abstract 
+background 
+although the prediction of protein protein interactions has been extensively investigated for yeast  few such datasets exist for the far larger proteome in human  
+furthermore  it has recently been estimated that the overall average false positive rate of available computational and high throughput experimental interaction datasets is as high as 90   
+results 
+the prediction of human protein protein interactions was investigated by combining orthogonal protein features within a probabilistic framework  
+the features include co expression  orthology to known interacting proteins and the full bayesian combination of subcellular localization  co occurrence of domains and post translational modifications  
+a novel scoring function for local network topology was also investigated  
+this topology feature greatly enhanced the predictions and together with the full bayes combined features  made the largest contribution to the predictions  
+a subset of the 32892 novel predicted interactions have been independently validated  
+comparison of the prediction dataset to other available human interaction datasets estimates the false positive rate of the new method to be below 80  which is competitive with other methods  
+since the new method scores and ranks all human protein pairs  smaller subsets of higher quality can be generated thus leading to even lower false positive prediction rates  
+conclusion 
+the set of interactions predicted in this work increases the coverage of the human interaction map and will help determine the highest confidence human interactions  
+background 
+protein protein interactions perform and regulate fundamental cellular processes  
+the comprehensive study of such interactions on a genome wide scale will lead to a clearer understanding of diverse cellular processes and of the molecular mechanisms of disease  
+although the determination of interactions by small scale laboratory techniques is impractical for a complete proteome on the grounds of cost and time  several experimental techniques now exist to determine protein protein interactions in a high throughput manner 1  
+high throughput datasets have been generated for model organisms such as yeast 23456  worm 7 and fly 89 as well as escherichia coli 10  
+in addition  the first broad focus experimental datasets for the human interactome have recently been published 1112  
+interactions determined by high throughput methods are generally considered to be less reliable than those obtained by low throughput studies 1314 and as a consequence efforts are also underway to extract evidence for interactions from the literature 151617  
+analysis of the high throughput datasets has shown that they overlap very little with each other  suggesting that their coverage is low  
+indeed  it has been estimated recently that the current yeast and human protein interaction maps are only 50  and 10  complete  respectively 18  
+the low coverage and variable quality of the experimental interaction datasets have prompted many groups to investigate computational methods to predict interactions or to determine the most likely interactions seen in the high throughput datasets  
+the different approaches to predict interactions can be grouped into five main categories  
+1  predictors based on sequence and structure exploit the observation that some pairs of sequence motifs  domains and structural families tend to interact preferentially  
+some methods predict interaction from sequence motifs found to be over represented in interacting protein pairs 19  or by considering the physico chemical properties and the location of groups of amino acids in the sequence 2021  
+others investigate the co occurrence in interacting proteins of specific protein domains or their structural family classification 2223  
+when three dimensional structures are available for both proteins thought to interact  high quality predictions and additional information such as the residues involved in the interaction and their binding affinity may be estimated  reviewed in 24   
+similarly  when two proteins show clear sequence similarity to proteins that exist in a complex for which the three dimensional structure is known  detailed predictions of the atomic level interactions may be made  
+for example  the major complexes in yeast have been predicted by this strategy 25  
+2  predictors based on comparative genomics have been exploited primarily in prokaryotes  
+they consider the physical location of genes  as well as their pattern of occurrence and evolutionary rate  to predict interactions or functional relationships between protein pairs  
+some predictors make use of the observation that neighboring genes whose relative location is conserved across several prokaryotic organisms are likely to interact 26  
+other predictors exploit the observation that gene pairs that co occur in related species or that co evolve also tend to be more likely to interact 27282930  
+in addition  domains that exist as separate proteins in some genomes but are also seen fused in a single protein in other genomes have been used to suggest the isolated domains may interact 3132  
+3  predictors based on orthology work on the assumption that the orthologs of a protein pair that are known to interact in one organism will also interact  
+such relationships are often referred to as interologs 33  
+for example  at blast e values below 10 10  it has been shown that 16   30  of yeast interactions can be transferred to the worm 34 while further studies have estimated that a joint e value below 10 70 is required to transfer interactions reliably between organisms 35  
+interologs have been used to predict protein protein interactions in human 36  
+4  predictors based on functional features exploit non sequence information to infer interactions  
+some predictors exploit the observation that there is a significant correlation in the expression levels of transcripts encoding proteins that interact 37  
+since proteins must be co localized in order to interact  protein subcellular localization has often been used to assess the quality of interaction datasets 3839  
+similarly  interacting proteins are also often involved in similar cellular processes  so gene ontology  process  and  function  annotations have been exploited to predict interactions and validate high throughput datasets 163638  
+5  predictors have exploited similarities in the network topology of known interaction datasets to predict novel interactions  
+in one study  the local topology of small world networks has been used to assess the quality of interaction datasets and predict novel interactions 40 while gerstein and colleagues have investigated the prediction of interactions by the identification of missing edges in almost fully connected complexes 41  
+in addition to these diverse approaches  some groups have combined concepts from several of the above categories in integrative frameworks  
+the first such predictor integrated co expression data  co essentiality as well as biological function in a na  ve bayes network to provide proteome wide de novo prediction of yeast protein interactions 37  
+subsequently  the combination of many more diverse features was investigated using different frameworks to predict yeast protein protein interactions  increasing the prediction accuracy and allowing an assessment of the limits of genomic integration 424344  
+the integration of diverse genomic features has also been useful in the investigation of the related but broader problem of predicting protein protein associations as well as complex and pathway membership  see for example 45   
+although  many computational methods have investigated the prediction of protein protein interactions  few have so far been applied to the human proteome  
+the first large scale prediction of the human interactome map involved transferring interactions from model organisms 36  
+this resulted in over 70000 predicted physical interactions involving approximately 6200 human proteins  
+a second method integrated expression data  orthology  protein domain data and functional annotations into a probabilistic framework and resulted in the prediction of nearly 40000 human protein interactions 46  
+it has recently been estimated that the false positive rates of these computational datasets as well as of available high throughput human interaction datasets are  on average  as high as 90  and their coverage is only approximately 10   indicating that more such efforts are needed to increase the coverage and confidence we have in current maps of the human interactome 18  
+in this paper  the prediction of physical interactions between human proteins has been investigated by integrating in a bayesian framework several different pieces of evidence including orthology  functional features and local network topology  
+in order to increase the accuracy and coverage of the predictions  different types of negative data  non interacting protein pairs  were explored to train the predictor  
+the most accurate of the predictors was then used to assess the likelihood of pair wise interaction for over 20000 human proteins from the ipi  international protein index  database  
+these predictions provide a likelihood of interaction for over 260 million human protein pairs and lead to the prediction of over 37000 human interactions  
+they should thus augment current knowledge of the human interactome as well as the understanding of the relationship between distinct cellular processes  
+results and discussion 
+architecture of the predictor and training of the modules 
+the prediction of human protein protein interactions was investigated in a bayesian framework by considering combinations of individual protein features known to be indicative of interaction  
+the seven individual features considered are summarized in table 1 and detailed in the methods section  
+as indicated in table 1  the different features were grouped into five distinct modules  expression  e   orthology  o   combined  c   disorder  d  and transitive  t   
+figure 1 illustrates the training scheme and architecture of the method  
+the expression  orthology  combined and disorder modules can calculate likelihood ratios  lr  of interaction independently and are referred to as the group a modules  figure 1a   
+the product of their likelihood ratios is referred to as the preliminary score  
+the transitive module considers the local topology of the network predicted by the group a modules and thus requires the completion of their analysis to calculate its own likelihood ratios of interaction  figure 1b   
+features considered in the prediction of interactions for each module 
+architecture of the predictor and likelihoods of the modules 
+architecture of the predictor and likelihoods of the modules  
+the predictor consists of two different parts  a and b  which are trained consecutively  
+the group a modules  shown in panel a  are trained in parallel  
+the likelihood ratios  lr  for most of their states are shown in panel a  their complete likelihood ratios are available in additional file 4   
+the product of the likelihood ratios of all group a modules considered in a given prediction is referred to as the preliminary score  ps  and can be calculated for all human protein pairs  
+if the transitive module is considered  the local topology of the network determined by the assignment of preliminary scores to all protein pairs considered in the training set is used to calculate the likelihood ratios for the transitive module  shown in panel b  for every protein pair in the training set  
+the final likelihood ratio is then the product of the preliminary score calculated in panel a and the likelihood ratio output by the transitive module in panel b  
+for the orthology module  yl  ym  yh  yeast low  medium and high scoring bins  fl  fm  fh  fly low  medium and high scoring bins  wl  wm  wh  worm low  medium and high scoring bins  hm and hl  medium and low scoring bins for human protein pairs that have human paralogs    1 organism  bin for human protein pairs that have interologs in more than one organism  
+for the combined module         refers to the lowest scoring bin  for the domain  dom   post translational modification  ptm  and subcellular localization  loc  features       refers to the second lowest scoring bin and            refer respectively to the third highest  second highest and highest scoring bins  
+the likelihood ratios of interaction are evaluated for each module by considering the relative proportions of positive and negative training examples that have a specific state  i e  that fall in a particular bin of a module   
+the datasets used to train the predictor consisted of 26896 known human protein interactions extracted from the human protein reference database  hprd  15 and approximately 100 times more randomly chosen protein pairs used as negative examples  
+the composition of the datasets and likelihood ratio calculations are explained in greater detail in the methods section  
+once the final likelihood ratio of interaction  lrfinal  is calculated for a given protein pair as shown in figure 1b  it is possible to estimate the posterior odds ratio of interaction by multiplying the final likelihood ratio by the prior odds ratio of interaction  
+estimates for the prior odds ratio of interaction vary  
+previous interaction studies on yeast and human use prior odds ratios that range from 1 600 to   1 400 37434647  
+the evaluation of this ratio is difficult because not all true interactions are known  
+as detailed in methods  the prior odds ratio for human protein interaction was explored by considering different versions and subsets of human interaction datasets  
+this suggested that there is insufficient data currently available to determine a reliable ratio for human  
+accordingly  we selected a prior odds ratio of interaction of 1 400 which is similar to current estimates for yeast and is probably still quite conservative  
+thus  the likelihood ratio threshold to predict interactions is 400  
+likelihood ratios of the modules 
+figure 1 summarizes the likelihood ratios computed for the five modules  
+the different modules differ in the range of likelihood ratio values achieved by their different states  
+the orthology and combined modules both have states that achieve likelihood ratios above 400  as high as 1207 for the orthology module and 613 for the combined module   indicating that both these modules can  on their own  predict some interacting protein pairs with a posterior odds ratio above 1  
+the expression module follows trends seen in previous studies with increasing likelihood ratios of interaction reflecting increasing expression correlation 3746  
+similarly  but in a much more pronounced way  the disorder module is only slightly predictive of interaction  with a maximum likelihood ratio of 1 8  
+most states of the orthology module achieve higher likelihood ratios than the highest obtained by the expression and disorder modules  
+the direct transfer of interactions to human from either yeast  fly or worm does not alone result in a posterior odds ratio above 1  as the likelihood ratios of interaction for all yeast  fly and worm bins in the orthology module are below 400   
+in contrast  the consideration of human interactions paralogous to the human protein pairs under investigation results in likelihood ratios of 431 and 1034  depending on how close the paralogs are as described in methods  which is much higher than those obtained for any single model organism  
+this agrees with a recent report that suggested protein protein interactions are more conserved within species than across species 49  
+the combined module uses domain co occurrence  post translational modification  ptm  co occurrence and subcellular localization information to predict interaction  
+additionally  this combination circumvents possible problems of dependence between these features  
+likelihood ratios of the features that form the combined module  considered separately 
+likelihood ratios of the features that form the combined module  considered separately  
+the combined module considers simultaneously three distinct features  the co occurrence of both domains and ptms as well as the subcellular co localization of proteins  
+here the likelihood ratios of these features considered separately are shown  
+in panel a  all domain pairs considered were given scores and likelihood ratios were estimated for different values of these scores  
+similarly  shown in panel b are the likelihood ratios for different values of ptm co occurrence scores  
+panel c shows the likelihood ratios for protein pairs localized to different sets of cellular compartments  
+previous methods have investigated the use of co occurring domains to predict interaction  see for example 2346   
+many pairs of domains co occur in proteins known to interact  
+when investigated as a separate feature  the chi square score of co occurrence of domain pairs correlates well with the likelihood of interaction of protein pairs that contain these domains  with the highest chi square score bin obtaining a likelihood ratio of 14  as shown in figure 3a  
+similarly  the co occurrence of ptms is also predictive of interaction  with its highest scoring bin obtaining a likelihood ratio of 6 as shown in figure 3b  
+lists of high scoring domain pairs and ptm pairs are shown in additional files 1 and 2  
+subcellular localization has been extensively used both to assess the quality of interaction datasets 115051 and to generate examples of non interacting protein pairs to use as negative datasets when training and testing predictors 3746  
+in the present study  the use of localization was investigated as a feature predictive of interaction  
+as shown in figure 3c  the likelihood ratio of same compartment protein pairs was found to be twice as high as that of randomly chosen or non annotated protein pairs whereas different non neighboring protein pairs are more than three times less likely to interact than random protein pairs  
+individual localization features achieve low interaction likelihood ratios  
+however  when integrated into the combined module  domain  ptm and localization information together achieve likelihood ratios that are high enough to predict interaction on their own  i e  above 400   
+as expected  the highest likelihood ratio bins for the combined module are those representing the highest combinations of the three features separately  
+the transitive module enhances the preliminary likelihood score  ps   calculated using the group a modules  by considering the local topology of the resulting network which is assessed using the neighborhood topology score as detailed in the methods section  
+the likelihood ratios for different values of the neighborhood topology score are shown in figure 1b  
+the transitive module is highly predictive of interaction and achieves likelihood ratios as high as 229  
+however  it can predict interacting protein pairs with a posterior odds ratio above 1 0 when used in combination with any single module in group a  as the product of the highest likelihood ratios of the transitive module and any group a module is greater than 400 as can be seen from figure 1   
+independence of the modules 
+the final likelihood ratio output by the predictor is only representative of the true likelihood of interaction of a protein pair if the modules considered are independent  
+conversely  some likelihood ratios would be underestimated for protein pairs achieving simultaneously low likelihoods for non independent features  
+previous studies have demonstrated that some of the features considered here are indeed independent 43  
+independence of all modules used in our predictor was verified by calculating pearson correlation coefficients for all pairs of modules  
+as shown in table 2  all modules considered are independent  since the highest pearson correlation coefficients computed are well below any value considered significant  
+pairwise pearson correlation for all modules 
+accuracy of the predictors 
+all combinations of modules were examined to determine which of the resulting predictors achieved the highest prediction accuracy  
+in order to analyze the predictions  five fold cross validation experiments were performed and the area under partial roc  receiver operator characteristic  curves  partial aucs  measured  
+roc50 and roc100 curves were selected as they consider a large enough number of positives to include all protein pairs predicted to have a posterior odds ratio above 1 0 by all the predictors investigated  
+the area under all rocn curves considered is relatively low because of the high proportion of negatives with respect to positives in the training and test sets  100 1   
+table 3 summarizes the characteristics of 19 different predictors and shows accuracy measures  
+as more group a modules are considered within the same predictor  the rocn auc scores increase significantly  as would be expected since these features are independent  as shown in table 2  and thus contribute different information to the prediction  
+for example  the predictor that considers both the expression and combined modules achieves a roc50 auc of 0 033 compared to 0 003 and 0 022 respectively for the individual modules  
+for example  both the expression orthology predictor and the expression orthology disorder predictor achieve a roc50 auc of 0 024  
+the disorder module offers the advantage of increasing the coverage of the prediction as a disorder score is calculated for all protein pairs  
+prediction accuracy of different combinations of modules 
+as the scores of the predictors increase  so do the number of interactions predicted above different posterior odds ratio thresholds  see lower portion of table 3   
+for example  the expression orthology predictor achieves a roc50 auc of 0 024 and predicts 5670 interactions at a posterior odds ratio greater than 1 whereas the expression orthology combined predictor achieves a roc50 auc of 0 044 and predicts over 15000 interactions at a posterior odds ratio above 1  
+the best combination of group a modules is the predictor consisting of the expression  orthology and combined modules  
+the transitive module  which can only be used in combination with other modules  increases substantially the scores and number of interactions predicted  
+the right hand portion of table 3 shows the accuracy measures for the highest scoring subset of predictors that consider the transitive module  
+the transitive module enhances the prediction by identifying among protein pairs with a relatively high preliminary score those that are most likely to interact  by considering the local topology of the network around them  
+for example  the roc50 auc rises from 0 044 to 0 075 when the transitive module is added to the expression orthology combined predictor  and the number of predictions above a posterior odds ratio of 1 doubles from 15330 to 34780  
+the predictor that considers the expression  orthology  combined and transitive modules is the one that achieves the highest accuracy overall  
+it is this predictor that is further analyzed in the next sections  
+comparison to predictions generated using alternative training sets 
+in this work training sets were used that comprised 100 times more negatives than positives  with the negatives randomly selected and filtered to remove any known or suspected positives  see methods   
+other groups have used negative positive ratios ranging from 1 to more than 600  see for example 374752   
+these issues have been investigated previously 53  
+since the choice of negative training data may influence the method  the choice of different training sets in the context of the probabilistic predictor presented here was investigated to determine which type of training set offers the highest accuracy  
+table 4 compares the accuracy of predictors trained with negative positive ratios of 1 100 and 1 1 and tested by five fold cross validation  
+to perform such a comparison  the eoct predictor  expression  orthology  combined and transitive modules  was trained on datasets consisting of either equal numbers of positives and negatives or 100 times more negatives than positives and then tested on both types of datasets  
+as shown in table 4  the predictors trained on datasets containing 100 times more negatives than positives perform significantly better than those trained on datasets containing equal numbers of positives and negatives  
+for example  the 1 1 pos neg trained predictor achieves a roc50 auc of 0 0645 whereas its 1 100 pos neg trained counterpart achieves a 0 0747 roc50 auc  
+this could be due to the fact that the number of non interacting protein pairs outweighs greatly the number of interacting protein pairs in cells  
+it should be noted that predictors tested on datasets consisting of equal numbers of positives and negatives achieve much higher accuracy measures than those tested on datasets containing 100 times more negatives than positives  
+this is because the number of positives scoring higher than the highest scoring n negatives  for a given value of n and a given predictor  will be greater if there are equal numbers of positives and negatives in the test set than if there are more negatives than positives  
+influence of the negative positive training set ratio on the prediction accuracy 
+the rocn aucs are an average of five separate experiments  each of which is itself a five fold cross validation experiment   
+their standard deviation is shown in parenthesis  
+a criticism of randomly chosen negatives is that they will contain some true interactors  
+however  the set of interacting pairs in the full protein pair space is small and thus the contamination rate of randomly chosen negative datasets will in fact be very low  
+contamination is probably below 1   which is likely lower than the contamination rate of the positive dataset as discussed in 47  
+localization derived negatives  on the other hand  should be free of contamination  if the localization annotations are complete and accurate  both conditions that are difficult to obtain as discussed in 54  
+in addition  proteins specific to a cellular compartment may have different characteristics to proteins in other compartments  
+these issues have been discussed previously 52  
+in order to see if different types of negatives could influence the accuracy of the predictors developed here we generated negative training test sets as in 46 by identifying all pairs of human proteins for which one protein is annotated as being nuclear and the other is annotated as being localized to the plasma membrane in the hprd database 15  
+the localization derived negative trained predictor tested on sets containing localization derived negatives achieves a lower accuracy than that of the random negative trained predictor tested on a test set containing randomly generated negatives  0 0686     0 0010 vs 0 0747     0 0022   
+our predictor trained with randomly generated negatives and a negative positive ratio of 100 performs the best out of all the combinations of training sets investigated  
+it is this predictor that is further analyzed in subsequent sections  
+contribution of the modules 
+the relative contribution of the modules to the prediction of interaction was investigated in order to gain a better understanding of the predictive power and areas of highest usefulness of the different modules  
+this set consists of 37606 distinct predicted interactions and is referred to as the lr400 dataset  all these interactions are listed and ranked in additional file 3   
+these protein pairs represent the most probable interactors with respect to the features considered  among all protein pairs examined by the predictor  
+to investigate the individual contribution of each module  we looked at the number of interactions predicted out of all lr400 pairs as a function of the minimum likelihood ratio of each module  
+as shown in figure 4a  all modules contribute positively  i e  contribute a likelihood ratio greater than 1 0  to the prediction of a certain proportion of the interactions in the lr400 dataset  
+the transitive module and to an even greater extent  the combined module contribute positively to the prediction of a very high proportion of the lr400 protein pairs  73  and 91  of the lr400 interactions have likelihood ratios greater than 1 for the transitive and combined modules respectively   
+the transitive module provides a likelihood ratio of 91 for the prediction of over 70  of the lr400 interactions  
+the combined module provides positive evidence for the highest number of interactions of the lr400 dataset  
+however  the value of the likelihood ratio it contributes is below 20 for over 50  of protein pairs in the lr400 dataset  which means that for these protein pairs  the combined module must be used in combination with other modules to achieve a total likelihood ratio above 400   
+the combined module does  however  achieve likelihood ratios high enough to predict over two thousand interactions of the lr400 dataset on its own  less than 15  of which are present in the training set  
+the orthology module contributes to the prediction of only 8474 protein pairs in the lr400 dataset  23    
+however  a large majority    75   of these 8474 predicted interactions achieve likelihood ratios above 200 from this module  
+in fact  almost 40  of these lr400 interactions achieve a likelihood ratio above 400 from the orthology module  
+this indicates that most interactions predicted by the orthology module  alone or in combination with other modules  are based on the highest scoring orthology bins  see figure 1a  which are the most conserved yeast interactions  whose bin achieves a likelihood ratio of 237   as well as human paralogous interactions and interactions found in more than one model organism  both of which achieve a likelihood well above 400   
+few interactions in the lr400 dataset are predicted on the basis of having interacting orthologs in worm or fly alone  
+the expression module provides positive evidence for a little less than half the predictions in the lr400 dataset  
+contribution of the modules 
+contribution of the modules  
+to examine the contribution of the different modules  we plotted the number of interactions predicted among all lr400 interactions  all interactions predicted using the full predictor that obtain a likelihood ratio of interaction greater than 400  as a function of the minimum likelihood ratio of individual modules  in panel a  or of combinations of modules  in panel b   
+in the case of combinations of modules  panel b   the minimum likelihood ratio is the product of the likelihood ratios of the modules considered  
+thus for example  the product of the expression and orthology ratios is greater than 1 for almost 20000 lr400 interactions and greater than 10 for approximately 10000 lr400 interactions  dark blue diamonds in panel b   
+e  expression module  o  orthology module  c  combined module  t  transitive module  
+figure 4b summarizes the contributions of different combinations of modules  
+the combined and transitive modules contribute the most to the prediction of interactions  
+they alone can predict approximately 27000 of the 37606 interactions of the lr400 dataset  
+when they are both present  regardless of which other modules are also present  they predict over 70  of the lr400 interactions  
+in contrast  the two remaining modules  expression and orthology  can predict approximately 5000 interactions together  
+this is interesting as many of the publicly available predicted interaction datasets mentioned in the background section use mainly orthology transfer from model organisms to identify interactions  
+this is discussed further in the next section  
+the curve representing the full predictor  consisting of the expression  orthology  combined and transitive modules  is also represented in figure 4b  the dark green squares   
+by definition  it predicts all proteins in the lr400 dataset at likelihood ratios equal to or above 400  this is how the lr400 dataset was generated   
+the right side of the curve illustrates the number of interactions that are predicted above likelihood ratios of 400 and more  
+as shown in figure 4b  the full predictor predicts approximately 20000 interactions at a total likelihood ratio of 1600  which is equivalent to an estimated posterior odds ratio of 4   
+at a likelihood ratio of 4000  approximately 11000 interactions are predicted and at a likelihood ratio of 8000  approximately 6500 interactions are predicted  
+we verified that the increasing estimated posterior odds ratios translated into better predictive value  
+figure 5 shows the true positive rate versus false positive rate for different posterior odds ratios as measured by five fold cross validation  
+as the posterior odds ratio increases  the false positive rate decreases and the relative proportion of true positives increases when compared to the proportion of false positives  
+accordingly  subsets of very high quality predictions may be generated by choosing a suitably high posterior odds ratio threshold  
+true positive rate versus false positive rate for different estimated posterior odds ratios 
+true positive rate versus false positive rate for different estimated posterior odds ratios  
+the true positive rate  tpr  versus false positive rate  fpr  is plotted for different values of the posterior odds ratio estimated for the dataset by five fold cross validation  
+as the posterior odds ratio increases  the false positive rate decreases and the ratio of the true positive rate divided by the false positive ratio increases  
+thus  higher quality datasets can be generated by requiring higher posterior odds ratios  
+the tpr is calculated as the number of true positives predicted divided by the total number of positives in the test set  
+the fpr is calculated as the number of false positives predicted divided by the total number of negatives in the test set  
+comparison to other interaction datasets 
+the false positive rate  fpr  of our predictor was estimated by the method of d haeseleer and church 1855 and used to compare it to other prediction datasets  
+the d haeseleer and church method compares two experimental datasets to a reference set and assumes that all intersections between the three datasets contain true positives  
+it is thus possible to estimate the number of true positives predicted by an experimental dataset by comparing the number of interactions present in the different intersections of the two experimental methods and the reference dataset  for details  see 1855   
+here  we compare three human interaction prediction datasets  the rhodes probabilistic dataset 46  the lehner orthology derived dataset 36 and the most accurate of our predictors  the lr400 subset of the predictor considering the expression  orthology  combined and transitive modules   
+the rates estimated for the rhodes and lehner datasets are similar to previous estimates 18  
+the estimated false positive rates for the lr400  rhodes and core lehner are quite similar  an average of 76  fpr for both the lr400 and core lehner datasets and 78  for the rhodes dataset  and well below the overall average false positive rate of 90  estimated for most available human high throughput experimental and prediction interaction datasets 18  
+however  not all proteins encoded by a single gene will necessarily interact with all protein products encoded by a second gene  even if one such protein pair does  
+this is why we describe interactions as a relationship between two proteins  allowing for a more precise description of the interaction  
+to compare our predictions to these datasets  we consider that two genes interact if at least one of their respective protein products interact  
+comparison to other interaction datasets 
+comparison to other interaction datasets  
+the false positive rates shown in panel a were estimated for the lr400 dataset as well as the rhodes  46  and lehner  36  predictions using the method described in  18  55  by comparing them two by two to a reference dataset  
+the number and overlap of distinct proteins  shown in b  and distinct interactions  shown in c  are shown for the lr400 dataset  the rhodes prediction dataset and the june 2006 version of the hprd  
+in figure 6b and 6c  we compare the number of distinct proteins and distinct interactions of the lr400 dataset to those of the rhodes prediction dataset and the june 2006 version of the hprd which was used to train our predictor  
+the rhodes dataset was trained using an earlier version of the hprd  
+as can be seen in figure 6  the intersections between the three datasets considered are low  especially when comparing the interactions  
+as suggested in 18  by making more such datasets available  it will be possible to increase our coverage of the interaction space and determine the most likely human interactions  
+another human interaction dataset has recently become available  the intnetdb 56  
+it was generated by integrating seven different features  four of which involve transferring interactions or characteristics of protein pairs from model organisms to human  in a probabilistic framework  
+interactions were predicted above a tp fp ratio  number of true positives divided by the number of false positives in the test set  of 1  
+using such a threshold  the authors claim to predict 180 010 human interactions  
+depending on the positive to negative ratio used in the datasets  tp fp   1 might correspond to an average posterior odds ratio of 1  
+in contrast  the average posterior odds ratio of our lr400 dataset is above 700  
+in comparison  by using a threshold of tp fp   1 in our test set  we predict over 1 000 000 human interactions  
+independent validation 
+as shown in figure 7  while less than 3  of the protein pairs predicted to interact at posterior odds ratios between 1 and 2 overlap with the hprd dataset used for training  this value increases to over 50  for the highest scoring subsets of the lr400 dataset  
+these highest scoring predictions receive high likelihood ratios of interaction from all four predictive modules and represent the strongest examples of interaction as evaluated by our predictor  
+such examples include interactions that allow the formation of well known protein complexes such as the proteasome  the mcm protein complex involved in the initiation of genome replication  replication factor c  the tbp taf complex  tbp associated factors  and the eif complex  eukaryotic translation initiation factors   
+the highest scoring predictions in the lr400 dataset thus mainly represent interactions present in the hprd dataset as well as interactions between proteins that have strong sequence identity to these known interacting pairs  
+however  as the posterior odds ratio decreases  the overlap between the predictions and the hprd derived training set decreases  
+some subsets of quite high posterior odds have much smaller overlaps with the training set  
+for example  interactions predicted at posterior odds ratios between 128 and 2048 have a 20 to 30  overlap with the training set as shown in figure 7  
+five such validated predictions are reported here  
+overlap of different subsets of the lr400 dataset with the hprd derived training set 
+overlap of different subsets of the lr400 dataset with the hprd derived training set  
+the number of interactions predicted and the proportion of overlap with the training set  which was derived from the hprd  were calculated for subsets of the lr400 dataset of different posterior odds ratios  
+ tcptp was predicted to interact with stat6 at a posterior odds ratio of 4300  
+it has been recently reported that tcptp  the only protein tyrosine phosphatase known to localize to the nucleus  dephosphorylates stat6 in this cellular compartment  which may in turn lead to the suppression of interleukine 4  il 4  induced signaling 57  
+ n wasp and arp3 achieve a predicted posterior odds ratio of interaction of 2700  
+a recent report suggested that the iqgap1 protein can activate n wasp thus changing its conformation and allowing it to bind the arp2 3 complex  which in turn directs the generation of branched actin filaments required for the extension of a lamellipodium 58  
+ the vamp3 vti1a interaction was predicted with a posterior odds ratio of 1518  
+both these proteins are believed to be part of the snare  soluble n ethylmaleimide sensitive factor attachment protein receptor  family of proteins which are involved in membrane fusion events  
+vti1a is a trans golgi network localized putative t snare 59 and vamp3 is an early recycling endosomal v snare 60  
+these two proteins were recently shown to interact  leading to their functional implication in the post golgi retrograde transport step 61  
+ cdk2 and mcm4 were predicted to interact at a posterior odds ratio of 62  
+cdk2 has recently been shown to phosphorylate mcm4  a subunit of a putative replicative helicase essential for dna replication  on two distinct residues  leading to a change in its affinity to chromatin and its enrichment in the nucleolus 62  
+ sam68 and smad2 achieve a predicted posterior odds ratio of 32  
+this interaction has been experimentally demonstrated by large scale yeast two hybrid analysis of the smad signaling system 63  
+our probabilistic predictor therefore not only reproduces and completes well known protein complexes but also identifies novel interactions  a subset of which have been independently validated  
+conclusion 
+the current human protein interaction map is estimated to be only 10  complete 18  
+here  we investigated the prediction of human protein protein interactions in an effort to increase the coverage of the human interactome while simultaneously providing high quality predictions  
+our investigation led us to compare the influence of different training sets on the prediction accuracy  
+the use of randomly generated negative training examples and large negative to positive ratios in the training set generated the most accurate predictors in the context of our model  
+a comparison to other large human interaction datasets revealed the average false positive rate of our dataset to be 76   which is much lower than the overall average for most large scale  currently available  human interaction datasets  experimental and computational  estimated to be 90  18  
+a subset of our novel predictions have been independently validated by identifying recent reports that experimentally investigated and confirmed that these protein pairs do interact  
+we provide all our predictions ranked according to the posterior odds ratio of interaction in additional file 3  
+it is thus possible to restrict the dataset to the highest scoring protein pairs  and only choose for example  protein pairs that have an estimated true positive rate of interaction above 90    
+by making this human interaction prediction dataset publicly available  it is our hope that it will help to identify the most high confidence interactions  leading to a more complete and accurate human interaction map  
+methods 
+datasets 
+in order to investigate the likelihood of interaction of human proteins  62322 human protein sequences were downloaded from the international protein index  ipi  database  version 3 16  64  
+some of these proteins are alternative transcripts of the same gene but can have distinct interaction partners  
+known interactions were downloaded from the human protein reference database  hprd  june 2006 version  15  
+this resulted in 26896 distinct human protein interactions involving 7531 distinct human proteins present in the initial ipi dataset  
+the 26896 interactions from the june 2006 version of the hprd were used as the positive dataset in the training testing of the predictor  
+two different sets of non interacting protein pairs were investigated  the main analysis employed a randomly generated negative dataset but this was also compared to a localization derived negative dataset  
+both non interacting protein datasets were cleaned by removing all protein pairs that came from the positive dataset as well as protein pairs that were annotated as interacting in other databases  dip 65  679 interactions  bind 66  2650 interactions   or predicted to interact in other studies  ophid 67  21815 interactions   
+of the 62322 human proteins from the initial ipi dataset  22889 were characterized by at least one of the features that we considered to predict interaction  see the features section   
+these 22889 human proteins are encoded by 16904 distinct genes and are referred to as the informative protein set  
+the randomly generated negative dataset used for the training and testing of the predictor was created by selecting protein pairs at random from the informative protein set  
+in contrast  the localization derived negative dataset was created by selecting protein pairs from the informative protein set for which the hprd 15 annotates one as being primarily in the plasma membrane and the other as primarily in the nucleus  
+training and testing was performed with 5 fold cross validation  
+in addition  positive to negative ratios of 1 1 and 1 100 were considered  
+the predictions were compared to the literature mined ramani dataset 16  the orthology derived lehner prediction dataset 36 and the probabilistic rhodes prediction dataset 46  
+all three datasets identify the interactions by stating the names and or gene locus ids of the genes that encode the interacting proteins  
+in contrast  we work directly on the protein sequences and so related the gene annotations to our protein identifiers by extracting entrez gene ids corresponding to the ipi protein entries from the ipi cross reference files  for the ipi release 3 24  64  
+ensembl gene identifiers  ensembl 42  were also matched to entrez locus ids  ncbi36  using biomart 68  
+despite this  37714 gene gene interactions were recovered from the rhodes dataset and 6132 interactions from the ramani dataset as well as 64306 and 10454 interactions from the lehner full and core datasets respectively  
+learning method 
+semi na  ve bayes classifiers were used to measure the likelihood of interaction of two proteins given the presence of the features considered  
+this learning method was chosen because it allows the integration of highly heterogeneous data in a model that is easy to interpret and that can readily accommodate missing data  
+the transparency of the method allows the straightforward determination of which features are most predictive of interaction at the level of the whole proteome as well as for individual protein pairs  
+the prediction of protein interaction is a binary problem which can be expressed in bayesian formalism  
+we are interested in determining the posterior odds ratio of interaction of two proteins  given the presence of the features we are considering  
+this posterior odds ratio can be re written using bayes rule  opost   p i f1       fn p  i f1       fn  p f1       fn i    p i p f1       fn p f1       fn  i    p  i p f1       fn  p f1       fn i    p i p f       fn  i   p  i  p i p  i   p f1       fn i p f1       fn  i  oprior   lr 1     fn  where i is a binary variable representing interaction   i represents non interaction  f1 through fn are the features we are considering  oprior is the prior odds ratio and lr is the likelihood ratio  
+if the features considered are independent  the likelihood ratio lr can be calculated as the product of the individual likelihood ratios with respect to the features considered separately  
+in the independent case  the likelihood ratio can be calculated as  lr f1     fn   p f1       fn i p f1       fn  i      i 1n p fi i p fi i   
+the likelihood ratios for the different features considered can be estimated by evaluating the ratio of the proportion of interacting and non interacting proteins for which a particular state of the feature is true in the training set  i e  by determining to which bin of the feature the protein pair belongs  for every protein pair in the positive and negative training sets   
+more precisely  the training step consisted of calculating the respective proportions of positive and negative examples that fall into each bin of the feature s  considered  i e  that have a particular state   
+the likelihood ratio of interaction for a given state is simply the ratio of the proportion of all positives that have that state divided by the proportion of all negatives that have that same state  
+when a particular state of a feature occurs only in positive examples  known interacting proteins   the likelihoods are set to the highest non infinite value of any state for that feature  to avoid infinite values   
+for a detailed calculation of the likelihoods see additional file 4  
+prior odds ratio estimate 
+this subset of interactions contains 36466 distinct interactions involving 5202 distinct proteins  thus resulting in a prior odds ratio of 1 370  
+this is most likely a conservative estimate since a certain proportion of interactions remain unknown and so when more data become available  the prior odds ratio will increase  
+for human proteins  12191 distinct interactions were recovered  involving 5164 human proteins from the september 2005 version of the hprd 15 and 26896 distinct interactions involving 7531 human proteins from the june 2006 version  leading respectively to prior odds estimates of 1 1093 and 1 1053  
+however  taking the subset of 5164 proteins from the september 2005 version that are seen in the june 2006 version  20842 distinct interactions   gave a prior odds of interaction estimate of 1 639  
+thus  between the two releases of the hprd  there was a large increase in the number of interactions for this subset of proteins and this is likely to continue for at least the next few releases  
+as a consequence  a prior odds ratio of 1 400 was used for all work in the paper  which is similar to the estimate for yeast and is likely still an underestimate of the true value  
+features 
+seven distinct features combined into five modules were investigated as summarized in table 1 and described below  
+1  
+expression module 
+expression data were downloaded from the gene expression omnibus 70  
+the gds596 dataset was used which examines gene expression profiles from 79 physiologically normal tissues obtained from various sources 71  
+expression data were recovered for 10642 distinct transcripts in 158 different arrays  2 arrays per tissue   
+pearson correlations were calculated for all 56620761 transcript pairs and correlation values were grouped into 20 bins of increasing co expression  
+2  
+orthology module 
+orthology maps between human and yeast  worm and fly were downloaded from the inparanoid database 72  
+interaction datasets for model organisms were downloaded from the bind 66  dip 65 and grid 69 databases  
+orthology interaction data were classified into 13 bins  
+high  medium and low confidence bins were defined for human protein pairs that have interacting orthologs in either yeast  fly or worm  for a total of 9 bins   
+the high confidence bins were populated by human protein pairs that have interacting orthologs that both achieve an inparanoid score of 1  i e  both proteins involved in an interaction in another organism are respectively the best orthology match for the two human proteins under consideration   
+the medium confidence bins were populated by human protein pairs that have interacting orthologs but only one of the interacting orthologs has an inparanoid score of 1  
+the orthology module has four additional bins  two bin for human pairs that have interacting paralogs in human  a medium and a low confidence bin which use the same definition as above for the model organisms   one bin for human pairs that have interacting homologs in more than one organism  these can be orthologs in yeast  worm or fly  or paralogs in human  and one bin for human pairs that have only non interacting orthologs  
+3  
+combined module 
+this module incorporates three distinct features in a non na  ve bayesian framework  subcellular localization  domain co occurrence and post translational modification co occurrence  
+subcellular localization 
+neighboring compartments were chosen as compartment pairs sharing a high proportion of proteins  as investigated previously 54  
+co occurrence of domains 
+the chi square test was used as a measure of the likelihood of co occurrence of specific interpro domains and motifs 73 in protein pairs  
+chi square scores were calculated for all pairs of domains motifs that occurred in the training data and were then grouped into 5 bins of increasing value  
+additionally  pfam 74 domain pairs known to interact from three dimensional structures 75 were included in the highest chi square score bin  
+when protein pairs contained more than one domain pair  the domain pair assigned to the highest chi square score bin was used to assign a likelihood of interaction  
+post translational modification  ptm  pair co occurrence 
+likelihoods were assessed using a ptm pair enrichment score calculated as the probability of co occurrence of two specific ptms in all pairs of interacting protein pairs divided by the probability of occurrence of both of these ptms separately  ptm_score p ptm i  ptm j  i p ptm i  i    p ptm j  i  where ptm i  and ptm j  are distinct ptms and i is the set of all interacting proteins that were used to train the predictor  
+the annotations of ptms in human proteins were downloaded from uniprot 76 and hprd 15  
+ptm instances described as  predicted    probable  or  possible  were excluded  leaving 3439 distinct proteins with ptm annotations in the training set  
+the ptm pair enrichment scores were grouped into 4 bins of increasing value  
+the localization  co occurrence of domains  and ptms were considered simultaneously to measure their predictive power in assessing the likelihood of protein interaction  
+to do this  all possible combinations of the 4 localization bins  5 chi square domain co occurrence bins and 4 ptm_score bins were investigated and are referred to as the combined module  
+4  
+disorder module 
+it has been suggested that unstructured regions of proteins are often involved in binding interactions  particularly in the case of transient interactions 77  
+protein intrinsic disorder was predicted for all proteins considered by using the vsl2b predictor 78  
+the disorder score for protein pairs was then calculated as the sum of percent disorder for each protein of the pair  
+disorder scores were grouped into 6 bins of increasing value  
+the expression  orthology  combined and disorder modules are referred collectively as the group a modules  
+likelihood ratios for each of the group a modules are illustrated in figure 1a  see additional file 4 for complete likelihood ratios for every possible state of these modules and for detailed calculations of these likelihood ratios   
+5  
+transitive module 
+the transitive module works on the premise that a pair of proteins is more likely to interact if it shares interacting partners  
+it does this by considering the local topology of the network predicted by the integration of the group a modules as depicted in figure 2  
+thus  the transitive module takes as input the product of the likelihood ratios of all other modules considered by the predictor  as illustrated in figure 1b   
+for each pair of proteins in the training set  the product of the likelihood ratios from all other modules  referred to as the preliminary score  ps  in figure 1  was calculated for all protein pairs neighboring the pair  i e  all protein pairs which involve one protein from the initial protein pair under study and for which it is possible to calculate such a score   
+all preliminary scores above 10 were kept  
+this parameter was determined empirically  
+a neighborhood topology score t was then calculated as follows  
+transitive module hypothesis 
+transitive module hypothesis  
+t    e   ecse1  ei ec   ej ec  where ec is the set of edges that connect proteins i and j to their common interactors  ei is the set of edges that involve protein i  se is the score  likelihood ratio  of edge e and ei ec refers to the set difference of ei and ec  
+for a given set of neighbors  t increases as the interactions with these neighbors become more likely  as the sum of se increases   
+additionally  the topology score t of a pair of proteins increases as the proportion of likely interactors that these two proteins share increases  
+the topology scores were grouped into 5 bins of increasing value  
+it only considers the preliminary scores of its neighbors and so is truly based on the local network topology around that protein pair  
+accordingly  the likelihood ratio the transitive module outputs for a given protein pair is independent of the likelihood ratio calculated by the group a modules for this same protein pair  
+correlation analysis 
+the pearson correlation between pairs of modules was estimated by taking 150 samples of 10000 protein pairs each and calculating the pearson correlation of the likelihood ratios for the two modules considered  for each sample  
+the reported correlation values are the average of the 150 experiments  
+accuracy measurements 
+the accuracy of the predictors was measured by performing five fold cross validation experiments in which the datasets were randomly divided into five non overlapping sets  four of which were used to train the predictor while the fifth was used to test the prediction accuracy  
+the accuracy reported is the average measured for all combinations of training and testing sets using these five sets  
+testing was done by predicting the total likelihood scores for all protein pairs in the test set using the models computed in the training phase and then counting the number of pairs that were well predicted  
+we used the area under partial roc curves as a measure of accuracy  
+receiver operator characteristic  roc  curves plot the true positive rate versus the false positive rate over their full range of possible values  
+in some circumstances  it is more informative to use partial roc curves  rocn curves  which illustrate the number of true positives identified by the predictor that score higher than the n highest scoring negatives  plotted for all values from 0 to n  
+there are many more negatives than positives in our datasets and this is also thought to be true for the full protein interaction networks we are modeling  
+since the aim is to identify the largest number of true interacting pairs while leaving out as many non interacting pairs as possible  it is most informative to measure the performance of the predictor under conditions of very low false positive rates  
+accordingly  roc50 and roc100 curves were analyzed because given the size of the datasets  these curves consider all the protein pairs predicted to have a posterior odds ratio above 1 0  for all the predictors investigated  
+the area under roc curves is often used as a summary measure of accuracy  
+for rocn curves  it can be calculated as auc rocn   1nt       i 1nti  where i takes on values from 1 to n  t is the total number of positives in the test set and ti is the number of positives that score higher than the ith highest scoring negative  
+a novel ensemble learning method for de novo computational identification of dna binding sites 
+abstract 
+background 
+despite the diversity of motif representations and search algorithms  the de novo computational identification of transcription factor binding sites remains constrained by the limited accuracy of existing algorithms and the need for user specified input parameters that describe the motif being sought  
+results 
+we present a novel ensemble learning method  scope  that is based on the assumption that transcription factor binding sites belong to one of three broad classes of motifs   non degenerate  degenerate and gapped motifs  
+scope employs a unified scoring metric to combine the results from three motif finding algorithms each aimed at the discovery of one of these classes of motifs  
+we found that scope s performance on 78 experimentally characterized regulons from four species was a substantial and statistically significant improvement over that of its component algorithms  
+scope outperformed a broad range of existing motif discovery algorithms on the same dataset by a statistically significant margin  
+conclusion 
+scope demonstrates that combining multiple  focused motif discovery algorithms can provide a significant gain in performance  
+a user friendly web interface  java source code and executables are available at http   genie dartmouth edu scope  
+backgound 
+the computational discovery of dna binding sites for previously uncharacterized transcription factors in groups of co regulated genes is a well studied problem with a great deal of practical relevance to the biologist  since such binding sites provide targets for mutational analyses  for reviews see 123   
+the position specific variability of transcription factor binding sites makes their de novo identification challenging  
+many computational motif finding methods are based on the observation that transcription factor binding sites occur more often than expected by chance in the upstream regions of the set of genes regulated by the same transcription factor 1  
+the problem thus simplifies to the identification of overrepresented motifs in a given set of upstream sequences  
+motif finding programs rely on a search algorithm to optimize a motif model  an abstract representation of a set of transcription factor binding sites   
+most recent programs represent motifs as position weight matrices  pwms   which record the frequency of each base at every position in the motif  
+other motif finding programs have relied on the use of consensus motif models  in which every base is represented by a letter of the 15 letter iupac code  which accounts for degeneracies as well as single bases  or k mismatch motif models  in which a non degenerate word with at most k allowed mismatches is used to represent the word   
+regardless of the motif model used  a search for all overrepresented motifs of any length and degree of degeneracy leads to a dauntingly large search space  
+thus  motif finding algorithms restrict their search space by using simplified motif representations  employing heuristic search strategies that are prone to local optima  or invoking additional parameters to limit the search space and thereby pass some of the optimization process off to the user 3  
+selection of the correct settings for these parameters is a crucial step in motif finding  and is often assumed to be the domain of experts  
+in a recent evaluation  hu and colleagues 4 compared the performance of five motif finders on a single prokaryotic genome  systematically exploring the effects of nuisance parameters  including expected motif length and number of occurrences  
+every motif finder they tested was found to be sensitive to values used for these parameters  
+even assuming that optimal parameter settings exist for a motif finding program for each specific situation  for the typical biologist looking to identify motifs in a set of uncharacterized sequences  acquiring such expertise is an onerous task  
+nuisance parameters complicate the interpretation of performance comparisons as well  
+a recent large scale performance comparison between thirteen different motif finding tools used expert knowledge in setting the parameters for every program 5  
+several of the programs contributing to the performance comparison were run with different parameter settings for each regulon  and in some cases  motifs were hand filtered as a post processing step  
+such performance comparisons evaluate not just algorithms but also the expertise of the users  making it difficult for a first time user to select a motif finder on a principled basis  
+a key result of the tompa  et al  study was the finding that all of the motif finders had roughly the same average performance under a wide range of conditions and test statistics 5  
+this finding was particularly notable because the motif finders studied employed a wide range of motif representations  scoring functions and search strategies and all were operated under the most favorable conditions possible  
+although the average performance of the programs did not differ significantly  the authors found that  for each pair of programs  each program performed better than the other on some subset of the data 5  
+this diversity of performance has led a number of authors to speculate that ensemble methods  comprising multiple motif finders  may lead to improvements in accuracy 158  
+ensemble methods  well known in the machine learning community 9  are typically composed of multiple methods comprising different search strategies  or the same search strategies with different initiation settings or random restarts  with a unified objective function  
+the final predictions are chosen from the ensemble of methods by a learning rule  which may be as simple as finding the maximum score from all the methods  or as complex as optimizing a weighted scoring scheme from among the methods  
+the construction of this learning rule is key to the performance of an ensemble learning method  as the performance of an ensemble method with an ineffective learning rule will be the average of the performance of its component algorithms  
+this observation serves to illustrate the challenges to the construction of an effective learning rule  
+to the best of our knowledge  only one study to date has explored ensemble learning in motif finding  
+hu  li and kihara 4 described a simple ensemble method wherein the component programs were random restarts of the same stochastic algorithm  such as gibbs sampling or expectation maximization  and the learning rule was a voting scheme in which the results of each random restart cast a  vote  for which positions in the dna sequence should be part of the final reported motif  hereafter  we refer to this as the hlk method   
+under this scheme  the authors found that ensemble learning resulted in an increase in performance ranging from 6 to 45   
+the hlk voting method provides a framework wherein a number of different motifs finders can be combined under the heuristic that if several motif finders make the same  or overlapping  prediction  then that prediction is accurate  
+here we present a novel ensemble motif finder based on a different conceptual approach  
+thus  our ensemble uses three specialized algorithms whose search spaces restrict them to each of these three local optima  beam for non degenerate motifs  prism for degenerate motifs and spacer for bipartite motifs   
+the results of these component algorithms are then combined using a learning rule that is simply the maximum score returned by each component algorithm  
+to make comparisons possible  the motif scores returned by each algorithm are penalized according to the complexity of the motif  
+in addition  we find that scope performs favorably compared to a diverse range of existing methods and is robust to the presence of extraneous sequences in its input  
+results 
+algorithm 
+scope takes as input a set of sequences u that are upstream of a set of genes g that are thought to be coregulated  
+the ultimate goal of a motif finder is to identify the specific subsequences    in u that act as binding sites for the transcription factor s  that regulate g  
+in practice  sets of binding sites are represented using a motif  
+we have found that simple consensus motifs over the full iupac alphabet  a 15 letter code consisting of the bases a t c g and all possible combinations  provide enough representational power to adequately describe     while still allowing for an efficient search 34  
+scope has three component algorithms  beam  prism and spacer  which search for non degenerate  short degenerate  and long  highly degenerate and  gapped  motifs  respectively  figure 1   
+each motif is scored considering one or both strands and the motif is marked to indicate which calculation scores higher  
+the results of the three algorithms are merged and sorted  
+artifactual motifs  whose significance can be accounted for by higher scoring motifs that they overlap  are identified and removed  for details  see additional file 1  section s1   
+flow diagram for scope 
+flow diagram for scope  
+beam and spacer are run independently  prism runs on the top 100 motifs output by beam  
+for yeast  whose upstream regions are standardized to 800 bp   beam and prism use the overrepresentation ks objective function  so ks   while spacer s slower running time requires the simpler overrepresentation objective function  so   
+the top 5 motifs from spacer are rescored using the combined objective function  
+the results of each program are sorted by sig and lower scoring motifs that substantially overlap higher scoring motifs are removed  
+the filtered lists of motifs from the three programs are finally merged by sig score  
+repetitive motifs are identified and removed during all stages  
+each of scope s three component algorithms seeks to maximize the same objective function over a different class of motifs  
+let m be a random variable over the full space of iupac words  
+the statistical significance p m   m  of a particular word m is determined by the distribution of m over the entire space of upstream sequences in the given species  
+in general  we seek to maximize  log p m   m    
+for example  it is quite likely that there exists an extremely long sequence that is entirely unique to u  
+such a unique sequence would appear to be highly significant  until we consider that we have in effect searched all possible sequences until we found one that is unique  
+to correct for this multiple hypothesis testing problem  van helden et al  14 proposed using a bonferroni correction  in which p m   m  is penalized by the number of motifs n of length  m   
+sig    log p m   m   n   
+thus  if m    acgt   n   44  
+we employed this same definition of sig for beam  our algorithm that searches for non degenerate motifs 10  
+defining n for degenerate or bipartite motifs raises a significant conceptual challenge  
+van helden et al  14 chose to use the same definition  but limited their search to a small number of degenerate bases  
+building on this intuition  one can argue that the characters   a   and   not a    iupac character   b    are roughly equivalent  while   a or g    iupac character   r    is different from   a   as there are six ways to define a combination of two bases  while only four ways to define a combination of one base or three bases  
+for motif m   m1m2   mn  we can therefore define n       choose 4   mi    where  mi  is the number of dna bases covered by the iupac character mi  
+in the case were both orientations of the motif are considered  this number is adjusted to account for palindromes  
+the resulting sig score thus penalizes motifs based on their length and degeneracy  enabling fair comparisons to be made between different motif classes  
+testing 
+evaluation of objective functions used by scope 
+each component algorithm in scope efficiently searches its restricted search space  keeping scope s runtime low  average runtime on our datasets were about one minute   
+this efficiency allowed us to explore several objective functions for scoring the statistical significance p m   m  of motifs  
+these objective functions were as follows  position bias  based on the kolmogorov smirnov  or ks  statistic   overrepresentation  a poisson based measure based on how often a motif occurs in u  and coverage  a poisson based measure based on how many upstream sequences contain the motif   
+for precise definitions  see methods  
+to establish which objective function  or combination of functions  was most suitable  we tested each objective function independently of scope  using a subset of the s  cerevisiae dataset  
+the measure used to assess the biological relevance of a motif was accuracy  a measure of the nucleotide level overlap between a motif and the known binding sites  for details see methods   
+from each regulon from the scpd database 15 we selected ten six mers at random from the upstream sequences and ten six mers at random from the collection of known binding sites for that regulon  
+for each of these sampled six mers  we calculated accuracy with respect to the known binding sites  
+we also calculated the sig score for each six mer  using four objective functions  ks  overrepresentation  coverage and combined ks overrepresentation   
+we then plotted sig versus accuracy for each objective function  to determine which objective functions correlated most strongly with biological relevance  figure 2   
+correlation between accuracy and sig scores 
+correlation between accuracy and sig scores  
+non degenerate 6 mers from s  cerevisiae were scored according to sig scores based on  a  overrepresentation   b  overrepresentation ks   c  coverage and  d  ks metrics of statistical significance  
+the 6 mers were randomly sampled from both the upstream regions and the known binding sites to ensure coverage or a wide range of accuracy  
+the x axis plots the bonferroni corrected and log2 transformed sig score for each metric  
+the red lines indicate the 95th sig percentile  
+these plots demonstrate that overrepresentation is a closer approximation to biological relevance than coverage or ks alone  
+adding ks to overrepresentation modestly improved the correlation by 13   as compared to overrepresentation alone  to r2   0 28  
+to assess the degree of class separation achieved by the two objective functions  we ranked the sampled six mers by sig score  and calculated the percentage of motifs with high sig scores  in the 95th percentile and above  that possessed a reasonable degree of overlap with the known binding sites  accuracy     0 10   
+by the overrepresentation measure  74 4  of high scoring motifs had accuracy   0 10  while 79 1  of high scoring motifs by ks overrepresentation had accuracy     0 10  
+this analysis suggests that more complex objective functions may provide a better estimate of biological significance than the overrepresentation objective functions commonly used  
+we thus chose to run scope using the overrepresentation ks combined objective function on the s  cerevisiae dataset  in which the upstream regions are of fixed length  
+we used the overrepresentation objective function for the other species  as our upstream definitions for those species were of variable length due to the available annotations  
+because identifying the genomic positions of highly degenerate bipartite motifs is prohibitively slow  initial rankings of motifs for spacer were computed using the overrepresentation objective function  and the overrepresentation ks objective function was used only to produce the final ordering and scores  
+although the ks objective function is computationally expensive  linear in the frequency of the motif in the genome   the scope algorithms all aggressively limit the search space  thereby making the use of this objective function     and exploration of other complex objective functions     possible  
+the surprisingly low correlations between sig and accuracy may indicate that the objective functions employed by motif finding programs are only a first approximation to biological significance  
+further research into more biologically accurate objective functions may yield better performance for motif discovery algorithms  
+evaluation of scope performance and ensemble learning scheme 
+we first assessed the performance of the optimized scope framework on synthetic datasets  for details  see additional file 1  section s2   
+scope performed well on the synthetic datasets  correctly identifying 92  of planted motifs that are over represented relative to background  those motifs with a sig score of greater than 5  figure 3   
+performance at different overrepresentation sig values on synthetic data 
+performance at different overrepresentation sig values on synthetic data  
+a motif was  found  if the top scoring motif returned by scope overlapped the planted motif by at least 50   
+a sig value of 0 implies that one motif of that significance is expected by chance  
+while synthetic test sets are useful in algorithmic development and initial testing  the results of such tests must be taken with a grain of salt  as they are highly dependent on the model used to generate the test sets 6  
+we therefore tested scope on an extensive array of regulons with known binding sites  for details of datasets  see additional file 1  section s3   
+we ran scope on each regulon and  following the scoring methodology used by sinha and tompa 6  we computed the accuracy for each of the top three motifs reported by scope against the known binding sites  
+the motifs reported by scope overlap to a large extent with the published cis regulatory elements  as discussed in additional file 1  section s3  a difference of one base pair length between the reported motif and the published cis regulatory element results in an expected accuracy of about 0 25   
+scope was run on 78 regulons from s  cerevisiae  b  subtilis  e  coli and d  melanogaster  
+on these datasets  scope s average accuracy was 0 28  0 29  0 16  and 0 08 respectively  
+scope s reported accuracy was significantly higher than any of its component algorithms  table 1   
+indeed  we found that scope increased accuracy by 31   44  over beam  prism or spacer alone  
+this improvement was achieved by combining beam s high positive predictive value  ppv  with prism s high sensitivity  figure 4   
+sensitivity is defined here as the fraction of the known binding sites  at the nucleotide level  predicted by the motif finder  and ppv is defined as the fraction of nucleotides predicted by the motif finder that correspond to the known binding sites  see methods for details   
+summary results for performance comparisons between scope and its component algorithms  on all regulons  
+a  win  is a regulon for which a program had the highest accuracy and that accuracy was at least 0 10  
+programs in a two way tie are credited with 0 5 wins each  so by construction  scope can at best share a win with one of the other programs  
+a perfect winner take all ensemble method would have the same number of wins as all the component algorithms combined  
+a  clear win  loss   is a regulon for which scope s accuracy was at least 0 10 higher  lower  than the other program  
+the p value reported for the paired t test was bonferroni corrected to account for multiple  three  comparisons  
+average and standard error of sensitivity and ppv for the component algorithms of scope on all 78 regulons 
+average and standard error of sensitivity and ppv for the component algorithms of scope on all 78 regulons  
+bars represent standard error  
+to provide a basis for evaluating the performance of scope s learning rule  we constructed an ensemble learning method  referred to here as baseline  from the results of beam  prism and spacer  by randomly selecting one of the accuracies from these three programs for each regulon  
+over 120 000 trials  baseline s average performance on this dataset was 0 176 with a standard deviation of 0 013  
+baseline s average score never exceeded that of scope  p   8 25    10 6   
+when compared to its component algorithms  scope picked the highest accuracy motif in 66  of the cases  as opposed to 33  for a random selection between three algorithms   
+these results suggest that scope s learning rule is highly effective  though it may certainly be improved further  
+of course  scope s learning rule is extremely simple  and more complex learning rules may allow scope to approach its theoretical upper bound  
+one rule that may prove effective is to weight the output of each algorithm according to  for example  the frequency of occurrence of each class of motif  non degenerate  short degenerate or long degenerate  in the species or by learning the appropriate weights on a representative training set  creating  in effect  a na  ve bayesian network  
+the training of a more complex learning rule must  however  be performed in a cross validation framework  and the size of the available dataset of regulons will place a practical limit on the complexity of the learning rule that can be devised  
+comparison with other motif finding programs 
+to provide a frame of reference for scope s performance  we ran ten other popular motif finders on these datasets  for details and references see table 2   
+we ran all programs directly from their websites  leaving all parameters at their defaults  
+the only parameter that we specified  where available  was the species from which the background sequences were derived  
+thus  the results of this performance comparison may be interpreted as a comparison against other motif finders when those motif finders are run using their default values  

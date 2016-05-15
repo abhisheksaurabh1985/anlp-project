@@ -1,0 +1,813 @@
+recently  a computational study addressed this question and reported that no trna gene for unknown amino acid was found in genome sequences available  
+however  no promising candidate for the 23rd amino acid was detected  and only one novel selenoprotein was predicted  
+our result suggests that the unknown amino acid encoded by stop codons does not exist  or its phylogenetic distribution is rather limited  which is in agreement with the previous study on trna  
+stop codon readthrough is a phenomenon in which the translation process does not terminate at a stop codon  and an amino acid is inserted there instead 12  
+in some cases  the inserted amino acid is not one of the 20 amino acids but a noncanonical one  
+they analyzed 146 prokaryotic genomes  but no likely trna of the novel amino acid was detected  
+actually  trnasec and trnapyl have unusual secondary structures 515 and often escape detection by programs without special consideration  
+lobanov et al  thus developed a sensitive search method to deal with this problem  but they also admitted that it would fail to identify highly unusual trnas  
+however  this condition is not sufficient  since two major problems remain   pseudogenes and two adjacent genes  
+in contrast  if the iorf consists of two adjacent genes  many hits that do not cover the inframe stop codon will be found  
+since pseudogenes are less conserved  and sequencing errors are relatively rare events  they will not have homologous iorfs in other species  
+even if they do  the position or type  uaa  uag or uga  of their inframe stop codons will not coincide  
+in other words  species specific readthrough genes are not in the scope of this study  
+based on this observation  each iorf was required to have    i  at least one homolog from other organisms that covers the inframe stop codon and  ii  no homolog that does not cover the stop codon  
+instead of the whole length of the amino acid sequence  a window of 101 residues centered at the inframe stop codon was used as a blast query  
+whether the codon aligned to the inframe stop codon is a nonsense codon or not was neglected at this stage  
+an iorf was discarded if there were any blast hits that do not cover the inframe stop codon  
+the three families we failed to find were selw like protein  peroxiredoxin and thiol protein disulphide oxidoreductase  
+the reason why the two other families were not detected is more complex  
+the cluster was thus discarded because of an apparent lack of stop codon conservation  
+hesb family was not clustered into one family  because their sequences were too short and diverged  
+selenoprotein families we failed to detect because of nonconserved location of stop codons 
+selenoprotein families we failed to detect because of nonconserved location of stop codons  
+the genome annotation of m  acetivorans also includes several amber containing genes that were absent from our prediction result  
+the reason why they were not detected is that only one species in our dataset had an amber containing form of these proteins  
+the successful detection of many known proteins is encouraging  because our method relies only on general properties of proteins that contain stop codon encoded amino acids  but not on specific features of selenocysteine or pyrrolysine  
+the n terminal part of the sequence contains five cxxch heme biding motifs  while the c terminal part has no similarity with any characterized proteins  
+this is because the inframe stop codons of these proteins are exclusively tga  and all of the above organisms possess selenocysteine insertion machinery  data not shown   
+if they are true selenoproteins  this protein family becomes a rare instance of selenoprotein that lacks non selenocysteine homologs  
+however  computational analysis of sequences immediately downstream of the inframe stop codons failed to identify secis elements  which is a hallmark of selenocysteine containing genes  
+in contrast to the first cluster  no homolog was identified from other species  
+this cluster is probably a false positive and not readthrough proteins  
+in summary  although a possible selenoprotein was newly identified  there was no promising candidate for an unknown amino acid encoded by a stop codon  
+because we have no a priori knowledge about the 23rd amino acid  cutoff thresholds for the filtering procedures were determined based on the known readthrough proteins  
+red circle  an organism with pyrrolysine  blue  selenocysteine  yellow  both pyrrolysine and selenocysteine  white  neither pyrrolysine nor selenocysteine  
+when top ten organisms were examined  only gluconobacter oxydans was an organism not known to have stop codon encoded amino acids  
+because it seems unlikely that an insertion system of novel amino acid evolves solely for transposable elements  this organism cannot be considered as a good candidate of the 23rd amino acid  
+however  the result agrees with the filtering dependent analysis that no candidate of the novel stop codon encoded amino acid is detectable in the current dataset  
+however  since the target of this study is the 23rd amino acid  and there is no a priori knowledge  only general properties of stop codon encoded amino acids can be used for prediction  
+however  both of them did not apply their methods to search for novel amino acids  
+therefore  the question of the 23rd amino acid has not been investigated from the viewpoint of coding sequences  
+additionally  the previous methods cannot effectively discriminate pseudogenes from readthrough genes  
+the previous methods also assume that proteins with stop codon encoded amino acids will have non readthrough homologs  i e   homologous proteins that do not have inframe stop codons   
+for example  pyrrolysine containing monomethylamine methyltransferases adopt tim barrel fold 6  but their primary sequences do not exhibit detectable similarity to other tim barrel proteins because of evolutionary divergence  
+dimethylamine methyltransferases also lack non readthrough homologs  
+therefore  it is important not to assume non readthrough homologs for exploring novel candidates  
+the method reported here is unique in that it does not assume non readthrough homologs  
+the most likely explanation is that the 23rd amino acid does not exist  or its distribution on the tree of life is rather limited  
+yet another possibility is that the 23rd amino acid exists but is not encoded by stop codons  
+zhang et al  20 examined the validity of this assumption using a secis based method and concluded that selenoproteins without cysteine homologs will be extremely rare  
+therefore  selenoproteins that lack cysteine homologs will be scarce  as previously reported  
+the result reported here is in agreement  but it is not conclusive  
+at least  only one experimentally confirmed example from a pathogenic strain of escherichia coli 23  whose genome is not yet determined  does not obey this rule  
+although many of the currently known selenoproteins and pyrrolysine proteins were successfully detected  no candidate for the 23rd amino acid was discovered  
+moreover  it does not assume the occurrence of non readthrough homologs in the public databases  
+if an iorf matched any protein coding genes  e value   10 3  and their reading frames did not coincide  the iorf was discarded  
+however  if there were any hits  e value   10 5  that did not cover the inframe stop codon  the iorf was discarded  
+if the location or type of stop codons was not identical  the cluster was discarded  
+if we measure purifying selection for amino acid sequences by the ratio of nonsynonymous to synonymous substitution rates  dn ds   a protein with a stop codon encoded amino acid will indicate the sign of selection  while cns will not  
+even if both the upstream and downstream regions of the inframe stop codon code proteins  they may be two adjacent genes instead of a readthrough protein  
+to enhance sensitivity of the filters  the whole length of an iorf was used as a blast query instead of the partial sequence  and the size of the blast database was increased from the 191 nonredundant genomes to the 328 complete genomes in genomenet and 246 draft genome sequences downloaded from genbank in may 2006  
+therefore  in an ideal situation the presence or absence of the 21 residues in alignments will be synchronized  
+using a conservative threshold  our most accurate predictor identifies 37606 human interactions  32892  80   of which are not present in other publicly available large human interaction datasets  thus substantially increasing the coverage of the human interaction map  
+as such  all combinations of the group a modules can be used to predict interaction in the presence or absence of the transitive module  
+in the absence of the transitive module  the preliminary score is used as the final likelihood ratio output by the predictor  
+if the transitive module is not considered  the final likelihood ratios assigned to all protein pairs is the preliminary score  ps   
+protein pairs that have a posterior odds of interaction above 1 are more likely to interact than not to interact  thus providing an obvious threshold to predict interacting proteins  
+however  since the highest likelihood ratio for the expression datasets that we consider is 33  they are not sufficient on their own to predict interacting protein pairs with a posterior odds ratio above 1  
+this is not surprising as the transfer of interacting orthologs  known as interologs 33  from one organism to another is a popular method to predict interactions  see for example 3448   particularly in the case of organisms like human for which only a small proportion of interactions are known  
+this is not surprising as previous studies have indicated that quite stringent joint e values must be used to transfer interactions safely between organisms 3435  
+these features were originally investigated separately  as shown in figure 3  but their combination into one module that considers all dependencies between them achieves higher accuracy  data not shown  and higher likelihood ratios  as can be seen by comparing to figure 1  while still being computationally feasible  
+four possible localization states were considered for protein pairs   same compartment  neighboring compartments  different non neighboring compartments and absence of localization annotation  more details are given in the methods section   
+this module cannot be used alone as it requires as input the output of at least one group a module  
+if the modules were not independent  some likelihood ratios would likely be overestimated  particularly for protein pairs that achieve simultaneously high likelihoods for non independent features  
+protein pairs predicted to have a posterior odds ratio below 1 0 have an estimated true positive rate below 50  and thus are more likely not to interact than to interact  
+these protein pairs are therefore not of interest in this context  
+individual modules do not achieve high scores for the areas under the roc50 and roc100  
+in fact  all roc50 auc values achieved by individual modules are below 0 025 and the expression and disorder modules do not predict any protein pairs  positive or negative  above a posterior odds ratio of 1  which is expected as the highest likelihood ratios they achieve are lower than 400  see figure 1a   
+however  the disorder module does not contribute significantly to the prediction as predictors that consider it do not  in general  do better than their counterparts that do not use it  
+however  this appears to add more noise to the prediction without increasing the accuracy  
+once again  the disorder module does not contribute positively to the prediction  
+its inclusion does not increase any of the measures of accuracy considered  
+in addition  several groups use localization derived negatives  i e  protein pairs that are not annotated as being localized to the same cellular compartment  rather than randomly chosen negatives  see for example 374346   
+ratios greater than 100 were not considered because they are computationally infeasible given the size of our datasets and the architecture of the predictor  
+when equal numbers of positives and negatives are used in training  the diversity that exists in the non interacting protein pair space may not be captured  thus resulting in misleading likelihood ratios for the predictive modules  
+the effect of localization derived negatives rather than randomly chosen negatives was also investigated to see if it would increase the prediction accuracy  
+however  one can argue that localization derived negatives might not be able to capture the full diversity of the non interacting protein space since many proteins in the same cellular compartment do not interact  
+such predictors may not generalize well when predicting on cell wide protein pairs which consist not only of non colocalized non interacting pairs but also numerous protein pairs that do not interact but are present in the same cellular compartment  
+the combined module for these predictors only considers domains and ptms but not subcellular localization as this would result in using this feature both in the selection of the training set and as a feature predictive of interaction  
+this is most likely due to the fact that the localization derived negative trained predictor cannot take full advantage of the transitive module  since the network resulting from the predictions of the group a modules likely does not sample the whole protein pair space well  
+to do this  all protein pairs were considered that achieve an estimated posterior odds ratio   1 when the eoct predictor was trained on the full datasets without cross validation  
+however  as previously noted  the highest likelihood provided by this module is 33 and thus the expression module cannot predict interaction on its own  
+when either of these two modules is absent  fewer than 12500 interactions are predicted  
+as the majority of the lr400 interactions are derived from the combined and transitive modules  it is possible that the method is identifying a large subset of interactions that are not common to previous human protein interaction datasets  
+the ramani interaction dataset that was automatically extracted from the literature 16 as well as all new interactions present in the october 2006 version of the manually curated hprd database 15  but none of the interactions also present in earlier versions of the hprd which were used to train our predictor  were taken as reference datasets  
+we estimated false positive rates for each of the datasets by comparing them two by two to one of the reference datasets  thus generating 4 to 6 different estimates of false positive rates for each computational dataset  as shown in figure 6a  the two lehner datasets were not compared to each other  which is why they have fewer fpr estimates   
+it should be noted that the rhodes  lehner and ramani datasets annotate interactions as a relationship between human genes and not their protein products directly  
+both the rhodes dataset and our lr400 dataset predict interactions involving many proteins that are not even present in their positive training set  the hprd   
+many of the predictions in these two datasets concern protein pairs and proteins that are not present in other datasets  suggesting that they cover different regions of the human interaction space  
+we do not compare our predictions to this dataset because such a threshold of tp fp   1 does not correspond to a posterior odds threshold   1  
+we do not believe that the quality of this large number of predictions is high enough to warrant their publication since the great majority of these protein pairs achieve a posterior odds ratio below 1  
+although the overlap between the lr400 dataset and the hprd derived positive training set is below 10  as shown in figure 6c  the proportion of interactions common to these two sets is not equally distributed for all posterior odds ratios of interaction values  
+although many of these novel predictions have not been previously investigated in the literature  there exists experimental evidence supporting a subset of these predictions which is not present in the june 2006 version of the hprd used to train our predictor  thus providing independent validation of our method  
+by considering several different types of orthogonal and quite distinct features including expression  orthology  combined protein characteristics and local network topology  we predicted over 37000 human protein interactions and explored a subspace of the human interactome that has not been investigated by previous large interaction datasets  
+duplicate interactions and self interactions were not considered  
+additionally  some proteins were not recovered in the conversion between different identifiers  
+some gene gene entries were not recovered in the conversion between different identifiers  or due to the deletion or replacement of some entrez locus ids  
+if the features are not independent  all possible combinations of all states of these features must be considered  which can be computationally quite intensive  
+additionally  when no data are available for a specific feature  for a given pair of proteins   the likelihood of the feature is set to 1 0  
+the prior odds ratio  oprior  is difficult to estimate because we do not know all the true interactions  even for a small subset of proteins  
+the prior odds ratio of interaction for yeast was estimated by combining all protein protein interactions  but only those related to direct physical interactions  and no entries derived by synthetic lethal type experiments  from the bind  dip and grid databases 656669  
+accordingly  it is reasonable to conclude that there are not enough known human interactions to calculate a realistic and stable estimate of the prior odds ratio of interactions for human  
+the low confidence bins were filled by human protein pairs that have interacting orthologs according to inparanoid but neither achieves a score of 1  i e  neither is the best match for the two human proteins under consideration   
+pslt  protein subcellular localization tool  subcellular localization predictions 54 were used to classify protein pairs in one of four groups   pairs of proteins predicted to be in the same compartment  pairs of proteins predicted to be in neighboring compartments  cytosol nucleus  endoplasmic reticulum golgi  golgi cytosol  cytosol plasma membrane  and plasma membrane secreted   pairs of proteins predicted in different non neighboring compartments and pairs of proteins for which there were no localization predictions  
+the transitive module investigates whether two proteins  such as i and j  that share many common interactors and have few additional interactors that are not common to both proteins are more likely to interact than two proteins  such as i  and j   that share few common interactors  
+it should be noted that the neighborhood topology score calculated for a given protein pair does not consider the preliminary score assigned to that protein pair  
+samples of the protein pair space were taken instead of considering the whole space as this was more computationally tractable  
+by building on components that efficiently search for motifs without user defined parameters  scope requires as input only a set of upstream sequences and a species designation  making it a practical choice for non expert users  
+program parameters  such as motif length  number of occurrences and orientation  that cannot be reasonably specified by the user without prior knowledge about the true binding sites are referred to as nuisance parameters 4  
+guidance on the specific parameter settings to use for given motif finding situations is not provided in most publications presenting motif finders  
+previous studies over smaller numbers of motif finders have found that no program clearly stands out as superior to the others and each program outperforms all others on some subset of the regulons 678  
+in this context  we note that tompa et al  5 found that  although every motif finding program tested had some regulons on which its performance was clearly superior  it was not possible a priori to predict which motif finder represented the best choice under any given set of conditions 5  
+rather than randomly restarting the same search algorithm or comparing multiple search strategies that all search for the same global optimum  and are potentially vulnerable to the same local optima   our algorithm assumes that the   biological significance surface   primarily consists of three local optima  and that one of these peaks represents the global optimum  
+we have previously demonstrated that the greedy search strategies employed by each of these methods allow them to reliably search their respective motif domains without the use of nuisance parameters  as the algorithms themselves efficiently optimize the parameters that are typically forced on the users 101112  
+the resulting ensemble algorithm  scope  has no nuisance parameters and performs significantly better than its component algorithms  
+while alternative representations  such as position weight matrices  pwms  are more expressive  their heuristic searches are prone to local optima and often do not perform well in practice  34111213   
+for bacteria and drosophila  upstream regions are defined to be the intergenic region upstream of each gene  thus  the ks objective function is not used  
+all values of m are not  however  equally likely a priori  
+in contrast  we have proposed that all characters should not be treated equally  but should be penalized in proportion to the information provided by them 1112  
+by this logic    acgt   will not be penalized differently from   acnnnngt    as both have the same number of bases that contribute any information to protein dna binding  
+indeed  previous studies have reported little or no correlation between the significance measures of various motif finders and measures of accuracy 416  
+different sig values were achieved by varying the number of upstream regions  the number of motifs per upstream region  and the number of extraneous upstream regions without planted motifs  
+an ensemble motif finder with a learning rule that is no better than random will provide an accuracy that is equal to the average of its three component algorithms  
+nuisance parameters are parameters that cannot be precisely defined without knowledge of the true binding sites  such as motif length  number of occurrences and orientation   
+scope has no user adjustable parameters  although its component algorithms do contain a number of internal parameters    hyperparameters    that govern their search over common nuisance parameters  
+we have therefore fixed those parameters to reasonable values and do not expose them to the user 101112  
+corroborating the results of previously published performance comparisons  14567   none of the other programs showed a statistically significant difference relative to the other nine  
+similarly  none of scope s component algorithms outperformed the other ten programs on this dataset by a statistically significant margin  
+in contrast  none of the other motif finders that performed well by one criterion performed well by the other  as shown by the average ranks for each motif finder over both sensitivity and ppv  figure 6b   
+in cases where the program failed to return a result  the sensitivity is 0 and the ppv is undefined  
+cases where a program did not support the species were not included  
+adding sequences that do not contain binding sites decreases the signal to noise ratio  making motif finding more difficult 4  
+yet remarkably  performance comparisons consistently reveal disappointing performance for motif finders and fail to find any statistical significance between them  
+conversely  the pwm based methods have an apparently more powerful motif model 17  but their search strategies cannot guarantee optimality and often terminate at local optima  
+the limitation arises  however  in regulons where only one program has a high accuracy and the others fail to find any portion of the binding sites  
+in this light  scope can be seen as leveraging the second key observation by embracing the no free lunch theorem   rather than boost average performance by taking the average results of three general purpose algorithms  scope uses highly specialized algorithms and assumes each will perform strongly on some regulons and weakly on others  and that the unified scoring metric can tell the difference   
+these observations are not offered as definitive proof that there are only three classes of motifs  rather  they show that power can be gained by identifying distinct motif classes and combining specialized algorithms with a unified scoring rule  
+although our test set of 78 regulons gave us enough power to find significance between scope and its components or other algorithms  it did not provide enough power to disentangle the effects of small improvements  such as the bonferroni correction  the objective function that takes position bias into account  or scoring motifs based off one or both strands   especially in the rigorous cross validation framework necessary to decipher precisely which aspects contribute significantly to the performance  
+whereas previous performance comparisons attempt to optimize the parameters of the programs in question 467 or allow expert users to tune their own programs and manually filter both the input and output 5 we intentionally made our comparisons between programs without manually optimizing any parameters for any species so as to emulate typical use conditions  
+although the present philosophy of performance comparison implicitly benefits scope  which has no parameters to optimize  it is arguably the most relevant comparison possible for the typical biologist  
+especially poor performance on drosophila was also reported in the tompa et al  performance comparison  indicating that this difficulty is not limited to the current dataset 5  
+thus  the background sequences used by scope and the other programs may not be representative of the   true   background model of enhancers  leading to inaccurate statistics  
+ensemble methods hold the potential for providing improvements in motif finding accuracy without resorting to the use of additional data  such as phylogenetic information or characterization of the domain structure of the transcription factor   which are not always available  
+since the latter cannot be defined without data that obviates the need for computational motif finding  objective functions that approximate biological significance are critical  
+while this objective function prevents a single upstream region from dominating a motif s score  it fails to account for multiple instances of a binding site in a single gene that may arise due to cooperative binding  
+most programs assume motif orientation does not matter and so define m   mr  
+however  none of these approaches offers structural evidence that the predicted domain pairs are able to form an interaction  
+given that 74  of all uniprot proteins contain at least one pfam match  this is not by itself surprising  
+the columns are split according to the proportion of interactions that contain an ipfam domain pair  blue   that contain any other pfam domains on both proteins  red   and those that contain no pfam domain pair  yellow   
+no p value  see methods  was greater than 1 84    10 06  
+in both h  sapiens  blue  and s  cerevisiae  green  a small number of ipfam domain pairs covers a large fraction of the interactome  whereas in e  coli  no ipfam domain occurs in more than 4 experimental interactions at a time  
+without further experiments  we cannot assign the correct interacting domains with certainty  
+to gain a rough estimate of the false positive rate due to this assumption  we counted how many protein pairs in the pdb contain an ipfam domain pair that does not mediate an interaction in one complex structure but does so in another  
+3671 out of a total of 5380 interacting protein pairs from the pdb contain an ipfam domain pair that does not interact in one complex structure but does so in another  
+thus  some complexes contain a greater number of ipfam domain pairs  while other complexes do not contain any at all  
+the grey set in the background represents ipfam domain pairs not found in the three species  
+even in h  sapiens  where we suspect a positive bias due to the overrepresentation of disease related proteins in both the pdb and protein interaction databases  81  of protein interactions do not contain an ipfam domain pair  
+ while there is no structural information about putative interactions between these pairs  this fraction can already be analysed using statistical methods to identify putative domain interactions 7910  
+the significant positive correlation in the frequency of ipfam domain pairs conserved between s  cerevisiae and h  sapiens also suggests that the binding interfaces are more often kept or even reused rather than lost in the course of evolution  
+an average of     16  of interaction entries were lost in the mapping process  either if no sequence was provided with the original entry or if no significant matching sequence could be found in integr8  
+it should be noted that the degree distribution per node is not maintained  
+while the neur and mib genes are evolutionarily conserved  their respective roles in the context of a single organism have not yet been examined  
+finally  ectopic expression of neur in d mib mutant larvae rescues the wing d mib phenotype  indicating that neur can compensate for the lack of d mib activity  
+for instance  dl  but not ser  is essential for lateral inhibition during early neurogenesis in the embryo  4   
+conversely  ser  but not dl  is specifically required for segmental patterning  5   
+these different requirements for dl and ser appear to primarily result from their non overlapping expression patterns rather than from distinct signaling properties  
+accordingly  signaling would not be linked directly to endocytosis  but endocytosis would be prerequisite for signaling  30   
+the d mib1 and d mib2mutant alleles did not complement the l 3 72cdaj12 and l 3 72cdai5 lethal mutations that have been mapped to the same cytological interval as the d mib gene  35   
+third  western blot analysis showed that the d mib protein was not detectable in imaginal disc and brain complex extracts prepared from homozygous d mib1 and d mib1 d mib2 larvae  figure 1c and c    
+fourth  the leaky  gal4 independent expression of a uas d mib transgene fully rescued the lethality of d mib1 d mib2 flies  data not shown  see also figure 1h   
+the endogenous d mib protein  predicted size  130 kda  was detected in s2 cells  lane 2  and in imaginal discs from wild type larvae  lane 3  but was not detectable in homozygous d mib1  lane 4  and d mib1 d mib3  lane 5  third instar larvae  
+d mib mutant flies showed a weak neurogenic phenotype  j  that was not observed in ser mutant flies  k   
+ectopic sensory organs in d mib mutant flies developed from ectopic sensory organ precursor cells  not shown   
+mutant pupae died as pharate adults showing ectopic macrochaetes  increased microchaete density on the dorsal thorax  figure 1i and 1j   short legs lacking tarsal segmentation  figure 1l and 1m   and nearly complete loss of eye and wing tissues  figure 1d and 1e   
+hypomorphic d mib2 d mib4 mutant flies only showed ectopic sensory organs  rough eyes  small wings  and thickened veins  figure 1d  1d   1g  and 1g   data not shown   
+more specifically  the bristle and leg phenotypes are likely to result from reduced signaling by dl  and not by ser   
+in contrast  a complete loss of ser signaling had no effect on bristle density  figure 1k   
+ f and f   expression of cut  red  at the wing margin was not affected by the complete loss of neur activity in neur1f65 mutant clones  indicated by the loss of the nuclear green fluorescent protein  gfp  marker  in green   
+a complete loss of cut and wg accumulation and wg lacz expression was observed in the central region of third instar d mib mutant wing discs  data not shown   
+interestingly  wing margin formation and expression of cut are not affected by the complete loss of neur activity  figure 2f and 2f    45   
+similarly  loss of neur activity had no detectable effect on leg segmentation  data not shown  and vein determination  45   two processes shown here to depend on d mib gene activity  
+ f   f    d mib staining at the apical cortex  blue in  f and f    was not detected in d mib2 mutant clone  marked by loss of nuclear gfp staining  green in  f    
+loss of d mib activity has no detectable effect on the apical accumulation of dl  red in  f and f      
+in contrast  ventral clones did not prevent the expression of cut  c and d   implying that d mib is not strictly required for dl signaling  
+note that mutant ventral cells abutting wild type dorsal cells expressed cut  arrow in  d    indicating that d mib is not required for n signal transduction  
+we focused our analysis on the notum region since d mib mutant discs have no wing pouch  figure 4   
+the complete loss of d mib activity in d mib1 mutant discs did not detectably change the subcellular localization of dl  figure 4c  4c   4f  and 4f    
+similar results were also obtained in d mib2 mutant clones  which showed strongly elevated levels of cortical ser  figure 4h  whereas the amount of dl at the apical cortex was not detectably modified  see figures 3f   3f   and 4j   
+of note  loss of d mib2 activity in clones did not block the accumulation of ser into intracellular dots  figure 4h    
+the distribution of dl  red in  j and j    was not affected by the loss of d mib activity  
+briefly  dissected wing discs were cultured for 15 min in the presence of antibodies that recognize the extracellular part of ser or dl  then washed  cultured for another 45 min in medium without antibodies  and then fixed  
+the complete loss of d mib activity in d mib1 wing discs did not significantly change the internalization of anti dl antibodies  figure 5d      5e      and 5f       indicating that d mib is not required for dl endocytosis in this tissue  
+the lack of cut expression in wild type ventral cells abutting the d v boundary indicates that d mib is required for ser signaling by dorsal cells and acts in a non autonomous manner to activate n in ventral cells  
+conversely  loss of d mib activity in large ventral clones  figure 6c and 6d  did not disrupt margin specification  indicating that d mib is not strictly required for dl signaling by ventral cells  
+of note  ventral d mib mutant cells expressed cut  implying that d mib is not required for n signal transduction  
+by contrast  elevated levels of ser expression failed to restore cut expression and growth of the wing pouch in d mib2 d mib3 mutant larvae  figure 8b   
+d mib2 d mib3 mutant discs expressing gfp  a   gfp staining not shown   ser  b   ncdc10  c   or neur  d  under the control of ser gal4 were stained for cut  red   
+expression of ser in dorsal cells did not rescue the d mib2 d mib3 wing pouch mutant phenotype  compare  b  with  a    consistent with d mib being required for ser signaling  
+consistent with the latter hypothesis  the neur gene is not expressed in wing pouch and wing margin cells  where it is not required  and appears to be expressed only in sensory cells  52   where it is required  
+expression of neur  using actin gal4  restored growth of the wing pouch and formation of the wing margin  data not shown   
+in a converse experiment  we found that the neur driven expression of d mib  using neurpgal4  did not rescue the cuticular neurogenic phenotype of neurpgal4 neur1f65 embryos  
+three uas d mib transgenic lines were tested  and none showed detectable rescue whereas the two uas neur lines used as positive controls either fully or partially rescued the cuticular neurogenic phenotype of neurpgal4 neur1f65 embryos  data not shown  uas d mib     neurpgal4    embryos developed normally   
+this indicates that a key function of neur in the embryo cannot be provided by d mib  
+third  results from an in vivo antibody uptake assay indicated that the endocytosis of ser  but not of dl  was strongly inhibited in d mib mutant cells  
+this inhibition correlated with the strong accumulation of ser  but not dl  at the apical cortex of d mib mutant cells  
+by analogy  the defective growth of the eye tissue may similarly result from the lack of ser signaling and of n activation along the d v boundary  55   
+this conclusion is consistent with observations made earlier showing that secreted versions of ser cannot activate n but instead antagonize ser signaling  56 57   
+interestingly  the strong requirement for dl and ser endocytosis seen in drosophila is not conserved in caenorhabditis elegans  in which secreted ligands have been shown to be functional  58 59   
+noticeably  there is no c  elegans mib homolog  and the function of c  elegans neur  f10d7 5  is not known  
+we have shown that the d mib gene regulates wing margin formation  leg segmentation  and vein formation  whereas none of these three processes depend on neur gene activity   45 60   this study   
+conversely  the activity of the neur gene is essential for binary cell fate decisions in the bristle lineage  22  that do not require the activity of the d mib gene  no bristle defects were seen in d mib mutant flies   
+the functional differences observed between d mib and neur cannot be simply explained by obvious differences in molecular activity and or substrate specificity  
+we have shown here that specific aspects of the d mib phenotype in legs and in the notum cannot simply result from loss of ser signaling and are consistent with reduced dl signaling  suggesting that d mib regulates dl signaling  
+we note  however  that no clear defects in dl subcellular localization and or trafficking were observed in d mib mutant cells  
+consistent with this idea  overexpression of neur in imaginal discs resulted in a strong reduction of ser accumulation at the apical cortex  data not shown   
+nevertheless  our observation that d mib could not compensate for the loss of neur activity in the embryo indicates that d mib and neur have overlapping rather than identical molecular activities  
+for instance  neur  but not d mib  localizes asymmetrically during asymmetric sensory organ precursor cell divisions  22   
+the l 3 72cdaj12 and l 3 72cdai5 alleles originally isolated by  35  failed to complement the d mib1 and d mib2 mutations and were renamed d mib3 and d mib4  
+yet no transposase sequence similar to rag1 or rag2 has been found  
+we also suggest that the rag2 protein was not encoded by ancient transib transposons but emerged in jawed vertebrates as a counterpart of rag1 necessary for the v d j recombination reaction  
+because the vast repertoire of bcrs and tcrs cannot be encoded genetically  ancestors of jawed vertebrates adopted an elegant combinatorial solution  1   
+however  given the lack of significant structural similarities between rags and known tpases  the    rag transposon    model  9 12 13 16  remained unproven  
+a lack of any labels means that the transib tpase and rag1 2 are not present in the sequenced portions of the corresponding genomes  
+among branches lacking transib tpases  only lamprey and crocodile genomes are not extensively sequenced to date  
+at the same time  recently sequenced genomes of honeybee  roundworms  fish  frog  mammals  sea squirts  plants  and fungi  except soybean rust  do not contain any detectable transib transposons  see figure 1   
+each empty cell indicates that the corresponding tpase query was not used at the particular stage of psi blast analysis  
+however  based on psi blast searches  no significant similarities between these nine tpases and rag1 protein were found  data not shown   
+indigenous properties of the transib tpase  that were not related directly to rag1 functions  including those responsible for the precise 5 bp length of tsds  might have been altered during evolution of rag1  leading to occasional 4 bp and 3 bp tsds that are atypical for transib transposons  
+extensive analysis of the flanks failed to show any hallmarks of putative transposons that might be associated with this rag1 like protein  and we did not find any evidence indicating that other rag1 core   like proteins are encoded by transposable elements  figure 5   
+although the two proteins are only 38  identical to each other  they share common features   1  their n terminal portions are missing and the rag1 like sequences start at positions 17 or 18   2  in both proteins the first aa residue overlaps with the acceptor splice site  and  3  their similarity to rag1 starts at positions corresponding to position 470 of the human rag1  
+again  as in the case of the sea urchin sequences  the lancelet rag1 core   like elements show no hallmarks of transposons  data not shown   
+even without the finger  the remaining portions of the sea urchin sequences were significantly similar to the corresponding portions of rag1  
+blastp searches of the sea urchin sequences against all genbank proteins  excluding rag1  detected only the ring finger domain of the sea urchin sequences  
+e values of these matches were much higher than the e values of similarities to the rag1 proteins  sp_768  0 04 versus 7  10 7  sp_86231  3  10 4 versus 7  10 7  sp_1226  10 4 versus 2  10 7  p4_sp  10 versus 2  10 7  p5_sp does not have ring finger and matches rag1 only  e value    9  10 7   
+based on the same approach  our study found that the starlet sea anemone and hydra genomes also encode several families of the n terminal rag1 domain that appear to be separate from the rag1 core   like proteins  data not shown   
+because there were no known tpases similar to rag1  it could be argued that rag1 independently developed some tpase like properties  rather than deriving them from a te encoded tpase  24   
+so far  we have found no evidence of such similarities  
+nevertheless  based on the orientations and relative positions of these transposons  none of them appears to be associated with the rag1 like sequences  see figure 5   
+we also could not identify the 5 bp tsds and tirs characteristic of the transib superfamily  
+the n terminal domain of rag1 has long been viewed as distinct from the core domain due to its lack of direct involvement in the v d j recombination reaction  
+in the sea urchin  lancelet  hydra  and starlet sea anemone genomes  the rag1 core   like sequences and the n terminal domain   like sequences do not appear to be linked to each other or to any other proteins  
+again  it is unclear if this part is not present in sea urchins or simply undetectable due to its small size and the high sequence divergence  
+however  none of the transib transposons identified so far encode any proteins other than the transib rag tpase  
+also  we could not find any rag2 like sequences in the recently sequenced sea urchin  lancelet  hydra  and sea anemone genomes  which encode rag1 like sequences  
+nevertheless  the apparent lack of rag2 like proteins in the sequenced portion of the sea urchin  lancelet  hydra  and sea anemone genomes  as well as in transib transposons suggests that rag2 was introduced in a separate event in jawless vertebrates  
+however  given the low 30  identity between the rag1 and sea urchin lancelet sea squirt rag1 like proteins  we cannot exclude the possibility that the ancestral rag2 protein went through a period of strong diversification driven by positive selection  and it can no longer be identified by sequence comparisons but may still be present in invertebrates  
+in any case  the origin of the v d j recombination system in jawless vertebrates appears to be a culmination of earlier evolutionary processes rather than an isolated event associated with insertion of a single transposon  
+the remaining portion of the zfb motif was probably lost in tpases of insect transib transposons  which do not encode rag2 like proteins  
+however  although the observed biochemical relationship between the hat tpase and v d j recombination is a step forward in our understanding of transposition reaction  several arguments strongly suggest that v d j machinery evolved from a transib rather than from hat transposon  
+first  as we mentioned previously  there is no significant sequence identity between hat tpases and rag1  even if one employs a psi blast search with most relaxed parameters  i e   e   10  no filters  no composition based statistics   
+no transib tpases had been deposited or annotated previously in genbank  except for two short hypothetical proteins predicted automatically during annotation of the d  melanogaster genome  151 aa gi 30923617 and 123 aa gi 30923765  
+the process is repeated for a specific number of iterations or until convergence  when no additional proteins are added on successive iterations  
+to ensure that a conservation profile for the transib tpases and rag1 proteins was not produced by a systematic error  we employed a procedure of    step wise    psi blast iterations  
+the following protocol describes the procedure   1  use a genbank set combined with n number of transib tpases  in our studies  n was equal to 7  13  and 18    2  run psi blast against genbank combined with tpases using each tpase as a query or seed   3  select only transib tpase sequences with e values less than 10 5 to define the pssm   4  take the best e value  ei  obtained by psi blast for rag1s when pssm is constructed without rag1  then  5  repeat these operations for different numbers  n  of tpases  
+presence and absence of corresponding residues in the transib tpases are indicated by   and    respectively  
+internal portions of transposons are not shown and are marked by xxx  
+it is also clear from the alignment that the hat termini do not have any second conserved block  which is expected to be preserved if rsss have evolved from hat termini  
+the elevated level of adenosine in the hemolymph due to lack of adgf a leads to apparently inconsistent phenotypic effects  precocious metamorphic changes including differentiation of macrophage like cells and fat body disintegration on one hand  and delay of development with block of pupariation on the other  
+without intervention  the affected individuals die from opportunistic infections within the first few months of life  
+ada is not the only adenosine deaminase in mammalian cells  
+drosophila also contains a gene  termed ada  with sequence similarity to human ada  but as we have previously shown the product of this gene is most likely not an active ada  16   
+melanization of the lymph glands was never observed in these larvae  and the imaginal discs and brain appear normal  
+homozygous pupae usually die soon after pupariation  in some cases they develop normal head and thorax imaginal structures  however  abdominal parts usually do not develop  
+less than 2  of mutant pupae develop normally and eventually emerge as adults without any obvious abnormalities besides the abdominal curvature  some of them are sterile  
+the adgf a homozygous flies carrying the hs adgf a construct showed survival rates significantly higher than adgf a even without heat shock  probably due to leaky expression of the hs adgf a construct  figure 2a   
+along the x axis  which is shared with  b    the rescue experiments are shown  marked by the gal4 driver used for expression of adgf a except for first three sets of bars   the first set presents only an adgf a mutant  the second an adgf a mutant carrying hs adgf a construct without heat shock  and the third with heat shock  and the y axis represents percentage of pupae and adult flies out of the total number of transferred first instar larvae of particular genotype  
+two different lines carrying the wild type uas adgf a expression construct together with an actin gal4 driver  providing ubiquitous expression  both completely rescued the mutant phenotype  whereas larvae with uas adgf a but without the driver showed the typical mutant phenotype  
+however  neither of the two lines carrying the mutated version of the uas adgf a  producing full length protein detected by anti myc antibody  see materials and methods  showed any rescue of the mutant phenotype  
+an average of 7  of hemocytes in the adgf a mutant are lamellocytes  figures 3 and 4e   large flat cells that are not present in circulation of wild type larvae under normal conditions  19   
+the lymph glands normally do not release hemocytes into the hemolymph before metamorphosis  20   instead  they are released during metamorphosis when the lymph glands disperse  19   
+no line expressing the gal4 driver exclusively in the lymph glands has been reported  so we used a combination of lines sharing in common the feature of gal4 driver expression in the lymph glands  
+the results  see figure 2 and table 1  clearly demonstrate that expression of adgf a in the lymph glands  driven by cg gal4 e33c gal4  or c564 gal4   but not in any other tissue examined  is necessary and sufficient to fully rescue the adgf a lethality  
+the c564 gal4 driver is not expressed as strongly as e33c gal4  but is still uniformly expressed in the lymph glands  it also fully rescued the mutant phenotype  
+the dot gal411c on chromosome ii  which shows weak expression  24   did not rescue the phenotype  but a dot gal443a insertion on chromosome x  which shows stronger expression  rescued approximately half of the mutant animals  figure 2   
+nearly all rescued individuals were males  suggesting that expression of the gal4 driver was influenced by x chromosome dosage compensation  and expression in females heterozygous for dot gal4 was not strong enough for rescue  
+expression of adgf a in salivary glands and fat body  as well as in other tissues  is not required for full rescue  as demonstrated by use of the cg gal4 dot gal4  but especially by e33c gal4 driver  and is also not sufficient to rescue the phenotype at all  as demonstrated by t110 gal4 and lsp2 gal4  table 1   
+no rescue of the phenotype  including body shape of escaping pupae  was observed  
+the only line showing significant  but not complete  rescue of adgf a survival without expression in the lymph glands was gawb5015  see figure 2   which expresses the gal4 driver very strongly and specifically in the ring gland and salivary glands  as well as very weak and spotty expression in imaginal discs  unpublished data    
+however  expression of adgf a driven by gawb5015 does not prevent the formation of melanotic tumors  see figure 2b   
+however  the delay in development and block of pupariation  figure 6b   as well as the pupal body shape  were not influenced by this mutation  
+the number of crystal cells was not increased and lamellocytes were not detected in crq  adgf a double mutants  see figure 3   
+none of the double mutant larvae showed either disintegration of fat body or melanotic tumor formation  figure 6a   
+even the adgf a mutant larvae heterozygous for the crq mutation  crq cyo gfp  adgf a adgf a  showed significant suppression of the fat body disintegration  with most of the tissue staying compact in bigger pieces and never disintegrating to single adipose cells  melanotic tumors were rarely observed  
+in addition  the absence of lamellocytes and the normal number of crystal cells in the double mutant strongly suggest that the differentiation of these cells and thus melanotic tumor formation is a secondary reaction to fat body disintegration  rather than a primary effect of the adgf a mutation  
+these results demonstrate that adenosine signaling through the adenosine receptor is involved in the developmental arrest of adgf a mutant  but that it does not play a role in fat body disintegration and macrophage differentiation  
+some mutants show typical expulsion from the glands with gfp totally external to the puparial case  e   while others do not expel glue proteins even after puparium formation  f   
+the block of pupariation in the adgf a mutant suggested that the level of ecdysone in these larvae might not be sufficient to initiate pupariation  
+however  the overall structure of the ring gland is not visibly affected even in the oldest larvae  10 d  i e   5 d after the heterozygous siblings pupariated  with a fully disintegrated fat body  figure 7b and 7c   
+in some cases  gfp was secreted into the lumen of salivary glands  but was not expectorated  figure 7f   which is similar to the defect seen in animals expressing the dominant negative form of ecdysone receptor driven by the sgs3 gal4 driver  33   
+although our tests did not exclude a role for adgf a in circulating hemocytes  which constitute a separate lineage from the lymph gland hemocytes  20    we showed that expression of adgf a in circulating hemocytes is not required for rescue of the adgf a mutant phenotype  since e33c gal4 uas adgf a which expresses adgf a in the lymph gland but not in circulating hemocytes fully rescued the phenotype  
+although these cells share other characteristics with plasmatocytes  they are normally not seen in circulation until they are released from the lymph glands at the onset of metamorphosis under the regulation of ecdysone to serve as phagocytes for histolysing tissues during metamorphosis   thus  they are referred to as pupal macrophages  19   
+this indication of precocious metamorphic changes  36  in the mutant is further supported by the finding that hemocytes aggregate in a segmental pattern in early rather than late third instar  see figure 4h   4j   and that the hemocytes lose expression of hemolectin in late third instar larvae rather than at the onset of metamorphosis  see figure 4g   21   
+a similar role of croquemort for removing histolysing tissues during drosophila metamorphosis has not yet been tested  but seems likely since the crq mutant used in this study  crqkg01679  is lethal in pupae  
+this protein was suggested to be a scavenger receptor  but it does not seem to be homologous to drosophila croquemort  unpublished data   
+adenosine could serve as a signal for macrophage differentiation  and the lack of adenosine deaminase activity due to the adgf a mutation could cause precocious differentiation of these cells in mutant larvae  
+one possible explanation for the developmental delay and failure to pupariate is that the adgf a mutation affects the production or release of ecdysteroid hormones from the major endocrine organ of the drosophila larva   the ring gland  
+other mutants with hormonal dysregulation show delayed larval development and failure to pupariate  42 43   
+the mutation in ador does not block macrophage differentiation and fat body disintegration  so this effect must involve another  as yet uncharacterized mechanism independent of ador signaling  
+although the adgf a mutation leads to larval or pupal death  we have shown that this is not due to the adenosine or deoxyadenosine simply blocking cellular proliferation or survival  as the experiments in vitro would suggest  
+indeed  most mitochondria released all their cytochrome c within a one minute period in a temperature independent manner  suggesting that an enzymatic transport mechanism is probably not involved  
+there is no apparent need for cytochrome c release in c  elegans  since ced 4 does not require it to activate ced 3  
+the drosophila bok homolog interacts with several anti apoptotic  but not with several pro apoptotic  bcl 2 family members and  therefore  possibly functions by antagonizing pro survival proteins  
+while one group reports that the caspase inhibitor p35 can block apoptosis induced by drosophila bok  22   another group did not see p35 inhibition  23   
+one notable exception is that the c elegans homologs of iaps do not appear to function in programmed cell death  
+the three proteins encoded by these genes have no significant homology to any other known proteins except for a small stretch of similarity at the amino terminus that is shared by all three but no other known proteins  
+although diablo smac shares no sequence homology with reaper  hid  or grim  it too can bind iaps  preventing them from inhibiting caspase activation  and thereby inducing apoptosis  
+an important difference between the function of diablo smac and reaper  hid  and grim is that diablo smac is not pro apoptotic by itself when overexpressed  but instead requires a death inducing stimulus to promote apoptosis  unlike the three drosophila proteins  
+in fact  saccharomyces cerevisiae contains neither caspases nor an apoptotic program  but it does have an iap like protein with a single bir domain that functions in regulating cell division  41   suggesting that the iaps are diverse family with only some members being anti apoptotic  hence this protein family is more accurately referred to as bir containing proteins  birps   
+using information from the genome project  c  elegans was shown to contain several potential caspases in addition to ced 3  but none of these has been shown to function in programmed cell death  9   
+in addition  while c  elegans has two bir domain containing proteins  neither appears to regulate cell death  bir 1 has been demonstrated to be essential for cytokinesis instead  39   
+the msl proteins colocalize to hundreds of sites along the single male x chromosome  they all are essentia
+sentence 
+no pericardial effusion is seen  
+ she denies fever  chills  or other constitutional symptoms   
+ she denies fever  chills  or other constitutional symptoms   
+ she denies fever  chills  or other constitutional symptoms   
+denies headache  
+denies posterior neck pain  
+ denies shortness of breath  stridor  or air hunger   
+ denies shortness of breath  stridor  or air hunger   
+ denies shortness of breath  stridor  or air hunger   
+no chest pain  
+no   abdominal pain  
+no focal neurologic deficits  
+allergies   no known drug allergies  
+ general   alert and oriented times three  in no acute distress   
+no foreign   body visualized in the upper pharynx  
+no tongue elevation  
+no anterior   cervical lymphadenopathy  
+ neck supple  no jvd   
+no murmurs  
+ there was no  evidence of ulceration  mass or diverticula   
+denies any shortness of breath or   diaphoresis  
+denies any shortness of breath or   diaphoresis  
+no pericardial   effusion is seen  
+review of systems     review of systems was negative and the patient has denied any fevers or   chills  
+review of systems     review of systems was negative and the patient has denied any fevers or   chills  
+ no chest pain  no shortness of breath  and no abdominal pain   
+ no chest pain  no shortness of breath  and no abdominal pain   
+ no chest pain  no shortness of breath  and no abdominal pain   
+denied any myalgias or arthralgias  
+denied any myalgias or arthralgias  
+denied any constipation or diarrhea  
+denied any constipation or diarrhea  
+denied any abnormal bleeding other than the bleeding from her vagina  
+denied   any headaches  
+no nausea or vomiting  
+no nausea or vomiting  
+allergies    no known drug allergies  
+denied any drug use  
+ general   in general  she is in no apparent distress lying on her back with   sullen facies   
+ no murmurs  rubs  or gallops   
+ no murmurs  rubs  or gallops   
+ no murmurs  rubs  or gallops   
+skin   no rashes  
+fecal occult blood was negative  
+there was no blood in the vagina  
+there was no evidence of polyps or mass  
+impression        no evidence of acute cardiopulmonary disease  
+the patient s h   and h were at baseline without any evidence of significant anemia  
+ at the time of discharge  the patient had no further   episodes of coffee ground emesis or any signs of active bleeding   
+chest x ray upon admission revealed a small to moderate left   basilar atelectasis effusion and there were no findings of pneumonia  
+she showed no clinical signs or symptoms of pneumonia  
+ at the time of discharge  she showed no signs of respiratory distress   
+allergies   no known drug allergies  
+ history of present illness   mr    name aaa  is a   age 90   year old gentleman with a past medical history of coronary   artery disease  status post cabg  but no history of known congestive heart   failure  who has not been admitted to the hospital in the last five to six   years  who presents today after a syncopal episode   
+ he denies any   antecedent palpitations  shortness of breath  chest pain  headache  or   lightheadedness   
+ he denies any   antecedent palpitations  shortness of breath  chest pain  headache  or   lightheadedness   
+ he denies any   antecedent palpitations  shortness of breath  chest pain  headache  or   lightheadedness   
+ he denies any   antecedent palpitations  shortness of breath  chest pain  headache  or   lightheadedness   
+ he denies any   antecedent palpitations  shortness of breath  chest pain  headache  or   lightheadedness   
+he still denies any   chest pain or shortness of breath  
+he still denies any   chest pain or shortness of breath  
+no focal sensory or motor deficits on history  
+allergies   none  
+ review of systems   constitutional   no fevers  chills  or sweats   
+ review of systems   constitutional   no fevers  chills  or sweats   
+ review of systems   constitutional   no fevers  chills  or sweats   
+heent   no headache or difficulty hearing  
+heent   no headache or difficulty hearing  
+pulmonary   no shortness of breath or pleuritic chest pain  
+pulmonary   no shortness of breath or pleuritic chest pain  
+cardiovascular   no substernal chest pressure or dyspnea on exertion  
+cardiovascular   no substernal chest pressure or dyspnea on exertion  
+gi   no nausea or vomiting  
+gi   no nausea or vomiting  
+ gu   no frequency  urgency  or dysuria   
+ gu   no frequency  urgency  or dysuria   
+ gu   no frequency  urgency  or dysuria   
+musculoskeletal   no arthralgias or myalgias  
+musculoskeletal   no arthralgias or myalgias  
+ neurologic   no numbness  tingling  or weakness   
+ neurologic   no numbness  tingling  or weakness   
+ neurologic   no numbness  tingling  or weakness   
+general   no acute distress  
+ neck   supple no jvd  lymph node  or cervical lymphadenopathy   
+ neck   supple no jvd  lymph node  or cervical lymphadenopathy   
+ cardiovascular   regular rate and rhythm  no murmurs  rubs  gallops   
+ cardiovascular   regular rate and rhythm  no murmurs  rubs  gallops   
+ cardiovascular   regular rate and rhythm  no murmurs  rubs  gallops   
+no focal sensory or motor deficits  
+ekg interpretation   a 12 lead ekg shows normal sinus rhythm with no acute   ischemic changes  
+the patient was not anemic  
+there was no evidence of polyps or  ulceration  
+findings      there are no acute radiographic abnormalities in the left  shoulder  
+ impression        no significant radiographic abnormalities in the left shoulder  region  except for minimal subchondral cystic change without  hypertrophic osteophytosis of the acromioclavicular joint   
+ the current marrow findings  however  would not be typical for a diagnosis of  hairy cell leukemia   
+ precise classification of this process cannot be definitively done on the  material available  but these findings would not support a diagnosis of  chronic lymphocytic leukemia or hairy cell leukemia   
+ precise classification of this process cannot be definitively done on the  material available  but these findings would not support a diagnosis of  chronic lymphocytic leukemia or hairy cell leukemia   
+no pericardial   effusion is seen  
+02  no valvular abnormalities  
+the   patient was brought to   institution today by his family as it was felt that he could   no longer take care of himself  
+the   patient was not cooperative  
+the patient   denied any headache  
+he did have some left sided weakness although that   seemed to have resolved by the time he had reached the emergency department  
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ in general  he denies any   changes in vision or diplopia  no changes in hearing  no neck pain  no   meningismus  no chest pain  no palpitations  no shortness of breath  no   cough  no abdominal pain  no nausea  vomiting  or diarrhea  no hematuria or   dysuria  no myalgia or arthralgia  no paresthesias or paralysis  no rash   
+ again  his review of systems is limited by the fact that he is not terribly   cooperative and he is difficult to keep focused   
+he has no known drug allergies  
+ his social history   he denies any tobacco  alcohol  or drug abuse although   he occasionally drinks beer   
+ his social history   he denies any tobacco  alcohol  or drug abuse although   he occasionally drinks beer   
+ his social history   he denies any tobacco  alcohol  or drug abuse although   he occasionally drinks beer   
+ the lungs are clear to auscultation bilaterally  no wheezes or   rales   
+ the lungs are clear to auscultation bilaterally  no wheezes or   rales   
+ the extremities have   no cyanosis  clubbing  or edema   
+ the extremities have   no cyanosis  clubbing  or edema   
+ the extremities have   no cyanosis  clubbing  or edema   
+the skin is warm and dry with no rash  
+the patient did have a chest x ray which was noted to be negative for any   infiltrate or effusion  
+the patient did have a chest x ray which was noted to be negative for any   infiltrate or effusion  
+there is no  pneumothorax with bilateral chest tubes in place  
+ the patient   underwent bilateral upper extremity duplex scan on   date nov 16 2007   which   revealed no evidence of active pseudoaneurysm  avf  or hematoma in the right   neck and shoulder region   
+ the patient   underwent bilateral upper extremity duplex scan on   date nov 16 2007   which   revealed no evidence of active pseudoaneurysm  avf  or hematoma in the right   neck and shoulder region   
+ the patient   underwent bilateral upper extremity duplex scan on   date nov 16 2007   which   revealed no evidence of active pseudoaneurysm  avf  or hematoma in the right   neck and shoulder region   
+ the patient s bilateral upper extremity duplex   scan revealed no pseudoaneurysms  no avm  or no organized hematoma   
+ the patient s bilateral upper extremity duplex   scan revealed no pseudoaneurysms  no avm  or no organized hematoma   
+ the patient s bilateral upper extremity duplex   scan revealed no pseudoaneurysms  no avm  or no organized hematoma   
+no pericardial effusion is seen  
+normal saline contrast injection without   evidence of right to left intracardiac shunt  
+04  normal saline contrast injection without evidence of right to left  intracardiac shunt  
+she denies any chest pain and denies difficulty breathing  
+she denies any chest pain and denies difficulty breathing  
+she was not lightheaded at all  
+ she admits to mild nausea   during this episode while she was at the   institution and denies any back   pain  denies fevers  denies cough  or cold symptoms   
+ she admits to mild nausea   during this episode while she was at the   institution and denies any back   pain  denies fevers  denies cough  or cold symptoms   
+ she admits to mild nausea   during this episode while she was at the   institution and denies any back   pain  denies fevers  denies cough  or cold symptoms   
+ she admits to mild nausea   during this episode while she was at the   institution and denies any back   pain  denies fevers  denies cough  or cold symptoms   
+she denies change in   bowel or bladder habits  
+social history    tobacco  quit smoking in 1958  
+denies alcohol or other drug use  
+denies alcohol or other drug use  
+general  she is not in any acute distress  
+ no wheezes  rales  or   rhonchi   
+ no wheezes  rales  or   rhonchi   
+ no wheezes  rales  or   rhonchi   
+ on my exam  her hyponatremia from last week appears have   resolved  with a sodium of 134   
+there was no evidence of polyps or mass  
+findings  no intracranial hemorrhage can be identified  
+impression    no intracranial pathology identified  
+she has no focal neurologic deficits  
+no pericardial effusion is seen  
+physical exam   general   in no acute distress  
+no sign of infection  
+ the patient has normal range   of motion in her hand with good capillary refill  and no signs of infection   
+ there was no evidence of polyps  although the examination  was limited by the quality of the prep   
+principal procedures and tests   doppler of the lower extremities negative   for dvt  
+the patient denies change in sleep  
+the patient denies worthlessness or self esteem or anhedonia  
+the patient denies worthlessness or self esteem or anhedonia  
+ she denies any symptoms of psychosis or   mania  ocd   
+no evidence of delusions or hallucinations but   had bizarre behavior that therapist felt to be her associated state  
+no evidence of delusions or hallucinations but   had bizarre behavior that therapist felt to be her associated state  
+the patient was not lethargic or agitated during the   hospitalization  
+the patient was not lethargic or agitated during the   hospitalization  
+ no delusions  lethargy  or   hallucinations   
+ no delusions  lethargy  or   hallucinations   
+ no delusions  lethargy  or   hallucinations   
+no pericardial effusion is seen  
+normal saline contrast   injection without evidence of right to left intracardiac shunt  
+04  normal saline contrast injection without evidence of right to left  intracardiac shunt  
+no numbness or  tingling or other injuries  
+no numbness or  tingling or other injuries  
+no pain  proximal to his hand and otherwise has  no other injuries  
+ social history      denies any alcohol  tobacco or illicit drug use   
+ social history      denies any alcohol  tobacco or illicit drug use   
+ social history      denies any alcohol  tobacco or illicit drug use   
+physical examination      general   in no acute distress  
+ no lymphadenopathy  thyromegaly or jvd   
+ no lymphadenopathy  thyromegaly or jvd   
+ no rales  rhonchi or wheezes   
+ no rales  rhonchi or wheezes   
+ no rales  rhonchi or wheezes   
+ no murmurs  gallops  rubs   
+ no murmurs  gallops  rubs   
+ no murmurs  gallops  rubs   
+ no masses    splenomegaly   
+ no masses    splenomegaly   
+extremities   no clubbing or cyanosis  
+extremities   no clubbing or cyanosis  
+no injury proximal to his wrist  
+the esophagus was entirely normal without  signs of inflammation or barrett s esophagus  
+ s_o_h  counters report type record type subgroup classifier  207 ky8cwb3wwpyp sp sp   e_o_h   report de identified  safe harbor compliant  by de id v 6 14 02       procedures  bk virus plasma  ph   interpretation  plasma   quantitative pcr testing for bk virus is negative   
+an mri done on the same day showed no   biliary dilatation and positive for cholecystolithiasis  
+she states that she has no history of pancreatitis or alcohol   use  
+she states that she has no history of pancreatitis or alcohol   use  
+there was no   peripancreatic stranding and no discrete mass  
+ she is currently at   her goal and tolerating these tube feeds well without any nausea  vomiting    or residuals   
+ she is currently at   her goal and tolerating these tube feeds well without any nausea  vomiting    or residuals   
+ she had very low   residuals  as well as no nausea or vomiting   
+ she had very low   residuals  as well as no nausea or vomiting   
+ this was done on   date jul 13 2007   and there was no thrombus identified within   the common femoral  superficial femoral  or popliteal veins   
+no pericardial effusion is seen  
+ no focal numbness or weakness  though she does have pain on movement of   her index and middle fingers   
+ no focal numbness or weakness  though she does have pain on movement of   her index and middle fingers   
+no current knee pain  
+no neck pain  
+no loss of consciousness  
+ skin  skin is otherwise unremarkable  with no rash or abrasions  as above   
+there is no evidence of any carpal or metacarpal fracture or dislocation  
+there was no  evidence of ulcers  
+findings      right hip  there are no detected fractures in the right hip  
+there  are no acute fractures identified in the remainder of the pelvis  
+right femur  there are no acute fractures detected in the right  femur  
+impression        no acute fractures detected in the pelvis or right hip region  
+ s_o_h  counters report type record type subgroup classifier  208 ichwebxs3zjh sp sp   e_o_h   report de identified  safe harbor compliant  by de id v 6 14 02       procedures  bk virus urine  ph   interpretation  urine  quantitative pcr testing for bk virus is negative   
+she was left with no residual weakness  
+the patient had no chest pain   or shortness of breath  
+the patient had no chest pain   or shortness of breath  
+no palpitations while she was here  
+no   pericardial effusion is seen  
+there is no pleural effusion or  pneumothorax  
+there is no pleural effusion or  pneumothorax  
+ the patient denied any headache    neck pain  weakness  numbness or paraesthesias   
+ the patient denied any headache    neck pain  weakness  numbness or paraesthesias   
+ the patient denied any headache    neck pain  weakness  numbness or paraesthesias   
+ the patient denied any headache    neck pain  weakness  numbness or paraesthesias   
+ the patient denied any headache    neck pain  weakness  numbness or paraesthesias   
+he denied any fever  
+his nausea and vomiting resolved  
+his nausea and vomiting resolved  
+he did not have any abdominal pain  
+no pericardial   effusion is seen  
+she denies any   incontinence  
+social history   the patient denies alcohol use  
+no   weakness  
+she had no signs of acute   disk herniation or weakness  
+she had no signs of acute   disk herniation or weakness  
+ gi  ros is  ve for change in bowel habit  bleeding  occult nor overt   change in  weight  anemia or any   alarm   symptom or sign   
+ gi  ros is  ve for change in bowel habit  bleeding  occult nor overt   change in  weight  anemia or any   alarm   symptom or sign   
+ gi  ros is  ve for change in bowel habit  bleeding  occult nor overt   change in  weight  anemia or any   alarm   symptom or sign   
+ gi  ros is  ve for change in bowel habit  bleeding  occult nor overt   change in  weight  anemia or any   alarm   symptom or sign   
+ there was no evidence of polyps  mass or diverticula   
+ there was no evidence of polyps  mass or diverticula   
+no calcaneal fracture can be seen  
+interpretation   negative for intraepithelial lesion or malignancy  
+ this gradually   cleared  and there were no further signs or symptoms of infection   
+she had no fever  
+she had no chills  
+she had no overt   signs or symptoms of infection  
+allergies   no known drug allergies  
+no pericardial effusion is   seen  
+ she denies any abdominal pain  no chest pain or shortness of   breath  she has had no particular sick contacts  and she has been using   over the counter remedies with no specific relief   
+ she denies any abdominal pain  no chest pain or shortness of   breath  she has had no particular sick contacts  and she has been using   over the counter remedies with no specific relief   
+ she denies any abdominal pain  no chest pain or shortness of   breath  she has had no particular sick contacts  and she has been using   over the counter remedies with no specific relief   
+ she denies any abdominal pain  no chest pain or shortness of   breath  she has had no particular sick contacts  and she has been using   over the counter remedies with no specific relief   
+physical examination   general   in no acute distress  
+ neck   supple  no lymphadenopathy  thyromegaly  or jvd   
+ neck   supple  no lymphadenopathy  thyromegaly  or jvd   
+ lungs     ctp  no rales  rhonchi  or wheezes   
+ lungs     ctp  no rales  rhonchi  or wheezes   
+ lungs     ctp  no rales  rhonchi  or wheezes   
+ heart   regular rate and rhythm  no   murmurs  gallops  or rubs   
+ heart   regular rate and rhythm  no   murmurs  gallops  or rubs   
+ heart   regular rate and rhythm  no   murmurs  gallops  or rubs   
+ abdomen   soft  nontender  nondistended  positive   bowel sounds  no mass or organomegaly   
+ extremities   no clubbing  cyanosis    or edema   
+ extremities   no clubbing  cyanosis    or edema   
+ extremities   no clubbing  cyanosis    or edema   
+the patient had no signs of a focal infection  
+ she appeared well and had   unremarkable vital signs  no signs of meningitis  otitis  pharyngitis  or   pneumonia   
+ she appeared well and had   unremarkable vital signs  no signs of meningitis  otitis  pharyngitis  or   pneumonia   
+ she appeared well and had   unremarkable vital signs  no signs of meningitis  otitis  pharyngitis  or   pneumonia   
+ she appeared well and had   unremarkable vital signs  no signs of meningitis  otitis  pharyngitis  or   pneumonia   
+there was no evidence of esophageal varices or gastric  varices  
+there was no evidence of esophageal varices or gastric  varices  
+ she was afebrile with   stable vitals  awake  alert  and oriented in no acute distress   
+no echocardiographic signs of tamponade are seen  
+03  none mitral regurgitation  
+09  no echocardiographic signs of tamponade are seen  
+she denies any   fevers or chills  
+she denies any   fevers or chills  
+she denies any cough or sputum production  
+she denies any cough or sputum production  
+she denies any   dysuria  
+ physical examination   on examination  the patient is a well developed white female in no acute   distress   
+the extremity examination shows  2 pulses and no peripheral edema  
+she   does not have any focal neurologic deficit  
+ed course   work up of the patient s complaint included a head ct that was unremarkable   and x ray of the abdomen with flat and upright views to rule out obstruction   and that also shows no free air or obstruction  
+ on   date sep 26 2007   his nutrition was increased to clear   liquids  then on   date sep 27 2007   the patient had a turkey sandwich of smashed   potatoes for lunch and states that he did not have abdominal pain  and wished   to go home   
+ partial small bowel obstruction  resolved   
+no pericardial   effusion is seen  
+04  no vegetations seen by this technique  
+he denies paresthesias  
+ general   he is awake  alert  in no acute distress   
+there was no foreign body  
+there was no evidence of polyps  
+the heart  size is normal without pericardial effusion  
+there is no evidence of noncalcified pulmonary nodule  or mass  
+there is no pleural effusion or pneumothorax  
+there is no pleural effusion or pneumothorax  
+the heart was in a regular rate and rhythm with no murmurs or   rubs  
+the heart was in a regular rate and rhythm with no murmurs or   rubs  
+the patient denied   any difficulty voiding  
+ this patient did have a chest x ray on   date may 22 2008   and the heart was within   normal range with no active lung disease   
+no pericardial   effusion is seen  
+history of present illness   mr    name aaa  is a   age in 50s  year old african american male with no history of   coronary artery disease who presents with a one day history of left sided   substernal chest pressure radiating to his left shoulder  
+he denies any headaches or   dizziness  
+he denies any headaches or   dizziness  
+no lower extremity swelling  
+ no lymphadenopathy    thyromegaly  or jvd   
+ no lymphadenopathy    thyromegaly  or jvd   
+ no lymphadenopathy    thyromegaly  or jvd   
+ no rales  rhonchi  or wheeze   
+ no rales  rhonchi  or wheeze   
+ no rales  rhonchi  or wheeze   
+ no murmurs  gallops  or rubs   
+ no murmurs  gallops  or rubs   
+ no murmurs  gallops  or rubs   
+ abdomen  soft  nontender    nondistended with positive bowel sounds and no hepatosplenomegaly   
+ extremities  no clubbing  cyanosis  or edema   
+ extremities  no clubbing  cyanosis  or edema   
+ extremities  no clubbing  cyanosis  or edema   
+chest x ray with demonstrate   no wide mediastinum  
+ he does have a history of pe s in the past  but his   signs and symptoms were not consistent with aortic dissection  pe  or   infectious etiologies   
+ he does have a history of pe s in the past  but his   signs and symptoms were not consistent with aortic dissection  pe  or   infectious etiologies   
+there are no pericardial or  pleural effusions  
+no enlarged nodes are identified  
+impression        negative for significant lung disease  
+there were no ischemic ekg changes during   stress  
+no   pericardial effusion is seen  
+ 09  there were no stress induced chest pain  ischemic ekg changes or wall  motion abnormalities at a relatively low level of stress   
+ 09  there were no stress induced chest pain  ischemic ekg changes or wall  motion abnormalities at a relatively low level of stress   
+ 09  there were no stress induced chest pain  ischemic ekg changes or wall  motion abnormalities at a relatively low level of stress   
+ this is a negative   stress ekg echocardiographic test for ischemia  therefore  there is a   low suspicion for significant coronary artery disease   
+ his pain is associated with nausea  no   vomiting   
+ he does occasionally have loose stools  no fevers or chills  no   sick contacts  no recent use of antibiotics   
+ he does occasionally have loose stools  no fevers or chills  no   sick contacts  no recent use of antibiotics   
+ he does occasionally have loose stools  no fevers or chills  no   sick contacts  no recent use of antibiotics   
+ he does occasionally have loose stools  no fevers or chills  no   sick contacts  no recent use of antibiotics   
+past medical history      physical exam     general appearance   in no acute distress  
+ no lymphadenopathy  thyromegaly or jvd   
+ no lymphadenopathy  thyromegaly or jvd   
+ no wheezes  rales or rhonchi   
+ no wheezes  rales or rhonchi   
+ no wheezes  rales or rhonchi   
+ no murmurs  rubs or gallops   
+ no murmurs  rubs or gallops   
+ no murmurs  rubs or gallops   
+no   masses or organomegaly  
+ extremities   no clubbing  cyanosis or edema   
+ extremities   no clubbing  cyanosis or edema   
+ extremities   no clubbing  cyanosis or edema   
+ he   had no signs of an acute abdomen  no signs of cholecystitis  pancreatitis or   peptic ulcer disease   
+ he   had no signs of an acute abdomen  no signs of cholecystitis  pancreatitis or   peptic ulcer disease   
+ he   had no signs of an acute abdomen  no signs of cholecystitis  pancreatitis or   peptic ulcer disease   
+ he   had no signs of an acute abdomen  no signs of cholecystitis  pancreatitis or   peptic ulcer disease   
+there was no evidence of polyps or mass  
+no pericardial   effusion is seen  
+the witnesses did not notice any tonic clonic movement and there was   no history of a seizure  
+the witnesses did not notice any tonic clonic movement and there was   no history of a seizure  
+she did not become incontinent  
+ does not   give a history of deafness and denies any recent nausea  vomiting and   diarrhea   
+ does not   give a history of deafness and denies any recent nausea  vomiting and   diarrhea   
+ does not   give a history of deafness and denies any recent nausea  vomiting and   diarrhea   
+ does not   give a history of deafness and denies any recent nausea  vomiting and   diarrhea   
+ there was no evidence of stricture  mucosal scalloping or  esophageal stricture   
+there are no other additional abnormal areas of  enhancement within the brain parenchyma  
+ the recent chest x ray on   date mar 21   2008   showed no evidence of pneumonia or metastatic disease status post right   pneumonectomy  stable appearance of the chest   
+no pericardial   effusion is seen  
+she denies   any diaphoresis  
+she denies any nausea  
+ in general  no change in   vision  diplopia or change in hearing   
+ in general  no change in   vision  diplopia or change in hearing   
+ in general  no change in   vision  diplopia or change in hearing   
+no neck pain or meningismus  
+no neck pain or meningismus  
+ positive for chest pain  no palpitations   
+ positive for shortness of breath    no cough   
+ no abdominal pain  nausea  vomiting or diarrhea   
+ no abdominal pain  nausea  vomiting or diarrhea   
+ no abdominal pain  nausea  vomiting or diarrhea   
+ no abdominal pain  nausea  vomiting or diarrhea   
+no hematuria or   dysuria  
+no hematuria or   dysuria  
+no myalgia or arthralgia  
+no myalgia or arthralgia  
+no paresthesia or paralysis  
+no paresthesia or paralysis  
+no rash  
+ social history    she denies any tobacco  alcohol or drug abuse   
+ social history    she denies any tobacco  alcohol or drug abuse   
+ social history    she denies any tobacco  alcohol or drug abuse   
+ no murmurs  rubs or gallops   
+ no murmurs  rubs or gallops   
+ no murmurs  rubs or gallops   
+no wheezes or rales  
+no wheezes or rales  
+ extremities   no cyanosis or clubbing  there is  2 pitting edema   
+ extremities   no cyanosis or clubbing  there is  2 pitting edema   
+i do not believe the   patient is having an acute mi at this time  
+the chest x ray does not demonstrate any   evidence of pulmonary infiltrate or edema  
+ her digoxin level is 0 6  which appears   to be subtherapeutic  however  she was not tachycardic  nor was she was in   atrial fibrillation   
+ her digoxin level is 0 6  which appears   to be subtherapeutic  however  she was not tachycardic  nor was she was in   atrial fibrillation   
+ there was no evidence of gastric varices  ulcers  or  mallory weiss tear   
+ there was no evidence of gastric varices  ulcers  or  mallory weiss tear   
+c      no parathyroid glands are  seen  
+no discrete hepatic lesions are shown  
+no findings of metastatic disease in the pelvis  
+no findings suggesting osteomyelitis  
+ her son saw her on   date mar 19   and at that time  the patient was   not jaundiced by his examination   
+no pericardial   effusion is seen  
+he denies any sputum production   or high fever  
+he denies any sputum production   or high fever  
+ he denies any orthopnea  lower extremity edema  or calf pain   
+ he denies any orthopnea  lower extremity edema  or calf pain   
+ he denies any orthopnea  lower extremity edema  or calf pain   
+there is no tonsillar exudate appreciated  
+there are no rales or rhonchi noted on   examination  
+there are no rales or rhonchi noted on   examination  
+there is no murmur or ectopy noted  
+extremities reveal no peripheral cyanosis or edema  
+extremities reveal no peripheral cyanosis or edema  
+there was no evidence of polyps or mass  
+ although  there is significant irregularity  there are no definite findings  to suggest instability   
+no joint space narrowing is shown  
+no acute fracture shown  
+he did   not have any complaints of chest pain of shortness of breath and he was   started on lovenox and coumadin and he will be discharged once the inr is   2 0  
+he did   not have any complaints of chest pain of shortness of breath and he was   started on lovenox and coumadin and he will be discharged once the inr is   2 0  
+no jvd  
+no carotid bruits  
+no clubbing or cyanosis  
+no clubbing or cyanosis  
+no pericardial   effusion is seen  
+02  no pericardial effusion  
+he denies any fever  
+the patient denies   any back pain  
+denies any dysuria or frequency  
+denies any dysuria or frequency  
+allergies   he has no known allergies  
+ review of systems   constitutional   he has some chills  but no fever   
+no   weight loss  
+no headache or dizziness  
+no headache or dizziness  
+psychological   no depression  
+ophthalmologic   denies any blurred vision  
+ ent   denies any ear  nose  or throat pain   
+endocrine   denies any polyuria or polyphagia  
+endocrine   denies any polyuria or polyphagia  
+skin   no rashes  
+pulmonary   denies any shortness of breath  
+no chest pain  
+genitourinary   no dysuria or frequency  
+genitourinary   no dysuria or frequency  
+there was no evidence of polyps or mass  
+no pericardial effusion is   seen  
+she denies a cough  
+social history   former tobacco  
+denies alcohol or drugs  
+denies alcohol or drugs  
+ general   the patient is awake  alert  lucid  appears to be in mild amount of   pain  in no acute distress   
+no jvd or lymphadenopathy  
+ no murmurs  rubs  or   gallops   
+ no murmurs  rubs  or   gallops   
+ no murmurs  rubs  or   gallops   
+ no wheezes  rales  or rhonchi   
+ no wheezes  rales  or rhonchi   
+ no wheezes  rales  or rhonchi   
+extremities   no edema or cyanosis  
+extremities   no edema or cyanosis  
+no evidence of polyps  
+there are no enlarged axillary intrathoracic lymph nodes  
+no soft  tissue masses are shown at the margins of the surgical resectionto  suggest recurrent disease  
+no pericardial  or pleural effusions  
+there  are no findings to suggest bowel obstruction  
+there is no free  fluid in the pelvis  
