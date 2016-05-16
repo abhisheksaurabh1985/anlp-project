@@ -55,7 +55,7 @@ templateFolder = "./templates"
 templatePaths = [os.path.join(templateFolder, f) for f in os.listdir(templateFolder) if os.path.isfile(os.path.join(templateFolder, f))]
 modelPath = prefix + "model"
 
-crfC = [5.0, 10.0, 15.0, 20.0]
+crfC = [1.0, 2.0, 3.0, 5.0, 10.0, 15.0, 20.0]
 crfF = [1, 2, 3, 5, 10, 15]
 
 outputFileName = prefix + "output.csv"

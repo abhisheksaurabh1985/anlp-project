@@ -2535,7 +2535,7 @@ Report No.	Concept	Sentence	Negation
 15	numbness	Neurologic - NUMBNESS, tingling, and weakness.	Affirmed			
 15	tingling	Neurologic - NUMBNESS, tingling, and weakness.	Affirmed			
 15	weakness	Neurologic - NUMBNESS, tingling, and weakness.	Affirmed			
-15	acute distress	General – ACUTE DISTRESS.	Affirmed			
+15	acute distress	General - ACUTE DISTRESS.	Affirmed
 15	Neck - Supple	NECK - SUPPLE no JVD, lymph node, or cervical lymphadenopathy.	Affirmed			
 15	JVD	Neck - Supple no JVD, lymph node, or cervical lymphadenopathy.	Negated			
 15	cervical lymphadenopathy	Neck - Supple no JVD, lymph node, or CERVICAL LYMPHADENOPATHY.	Negated			
@@ -3151,8 +3151,8 @@ Report No.	Concept	Sentence	Negation
 99	gallops	MURMURS, rubs and gallops.	Affirmed			
 99	wheezes	Wheezes or RALES.	Affirmed			
 99	rales	Wheezes or RALES.	Affirmed			
-99	cyanosis	Extremities: CYANOSIS or clubbing, there is � pitting edema.	Affirmed			
-99	clubbing	Extremities: CYANOSIS or clubbing, there is � pitting edema.	Affirmed			
+99	cyanosis	Extremities: CYANOSIS or clubbing, there is +2 pitting edema.	Affirmed
+99	clubbing	Extremities: CYANOSIS or clubbing, there is +2 pitting edema.	Affirmed
 99	septal infarct	There is no evidence of a SEPTAL INFARCT with negative deflections or Q waves in the septal leads.	Negated			
 99	acute MI	I do believe that the patient is having an ACUTE MI at this time.	Affirmed			
 99	pulmonary infiltrate or edema	The chest x-ray does demonstrate any evidence of PULMONARY INFILTRATE OR EDEMA.	Affirmed			
