@@ -9,177 +9,228 @@ def getMax(my_list):
    index, value = max(enumerate(my_list), key=operator.itemgetter(1))
    return (value,index)
 
+def createInputForCRF(filename):
 
-# Read the annotated data in an Ordered Dictionary
-txtFileName= './data/Annotations-1-120_orig.txt'
-triggersFileName = './data/negex_triggers.txt'
+   # Read the annotated data in an Ordered Dictionary
+   txtFileName= './data/Annotations-1-120_orig.txt'
+   triggersFileName = './data/negex_triggers.txt'
 
-dictAnnotatedData= getTxtInDictionary(txtFileName)
+   dictAnnotatedData= getTxtInDictionary(txtFileName)
 
-# Word2Vec expects single sentences, each one of them as a list of words. Generate tokens from sentences.
-tokenizedSentences= getTokens(dictAnnotatedData['Sentence'][0:])
-print len(tokenizedSentences)
+   # Word2Vec expects single sentences, each one of them as a list of words. Generate tokens from sentences.
+   tokenizedSentences= getTokens(dictAnnotatedData['Sentence'][0:])
+   print len(tokenizedSentences)
 
-triggers= getTriggers(triggersFileName)
-cueTypeTags = extractCueTypeTags(tokenizedSentences, triggers)
+   triggers= getTriggers(triggersFileName)
+   cueTypeTags = extractCueTypeTags(tokenizedSentences, triggers)
 
-# Tokenize 'concepts'
-tokenizedConcepts = getTokens(dictAnnotatedData['Concept'][0:])
-print len(tokenizedConcepts)
+   # Tokenize 'concepts'
+   tokenizedConcepts = getTokens(dictAnnotatedData['Concept'][0:])
+   print len(tokenizedConcepts)
 
-negations = dictAnnotatedData['Negation']
+   negations = dictAnnotatedData['Negation']
 
-# Define B-I-O tags as per IOB2 convention. Three types of tags have been used viz. O (Others), B-X (Beginning of X)
-# and I-X (Inside X) where X is 'CONCEPT'.
-bioTags= ['O', 'B', 'I']
-priorities= {'O':0, 'B':2, 'I':1}
+   # Define B-I-O tags as per IOB2 convention. Three types of tags have been used viz. O (Others), B-X (Beginning of X)
+   # and I-X (Inside X) where X is 'CONCEPT'.
+   bioTags= ['O', 'B', 'I']
+   priorities= {'O':0, 'B':2, 'I':1}
 
-# Training data for CRF with negated concepts
-(trainDataCRF, uniqueSentenses, conceptsForUniqueSentences, negationsForUniqueSentences) = \
-   getTrainingDataForCRF(tokenizedSentences,
-                         tokenizedConcepts, negations,
-                         bioTags, priorities, cueTypeTags)
+   # Training data for CRF with negated concepts
+   (trainDataCRF, uniqueSentenses, conceptsForUniqueSentences, negationsForUniqueSentences) = \
+      getTrainingDataForCRF(tokenizedSentences,
+                            tokenizedConcepts, negations,
+                            bioTags, priorities, cueTypeTags)
+   # write the data to file
+   writeCsvToFile(trainDataCRF, filename)
+   print "%s created" % filename
+   return (trainDataCRF, uniqueSentenses, conceptsForUniqueSentences, negationsForUniqueSentences)
 
-prefix = "./output/"
-# write the data to file
-filename = prefix + 'trainNegatedCRF.csv'
-writeCsvToFile(trainDataCRF, filename)
-print "%s created" % filename
+def trainCRF(crfCmd, templatePath, trainingFileName, modelPath):
+   otherParams = [templatePath, trainingFileName, modelPath]
+   # Run the tagger and get the output
+   p = Popen(crfCmd + otherParams, stdin=PIPE, stdout=PIPE, stderr=PIPE)
+   (stdout, stderr) = p.communicate()
+   return (p.returncode, stderr, stdout)
 
+def testCRF(crfCmd, modelPath, testFileName, outputFileName):
+   otherParams = ['-m', modelPath, testFileName]
+   p = Popen(crfCmd + otherParams, stdin=PIPE, stdout=PIPE, stderr=PIPE)
+   (stdout, stderr) = p.communicate()
 
-# evaluate crf
-crfPath = ""
-crfLearn = "crf_learn"
-crfTest = "crf_test"
-templateFolder = "./templates"
-templatePaths = [os.path.join(templateFolder, f) for f in os.listdir(templateFolder) if os.path.isfile(os.path.join(templateFolder, f))]
-modelPath = prefix + "model"
+   predictions = stdout
+   f = open(outputFileName,'w')
+   f.write(predictions)
+   f.close()
 
-crfC = [1.0, 2.0, 3.0, 5.0, 10.0, 15.0, 20.0]
-crfF = [1, 2, 3, 5, 10, 15]
+evalMeasureKeys = ['specificity', 'sensitivity', 'precision', 'accuracy', 'f1score']
 
-outputFileName = prefix + "output.csv"
-outputConceptsFileName = prefix + "concepts.csv"
+def computeEvalMeasures(confusionMatrix):
+    # specificity TN/(TN+FP)
+   specificity = confusionMatrix[1,1]/float(confusionMatrix[1,0]+confusionMatrix[1,1])
 
-useMira = [False, True]
+   # sensitivity TP/(TP+FN) - recall
+   sensitivity = confusionMatrix[0,0]/float(confusionMatrix[0,0]+confusionMatrix[0,1])
 
-confMatrixes = []
-# Split data for training and testing
-percentTestData= 25 # Only integer
+   # precision TP/(TP+FP)
+   precision = confusionMatrix[0,0]/float(confusionMatrix[0,0]+confusionMatrix[1,0])
 
-# number of times to split dataset randomly to compute average accuracy
-N = 10
+   # F1-score 2*TP/(2*TP+FP+FN)
+   f1score = 2*confusionMatrix[0,0]/float(2*confusionMatrix[0,0]+confusionMatrix[1,0]+confusionMatrix[0,1])
 
-trainingFileNameTemplate = prefix + 'trainingNegatedDataCRF-%d.txt'
-testFileNameTemplate = prefix + 'testNegatedDataCRF-%d.txt'
-# first - split the data
-for i in xrange(N):
-   [dataCRF, trainingDataCRF, testDataCRF] = splitDataForValidation(filename, percentTestData)
-   writeLinesToFile(trainingDataCRF, trainingFileNameTemplate % i)
-   writeLinesToFile(testDataCRF, testFileNameTemplate % i)
+   # accuracy (TP+TN)/(TP+FP+FN)
+   accuracy = (confusionMatrix[0,0]+confusionMatrix[1,1])/float(sum(sum(confusionMatrix)))
 
-specificities = []
-sensitivities = []
-precisions = []
-accuracies = []
-f1scores = []
-params = []
-
-
-# then - check all sets of parameters
-for crfCParam in crfC:
-   for crfFParam in crfF:
-      for useMiraParam in useMira:
-         for templatePath in templatePaths:
-            recallForParams = []
-            precisionForParams = []
-            crfCmd = [crfLearn]
-            crfParams = ['-c', str(crfCParam), '-f', str(crfFParam)]
-            if (useMiraParam):
-               crfParams.extend(["-a", "MIRA"])
-            crfCmd.extend(crfParams)
-            crfParams.extend(["template", templatePath])
-            print crfParams
-            confMatForParams = []
-            ignored = 0
-            for i in xrange(N):
-               crfCmd.extend([templatePath, trainingFileNameTemplate % i, modelPath])
-               # Run the tagger and get the output
-               p = Popen(crfCmd, stdin=PIPE, stdout=PIPE, stderr=PIPE)
-               (stdout, stderr) = p.communicate()
-               if p.returncode != 0:
-                  print ('crf_learn command failed! Details: %s\n%s' % (stderr,stdout))
-                  break
-
-               crfCmd = [crfTest, '-m', modelPath, (testFileNameTemplate % i)]
-               p = Popen(crfCmd, stdin=PIPE, stdout=PIPE, stderr=PIPE)
-               (stdout, stderr) = p.communicate()
-
-               predictions = stdout
-               f = open(outputFileName,'w')
-               f.write(predictions)
-               f.close()
-
-               # (nonOTagAccuracy, accuracy, class_res) = count_out(outputFileName)
-               (concepts, sentences, labels) = classify_concepts(outputFileName)
-
-               # confusion matrix
-               # [TP FN
-               #  FP TN]
-               confMatrix, ignoredC = getConfusionMatrix(conceptsForUniqueSentences, concepts,
-                                               uniqueSentenses, sentences,
-                                               negationsForUniqueSentences, labels)
-               ignored += ignoredC
-
-               confMatForParams.append(np.array(confMatrix))
-            sumConfMatrix = sum(confMatForParams)
-            confMatrixes.append(sumConfMatrix)
-
-            # specificity TN/(TN+FP)
-            specificity = sumConfMatrix[1,1]/float(sumConfMatrix[1,0]+sumConfMatrix[1,1])
-            print "specificity / true negative rate %s" % str(specificity)
-
-            # sensitivity TP/(TP+FN) - recall
-            sensitivity = sumConfMatrix[0,0]/float(sumConfMatrix[0,0]+sumConfMatrix[0,1])
-            print "sensitivity  / true positive rate / recall %s" % str(sensitivity)
-
-            # precision TP/(TP+FP)
-            precision = sumConfMatrix[0,0]/float(sumConfMatrix[0,0]+sumConfMatrix[1,0])
-            print "precision %s" % str(precision)
-
-            # F1-score 2*TP/(2*TP+FP+FN)
-            f1score = 2*sumConfMatrix[0,0]/float(2*sumConfMatrix[0,0]+sumConfMatrix[1,0]+sumConfMatrix[0,1])
-            print "f1 score %s" % str(f1score)
-
-            # accuracy (TP+TN)/(TP+FP+FN)
-            accuracy = (sumConfMatrix[0,0]+sumConfMatrix[1,1])/float(sum(sum(sumConfMatrix)))
-            print "accuracy %s" % str(accuracy)
-
-            # print "ignored %f" % (ignored/float(sum(sum(sumConfMatrix))))
-            # print "ignored %d" % (ignored)
-
-            sensitivities.append(sensitivity)
-            specificities.append(specificity)
-            accuracies.append(accuracy)
-            precisions.append(precision)
-            f1scores.append(f1score)
-            params.append(crfParams)
+   measures = [specificity, sensitivity, precision, accuracy, f1score]
+   res = {}
+   for i in xrange(len(measures)):
+      res[evalMeasureKeys[i]] = measures[i]
+   return res
 
 
-maxSpecificity, ind = getMax(specificities)
-print("\nmax specificity / true negative rate %f, for params %s" %
-      (maxSpecificity, ' '.join(params[ind])))
-maxSensitivity, ind = getMax(sensitivities)
-print("max sensitivity / true positive rate / recall %f, for params %s" %
-      (maxSensitivity, ' '.join(params[ind])))
-maxPrecision, ind = getMax(sensitivities)
-print("max precision %f, for params %s" %
-      (maxPrecision, ' '.join(params[ind])))
-maxF1score, ind = getMax(f1scores)
-print("max f1score %f, for params %s" %
-      (maxF1score, ' '.join(params[ind])))
-maxAccuracy, ind = getMax(accuracies)
-print("max accuracy %f, for params %s" %
-      (maxAccuracy, ' '.join(params[ind])))
+
+if __name__ == "__main__":
+   prefix = "./output/"
+   # write the data to file
+   filename = prefix + 'trainNegatedCRF.csv'
+   (trainDataCRF, uniqueSentenses, conceptsForUniqueSentences, negationsForUniqueSentences) = \
+      createInputForCRF(filename)
+
+   # evaluate crf
+   crfPath = ""
+   crfLearn = "crf_learn"
+   crfTest = "crf_test"
+   templateFolder = "./templates"
+   templatePaths = [os.path.join(templateFolder, f) for f in os.listdir(templateFolder) if os.path.isfile(os.path.join(templateFolder, f))]
+   # templatePaths = [templateFolder+"/template8"]
+   modelPath = prefix + "model"
+
+   crfC = [1.0, 2.0]
+   crfF = [1, 2, 3]
+
+   outputFileName = prefix + "output.csv"
+   outputConceptsFileName = prefix + "concepts.csv"
+
+   useMira = [True]
+
+   # inner cross-validation to choose hyper-parameters
+   k_inner = 10
+   # outer cross-validation to evaluate performance
+   k_outer = 5
+
+   bestParamsDict = {}
+   for k in evalMeasureKeys:
+      bestParamsDict[k] = []
+
+   [dataCRF, trainingDataCRF_outer, testDataCRF_outer] = kfoldCrossValidation(filename, k_outer)
+
+   filenameForValidationTemplate = prefix + 'validationNegatedDataCRF - %d.txt'
+   filenameForFinalTestTemplate = prefix + 'testFinalNegatedDataCRF - %d.txt'
+   trainingFileNameTemplate = prefix + 'trainingNegatedDataCRF-%d.txt'
+   testFileNameTemplate = prefix + 'testNegatedDataCRF-%d.txt'
+
+   for i_outer in xrange(k_outer):
+      writeLinesToFile(trainingDataCRF_outer[i_outer], filenameForValidationTemplate % i_outer)
+      writeLinesToFile(testDataCRF_outer[i_outer], filenameForFinalTestTemplate % i_outer)
+
+
+   for i_outer in xrange(k_outer):
+
+      print "\nprocessing outer %d fold\n" % i_outer
+      confMatrixes = []
+
+      [dataCRF, trainingDataCRF, testDataCRF] = kfoldCrossValidation(filenameForValidationTemplate%i_outer, k_inner)
+      for i in xrange(k_inner):
+         writeLinesToFile(trainingDataCRF[i], trainingFileNameTemplate % i)
+         writeLinesToFile(testDataCRF[i], testFileNameTemplate % i)
+
+      evalMeasures = {}
+      for k in evalMeasureKeys:
+         evalMeasures[k] = []
+
+      params = []
+
+      # check all sets of parameters
+      for crfCParam in crfC:
+         for crfFParam in crfF:
+            for useMiraParam in useMira:
+               for templatePath in templatePaths:
+                  recallForParams = []
+                  precisionForParams = []
+                  crfCmd = [crfLearn]
+                  crfParams = ['-c', str(crfCParam), '-f', str(crfFParam)]
+                  if (useMiraParam):
+                     crfParams.extend(["-a", "MIRA"])
+                  crfCmd.extend(crfParams)
+                  crfParams.extend(["template", templatePath])
+                  print crfParams
+                  confMatForParams = []
+                  ignored = 0
+                  for i in xrange(k_inner):
+                     (returncode, stderr, stdout) = trainCRF(crfCmd, templatePath, trainingFileNameTemplate%i, modelPath)
+                     if returncode != 0:
+                        print ('crf_learn command failed! Details: %s\n%s' % (stderr,stdout))
+                        break
+                     testCRF([crfTest], modelPath, (testFileNameTemplate % i), outputFileName)
+
+                     (concepts, sentences, labels) = classify_concepts(outputFileName)
+
+                     # confusion matrix
+                     # [TP FN
+                     #  FP TN]
+                     confMatrix, ignoredC = getConfusionMatrix(conceptsForUniqueSentences, concepts,
+                                                     uniqueSentenses, sentences,
+                                                     negationsForUniqueSentences, labels)
+                     ignored += ignoredC
+
+                     confMatForParams.append(np.array(confMatrix))
+                  sumConfMatrix = sum(confMatForParams)
+                  confMatrixes.append(sumConfMatrix)
+
+                  currentMeasures = computeEvalMeasures(sumConfMatrix)
+
+                  for k in currentMeasures.keys():
+                     print "%s  %s" % (k, currentMeasures[k])
+                     evalMeasures[k].append(currentMeasures[k])
+
+                  params.append(crfParams)
+
+      bestParamsDict_inner = {}
+
+      for i in xrange(len(evalMeasureKeys)):
+         maxMeasure, ind = getMax(evalMeasures[evalMeasureKeys[i]])
+         print("\nmax %s %f, for params %s" %
+            (evalMeasureKeys[i], maxMeasure, ' '.join(params[ind])))
+         otherMeasures = {}
+         for k in evalMeasureKeys:
+            otherMeasures[k] = evalMeasures[k][ind]
+         print ("other measures: %s" % str(otherMeasures))
+         bestParamsDict_inner[evalMeasureKeys[i]] = (maxMeasure, params[ind])
+
+
+      # test with the best parameters
+      for k in bestParamsDict_inner.keys():
+         print "\ntesting for best parameters for %s" % k
+         paramsBest = bestParamsDict_inner[k][1]
+         print "parameters %s" % ' '.join(paramsBest)
+         crfCmd = paramsBest[:-2]
+         (returncode, stderr, stdout) = trainCRF([crfLearn] + crfCmd, paramsBest[-1], filenameForValidationTemplate % i_outer, modelPath)
+         if returncode != 0:
+            print ('crf_learn command failed! Details: %s\n%s' % (stderr,stdout))
+
+         testCRF([crfTest], modelPath, filenameForFinalTestTemplate % i_outer, outputFileName)
+         (concepts, sentences, labels) = classify_concepts(outputFileName)
+
+         confMatrix, ignoredC = getConfusionMatrix(conceptsForUniqueSentences, concepts,
+                                                     uniqueSentenses, sentences,
+                                                     negationsForUniqueSentences, labels)
+         measures = computeEvalMeasures(np.array(confMatrix))
+         for k_m in measures.keys():
+            print "%s  %s" % (k_m, measures[k_m])
+         bestParamsDict[k].append(measures[k])
+
+
+   print bestParamsDict
+   for k in evalMeasureKeys:
+      print "avg %s = %f" % (k, sum(bestParamsDict[k])/float(k_outer))
 
 

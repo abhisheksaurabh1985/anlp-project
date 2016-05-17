@@ -11,6 +11,11 @@ from nltk.corpus import conll2000
 from ChunkParser import *
 
 defaultTag = "-"
+# Training a chunk parser on conll200 corpus
+train_sents = conll2000.chunked_sents('train.txt')
+# training the chunker, ChunkParser is a class defined in the next slide
+NPChunker = ChunkParser(train_sents)
+
 
 def getCSVInDictionary(csvFileName):
     '''
@@ -210,7 +215,7 @@ def isPunctuation(token):
     matched = re.match("[^\w]*", token)
     return matched != None and matched.group(0) == token
 
-def splitDataForValidation(fileNameCRFData, percentTest, verbose=False):
+def getCRFDataFromFile(fileNameCRFData, verbose =False):
     dataCRF= []
     with open(fileNameCRFData, 'r') as f:
         temp= []
@@ -221,9 +226,40 @@ def splitDataForValidation(fileNameCRFData, percentTest, verbose=False):
                 temp= []
 
     if verbose: print len(dataCRF)
+    return dataCRF
+
+def kfoldCrossValidation(fileNameCRFData, k, verbose=False):
+    dataCRF = getCRFDataFromFile(fileNameCRFData)
+    # Split into train and test
+    trainingDataCRF = []
+    testDataCRF = []
+
+    random.shuffle(dataCRF)
+    l = len(dataCRF)
+    s = int(l/k)
+
+    for i in xrange(k):
+        if i == k-1:
+            endTestInd = l-1
+        else:
+            endTestInd = (i+1)*s
+        trainFold = dataCRF[0:s*i] + dataCRF[endTestInd:l-1]
+        testFold = dataCRF[s*i:endTestInd]
+        trainingDataCRF.append(trainFold)
+        testDataCRF.append(testFold)
+
+    if verbose:
+        print len(trainingDataCRF)
+        print len(testDataCRF)
+
+    return dataCRF, trainingDataCRF, testDataCRF
+
+def splitDataForValidation(fileNameCRFData, percentTest, verbose=False):
+    dataCRF = getCRFDataFromFile(fileNameCRFData)
     # Split into train and test
     countSentencesTest = math.ceil((percentTest/ 100)* len(dataCRF))
     random.shuffle(dataCRF)
+
     trainingDataCRF= dataCRF[0:len(dataCRF)- int(countSentencesTest)]
     testDataCRF = [x for x in dataCRF if x not in trainingDataCRF]
 
@@ -256,10 +292,6 @@ def extractCueTypeTags(tokenizedSentences, triggers):
 
 
 def getChunks(tokenizedSentences):
-    # Training a chunk parser on conll200 corpus
-    train_sents = conll2000.chunked_sents('train.txt')
-    # training the chunker, ChunkParser is a class defined in the next slide
-    NPChunker = ChunkParser(train_sents)
 
     chunksTags = []
     for sentence in tokenizedSentences:
