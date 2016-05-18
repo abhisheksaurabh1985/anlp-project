@@ -18,10 +18,16 @@ The dataset is provided in /data folder.
 
 The method uses nested kfold cross-validation, the outer k = 5, the inner k = 10.
 
- execute.py - main file to train the model and evaluate results;
- negclassifier_functions.py - file with function defenitions;
- negclassifier_classes.py - file with classes definitions;
- data/Annotations-1-120_orig.txt - file for training
- data/negex_triggers.txt - file with pre- and postnegation cues
- templates - folder for the features templates
- output - folder where all output files are placed
+ * execute.py - main file to train the model and evaluate results;
+ 
+ * negclassifier_functions.py - file with function defenitions;
+ 
+ * negclassifier_classes.py - file with classes definitions;
+ 
+ * data/Annotations-1-120_orig.txt - file for training;
+ 
+ * data/negex_triggers.txt - file with pre- and postnegation cues;
+ 
+ * templates - folder for the features templates;
+ 
+ * output - folder where all output files are placed.

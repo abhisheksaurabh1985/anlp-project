@@ -6,12 +6,13 @@ import numpy as np
 if __name__ == "__main__":
    # prefix for all the output files
    prefix = "./output/"
+   txtFileName= './data/Annotations-1-120_orig.txt'
 
    # write the data to file
    filename = prefix + 'trainNegatedCRF.csv'
    # parse the input file and create an input for crf++
    (trainDataCRF, uniqueSentenses, conceptsForUniqueSentences, negationsForUniqueSentences) = \
-      createInputForCRF(filename)
+      createInputForCRF(txtFileName, filename)
 
    # evaluate crf
    crfPath = ""
@@ -23,12 +24,9 @@ if __name__ == "__main__":
    # Parameters for the grid search
    templatePaths = [os.path.join(templateFolder, f) for f in os.listdir(templateFolder)
                     if os.path.isfile(os.path.join(templateFolder, f))]
-   templatePaths = [templateFolder + "/template1"]
-   # crfC = [1.0, 2.0]
-   crfC = [1.0]
-   # crfF = [1, 2, 3]
-   crfF = [1]
-   useMira = [True]
+   crfC = [1.0, 2.0]
+   crfF = [1, 2, 3]
+   useMira = [False, True]
 
    outputFileName = prefix + "output.csv"
    outputConceptsFileName = prefix + "concepts.csv"

@@ -112,7 +112,7 @@ def writeLinesToFile(data, fileName):
             if i is not None:
                 file.writelines(''.join(i))
 
-def writeCsvToFile(data, fileName):
+def writeCsvToFile(data, fileName, sep = " "):
     '''
     Write list of strings to a csv file
     :param data: list of strings
@@ -121,7 +121,7 @@ def writeCsvToFile(data, fileName):
     '''
     with open(fileName, 'wb') as csvfile:
         for row in data:
-            csvfile.write(" ".join(row) + "\n")
+            csvfile.write(sep.join(row) + "\n")
 
 def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts_orig,
                           negations_orig, bioTags, priorities,
@@ -170,7 +170,7 @@ def getTrainingDataForCRF(tokenizedSentences_orig, tokenizedConcepts_orig,
             tempListNeg = list(itertools.repeat(defaultTag,len(sentence)))
 
             if (startInd == -1):
-                print("concept '%s' is not in sentence '%s'; ignore this concept" % (' '.join(concept), ' '.join(sentence)))
+                # print("concept '%s' is not in sentence '%s'; ignore this concept" % (' '.join(concept), ' '.join(sentence)))
                 notFoundConceptIndices.append((i, j))
                 listsBioTagsForSentence.append(tempList)
                 listsNegTagsForSentence.append(tempListNeg)
@@ -621,6 +621,15 @@ def classifyConcepts(filename):
 
    f.close()
 
+   fileout = "./output/concepts.csv"
+
+   output = []
+   for i in xrange(len(concepts)):
+       conceptsForSentence = concepts[i]
+       for j in xrange(len(conceptsForSentence)):
+           output.append((' '.join(conceptsForSentence[j]), ' '.join(sentences[i]), labels[i][j]))
+
+   writeCsvToFile(output, fileout, '\t\t')
    return (concepts, sentences, labels)
 
 def getLabelFromTags(labelTags):
@@ -649,21 +658,21 @@ def createInputForCRF(inputFilename, outputFilename):
    '''
 
    # Read the annotated data in an Ordered Dictionary
-   txtFileName= './data/Annotations-1-120_orig.txt'
+
    triggersFileName = './data/negex_triggers.txt'
 
-   dictAnnotatedData= getTxtInDictionary(txtFileName)
+   dictAnnotatedData= getTxtInDictionary(inputFilename)
 
    # Word2Vec expects single sentences, each one of them as a list of words. Generate tokens from sentences.
    tokenizedSentences= getTokens(dictAnnotatedData['Sentence'][0:])
-   print len(tokenizedSentences)
+   # print len(tokenizedSentences)
 
    triggers= getTriggers(triggersFileName)
    cueTypeTags = extractCueTypeTags(tokenizedSentences, triggers)
 
    # Tokenize 'concepts'
    tokenizedConcepts = getTokens(dictAnnotatedData['Concept'][0:])
-   print len(tokenizedConcepts)
+   # print len(tokenizedConcepts)
 
    negations = dictAnnotatedData['Negation']
 
